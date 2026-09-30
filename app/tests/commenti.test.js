@@ -56,5 +56,4 @@ test('Progetto: the project and the index of commented editions', async () => {
   assert.match(res.text, /I canti di Giacomo Leopardi commentati da Alfredo Straccali, 2ª edizione riveduta e corretta, Firenze, G\. C\. Sansoni, 1895/);
   assert.match(res.text, /<a href="\/leggo\/12\?c=straccali_1895">XII\. L(?:'|&#39;)infinito<\/a>/);
   assert.match(res.text, /Trascrizione dall(?:'|&#39;)immagine della pagina, da verificare\./);
-  assert.match((await request(app).get('/')).text, /<a href="\/progetto">/);
 });

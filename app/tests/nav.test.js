@@ -64,3 +64,10 @@ test('the home page describes only what exists', async () => {
   assert.match(html.text, /con i testimoni a stampa e le traduzioni/);
   assert.doesNotMatch(html.text, /commenti storici/);
 });
+
+test('Progetto is the last navbar link, active on its page, and not repeated in the footer', async () => {
+  const html = await get('/progetto');
+  assert.match(navbar(html), /<a href="\/traduco[^"]*" class="">Traduco<\/a>\s*<a href="\/progetto" class="on">Progetto<\/a>\s*$/);
+  assert.match(navbar(await get('/')), /<a href="\/progetto" class="">Progetto<\/a>/);
+  assert.doesNotMatch(html.slice(html.indexOf('<footer')), /href="\/progetto"/);
+});
