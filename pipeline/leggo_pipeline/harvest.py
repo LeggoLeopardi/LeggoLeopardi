@@ -27,7 +27,10 @@ class ChainError(Exception):
 
 
 def _http_fetch(title: str) -> str | None:
-    params = {"action": "query", "prop": "revisions", "rvprop": "content", "titles": title, "format": "json"}
+    params = {
+        "action": "query", "prop": "revisions", "rvprop": "content",
+        "titles": title, "format": "json", "redirects": 1,
+    }
     r = requests.get(API, params=params, headers={"User-Agent": USER_AGENT}, timeout=30)
     r.raise_for_status()
     page = next(iter(r.json()["query"]["pages"].values()))
@@ -77,10 +80,16 @@ def follow_chain(client: WikiClient, entry: str, stop: set[str], max_pages: int 
     title = entry
     while True:
         try:
-            nxt = next_page(client.page(title))
+            text = client.page(title)
         except PageMissing as e:
             raise ChainError(f"poem starting at {entry!r}: page {e} does not exist") from e
-        if nxt is None or nxt in stop or nxt.startswith(NOTES_PREFIX):
+        if text.lstrip().upper().startswith("#REDIRECT"):
+            raise ChainError(f"poem starting at {entry!r}: page {title!r} is a redirect stub; delete it from the cache")
+        nxt = next_page(text)
+        # Every poem's last page links on to the next poem or to the notes; no link means a broken chain.
+        if nxt is None:
+            raise ChainError(f"poem starting at {entry!r}: page {title!r} has no forward link")
+        if nxt in stop or nxt.startswith(NOTES_PREFIX):
             return pages
         if nxt in pages:
             raise ChainError(f"poem starting at {entry!r}: loop at {nxt!r}")

@@ -41,7 +41,7 @@ app.get('/leggo/:n', (req, res, next) => {
 
 app.get('/lang/:code', (req, res) => {
   const code = ['it', 'en'].includes(req.params.code) ? req.params.code : 'it';
-  const next = typeof req.query.next === 'string' && /^\/(?!\/)/.test(req.query.next) ? req.query.next : '/';
+  const next = typeof req.query.next === 'string' && /^\/(?![\/\\])[^\\\x00-\x1f]*$/.test(req.query.next) ? req.query.next : '/';
   res.cookie('lang', code, { maxAge: 365 * 24 * 3600 * 1000, sameSite: 'lax' });
   res.redirect(next);
 });

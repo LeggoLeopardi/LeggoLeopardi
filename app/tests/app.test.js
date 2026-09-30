@@ -33,3 +33,10 @@ test('unknown pages are 404 with the site layout', async () => {
   assert.equal(res.status, 404);
   assert.match(res.text, /Leggo <b>Leopardi<\/b>/);
 });
+
+test('language switch rejects backslash tricks that browsers read as //', async () => {
+  for (const next of ['/%5Cevil.example', '/%5C%5Cevil.example', '/%09/evil.example']) {
+    const res = await request(app).get(`/lang/en?next=${next}`);
+    assert.equal(res.headers.location, '/', next);
+  }
+});
