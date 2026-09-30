@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Commento a XII. L'infinito</title>
+<title type="short">Straccali</title>
+<author>Alfredo Straccali</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dall'immagine della pagina, da verificare.</note>
+<note>Selezione: tutte le note al canto.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>I canti di Giacomo Leopardi commentati da Alfredo Straccali, 2ª edizione riveduta e corretta, Firenze, G. C. Sansoni, 1895<date when="1895">1895</date><note type="source">commenti/Straccali_I_canti_di_Giacomo_Leopardi.pdf, p. 33 (pagina 58 del PDF)</note></bibl>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<div type="commentary" corresp="../../base/c12.xml#c12">
+<note type="intro" target="../../base/c12.xml#c12">Questa e le cinque seguenti poesie furono, sotto il nome di <hi rend="italic">Idillî</hi>, pubblicate (e, tranne il <hi rend="italic">Sogno</hi>, per la prima volta) nel <hi rend="italic">Nuovo Ricoglitore</hi> di Milano, negli anni 1825-26 (dic.-genn.); ma composte molto prima, e precisamente nel 1819, come sappiamo dall'autore stesso che questa data vi appose nella ediz. bolognese del 1826. — Benché giovanile, è delle piú perfette poesie leopardiane.</note>
+<note type="intro" target="../../base/c12.xml#c12"><hi rend="bold">Metrica.</hi> Endecasillabi sciolti.</note>
+<note type="comm" n="1" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v1"><ref>ermo colle.</ref> Il monte Tabor. «Il quale oggidì», scrive il prof. Mestica, «ridotto a passeggio pubblico e frequentatissimo, ha perduto la vaga rozzezza e in parte anche la forma natia; ma a' tempi del poeta, che volentieri vi si recava a diporto, e vi si tratteneva fuor della vista della gente, era veramente <hi rend="italic">ermo</hi> [romito], folto di alberi e irto di sterpi a maniera di siepi». Cfr. <hi rend="italic">Il passero solitario</hi>, la nota al v. 1.</note>
+<note type="comm" n="2" target="../../base/c12.xml#c12.v2" targetEnd="../../base/c12.xml#c12.v3"><ref>che da tanta ecc.:</ref> la quale esclude, chiude fuori, il guardo da tanta parte dell'ultimo orizzonte; ossia, impedisce la vista di tanta parte dell'estremo orizzonte.</note>
+<note type="comm" n="3" target="../../base/c12.xml#c12.v4" targetEnd="../../base/c12.xml#c12.v5"><ref>interminati Spazi.</ref> È l'infinito nello spazio. — Var. [Ric. '25; B. '26; F. '31] <hi rend="italic">interminato Spazio</hi>.</note>
+<note type="comm" n="4" target="../../base/c12.xml#c12.v5" targetEnd="../../base/c12.xml#c12.v5"><ref>di là da quella:</ref> oltre quella siepe. Il poeta, che è seduto, non vede, sensibilmente, che la siepe e il cielo.</note>
+<note type="comm" n="5" target="../../base/c12.xml#c12.v7" targetEnd="../../base/c12.xml#c12.v8"><ref>fingo,</ref> immagino. — <hi rend="bold">ove.</hi> Mi par da riferire, come fa il Mestica, comprensivamente a <hi rend="italic">spazi ... silenzi ... quiete</hi> ... — <hi rend="bold">per poco ecc.</hi>: poco manca che il cuore non impaurisca, sbigottisca. <hi rend="italic">Spaurare</hi> e <hi rend="italic">spaurarsi</hi> son forme care al nostro. Cfr. <hi rend="italic">La vita solitaria</hi>, 89; <hi rend="italic">Amore e Morte</hi>, 34: <hi rend="italic">Palinodia</hi>, 273.</note>
+<note type="comm" n="6" target="../../base/c12.xml#c12.v8" targetEnd="../../base/c12.xml#c12.v8"><ref>come:</ref> allorché, quando.</note>
+<note type="comm" n="7" target="../../base/c12.xml#c12.v9" targetEnd="../../base/c12.xml#c12.v10"><ref>quello Infinito silenzio:</ref> cioè l'infinito silenzio, la profondissima quiete che e' si finge nel pensiero. — <hi rend="bold">a questa voce</hi>: al suono, allo stormir del vento.</note>
+<note type="comm" n="8" target="../../base/c12.xml#c12.v11" targetEnd="../../base/c12.xml#c12.v11"><ref>l'eterno:</ref> l'eternità. È l'infinito nel tempo.</note>
+<note type="comm" n="9" target="../../base/c12.xml#c12.v12" targetEnd="../../base/c12.xml#c12.v13"><ref>le morte stagioni:</ref> le età trascorse. — <hi rend="bold">e la presente.</hi> Intendi <hi rend="italic">stagione</hi>. Il suono di una età, la vita fuggente di una generazione nella infinità del tempo, è al poeta come un fiato di vento nel silenzio infinito di spazî interminati. Qui hai il sublime! — <hi rend="bold">Suon.</hi> Cfr. <hi rend="italic">La sera del di di festa</hi>, 33.</note>
+<note type="comm" n="10" target="../../base/c12.xml#c12.v14" targetEnd="../../base/c12.xml#c12.v14"><ref>Immensità.</ref> È l'infinito nello spazio e nel tempo. — Var. [Ric. '25; B. '26] <hi rend="italic">Infinità</hi>.</note>
+</div>
+</body>
+</text>
+</TEI>

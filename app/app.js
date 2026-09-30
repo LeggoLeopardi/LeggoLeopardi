@@ -23,9 +23,10 @@ app.use((req, res, next) => {
   res.locals.canti = data.index();
   res.locals.lang = req.getLocale();
   res.locals.path = req.path;
-  const inPoem = /^\/(?:leggo|traduco)\/(\d+)(?:\/|$)/.exec(req.path);
+  const inPoem = /^\/(?:leggo|confronto|traduco)\/(\d+)(?:\/|$)/.exec(req.path);
   const current = inPoem && data.poem(inPoem[1]);
   res.locals.leggoHref = current ? `/leggo/${current.n}` : '/leggo';
+  res.locals.confrontoHref = current && data.facsimile(current.n) ? `/confronto/${current.n}` : '/confronto';
   res.locals.traducoHref = current && data.translations(current.n) ? `/traduco/${current.n}` : '/traduco';
   next();
 });
@@ -33,6 +34,7 @@ app.use((req, res, next) => {
 // Modules a poem can have, in navbar order; a module is listed for a poem only when it has data.
 const MODULES = [
   { mod: 'leggo', has: () => true },
+  { mod: 'confronto', has: (n) => Boolean(data.facsimile(n)) },
   { mod: 'traduco', has: (n) => Boolean(data.translations(n)) },
 ];
 
@@ -60,12 +62,42 @@ app.get('/leggo/:n', (req, res, next) => {
   const poem = data.poem(req.params.n);
   if (!poem) return next();
   const title = `${poem.roman}. ${poem.title || poem.incipit}`;
-  const facs = data.facsimile(poem.n);
-  if (!facs) return res.render('leggo', { poem, title, pnav: poemNav(poem, 'leggo') });
-  // Poems with the team TEI and page images open in the text–variants–facsimile view.
+  const comm = data.commentaries(poem.n);
+  let cview = null;
+  if (comm) {
+    const one = comm.commentators.find((c) => c.id === req.query.c);
+    if (one) {
+      cview = { mode: 'one', sel: one };
+    } else {
+      // every commentator's notes, grouped by the verse they start at (commentators oldest first)
+      const byVerse = new Map();
+      comm.commentators.forEach((c) => c.notes.forEach((nt) => {
+        if (!byVerse.has(nt.from)) byVerse.set(nt.from, []);
+        byVerse.get(nt.from).push({ c, nt });
+      }));
+      cview = { mode: 'all', groups: [...byVerse.keys()].sort((a, b) => a - b).map((v) => ({ v, items: byVerse.get(v) })) };
+    }
+  }
+  return res.render('leggo', { poem, title, comm, cview, pnav: poemNav(poem, 'leggo') });
+});
+
+app.get('/confronto', (req, res) => {
+  const requested = data.poem(req.query.n);
+  const target = requested && data.facsimile(requested.n) ? requested : data.index().find((p) => data.facsimile(p.n));
+  if (!target) return res.status(404).render('404');
+  return res.redirect(`/confronto/${target.n}`);
+});
+
+app.get('/confronto/:n', (req, res, next) => {
+  const poem = data.poem(req.params.n);
+  const facs = poem && data.facsimile(poem.n);
+  if (!facs) return next();
   const imaged = facs.witnesses.filter((w) => w.image);
   const sel = imaged.find((w) => w.siglum === req.query.w) || imaged.find((w) => w.siglum === 'N35c') || imaged[0];
-  return res.render('facsimile', { poem, facs, imaged, sel, credits: facs.credits, title, pnav: poemNav(poem, 'leggo') });
+  return res.render('facsimile', {
+    poem, facs, imaged, sel, credits: facs.credits, pnav: poemNav(poem, 'confronto'),
+    title: `${poem.roman}. ${poem.title || poem.incipit} · Confronto`,
+  });
 });
 
 app.get('/lang/:code', (req, res) => {
@@ -102,12 +134,12 @@ app.get('/traduco/:n', (req, res, next) => {
   });
 });
 
-// The facsimile view became the default Leggo view for its poems; keep old links working.
+// The facsimile view moved to Confronto; keep old links working.
 app.get('/leggo/:n/facsimile', (req, res, next) => {
   const poem = data.poem(req.params.n);
   if (!poem) return next();
   const w = typeof req.query.w === 'string' && /^[A-Z]{1,4}\d{2}c?$/.test(req.query.w) ? `?w=${req.query.w}` : '';
-  res.redirect(301, `/leggo/${poem.n}${w}`);
+  return res.redirect(301, `/confronto/${poem.n}${w}`);
 });
 
 app.use((req, res) => res.status(404).render('404'));

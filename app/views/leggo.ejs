@@ -3,6 +3,7 @@
 <main class="wrap leggo">
   <%- include('partials/poem-header') %>
 
+  <div class="<%= comm ? 'lcols' : '' %>">
   <article class="poem">
     <p class="print-head"><% poem.head.forEach((h) => { %><span><%= h %></span><% }) %></p>
     <% if (poem.epigraph.length) { %>
@@ -18,11 +19,49 @@
                if (item.missing) cls.push('missing');
                if (item.unnumbered) cls.push('unnumbered');
                if (item.indent) cls.push('indent' + item.indent); %>
-            <p class="<%= cls.join(' ') %>" id="<%= item.n ? 'v' + item.n : item.id %>"<%= item.unnumbered ? ' title="' + __('leggo.unnumbered') + '"' : '' %>><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span class="vt"><% if (item.missing) { %><%= __('leggo.missingVerse') %><% } else { %><%- item.html %><% } %></span></p>
+            <p class="<%= cls.join(' ') %>" id="<%= item.n ? 'v' + item.n : item.id %>"<%- item.n ? ` data-v="${item.n}"` : '' %><%- item.unnumbered ? ` title="${__('leggo.unnumbered')}"` : '' %>><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span class="vt"><% if (item.missing) { %><%= __('leggo.missingVerse') %><% } else { %><%- item.html %><% } %></span></p>
           <% } %>
         <% }) %>
       </div>
     <% }) %>
   </article>
+
+  <% if (comm) {
+       const range = (nt) => nt.from === nt.to ? `v. ${nt.from}` : `vv. ${nt.from}–${nt.to}`;
+       const note = (c, nt, withWho) => `<li class="cnote${nt.added ? ' added' : ''}" data-from="${nt.from}" data-to="${nt.to}">`
+         + (withWho ? `<p class="cwho">${c.short} ${c.year}</p>` : '')
+         + `<span class="cv">${range(nt)}</span> <b class="clemma">${nt.lemma.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</b> ${nt.html}</li>`; %>
+  <section class="comm" aria-label="<%= __('comm.label') %>">
+    <details class="list-picker cpick">
+      <summary><%= cview.mode === 'one' ? `${cview.sel.short} ${cview.sel.year}` : __('comm.all') %></summary>
+      <div class="list-panel">
+        <ul>
+          <li><a href="?c=all"<%- cview.mode === 'all' ? ' aria-current="true"' : '' %>><%= __('comm.all') %></a></li>
+          <% comm.commentators.forEach((c) => { %><li><a href="?c=<%= c.id %>"<%- cview.mode === 'one' && cview.sel.id === c.id ? ' aria-current="true"' : '' %>><%= c.short %> <%= c.year %></a></li><% }) %>
+        </ul>
+      </div>
+    </details>
+
+    <% if (cview.mode === 'one') { %>
+      <% cview.sel.intro.forEach((para) => { %><p class="cintro"><%- para %></p><% }) %>
+      <ol class="cnotes"><% cview.sel.notes.forEach((nt) => { %><%- note(cview.sel, nt, false) %><% }) %></ol>
+    <% } else { %>
+      <% cview.groups.forEach((g) => { %><div class="cgroup" data-v="<%= g.v %>"><ol class="cnotes"><% g.items.forEach(({ c, nt }) => { %><%- note(c, nt, true) %><% }) %></ol></div>
+      <% }) %>
+    <% } %>
+
+    <section class="csources" aria-label="<%= __('comm.sources') %>">
+      <% (cview.mode === 'one' ? [cview.sel] : comm.commentators).forEach((c) => { %>
+      <div class="csrc">
+        <h2><%= c.short %> <%= c.year %></h2>
+        <p><%= c.bibl %></p>
+        <p class="small"><%= c.source %> · <%= c.status.join(' ') %></p>
+      </div>
+      <% }) %>
+    </section>
+  </section>
+  <% } %>
+  </div>
 </main>
+<% if (comm) { %><script src="/js/leggo.js" defer></script><% } %>
 <%- include('partials/footer') %>

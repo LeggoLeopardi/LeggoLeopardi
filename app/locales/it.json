@@ -58,5 +58,10 @@
     "next": "Canto successivo",
     "choose": "Scegli un canto",
     "modules": "Sezioni del canto"
+  },
+  "comm": {
+    "label": "Commento",
+    "all": "Tutti i commentatori",
+    "sources": "Edizioni commentate"
   }
 }

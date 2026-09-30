@@ -244,3 +244,31 @@ a.step:hover { background: var(--panel); }
 .list-panel a { display: block; padding: 2px 6px; border-radius: 3px; text-decoration: none; font-size: 1.05rem; }
 .list-panel a:hover { background: var(--panel); }
 .list-panel a[aria-current] { background: var(--panel); color: var(--main); font-weight: 600; }
+
+/* leggo: the poem with its commentaries */
+.lcols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(18px, 3.5vw, 48px); align-items: start; }
+.lcols .poem { max-width: none; }
+.verse[data-v] { border-radius: 3px; cursor: default; }
+.verse.hl { background: var(--panel); }
+.comm { position: sticky; top: 72px; max-height: calc(100vh - 90px); overflow: auto; padding-right: 6px; }
+.cpick { margin: 0 0 14px; }
+.cpick .list-panel { columns: 1; width: min(22rem, calc(100vw - 32px)); }
+.cintro { font-size: 1.02rem; margin: 0 0 .7em; color: var(--ink); }
+.cgroup + .cgroup { margin-top: 6px; }
+.cnotes { list-style: none; margin: 0; padding: 0; }
+.cnote { font-size: 1.04rem; line-height: 1.45; padding: 8px 10px; border-radius: 4px; border-left: 3px solid transparent; }
+.cnote + .cnote { border-top: 1px dotted var(--line); }
+.cgroup .cnotes { border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+.cnote.hl { background: var(--panel); border-left-color: var(--accent); }
+.cwho { font-family: var(--label); letter-spacing: .04em; color: var(--main); font-size: .95rem; margin: 0 0 2px; }
+.cv { font-family: var(--label); color: var(--muted); font-size: .9rem; }
+.clemma { font-weight: 600; color: var(--dark); }
+.cnote.added .cv::before { content: "* "; color: var(--accent); }
+.csources { margin-top: 22px; padding-top: 12px; border-top: 1px solid var(--line); display: grid; gap: 10px; font-size: .95rem; color: var(--muted); }
+.csrc h2 { font-family: var(--label); font-weight: 500; font-size: 1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .2em; }
+.csrc p { margin: .15em 0; }
+.csrc .small { font-size: .85rem; }
+@media (max-width: 860px) {
+  .lcols { grid-template-columns: 1fr; }
+  .comm { position: static; max-height: none; overflow: visible; }
+}

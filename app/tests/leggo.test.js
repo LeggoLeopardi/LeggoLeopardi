@@ -28,7 +28,7 @@ test('a text-only poem renders all its verses exactly, numbered every 5', async 
 test('missing, unnumbered and speaker lines are visible', async () => {
   const consalvo = index.find((p) => p.slug === 'consalvo').n;
   let res = await request(app).get(`/leggo/${consalvo}`);
-  assert.match(res.text, /<p class="verse missing" id="v130">/);
+  assert.match(res.text, /<p class="verse missing" id="v130"[^>]*>/);
   const frag = index.find((p) => byN(p.n).stanzas.flat().some((i) => i.type === 'label')).n;
   res = await request(app).get(`/leggo/${frag}`);
   assert.match(res.text, /<p class="speaker">/);

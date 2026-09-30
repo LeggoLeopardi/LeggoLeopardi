@@ -46,4 +46,15 @@ function translations(n) {
   return translationSets.get(n);
 }
 
-module.exports = { index, poem, facsimile, translations };
+const commentarySets = new Map();
+
+/** The commentaries on poem n (oldest edition first), or null when it has none. */
+function commentaries(n) {
+  if (!commentarySets.has(n)) {
+    const file = path.join(DATA_DIR, 'comm', `c${n}.json`);
+    commentarySets.set(n, fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null);
+  }
+  return commentarySets.get(n);
+}
+
+module.exports = { index, poem, facsimile, translations, commentaries };

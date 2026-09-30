@@ -58,5 +58,10 @@
     "next": "Next poem",
     "choose": "Choose a poem",
     "modules": "Sections of the poem"
+  },
+  "comm": {
+    "label": "Commentary",
+    "all": "All commentators",
+    "sources": "Commented editions"
   }
 }
