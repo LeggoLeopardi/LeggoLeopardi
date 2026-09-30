@@ -13,6 +13,7 @@
 
   <article class="poem">
     <p class="badge"><%= __('leggo.source.' + poem.source.status) %></p>
+    <% if (poem.status.facsimile) { %><p><a class="btn ghost" href="/leggo/<%= poem.n %>/facsimile"><%= __('leggo.facsimile') %></a></p><% } %>
     <h1 class="poem-head"><% poem.head.forEach((h) => { %><span><%= h %></span><% }) %></h1>
     <% if (poem.epigraph.length) { %>
       <blockquote class="epigraph"><% poem.epigraph.forEach((e) => { %><p><%= e %></p><% }) %></blockquote>

@@ -1,5 +1,8 @@
 {
-  "nav": { "label": "Modules", "soon": "Coming soon" },
+  "nav": {
+    "label": "Modules",
+    "soon": "Coming soon"
+  },
   "home": {
     "eyebrow": "Digital edition of the Canti · University of Bologna",
     "lede": "The Canti in the text of the corrected copy of the Starita edition (N35c), with historical commentaries, verse-by-verse translations and the collation of the printed editions.",
@@ -9,7 +12,11 @@
     "vignetteAlt": "Page 62 of the Canti, Naples, Starita 1835: XII. L’infinito",
     "vignetteCaption": "<i>Canti</i>, Naples, Starita 1835, p. 62: XII. L’infinito. Corrected copy (N35c). Image: WikiLeopardi."
   },
-  "status": { "none": "coming soon", "provisional": "provisional text", "verified": "verified" },
+  "status": {
+    "none": "coming soon",
+    "provisional": "provisional text",
+    "verified": "verified"
+  },
   "leggo": {
     "choose": "Choose a poem",
     "go": "Go",
@@ -18,8 +25,26 @@
       "verified": "Verified text"
     },
     "missingVerse": "[verse missing in the source]",
-    "unnumbered": "line without a number in the source"
+    "unnumbered": "line without a number in the source",
+    "facsimile": "Text, variants and facsimile"
   },
-  "notFound": { "title": "Page not found", "body": "The page you asked for does not exist.", "home": "Back to the start" },
-  "footer": "Leggo Leopardi · DH.ARC, University of Bologna"
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you asked for does not exist.",
+    "home": "Back to the start"
+  },
+  "footer": "Leggo Leopardi · DH.ARC, University of Bologna",
+  "facs": {
+    "back": "Leggo",
+    "verse": "l.",
+    "witnesses": "Witnesses",
+    "variants": "Variants",
+    "title": "Title",
+    "source": "Text and variants: TEI encoding by {{credits}} (DH.ARC, Bologna). Images: WikiLeopardi. Provisional alignment.",
+    "hint": "Hover over a line to see it on the page, and the other way round. Underlined words lead to the variants.",
+    "text": "Text of {{w}}",
+    "alt": "Page of L’infinito in {{w}}",
+    "caption": "Page of {{w}} (WikiLeopardi image). Click to enlarge.",
+    "noZones": "Line-by-line alignment is not available for this page yet."
+  }
 }

@@ -1,5 +1,8 @@
 {
-  "nav": { "label": "Moduli", "soon": "In preparazione" },
+  "nav": {
+    "label": "Moduli",
+    "soon": "In preparazione"
+  },
   "home": {
     "eyebrow": "Edizione digitale dei Canti · Università di Bologna",
     "lede": "I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i commenti storici, le traduzioni verso per verso e la collazione delle stampe.",
@@ -9,7 +12,11 @@
     "vignetteAlt": "Pagina 62 dei Canti, Napoli, Starita 1835: XII. L’infinito",
     "vignetteCaption": "<i>Canti</i>, Napoli, Starita 1835, p. 62: XII. L’infinito. Esemplare corretto (N35c). Immagine: WikiLeopardi."
   },
-  "status": { "none": "in preparazione", "provisional": "testo provvisorio", "verified": "verificato" },
+  "status": {
+    "none": "in preparazione",
+    "provisional": "testo provvisorio",
+    "verified": "verificato"
+  },
   "leggo": {
     "choose": "Scegli un canto",
     "go": "Vai",
@@ -18,8 +25,26 @@
       "verified": "Testo verificato"
     },
     "missingVerse": "[verso mancante nella fonte]",
-    "unnumbered": "riga senza numero nella fonte"
+    "unnumbered": "riga senza numero nella fonte",
+    "facsimile": "Testo, varianti e facsimile"
   },
-  "notFound": { "title": "Pagina non trovata", "body": "La pagina richiesta non esiste.", "home": "Torna all’inizio" },
-  "footer": "Leggo Leopardi · DH.ARC, Università di Bologna"
+  "notFound": {
+    "title": "Pagina non trovata",
+    "body": "La pagina richiesta non esiste.",
+    "home": "Torna all’inizio"
+  },
+  "footer": "Leggo Leopardi · DH.ARC, Università di Bologna",
+  "facs": {
+    "back": "Leggo",
+    "verse": "v.",
+    "witnesses": "Testimoni",
+    "variants": "Varianti",
+    "title": "Titolo",
+    "source": "Testo e varianti: codifica TEI di {{credits}} (DH.ARC, Bologna). Immagini: WikiLeopardi. Allineamento provvisorio.",
+    "hint": "Passa sopra un verso per vederlo sulla pagina, e viceversa. Le parole sottolineate portano alle varianti.",
+    "text": "Testo di {{w}}",
+    "alt": "Pagina di L’infinito in {{w}}",
+    "caption": "Pagina di {{w}} (immagine WikiLeopardi). Clic per ingrandire.",
+    "noZones": "Per questa pagina l’allineamento verso per verso non è ancora disponibile."
+  }
 }
