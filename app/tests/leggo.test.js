@@ -25,7 +25,6 @@ test("L'infinito renders all 15 verses exactly, numbered every 5", async () => {
   assert.equal((res.text.match(/<p class="verse/g) || []).length, 15);
   assert.match(res.text, /<span class="vn">5<\/span>/);
   assert.doesNotMatch(res.text, /<span class="vn">4<\/span>/);
-  assert.match(res.text, /class="badge"/);
 });
 
 test('missing, unnumbered and speaker lines are visible', async () => {

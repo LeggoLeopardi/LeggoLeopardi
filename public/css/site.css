@@ -57,12 +57,10 @@ a { color: inherit; }
 .band-soft { background: var(--panel); padding-block: clamp(28px, 5vw, 56px); }
 h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 0 0 .6em; }
 .canti { list-style: none; margin: 0; padding: 0; columns: 3 18rem; column-gap: 36px; }
-.canto { break-inside: avoid; display: grid; grid-template-columns: 3.4em minmax(0, 1fr) auto; gap: 8px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 1.1rem; }
+.canto { break-inside: avoid; display: grid; grid-template-columns: 3.4em minmax(0, 1fr); gap: 8px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 1.1rem; }
 .canto .num { font-family: var(--label); color: var(--muted); text-align: right; }
 .canto .t { text-decoration: none; }
 .canto .t:hover { color: var(--main); text-decoration: underline; }
-.st { font-family: var(--label); font-size: .8rem; padding: 0 7px; border-radius: 9px; white-space: nowrap; border: 1px solid var(--tint); color: var(--muted); }
-.st-verified { background: var(--main); color: var(--paper); border-color: var(--main); }
 
 /* leggo */
 .leggo { padding-block: clamp(20px, 4vw, 40px); }
