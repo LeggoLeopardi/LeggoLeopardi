@@ -50,4 +50,13 @@ def test_note_content_marks_and_added_notes():
     assert antognoni.xpath("//tei:note[@type='comm']/@subtype", namespaces=NS) == ["added"]
     fornaciari = tree(CONFIG["12"][2])
     note = fornaciari.xpath("//tei:note[@type='comm']", namespaces=NS)[0]
-    assert (note.get("target").split("#")[1], note.get("targetEnd").split("#")[1]) == ("c12.v1", "c12.v3")
+    assert (note.get("target").split("#")[1], note.get("targetEnd").split("#")[1]) == ("c12.v1", "c12.v1")
+
+
+def test_one_note_per_printed_lemma():
+    # Straccali prints "7. fingo, immagino. — ove. … — per poco ecc.: …" as one paragraph: three notes
+    notes = tree(CONFIG["12"][0]).xpath("//tei:note[@type='comm']", namespaces=NS)
+    lemmas = [(n.find("tei:ref", NS).text, n.get("target").split(".v")[-1], n.get("targetEnd").split(".v")[-1]) for n in notes]
+    assert lemmas[4:7] == [("fingo,", "7", "7"), ("ove.", "7", "7"), ("per poco ecc.:", "7", "8")]
+    assert lemmas[11:14] == [("le morte stagioni:", "12", "12"), ("e la presente.", "12", "12"), ("Suon.", "13", "13")]
+    assert "".join(notes[4].itertext()) == "fingo, immagino."  # no run-on into the next lemma

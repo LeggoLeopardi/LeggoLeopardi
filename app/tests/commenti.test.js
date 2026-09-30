@@ -18,14 +18,15 @@ test('Leggo on L\'infinito: the poem and all the commentaries, grouped by verse'
   assert.match(html, /<section class="comm"/);
   const v1 = html.slice(html.indexOf('<div class="cgroup" data-v="1">'), html.indexOf('<div class="cgroup" data-v="2">'));
   assert.deepEqual(who(v1), ['Fornaciari 1889', 'Castagnola 1893', 'Straccali 1895', 'Levi 1921']);
-  assert.match(v1, /data-from="1" data-to="3"/);
+  assert.equal((v1.match(/<li class="cnote/g) || []).length, 6);  // Levi's three lemmas on v. 1 are three notes under one name
+  assert.match(v1, /<b class="clemma">colle,<\/b> il M\. Tabor/);
   assert.match(v1, /<b class="clemma">ermo colle\.<\/b> Il monte Tabor/);
   assert.match(html, /class="cnote added"/);
 });
 
 test('one commentator at a time, with its introduction; unknown ids show all', async () => {
   let html = await get(`/leggo/${inf}?c=straccali_1895`);
-  assert.equal((html.match(/<li class="cnote/g) || []).length, 10);
+  assert.equal((html.match(/<li class="cnote/g) || []).length, 15);
   assert.match(html, /Questa e le cinque seguenti poesie furono/);
   assert.match(html, /<a href="\?c=straccali_1895" aria-current="true">/);
   assert.match(html, /<span class="cv">vv\. 2–3<\/span>/);
@@ -61,7 +62,7 @@ test('Progetto: the project and the index of commented editions', async () => {
 test('commented words are underlined in the verse and point at their notes', async () => {
   const v1 = (html) => html.match(/<p class="verse" id="v1"[^>]*>.*?<\/p>/)[0];
   const all = await get(`/leggo/${inf}`);
-  assert.match(v1(all), /<span class="vt"><span class="lem" data-notes="n-fornaciari_1889-0 n-levi_1921-0">Sempre caro mi fu<\/span><span class="lem" data-notes="n-fornaciari_1889-0"> quest’<\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-castagnola_1893-0 n-straccali_1895-0">ermo<\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-straccali_1895-0"> colle<\/span>,<\/span>/);
+  assert.match(v1(all), /<span class="vt"><span class="lem" data-notes="n-fornaciari_1889-0 n-levi_1921-0">Sempre caro mi fu<\/span><span class="lem" data-notes="n-fornaciari_1889-0"> quest’<\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-castagnola_1893-0 n-straccali_1895-0 n-levi_1921-1">ermo<\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-straccali_1895-0"> <\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-straccali_1895-0 n-levi_1921-2">colle<\/span>,<\/span>/);
   assert.match(all, /<li class="cnote" id="n-castagnola_1893-0" data-from="1" data-to="1">/);
   const lems = [...all.matchAll(/data-notes="([^"]+)"/g)].flatMap((m) => m[1].split(' '));
   const ids = [...all.matchAll(/<li class="cnote[^"]*" id="([^"]+)"/g)].map((m) => m[1]);
