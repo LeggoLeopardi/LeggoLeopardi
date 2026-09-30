@@ -3,9 +3,7 @@
     <a class="brand" href="/">Leggo <b>Leopardi</b></a>
     <nav class="links" aria-label="<%= __('nav.label') %>">
       <a href="<%= leggoHref %>" class="<%= path.startsWith('/leggo') ? 'on' : '' %>">Leggo</a>
-      <a href="/traduco" class="<%= path.startsWith('/traduco') ? 'on' : '' %>">Traduco</a>
-      <span class="soon" title="<%= __('nav.soon') %>">Collaziono</span>
-      <span class="soon" title="<%= __('nav.soon') %>">Concordanza</span>
+      <a href="<%= traducoHref %>" class="<%= path.startsWith('/traduco') ? 'on' : '' %>">Traduco</a>
     </nav>
     <div class="lang">
       <a href="/lang/it?next=<%= encodeURIComponent(path) %>" class="<%= lang === 'it' ? 'on' : '' %>">IT</a>

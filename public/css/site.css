@@ -181,3 +181,35 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
   .tcols, .tcols.three { grid-template-columns: 1fr; }
 }
 .tl > span:last-child { padding-left: 1.1em; text-indent: -1.1em; }  /* a wrapped verse continues indented */
+
+/* poem header: the title is the selector, with previous/next arrows and the poem's module tabs */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.poem-bar { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; }
+.poem-bar .step { flex: 0 0 auto; }
+.poem-bar .poem-select { margin: 0; display: block; min-width: 0; }
+.poem-title { margin: 0; min-width: 0; }
+.poem-title select {
+  appearance: none; -webkit-appearance: none; border: 0; border-radius: 3px; background-color: transparent;
+  font-family: var(--display); font-size: clamp(1.6rem, 3.6vw, 2.4rem); font-weight: 500; color: var(--dark);
+  padding: 2px 1.4em 2px 0; max-width: 100%; cursor: pointer; text-overflow: ellipsis; field-sizing: content;
+  background-image: linear-gradient(45deg, transparent 50%, var(--main) 50%), linear-gradient(135deg, var(--main) 50%, transparent 50%);
+  background-position: calc(100% - 13px) 58%, calc(100% - 7px) 58%; background-size: 6px 6px; background-repeat: no-repeat;
+}
+.poem-title select:hover { background-color: var(--panel); }
+.step { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border-radius: 50%; font-size: 1.9rem; line-height: 1; text-decoration: none; color: var(--main); }
+a.step:hover { background: var(--panel); }
+.ptabs { display: flex; gap: 20px; border-bottom: 1px solid var(--line); margin: 4px 0 24px; padding-left: calc(2.4rem + 8px); font-family: var(--label); font-size: 1.1rem; letter-spacing: .04em; }
+.ptab { text-decoration: none; color: var(--muted); padding: 6px 0; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.ptab.on { color: var(--main); border-bottom-color: var(--main); }
+.poem-bar + :not(.ptabs) { margin-top: 20px; }
+.print-head { font-family: var(--label); letter-spacing: .06em; color: var(--dark); font-size: 1.15rem; line-height: 1.35; margin: 0 0 1em; }
+.print-head span { display: block; }
+
+/* phones: the navbar in one row, modules scroll sideways if needed */
+@media (max-width: 640px) {
+  .nav-inner { flex-wrap: nowrap; gap: 10px; }
+  .brand { font-size: 1.15rem; margin-right: 0; white-space: nowrap; }
+  .links { flex-wrap: nowrap; overflow-x: auto; gap: 12px; margin-right: auto; scrollbar-width: none; }
+  .lang { flex-shrink: 0; }
+  .ptabs { padding-left: 0; }
+}

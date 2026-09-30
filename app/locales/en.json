@@ -5,7 +5,7 @@
   },
   "home": {
     "eyebrow": "Digital edition of the Canti · University of Bologna",
-    "lede": "The Canti in the text of the corrected copy of the Starita edition (N35c), with historical commentaries, verse-by-verse translations and the collation of the printed editions.",
+    "lede": "The Canti in the text of the corrected copy of the Starita edition (N35c), with the printed witnesses and the translations.",
     "readInfinito": "Read L’infinito",
     "index": "Index of the Canti",
     "canti": "The Canti",
@@ -51,5 +51,11 @@
       "fr": "French",
       "ru": "Russian"
     }
+  },
+  "poem": {
+    "prev": "Previous poem",
+    "next": "Next poem",
+    "choose": "Choose a poem",
+    "modules": "Sections of the poem"
   }
 }

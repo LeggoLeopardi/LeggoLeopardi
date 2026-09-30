@@ -5,7 +5,7 @@
   },
   "home": {
     "eyebrow": "Edizione digitale dei Canti · Università di Bologna",
-    "lede": "I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i commenti storici, le traduzioni verso per verso e la collazione delle stampe.",
+    "lede": "I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i testimoni a stampa e le traduzioni.",
     "readInfinito": "Leggi L’infinito",
     "index": "Indice dei Canti",
     "canti": "I Canti",
@@ -51,5 +51,11 @@
       "fr": "Francese",
       "ru": "Russo"
     }
+  },
+  "poem": {
+    "prev": "Canto precedente",
+    "next": "Canto successivo",
+    "choose": "Scegli un canto",
+    "modules": "Sezioni del canto"
   }
 }

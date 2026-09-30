@@ -23,10 +23,33 @@ app.use((req, res, next) => {
   res.locals.canti = data.index();
   res.locals.lang = req.getLocale();
   res.locals.path = req.path;
-  const inPoem = /^\/leggo\/(\d+)(?:\/|$)/.exec(req.path);
-  res.locals.leggoHref = inPoem && data.poem(inPoem[1]) ? `/leggo/${inPoem[1]}` : '/leggo';
+  const inPoem = /^\/(?:leggo|traduco)\/(\d+)(?:\/|$)/.exec(req.path);
+  const current = inPoem && data.poem(inPoem[1]);
+  res.locals.leggoHref = current ? `/leggo/${current.n}` : '/leggo';
+  res.locals.traducoHref = current && data.translations(current.n) ? `/traduco/${current.n}` : '/traduco';
   next();
 });
+
+// Modules a poem can have, in navbar order; a module is listed for a poem only when it has data.
+const MODULES = [
+  { mod: 'leggo', has: () => true },
+  { mod: 'traduco', has: (n) => Boolean(data.translations(n)) },
+];
+
+/** Poem header data: selector options, previous/next poem within the module, and the poem's module tabs. */
+function poemNav(poem, mod) {
+  const has = MODULES.find((m) => m.mod === mod).has;
+  const list = data.index().filter((p) => has(p.n));
+  const i = list.findIndex((p) => p.n === poem.n);
+  const tabs = MODULES.filter((m) => m.has(poem.n)).map((m) => ({ mod: m.mod, href: `/${m.mod}/${poem.n}`, on: m.mod === mod }));
+  return {
+    mod,
+    prev: i > 0 ? list[i - 1] : null,
+    next: i >= 0 && i < list.length - 1 ? list[i + 1] : null,
+    tabs: tabs.length > 1 ? tabs : [],
+    options: data.index().map((p) => ({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}`, disabled: !has(p.n) })),
+  };
+}
 
 app.get('/', (req, res) => res.render('home'));
 
@@ -40,11 +63,11 @@ app.get('/leggo/:n', (req, res, next) => {
   if (!poem) return next();
   const title = `${poem.roman}. ${poem.title || poem.incipit}`;
   const facs = data.facsimile(poem.n);
-  if (!facs) return res.render('leggo', { poem, title });
+  if (!facs) return res.render('leggo', { poem, title, pnav: poemNav(poem, 'leggo') });
   // Poems with the team TEI and page images open in the text–variants–facsimile view.
   const imaged = facs.witnesses.filter((w) => w.image);
   const sel = imaged.find((w) => w.siglum === req.query.w) || imaged.find((w) => w.siglum === 'N35c') || imaged[0];
-  return res.render('facsimile', { poem, facs, imaged, sel, credits: facs.credits, title });
+  return res.render('facsimile', { poem, facs, imaged, sel, credits: facs.credits, title, pnav: poemNav(poem, 'leggo') });
 });
 
 app.get('/lang/:code', (req, res) => {
@@ -76,7 +99,7 @@ app.get('/traduco/:n', (req, res, next) => {
     g.items.push(t);
   });
   return res.render('traduco', {
-    poem, trad, t1, t2, groups, selectModule: 'traduco',
+    poem, trad, t1, t2, groups, pnav: poemNav(poem, 'traduco'),
     title: `${poem.roman}. ${poem.title || poem.incipit} · Traduco`,
   });
 });
