@@ -57,3 +57,16 @@ test('Progetto: the project and the index of commented editions', async () => {
   assert.match(res.text, /<a href="\/leggo\/12\?c=straccali_1895">XII\. L(?:'|&#39;)infinito<\/a>/);
   assert.match(res.text, /Trascrizione dall(?:'|&#39;)immagine della pagina, da verificare\./);
 });
+
+test('commented words are underlined in the verse and point at their notes', async () => {
+  const v1 = (html) => html.match(/<p class="verse" id="v1"[^>]*>.*?<\/p>/)[0];
+  const all = await get(`/leggo/${inf}`);
+  assert.match(v1(all), /<span class="vt"><span class="lem" data-notes="n-fornaciari_1889-0 n-levi_1921-0">Sempre caro mi fu<\/span><span class="lem" data-notes="n-fornaciari_1889-0"> quest’<\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-castagnola_1893-0 n-straccali_1895-0">ermo<\/span><span class="lem" data-notes="n-fornaciari_1889-0 n-straccali_1895-0"> colle<\/span>,<\/span>/);
+  assert.match(all, /<li class="cnote" id="n-castagnola_1893-0" data-from="1" data-to="1">/);
+  const lems = [...all.matchAll(/data-notes="([^"]+)"/g)].flatMap((m) => m[1].split(' '));
+  const ids = [...all.matchAll(/<li class="cnote[^"]*" id="([^"]+)"/g)].map((m) => m[1]);
+  assert.deepEqual([...new Set(lems)].sort(), [...ids].sort());  // every note has underlined words, every underline a note
+  const one = await get(`/leggo/${inf}?c=castagnola_1893`);
+  assert.match(v1(one), /<span class="vt">Sempre caro mi fu quest’<span class="lem" data-notes="n-castagnola_1893-0">ermo<\/span> colle,<\/span>/);
+  assert.equal([...one.matchAll(/class="lem"/g)].length, 1);
+});

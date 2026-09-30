@@ -19,7 +19,7 @@
                if (item.missing) cls.push('missing');
                if (item.unnumbered) cls.push('unnumbered');
                if (item.indent) cls.push('indent' + item.indent); %>
-            <p class="<%= cls.join(' ') %>" id="<%= item.n ? 'v' + item.n : item.id %>"<%- item.n ? ` data-v="${item.n}"` : '' %><%- item.unnumbered ? ` title="${__('leggo.unnumbered')}"` : '' %>><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span class="vt"><% if (item.missing) { %><%= __('leggo.missingVerse') %><% } else { %><%- item.html %><% } %></span></p>
+            <p class="<%= cls.join(' ') %>" id="<%= item.n ? 'v' + item.n : item.id %>"<%- item.n ? ` data-v="${item.n}"` : '' %><%- item.unnumbered ? ` title="${__('leggo.unnumbered')}"` : '' %>><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span class="vt"><% if (item.missing) { %><%= __('leggo.missingVerse') %><% } else { %><%- marked[item.n] || item.html %><% } %></span></p>
           <% } %>
         <% }) %>
       </div>
@@ -28,7 +28,7 @@
 
   <% if (comm) {
        const range = (nt) => nt.from === nt.to ? `v. ${nt.from}` : `vv. ${nt.from}–${nt.to}`;
-       const note = (c, nt, withWho) => `<li class="cnote${nt.added ? ' added' : ''}" data-from="${nt.from}" data-to="${nt.to}">`
+       const note = (c, nt, withWho) => `<li class="cnote${nt.added ? ' added' : ''}" id="n-${c.id}-${c.notes.indexOf(nt)}" data-from="${nt.from}" data-to="${nt.to}">`
          + (withWho ? `<p class="cwho"><a href="/progetto#${c.id}">${c.short} ${c.year}</a></p>` : '')
          + `<span class="cv">${range(nt)}</span> <b class="clemma">${nt.lemma.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</b> ${nt.html}</li>`; %>
   <section class="comm" aria-label="<%= __('comm.label') %>">

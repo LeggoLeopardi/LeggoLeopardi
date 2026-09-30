@@ -58,6 +58,30 @@ app.get('/leggo', (req, res) => {
   res.redirect(`/leggo/${requested ? requested.n : data.index()[0].n}`);
 });
 
+const escapeHtml = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+// Verse html with the commented words wrapped in <span class="lem" data-notes="…">, one span per stretch of text
+// covered by the same notes. Verses with markup of their own keep their html (their notes stay verse-level).
+function markLemmas(poem, notes) {
+  const cover = new Map();  // verse n -> [[start, end, key]]
+  notes.forEach(({ key, nt }) => (nt.spans || []).forEach(([v, s, e]) => {
+    if (!cover.has(v)) cover.set(v, []);
+    cover.get(v).push([s, e, key]);
+  }));
+  const marked = {};
+  poem.stanzas.flat().forEach((item) => {
+    const spans = cover.get(item.n);
+    if (!spans || item.missing || item.html !== escapeHtml(item.text)) return;
+    const cuts = [...new Set([0, item.text.length, ...spans.flatMap(([s, e]) => [s, e])])].sort((a, b) => a - b);
+    marked[item.n] = cuts.slice(0, -1).map((a, i) => {
+      const piece = escapeHtml(item.text.slice(a, cuts[i + 1]));
+      const keys = spans.filter(([s, e]) => s <= a && a < e).map(([, , k]) => k);
+      return keys.length ? `<span class="lem" data-notes="${keys.join(' ')}">${piece}</span>` : piece;
+    }).join('');
+  });
+  return marked;
+}
+
 app.get('/leggo/:n', (req, res, next) => {
   const poem = data.poem(req.params.n);
   if (!poem) return next();
@@ -78,7 +102,9 @@ app.get('/leggo/:n', (req, res, next) => {
       cview = { mode: 'all', groups: [...byVerse.keys()].sort((a, b) => a - b).map((v) => ({ v, items: byVerse.get(v) })) };
     }
   }
-  return res.render('leggo', { poem, title, comm, cview, pnav: poemNav(poem, 'leggo') });
+  const shown = !comm ? [] : (cview.mode === 'one' ? [cview.sel] : comm.commentators)
+    .flatMap((c) => c.notes.map((nt, i) => ({ key: `n-${c.id}-${i}`, nt })));
+  return res.render('leggo', { poem, title, comm, cview, marked: markLemmas(poem, shown), pnav: poemNav(poem, 'leggo') });
 });
 
 app.get('/confronto', (req, res) => {

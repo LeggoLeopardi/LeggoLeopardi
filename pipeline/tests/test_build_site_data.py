@@ -151,3 +151,32 @@ def test_build_site_marks_poems_with_commentaries(tmp_path):
     build_site([dict(INFINITO_ENTRY, status=STATUS)], tei, out, comm_dir=COMM)
     assert json.loads((out / "index.json").read_text(encoding="utf-8"))[0]["status"]["commenti"] == "provisional"
     assert (out / "comm" / "c12.json").is_file()
+
+
+from leggo_pipeline.build_base import base_verses
+from leggo_pipeline.build_site_data import lemma_spans
+
+VV = {1: "Sempre caro mi fu quest’ermo colle,", 2: "E questa siepe, che da tanta parte",
+      9: "Odo stormir tra queste piante, io quello", 10: "Infinito silenzio a questa voce"}
+
+
+def test_lemma_spans_find_the_commented_words():
+    cut = lambda v, s, e: VV[v][s:e]
+    assert [cut(*s) for s in lemma_spans("ermo colle.", VV, 1, 1)] == ["ermo colle"]
+    assert [cut(*s) for s in lemma_spans("Ermo;", VV, 1, 1)] == ["ermo"]  # case, apostrophe as a boundary
+    assert [cut(*s) for s in lemma_spans("Sempre caro mi fu quest'ermo colle.", VV, 1, 3)] == ["Sempre caro mi fu quest’ermo colle"]
+    assert [cut(*s) for s in lemma_spans("che da tanta ecc.:", VV, 2, 3)] == ["che da tanta"]  # "ecc." abbreviates the rest
+    assert [cut(*s) for s in lemma_spans("quello Infinito silenzio:", VV, 9, 10)] == ["quello", "Infinito silenzio"]  # across verses
+    assert lemma_spans("mare.", VV, 1, 2) == []  # not in the verses: no underline
+    assert lemma_spans("fu", {1: "Sempre caro mi fu quest’ermo colle,"}, 1, 1) == [[1, 15, 17]]
+
+
+def test_commentaries_json_every_lemma_is_found_in_the_base_text():
+    data = commentaries_json(dict(INFINITO_ENTRY, status=STATUS), COMM, paths.TEI_BASE / "c12.xml")
+    verses = base_verses(paths.TEI_BASE / "c12.xml")
+    for c in data["commentators"]:
+        for nt in c["notes"]:
+            assert nt["spans"], (c["id"], nt["lemma"])
+            assert all(nt["from"] <= v <= nt["to"] for v, _, _ in nt["spans"])
+    st = next(c for c in data["commentators"] if c["id"] == "straccali_1895")
+    assert [verses[v][s:e] for v, s, e in st["notes"][-1]["spans"]] == ["Immensità"]
