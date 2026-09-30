@@ -1,8 +1,7 @@
 <%- include('partials/head') %>
 <%- include('partials/nav') %>
 <main class="wrap facs">
-  <%- include('partials/poem-select') %>
-  <h1 class="poem-head"><span><%= poem.roman %>. <%= poem.title || poem.incipit %></span></h1>
+  <%- include('partials/poem-header') %>
 
   <nav class="wtabs" aria-label="<%= __('facs.witnesses') %>">
     <% imaged.forEach((w) => { const on = w.siglum === sel.siglum; %><a href="?w=<%= w.siglum %>" data-w="<%= w.siglum %>" class="wtab<%= on ? ' on' : '' %>"<%- on ? ' aria-current="page"' : '' %> title="<%= w.label %>"><%= w.siglum %></a><% }) %>
@@ -11,7 +10,7 @@
   <div class="facs-grid">
     <section class="facs-text" aria-label="<%= __('facs.text', { w: sel.siglum }) %>">
       <p class="wlabel"><b><%= sel.siglum %></b> · <%= sel.label %></p>
-      <h2 class="facs-head"><% sel.head.forEach((h) => { %><span><%- h %></span><% }) %></h2>
+      <p class="print-head"><% sel.head.forEach((h) => { %><span><%- h %></span><% }) %></p>
       <% sel.verses.forEach((v) => { %><p class="fverse" id="v<%= v.n %>" data-v="<%= v.n %>"><span class="vn"><%= v.n % 5 === 0 ? v.n : '' %></span><span class="vt"><%- v.html %></span></p>
       <% }) %>
     </section>

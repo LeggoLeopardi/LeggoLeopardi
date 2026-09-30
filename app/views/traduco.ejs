@@ -1,8 +1,7 @@
 <%- include('partials/head') %>
 <%- include('partials/nav') %>
 <main class="wrap traduco">
-  <%- include('partials/poem-select') %>
-  <h1 class="poem-head"><span><%= poem.roman %>. <%= poem.title || poem.incipit %></span></h1>
+  <%- include('partials/poem-header') %>
 
   <form class="tpick" action="/traduco/<%= poem.n %>" method="get">
     <% const esc = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); %>
@@ -15,6 +14,7 @@
   <div class="tcols<%= t2 ? ' three' : '' %>">
     <section class="tcol it" lang="it">
       <h2 class="tname"><%= __('trad.italian') %></h2>
+      <p class="print-head"><% trad.italian.head.forEach((h) => { %><span><%= h %></span><% }) %></p>
       <% trad.italian.stanzas.forEach((stanza) => { %><div class="tstanza"><% stanza.forEach((item) => { if (item.type === 'l') { %><p class="tl"><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span><%- item.html %></span></p><% } }) %></div><% }) %>
     </section>
     <% [t1, t2].filter(Boolean).forEach((t) => { %>
