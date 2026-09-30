@@ -14,5 +14,5 @@ Images: WikiLeopardi (File:InfinitoNR25.jpg, InfinitoB26.jpg, InfinitoF31.jpg, I
 
 Team N35c text compared with the WikiLeopardi base text:
 
-- v2: team TEI 'E questa siepe,che da tanta parte' ≠ WikiLeopardi 'E questa siepe, che da tanta parte'
+- identical
 

@@ -116,6 +116,9 @@
          <variantEncoding location="internal" method="parallel-segmentation"/>
          <variantEncoding location="internal" method="double-end-point"/>
       </encodingDesc>
+      <revisionDesc>
+         <change when="2026-09-30">LeggoLeopardi: aggiunto lo spazio mancante al v. 2 dopo &lt;/app&gt; ("siepe, che"). Il resto del file è identico alla copia di Priore e Nava (EVT, maggio 2026).</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -137,7 +140,7 @@
                   <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">siepe,</lem>
                   <rdg wit="#AN"><mod change="#layer0" seq="1">siepe </mod><mod change="#layer3"
                         type="reuse" seq="2">siepe,</mod></rdg>
-               </app>che da tanta parte</l>
+               </app> che da tanta parte</l>
             <l n="3"><app>
                   <lem wit="#N35 #N35c">Dell'ultimo orizzonte</lem>
                   <rdg wit="#AN"><mod change="#layer0" seq="1">Del celeste confine </mod><mod

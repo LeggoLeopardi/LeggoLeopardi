@@ -47,7 +47,7 @@ Last updated: 2026-09-30.
 - Page images: WikiLeopardi (NR25, B26, F31, N35, N35c). Verse zones in `tei/facsimile/c12.xml`, detected inside hand-marked regions (`pipeline/facsimile.json`). Check images: `reports/facsimile/`.
 - View: `/leggo/12/facsimile`. The display mode for the variants is still to be decided by the team; this is the minimal version.
 - For Priore and Nava (their TEI, not changed here):
-  - v.2: no space after `</app>`, so the text reads *siepe,che*.
+  - v.2: no space after `</app>` (*siepe,che*). **Fixed in our copy** on 2026-09-30, noted in its `<revisionDesc>`; their original still needs it.
   - The title of AV reads `MDCCCXIX V L'Infinito`; `V` is probably a mistyped `|`.
   - The newer copy marks title line breaks with ` | ` instead of `<lb/>`.
 - No manuscript images yet: the BNN IIIF links for AN return errors; no source for AV.

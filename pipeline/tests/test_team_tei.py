@@ -17,6 +17,7 @@ def test_header_witnesses_layers_credits():
 
 def test_base_witness_text():
     assert text("N35c", 1) == "Sempre caro mi fu quest’ermo colle,"
+    assert text("N35c", 2) == "E questa siepe, che da tanta parte"
     assert text("N35c", 3) == "Dell'ultimo orizzonte il guardo esclude."
     assert text("N35c", 4) == "Ma sedendo e mirando, interminati"
     assert text("N35c", 5) == "Spazi di là da quella, e sovrumani"
@@ -60,7 +61,14 @@ def test_compare_with_base_reports_differences():
 
     base = {n: "".join(t for t, _ in POEM.texts["N35c"]["verses"][n]) for n in range(1, 16)}
     assert compare_with_base(POEM, base) == []
-    base[2] = "E questa siepe, che da tanta parte"
+    base[2] = "E questa siepe che da tanta parte"
     assert compare_with_base(POEM, base) == [
-        "v2: team TEI 'E questa siepe,che da tanta parte' ≠ WikiLeopardi 'E questa siepe, che da tanta parte'"
+        "v2: team TEI 'E questa siepe, che da tanta parte' ≠ WikiLeopardi 'E questa siepe che da tanta parte'"
     ]
+
+
+def test_team_n35c_text_matches_the_wikileopardi_base():
+    from leggo_pipeline.build_base import base_verses
+    from leggo_pipeline.build_facsimile import compare_with_base
+
+    assert compare_with_base(POEM, base_verses(paths.TEI_BASE / "c12.xml")) == []
