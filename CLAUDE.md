@@ -7,4 +7,4 @@
 - WikiLeopardi: cache every page in `pipeline/cache/`, browser-like User-Agent, 0.5 s between requests.
 - Python: `cd pipeline && uv run …` (3.12). Node 22. The app never reads files relative to the working directory.
 - `public/data/` and `tei/base/` are generated: change the pipeline, not the output.
-- Spec: `docs/superpowers/specs/2026-09-30-leggoleopardi-design.md`. Plans: `docs/superpowers/plans/`.
+- Spec: `docs/superpowers/specs/2026-09-30-leggoleopardi-design.md`. Plans: `docs/superpowers/plans/`. Status, decisions and deferred fixes: `docs/status.md` (keep it updated at the end of each phase).

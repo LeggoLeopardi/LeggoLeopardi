@@ -18,4 +18,4 @@ Reading text: N35c (the corrected copy of *Canti*, Napoli, Starita 1835). Curren
     npm run dev        # http://localhost:8000
     npm test
 
-Design spec: `docs/superpowers/specs/2026-09-30-leggoleopardi-design.md`.
+Design spec: `docs/superpowers/specs/2026-09-30-leggoleopardi-design.md`. Current status, decisions and open items: `docs/status.md`.
