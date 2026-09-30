@@ -66,5 +66,4 @@ Last updated: 2026-09-30.
 - There is no Express error handler. A malformed URL gets Express's default 400 page, and a missing JSON file would fail every request.
 - A wiki page deleted after `canti.json` was generated raises an error that does not name the poem.
 - CI grants `contents: write` to pull-request runs too. Limit it to push.
-- On a phone, the sticky navbar wraps to about 4 rows.
 - There is no favicon.

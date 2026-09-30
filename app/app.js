@@ -23,6 +23,8 @@ app.use((req, res, next) => {
   res.locals.canti = data.index();
   res.locals.lang = req.getLocale();
   res.locals.path = req.path;
+  const inPoem = /^\/leggo\/(\d+)(?:\/|$)/.exec(req.path);
+  res.locals.leggoHref = inPoem && data.poem(inPoem[1]) ? `/leggo/${inPoem[1]}` : '/leggo';
   next();
 });
 
@@ -52,7 +54,7 @@ app.get('/leggo/:n/facsimile', (req, res, next) => {
   if (!facs) return next();
   const imaged = facs.witnesses.filter((w) => w.image);
   const sel = imaged.find((w) => w.siglum === req.query.w) || imaged.find((w) => w.siglum === 'N35c') || imaged[0];
-  res.render('facsimile', { poem, facs, imaged, sel, title: `${poem.roman}. ${poem.title || poem.incipit} · Facsimile` });
+  res.render('facsimile', { poem, facs, imaged, sel, credits: facs.credits, title: `${poem.roman}. ${poem.title || poem.incipit} · Facsimile` });
 });
 
 app.use((req, res) => res.status(404).render('404'));
