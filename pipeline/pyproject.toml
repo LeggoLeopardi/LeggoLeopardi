@@ -2,7 +2,12 @@
 name = "leggo-pipeline"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
-dependencies = ["lxml>=5.2", "requests>=2.32"]
+dependencies = [
+    "lxml>=5.2",
+    "numpy>=2.5.3",
+    "pillow>=12.3.0",
+    "requests>=2.32",
+]
 
 [dependency-groups]
 dev = ["pytest>=8"]

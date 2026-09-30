@@ -24,4 +24,15 @@ function poem(param) {
   return poems.get(n);
 }
 
-module.exports = { index, poem };
+const facsimiles = new Map();
+
+/** Text, variants and page images of poem n from the team TEI, or null when there is none. */
+function facsimile(n) {
+  if (!facsimiles.has(n)) {
+    const file = path.join(DATA_DIR, 'facs', `c${n}.json`);
+    facsimiles.set(n, fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null);
+  }
+  return facsimiles.get(n);
+}
+
+module.exports = { index, poem, facsimile };

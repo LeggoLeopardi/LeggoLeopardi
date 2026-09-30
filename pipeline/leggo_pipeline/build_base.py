@@ -36,13 +36,13 @@ def _el(parent, tag: str, text: str | None = None, **attrs: str):
     return el
 
 
-def _layout(root) -> None:
+def _layout(root, structural: set[str] = STRUCTURAL) -> None:
     for el in root.iter():
         name = etree.QName(el).localname
-        if name in STRUCTURAL and len(el) and not (el.text and el.text.strip()):
+        if name in structural and len(el) and not (el.text and el.text.strip()):
             el.text = "\n"
         parent = el.getparent()
-        if parent is not None and etree.QName(parent).localname in STRUCTURAL and not (el.tail and el.tail.strip()):
+        if parent is not None and etree.QName(parent).localname in structural and not (el.tail and el.tail.strip()):
             el.tail = "\n"
 
 
@@ -206,6 +206,15 @@ def main(argv: list[str] | None = None) -> int:
     print(f"wrote {len(manifest)} files to {paths.TEI_BASE}; report: {paths.REPORTS / 'base_report.md'}")
     return 0
 
+
+def base_verses(path: Path) -> dict[int, str | None]:
+    """Numbered verses of tei/base/c{n}.xml; None for a verse missing in the source."""
+    root = etree.parse(str(path)).getroot()
+    out: dict[int, str | None] = {}
+    for l in root.iter(f"{{{TEI_NS}}}l"):
+        if l.get("n") and etree.QName(l.getparent()).localname == "lg":
+            out[int(l.get("n"))] = None if l.find(f"{{{TEI_NS}}}gap") is not None else "".join(l.itertext())
+    return out
 
 if __name__ == "__main__":
     sys.exit(main())

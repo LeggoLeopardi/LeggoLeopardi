@@ -1,0 +1,48 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+<main class="wrap facs">
+  <p class="eyebrow"><a href="/leggo/<%= poem.n %>">← <%= __('facs.back') %></a></p>
+  <h1 class="poem-head"><span><%= poem.roman %>. <%= poem.title || poem.incipit %></span></h1>
+  <p class="badge"><%= __('facs.source', { credits: facs.credits.join(', ') }) %></p>
+
+  <nav class="wtabs" aria-label="<%= __('facs.witnesses') %>">
+    <% imaged.forEach((w) => { const on = w.siglum === sel.siglum; %><a href="?w=<%= w.siglum %>" data-w="<%= w.siglum %>" class="wtab<%= on ? ' on' : '' %>"<%- on ? ' aria-current="page"' : '' %> title="<%= w.label %>"><%= w.siglum %></a><% }) %>
+  </nav>
+  <p class="hint"><%= __('facs.hint') %></p>
+
+  <div class="facs-grid">
+    <section class="facs-text" aria-label="<%= __('facs.text', { w: sel.siglum }) %>">
+      <p class="wlabel"><b><%= sel.siglum %></b> · <%= sel.label %></p>
+      <h2 class="facs-head"><% sel.head.forEach((h) => { %><span><%- h %></span><% }) %></h2>
+      <% sel.verses.forEach((v) => { %><p class="fverse" id="v<%= v.n %>" data-v="<%= v.n %>"><span class="vn"><%= v.n % 5 === 0 ? v.n : '' %></span><span class="vt"><%- v.html %></span></p>
+      <% }) %>
+    </section>
+    <figure class="facs-img">
+      <div class="page">
+        <a href="<%= sel.image %>" target="_blank" rel="noopener"><img src="<%= sel.image %>" alt="<%= __('facs.alt', { w: sel.siglum }) %>"></a>
+        <% if (sel.zones) { Object.entries(sel.zones).forEach(([n, z]) => { %><a class="zone" href="#v<%= n %>" data-v="<%= n %>" style="left:<%= z[0] %>%;top:<%= z[1] %>%;width:<%= z[2] %>%;height:<%= z[3] %>%" aria-label="<%= __('facs.verse') %> <%= n %>"></a><% }) } %>
+      </div>
+      <figcaption><%= __('facs.caption', { w: sel.siglum }) %><% if (!sel.zones) { %> <span class="nozones"><%= __('facs.noZones') %></span><% } %></figcaption>
+    </figure>
+  </div>
+
+  <section class="apparatus" aria-labelledby="app-title">
+    <h2 id="app-title"><%= __('facs.variants') %></h2>
+    <ol class="places">
+      <% Object.entries(facs.places).forEach(([pid, p]) => { %>
+        <li id="place-<%= pid %>">
+          <span class="where"><%= p.verses[0] === 0 ? __('facs.title') : __('facs.verse') + ' ' + p.verses.join('–') %></span>
+          <ul>
+            <% p.readings.forEach((r) => { %>
+              <li class="<%= r.lem ? 'lem' : 'rdg' %>"><span class="rtext"><%= r.text %></span> <span class="wits"><%= r.wit.join(' ') %></span>
+                <% if (r.layers.length) { %><ol class="layers"><% r.layers.forEach((l) => { %><li><span class="ltext"><%= l.text %></span> <span class="lab"><%= l.label || '' %><%= l.type ? ' · ' + l.type : '' %></span></li><% }) %></ol><% } %>
+              </li>
+            <% }) %>
+          </ul>
+        </li>
+      <% }) %>
+    </ol>
+  </section>
+</main>
+<script src="/js/facsimile.js" defer></script>
+<%- include('partials/footer') %>

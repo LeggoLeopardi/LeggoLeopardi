@@ -48,3 +48,40 @@ def test_build_site_writes_index(tmp_path):
     index = json.loads((out / "index.json").read_text(encoding="utf-8"))
     assert index == [{"n": 12, "roman": "XII", "title": "L'infinito", "slug": "l-infinito", "incipit": INFINITO[0], "status": STATUS}]
     assert (out / "c12.json").is_file()
+
+
+from leggo_pipeline import paths
+from leggo_pipeline.build_site_data import facsimile_json
+
+
+def test_facsimile_json():
+    data = facsimile_json(dict(INFINITO_ENTRY, status=STATUS), paths.TEI_GENETIC / "c12.xml", paths.TEI_FACS / "c12.xml")
+    wits = {w["siglum"]: w for w in data["witnesses"]}
+    assert list(wits) == ["AN", "AV", "NR25", "B26", "F31", "N35", "N35c"]
+    assert wits["AN"]["image"] is None and wits["AN"]["zones"] is None
+    n35c = wits["N35c"]
+    assert n35c["image"] == "/img/facs/c12-N35c.jpg"
+    assert list(n35c["zones"]) == [str(i) for i in range(1, 16)]
+    assert all(0 <= v <= 100 for z in n35c["zones"].values() for v in z)
+    verse = {v["n"]: v["html"] for v in n35c["verses"]}
+    assert verse[3] == '<a class="place" href="#place-p4" data-place="p4">Dell\'ultimo orizzonte</a> il guardo esclude.'
+    nr25 = {v["n"]: v["html"] for v in wits["NR25"]["verses"]}
+    assert nr25[5].startswith('<a class="place" href="#place-p6" data-place="p6">spazio</a> di là da quella')
+    assert n35c["head"] == ['<a class="place" href="#place-p1" data-place="p1">XII.</a>',
+                            '<a class="place" href="#place-p1" data-place="p1">L\'INFINITO.</a>']
+    p13 = data["places"]["p13"]
+    assert p13["verses"] == [14]
+    an = next(r for r in p13["readings"] if "AN" in r["wit"])
+    assert [(l["label"], l["text"]) for l in an["layers"]][0] == ("Penna A 1819", "Immensità il mio pensier s'annega,")
+    assert data["credits"] == ["Roberta Priore", "Beatrice Nava"]
+    assert len(data["places"]) == 14
+
+
+def test_build_site_marks_poems_with_facsimile(tmp_path):
+    tei, out = tmp_path / "tei", tmp_path / "out"
+    tei.mkdir()
+    (tei / "c12.xml").write_bytes(etree.tostring(infinito_tree(), xml_declaration=True, encoding="UTF-8"))
+    build_site([dict(INFINITO_ENTRY, status=STATUS)], tei, out, paths.TEI_GENETIC, paths.TEI_FACS)
+    index = json.loads((out / "index.json").read_text(encoding="utf-8"))
+    assert index[0]["status"]["facsimile"] == "provisional"
+    assert (out / "facs" / "c12.json").is_file()

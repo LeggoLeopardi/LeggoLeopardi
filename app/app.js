@@ -46,6 +46,15 @@ app.get('/lang/:code', (req, res) => {
   res.redirect(next);
 });
 
+app.get('/leggo/:n/facsimile', (req, res, next) => {
+  const poem = data.poem(req.params.n);
+  const facs = poem && data.facsimile(poem.n);
+  if (!facs) return next();
+  const imaged = facs.witnesses.filter((w) => w.image);
+  const sel = imaged.find((w) => w.siglum === req.query.w) || imaged.find((w) => w.siglum === 'N35c') || imaged[0];
+  res.render('facsimile', { poem, facs, imaged, sel, title: `${poem.roman}. ${poem.title || poem.incipit} · Facsimile` });
+});
+
 app.use((req, res) => res.status(404).render('404'));
 
 module.exports = app;
