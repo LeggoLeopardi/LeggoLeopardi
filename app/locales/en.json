@@ -35,16 +35,16 @@
   },
   "footer": "Leggo Leopardi · DH.ARC, University of Bologna",
   "facs": {
-    "back": "Leggo",
     "verse": "l.",
     "witnesses": "Witnesses",
     "variants": "Variants",
     "title": "Title",
-    "source": "Text and variants: TEI encoding by {{credits}} (DH.ARC, Bologna). Images: WikiLeopardi. Provisional alignment.",
-    "hint": "Hover over a line to see it on the page, and the other way round. Underlined words lead to the variants.",
     "text": "Text of {{w}}",
     "alt": "Page of L’infinito in {{w}}",
     "caption": "Page of {{w}} (WikiLeopardi image). Click to enlarge.",
-    "noZones": "Line-by-line alignment is not available for this page yet."
+    "noZones": "Line-by-line alignment is not available for this page yet.",
+    "credit": "Text and variants: TEI encoding by {{credits}} (DH.ARC, University of Bologna). Facsimile images: WikiLeopardi.",
+    "close": "Close",
+    "popover": "Variants"
   }
 }

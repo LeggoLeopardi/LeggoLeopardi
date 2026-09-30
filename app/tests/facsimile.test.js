@@ -68,3 +68,32 @@ test('only poems with a facsimile have the page, and Leggo links to it', async (
   assert.doesNotMatch((await request(app).get(`/leggo/${other}`)).text, /\/facsimile"/);
   assert.equal((await request(app).get('/js/facsimile.js')).status, 200);
 });
+
+test('credits are in the footer, not at the top; no breadcrumb', async () => {
+  const res = await request(app).get(`/leggo/${inf}/facsimile`);
+  const footer = res.text.slice(res.text.indexOf('<footer'));
+  assert.match(footer, /Roberta Priore, Beatrice Nava/);
+  assert.doesNotMatch(res.text.slice(0, res.text.indexOf('<footer')), /Roberta Priore/);
+  assert.doesNotMatch(res.text, /← /);
+  assert.doesNotMatch((await request(app).get('/')).text.slice(-600), /Roberta Priore/);
+});
+
+test('inside a poem the navbar Leggo link returns to that poem', async () => {
+  const nav = (html) => html.slice(html.indexOf('<nav class="links"'), html.indexOf('</nav>'));
+  assert.match(nav((await request(app).get(`/leggo/${inf}/facsimile`)).text), new RegExp(`<a href="/leggo/${inf}" class="on">Leggo</a>`));
+  assert.match(nav((await request(app).get(`/leggo/${inf}`)).text), new RegExp(`<a href="/leggo/${inf}" class="on">Leggo</a>`));
+  assert.match(nav((await request(app).get('/')).text), /<a href="\/leggo" class="">Leggo<\/a>/);
+});
+
+test('the popover has everything it needs in the page', async () => {
+  const res = await request(app).get(`/leggo/${inf}/facsimile`);
+  assert.match(res.text, /<div class="popover" id="popover" role="dialog" aria-labelledby="popover-title" hidden>/);
+  assert.match(res.text, /<button type="button" class="popover-close"/);
+  for (let k = 1; k <= 14; k += 1) assert.match(res.text, new RegExp(`<li id="place-p${k}">`));
+});
+
+test('no instructions or provisional notice on the facsimile page', async () => {
+  const res = await request(app).get(`/leggo/${inf}/facsimile`);
+  assert.doesNotMatch(res.text, /class="hint"/);
+  assert.doesNotMatch(res.text, /Provvisorio|Provisional/);
+});

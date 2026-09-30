@@ -97,10 +97,9 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 
 /* facsimile (text and page aligned) */
 .facs { padding-block: clamp(20px, 4vw, 40px); }
-.wtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 6px; font-family: var(--label); }
+.wtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 20px; font-family: var(--label); }
 .wtab { text-decoration: none; padding: 3px 12px; border: 1px solid var(--tint); border-radius: 3px; color: var(--main); }
 .wtab.on { background: var(--main); border-color: var(--main); color: var(--paper); }
-.hint { color: var(--muted); font-size: 1rem; margin: 4px 0 16px; }
 .facs-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; }
 .wlabel { font-size: 1rem; color: var(--muted); margin: 0 0 .6em; }
 .facs-head { font-weight: 500; color: var(--dark); font-size: 1.4rem; line-height: 1.2; margin: 0 0 .8em; }
@@ -132,4 +131,32 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 @media (max-width: 800px) {
   .facs-grid { grid-template-columns: 1fr; }
   .facs-img { position: static; }
+}
+
+/* variant popover (facsimile page) */
+.facs { position: relative; }
+.popover { position: absolute; z-index: 20; width: min(26rem, 90vw); max-height: 60vh; overflow: auto; background: var(--paper); border: 1px solid var(--tint); border-radius: 6px; box-shadow: 0 12px 32px -12px rgba(14, 58, 98, .45); padding: 8px 14px 12px; }
+.popover[hidden] { display: none; }
+.popover-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.popover-bar h2 { font-family: var(--label); font-size: 1rem; letter-spacing: .04em; color: var(--muted); margin: 0; font-weight: 500; }
+.popover-close { border: 0; background: none; font-size: 1.1rem; line-height: 1; cursor: pointer; color: var(--muted); padding: 6px 8px; }
+.popover ul, .popover ol { list-style: none; margin: 0; padding: 0; }
+.popover ul > li { padding: 2px 0; }
+.popover .lem .rtext { font-weight: 600; }
+.popover .wits { font-family: var(--label); font-size: .9rem; color: var(--main); }
+.popover .layers { margin: 2px 0 6px 1.2em; font-size: 1rem; }
+.popover .lab { font-family: var(--label); font-size: .85rem; color: var(--muted); }
+a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); border-radius: 2px; }
+.foot .credit { margin: 6px 0 0; font-size: .95rem; opacity: .85; }
+@media (max-width: 800px) {
+  .popover { position: fixed; left: 0; right: 0; bottom: 0; top: auto; width: auto; max-height: 55vh; border-radius: 12px 12px 0 0; }
+}
+
+/* phones: a compact navbar that scrolls away with the page */
+@media (max-width: 640px) {
+  .nav { position: static; }
+  .nav-inner { gap: 6px 14px; padding-block: 8px; }
+  .brand { font-size: 1.3rem; }
+  .links { gap: 12px; font-size: 1rem; }
+  .lang a { padding: 0 6px; }
 }

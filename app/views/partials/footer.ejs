@@ -1,3 +1,3 @@
-<footer class="foot"><div class="wrap"><%= __('footer') %></div></footer>
+<footer class="foot"><div class="wrap"><%= __('footer') %><% if (typeof credits !== 'undefined' && credits && credits.length) { %><p class="credit"><%= __('facs.credit', { credits: credits.join(', ') }) %></p><% } %></div></footer>
 </body>
 </html>

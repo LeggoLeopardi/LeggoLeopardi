@@ -35,16 +35,16 @@
   },
   "footer": "Leggo Leopardi · DH.ARC, Università di Bologna",
   "facs": {
-    "back": "Leggo",
     "verse": "v.",
     "witnesses": "Testimoni",
     "variants": "Varianti",
     "title": "Titolo",
-    "source": "Testo e varianti: codifica TEI di {{credits}} (DH.ARC, Bologna). Immagini: WikiLeopardi. Allineamento provvisorio.",
-    "hint": "Passa sopra un verso per vederlo sulla pagina, e viceversa. Le parole sottolineate portano alle varianti.",
     "text": "Testo di {{w}}",
     "alt": "Pagina di L’infinito in {{w}}",
     "caption": "Pagina di {{w}} (immagine WikiLeopardi). Clic per ingrandire.",
-    "noZones": "Per questa pagina l’allineamento verso per verso non è ancora disponibile."
+    "noZones": "Per questa pagina l’allineamento verso per verso non è ancora disponibile.",
+    "credit": "Testo e varianti: codifica TEI di {{credits}} (DH.ARC, Università di Bologna). Immagini dei facsimili: WikiLeopardi.",
+    "close": "Chiudi",
+    "popover": "Varianti"
   }
 }

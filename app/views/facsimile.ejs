@@ -1,14 +1,11 @@
 <%- include('partials/head') %>
 <%- include('partials/nav') %>
 <main class="wrap facs">
-  <p class="eyebrow"><a href="/leggo/<%= poem.n %>">← <%= __('facs.back') %></a></p>
   <h1 class="poem-head"><span><%= poem.roman %>. <%= poem.title || poem.incipit %></span></h1>
-  <p class="badge"><%= __('facs.source', { credits: facs.credits.join(', ') }) %></p>
 
   <nav class="wtabs" aria-label="<%= __('facs.witnesses') %>">
     <% imaged.forEach((w) => { const on = w.siglum === sel.siglum; %><a href="?w=<%= w.siglum %>" data-w="<%= w.siglum %>" class="wtab<%= on ? ' on' : '' %>"<%- on ? ' aria-current="page"' : '' %> title="<%= w.label %>"><%= w.siglum %></a><% }) %>
   </nav>
-  <p class="hint"><%= __('facs.hint') %></p>
 
   <div class="facs-grid">
     <section class="facs-text" aria-label="<%= __('facs.text', { w: sel.siglum }) %>">
@@ -43,6 +40,10 @@
       <% }) %>
     </ol>
   </section>
+  <div class="popover" id="popover" role="dialog" aria-labelledby="popover-title" hidden>
+    <div class="popover-bar"><h2 id="popover-title" data-label="<%= __('facs.popover') %>"></h2><button type="button" class="popover-close" aria-label="<%= __('facs.close') %>">✕</button></div>
+    <div class="popover-body"></div>
+  </div>
 </main>
 <script src="/js/facsimile.js" defer></script>
 <%- include('partials/footer') %>

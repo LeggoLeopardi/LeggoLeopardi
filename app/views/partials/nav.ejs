@@ -2,7 +2,7 @@
   <div class="wrap nav-inner">
     <a class="brand" href="/">Leggo <b>Leopardi</b></a>
     <nav class="links" aria-label="<%= __('nav.label') %>">
-      <a href="/leggo" class="<%= path.startsWith('/leggo') ? 'on' : '' %>">Leggo</a>
+      <a href="<%= leggoHref %>" class="<%= path.startsWith('/leggo') ? 'on' : '' %>">Leggo</a>
       <span class="soon" title="<%= __('nav.soon') %>">Traduco</span>
       <span class="soon" title="<%= __('nav.soon') %>">Collaziono</span>
       <span class="soon" title="<%= __('nav.soon') %>">Concordanza</span>
