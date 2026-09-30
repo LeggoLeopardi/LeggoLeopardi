@@ -9,6 +9,7 @@ Reading text: N35c (the corrected copy of *Canti*, Napoli, Starita 1835). Curren
     uv run python -m leggo_pipeline.manifest          # (re)build canti.json from WikiLeopardi
     uv run python -m leggo_pipeline.build_base        # tei/base/*.xml + reports/base_report.md
     uv run python -m leggo_pipeline.build_facsimile   # L'infinito: page images, verse zones (tei/facsimile), reports/facsimile_report.md
+    uv run python -m leggo_pipeline.build_translations # tei/traduzioni from pipeline/traduzioni.json (needs ../commenti, ../leopardi_translations)
     uv run python -m leggo_pipeline.validate          # TEI checks
     uv run python -m leggo_pipeline.build_site_data   # public/data/*.json
     uv run pytest

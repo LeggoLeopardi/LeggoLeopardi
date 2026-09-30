@@ -1,0 +1,36 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+<main class="wrap traduco">
+  <%- include('partials/poem-select') %>
+  <h1 class="poem-head"><span><%= poem.roman %>. <%= poem.title || poem.incipit %></span></h1>
+
+  <form class="tpick" action="/traduco/<%= poem.n %>" method="get">
+    <% const esc = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); %>
+    <% const options = (current) => groups.map((g) => `<optgroup label="${esc(__('trad.lang.' + g.lang))}">` + g.items.map((t) => `<option value="${t.id}"${current && t.id === current.id ? ' selected' : ''}>${esc(t.translator)}${t.year ? ', ' + t.year : ''}</option>`).join('') + '</optgroup>').join(''); %>
+    <select id="t-select" name="t" onchange="this.form.submit()" aria-label="<%= __('trad.translation') %>"><%- options(t1) %></select>
+    <select id="t2-select" name="t2" onchange="this.form.submit()" aria-label="<%= __('trad.second') %>"><option value=""><%= __('trad.none') %></option><%- options(t2) %></select>
+    <noscript><button type="submit"><%= __('leggo.go') %></button></noscript>
+  </form>
+
+  <div class="tcols<%= t2 ? ' three' : '' %>">
+    <section class="tcol it" lang="it">
+      <h2 class="tname"><%= __('trad.italian') %></h2>
+      <% trad.italian.stanzas.forEach((stanza) => { %><div class="tstanza"><% stanza.forEach((item) => { if (item.type === 'l') { %><p class="tl"><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span><%- item.html %></span></p><% } }) %></div><% }) %>
+    </section>
+    <% [t1, t2].filter(Boolean).forEach((t) => { %>
+    <section class="tcol" lang="<%= t.lang %>">
+      <h2 class="tname"><%= t.translator %><%= t.year ? ', ' + t.year : '' %></h2>
+      <details class="tsource">
+        <summary><%= __('trad.source') %></summary>
+        <p><%= t.bibl %></p>
+        <% if (t.sources.length) { %><ul><% t.sources.forEach((s) => { %><li><% if (s.url) { %><a href="<%= s.url %>" target="_blank" rel="noopener"><%= s.label %></a><% } else { %><%= s.label %><% } %></li><% }) %></ul><% } %>
+        <p class="rights"><%= t.rights %></p>
+        <% t.notes.forEach((note) => { %><p class="tnote"><%= note %></p><% }) %>
+      </details>
+      <% if (t.title.length) { %><h3 class="thead"><% t.title.forEach((line) => { %><span><%= line %></span><% }) %></h3><% } %>
+      <% t.stanzas.forEach((stanza) => { if (t.form === 'prose') { stanza.forEach((para) => { %><p class="tprose"><%= para %></p><% }) } else { %><div class="tstanza"><% stanza.forEach((line) => { %><p class="tl"><span><%= line %></span></p><% }) %></div><% } }) %>
+    </section>
+    <% }) %>
+  </div>
+</main>
+<%- include('partials/footer') %>

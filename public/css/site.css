@@ -158,3 +158,26 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
   .links { gap: 12px; font-size: 1rem; }
   .lang a { padding: 0 6px; }
 }
+
+/* traduco */
+.traduco { padding-block: clamp(20px, 4vw, 40px); }
+.tpick { display: flex; gap: 10px; flex-wrap: wrap; margin: 6px 0 24px; }
+.tpick select { font: inherit; font-size: 1.05rem; max-width: 100%; padding: 4px 8px; border: 1px solid var(--tint); border-radius: 3px; background: var(--paper); color: var(--ink); }
+.tcols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 3vw, 40px); align-items: start; }
+.tcols.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tname { font-family: var(--label); font-weight: 500; font-size: 1.1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .4em; }
+.tsource { font-size: .95rem; color: var(--muted); margin: 0 0 1em; }
+.tsource summary { cursor: pointer; font-family: var(--label); letter-spacing: .04em; }
+.tsource p, .tsource ul { margin: .3em 0; }
+.tsource ul { padding-left: 1.2em; }
+.thead { font-weight: 500; color: var(--dark); font-size: 1.2rem; margin: 0 0 .8em; }
+.thead span { display: block; }
+.tstanza { margin-bottom: 1em; }
+.tl { display: grid; grid-template-columns: 2.2em minmax(0, 1fr); margin: 0; }
+.tcol:not(.it) .tl { grid-template-columns: minmax(0, 1fr); }
+.tl .vn { font-family: var(--label); font-size: .85rem; color: var(--muted); text-align: right; padding-right: .8em; padding-top: .25em; }
+.tprose { margin: 0 0 .8em; }
+@media (max-width: 800px) {
+  .tcols, .tcols.three { grid-template-columns: 1fr; }
+}
+.tl > span:last-child { padding-left: 1.1em; text-indent: -1.1em; }  /* a wrapped verse continues indented */
