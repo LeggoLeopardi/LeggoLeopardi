@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>L’infini</title>
+<author>E. de Montlaur</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+<note>Il testo si apre con il verso italiano «E il naufragar m'è dolce in questo mare.», come nella fonte.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>De Montlaur E., Giacomo Leopardi<date when="1846">1846</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Francia traduzioni.docx, tabella 3)</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="fr"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="fr">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>L’infini</head>
+<lg>
+<l>E il naufragar m'è dolce in questo mare.</l>
+<l>J’aime depuis longtemps cette verte colline, Cette haie au sommet, dont la fraîche aubépine,</l>
+<l>Encensoir parfumé dans la chaude saison,</l>
+<l>Me cache la moitié du lointain horizon.</l>
+<l>Assis là, je regarde, et j’écoute, et je pense Aux espaces sans fin, au souverain silence,</l>
+<l>A ce calme profond qui nous berce, — et mon cœur</l>
+<l>S’emplit, tout en rêvant, d’une vague terreur. Puis, pendant que le vent siffle à travers les chênes,</l>
+<l>—Et l’on dirait de loin comme des voix humaines,—</l>
+<l>Au silence éternel je compare sa voix.</l>
+<l>Je songe au temps présent, à celui d’autrefois, Au bruit qu il rend. Le flot toujours monte et m’inonde.</l>
+<l>Et le naufrage est doux sur celte mer profonde.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

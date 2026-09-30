@@ -14,7 +14,8 @@ Last updated: 2026-09-30.
 |---|---|
 | 1a Skeleton: N35c base text of all 41 Canti from WikiLeopardi, Leggo view, CI, deploy | **Done** (PR #1, 2026-09-30) |
 | *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (branch `infinito-facsimile`) |
-| 1b *L'infinito* complete: apparatus and Collaziono, translations and Traduco, commentaries in Leggo, Concordanza | Parked: plan on branch `phase-1b-collation` |
+| Traduco for *L'infinito*: 19 translations (EN, FR, DE, ES, RU), whole poem side by side | **Done** (`/traduco/12`) |
+| 1b rest: Collaziono (parked plan on branch `phase-1b-collation`), commentaries in Leggo, Concordanza; verse alignment of translations (after the admin panel) | Next |
 | 1c Other poems | – |
 | 2 Team workspace | – |
 
@@ -51,6 +52,14 @@ Last updated: 2026-09-30.
   - The title of AV reads `MDCCCXIX V L'Infinito`; `V` is probably a mistyped `|`.
   - The newer copy marks title line breaks with ` | ` instead of `<lb/>`.
 - No manuscript images yet: the BNN IIIF links for AN return errors; no source for AV.
+
+## Traduco
+
+- Sources and extraction ranges: `pipeline/traduzioni.json` (checked by hand); report: `reports/translations_report.md`.
+- **Rights: all translations are shown by the project's decision of 2026-09-30, including Akhmatova 1967, which is in copyright (Akhmatova d. 1966, Naiman d. 2022).** The rights note is in each TEI file and in the page's source details.
+- Cliffe 1893 and 1896 are two versions (revised wording). Sainte-Beuve: one text, two sources (Zecchini's transcription and Wikisource).
+- To review: De Montlaur's text opens with the Italian verse *E il naufragar…* (as in Zecchini's transcription); Amiel's verse line breaks were lost in the transcription; Pomyan, Ivanov and Tkhorzhevsky are OCR, not collated.
+- On phones the columns stack (Italian, then the translation) instead of a switch.
 
 ## Open items
 

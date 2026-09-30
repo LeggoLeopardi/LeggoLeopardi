@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>LO INFINITO</title>
+<author>Calixto Oyuela</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (Oyuela m. 1935)</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Calixto Oyuela, Cantos de Leopardi, 1883<date when="1883">1883</date></bibl>
+<bibl type="source">Wikisource<ptr target="https://es.wikisource.org/wiki/Cantos_de_Leopardi"/></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="es"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="es">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>LO INFINITO</head>
+<lg>
+<l>Esta colina solitaria siempre</l>
+<l>Grata fué para mí, y este vallado,</l>
+<l>Que por tan varias partes</l>
+<l>La vista cierra al horizonte extremo.</l>
+<l>Mas si sentado miro interminables</l>
+<l>Espacios tras de aquél, y sobrehumano</l>
+<l>Silencio, y profundísimo sosiego</l>
+<l>Finjo en mi mente; de lo cual por poco</l>
+<l>El corazón no tiembla. Y como el viento</l>
+<l>Entre estas plantas silba, ese infinito</l>
+<l>Silencio á este rumor voy comparando:</l>
+<l>Y recuerdo lo eterno, y las edades</l>
+<l>Sepultas ya, y la presente y viva,</l>
+<l>Y su tumulto. Así mi pensamiento</l>
+<l>Se inmerge en esta inmensidad, y dulce</l>
+<l>Ésme náufrago ser de este oceano.</l>
+<l>Mayo de 1883.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

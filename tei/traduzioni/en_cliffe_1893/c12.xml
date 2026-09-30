@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>The infinite</title>
+<author>F. H. Cliffe</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>F. H. Cliffe, The poems of Leopardi.<date when="1893">1893</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Regno Unito traduzioni.docx, tabella 7)</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="en"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="en">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>The infinite</head>
+<lg>
+<l>I always loved this solitary hill</l>
+<l>And this green hedge that hides on every side</l>
+<l>The last and dim horizon from our view.</l>
+<l>But as I sit and gaze, a never-ending</l>
+<l>Space far beyond it and unearthly silence</l>
+<l>And deepest quiet to my thought I picture,</l>
+<l>And as with terror is my heart o'ercast</l>
+<l>With wondrous awe. And while I hear the wind</l>
+<l>Amid the green leaves rustling, I compare</l>
+<l>That silence infinite unto this sound,</l>
+<l>And to my mind eternity occurs,</l>
+<l>And all the vanished ages, and the present</l>
+<l>Whose sound doth meet mine ear. And so in this</l>
+<l>Immensity my thought is drifted on,</l>
+<l>And to be wrecked on such a sea is sweet.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

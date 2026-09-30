@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Das Unendliche</title>
+<author>Louis von Arentsschildt</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Louis von Arentsschildt, Völkerstimmen. Portugal. Spanien. Italien. Schottland. England, 1847.<date when="1847">1847</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Germania traduzioni.docx, tabella 4)</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="de"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="de">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>Das Unendliche</head>
+<lg>
+<l>Stets war mir theuer dieser öde Hügel</l>
+<l>Und dieses Dickicht, das so großen Theil</l>
+<l>Vom fernsten Horizont dem Blick entzieht.</l>
+<l>Hier saß und schaut ich die Unendlichkeit,</l>
+<l>Die es verbarg; das heilge Schweigen und</l>
+<l>Die tiefste Ruhe fühlt ich in der Seele,</l>
+<l>Im Herzen, das von keiner Furcht bewegt.</l>
+<l>Und wie den Wind ich hörte durch die Pflanzen</l>
+<l>Hinbrausen, so verglich ich diese Stimme</l>
+<l>Mit jenem tiefen Schweigen, und es kam</l>
+<l>Erinnrung mir des Ewigen, des Todes,</l>
+<l>Des Gegenwärtigen - und ihrer Stimme.</l>
+<l>So tauchte unter im Unendlichen</l>
+<l>Mein Denken: und der Schiffbruch war</l>
+<l>Mir süß in diesem Meere.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

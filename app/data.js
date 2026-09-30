@@ -35,4 +35,15 @@ function facsimile(n) {
   return facsimiles.get(n);
 }
 
-module.exports = { index, poem, facsimile };
+const translationSets = new Map();
+
+/** The Italian text and every translation of poem n, or null when it has none. */
+function translations(n) {
+  if (!translationSets.has(n)) {
+    const file = path.join(DATA_DIR, 'trad', `c${n}.json`);
+    translationSets.set(n, fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null);
+  }
+  return translationSets.get(n);
+}
+
+module.exports = { index, poem, facsimile, translations };

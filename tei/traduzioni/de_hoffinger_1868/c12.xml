@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Das Unendliche</title>
+<author>Josepha von Hoffinger</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Josepha von Hoffinger, Kronen aus Italiens Dichterwalde, 1868.<date when="1868">1868</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Germania traduzioni.docx, tabella 9)</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="de"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="de">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>Das Unendliche</head>
+<lg>
+<l>Stets war mir lieb der abgeschiedne Hügel</l>
+<l>Und dieser Hang, der auf so vielen Seiten</l>
+<l>Den Horizont vor unsern Blicken schließt;</l>
+<l>Doch wenn ich ruh und schau, ersinn ich mir</l>
+<l>In den Gedanken unbegränzte Räume</l>
+<l>Jenseits von dort, und übermenschlich Schweigen</l>
+<l>Und allertiefste Ruhe, wo nicht leicht</l>
+<l>Das Herz von Furcht erbebt. Und wie den Wind</l>
+<l>Ich in den Bäumen stürmen hör’, vergleiche</l>
+<l>Mit diesem Laut ich solch unendlich Schweigen;</l>
+<l>Und dann gedenke ich der Ewigkeit,</l>
+<l>Der todten Jahreszeit und der gegenwärtgen,</l>
+<l>Die lebt, und ihrer Stimmen. Also taucht</l>
+<l>In die Unendlichkeit sich mein Gedanke,</l>
+<l>Und süß ist Schiffbruch mir in diesem Meere.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

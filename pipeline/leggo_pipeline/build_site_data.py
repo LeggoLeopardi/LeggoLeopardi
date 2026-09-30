@@ -133,9 +133,52 @@ def facsimile_json(entry: dict, team_path: Path, facs_path: Path) -> dict:
     }
 
 
+def _translation(tid: str, path: Path) -> dict:
+    root = etree.parse(str(path)).getroot()
+    x = lambda q: root.xpath(q, namespaces=NS)
+    div = root.find(f".//{TEI}div")
+    head = div.find(f"{TEI}head")
+    title = [] if head is None else [head.text or ""] + [lb.tail or "" for lb in head]
+    prose = div.find(f"{TEI}p") is not None
+    stanzas = [[p.text or "" for p in div.findall(f"{TEI}p")]] if prose else [
+        [l.text or "" for l in lg.findall(f"{TEI}l")] for lg in div.findall(f"{TEI}lg")
+    ]
+    year = x("string(//tei:sourceDesc/tei:bibl[1]/tei:date/@when)")
+    bibl = x("//tei:sourceDesc/tei:bibl[1]")[0]
+    return {
+        "id": tid,
+        "lang": x("string(//tei:langUsage/tei:language/@ident)"),
+        "translator": x("string(//tei:titleStmt/tei:author)"),
+        "year": int(year) if year else None,
+        "title": title,
+        "bibl": " ".join((bibl.text or "").split()),
+        "sources": [
+            {"label": " ".join((b.text or "").split()), "url": b.xpath("string(tei:ptr/@target)", namespaces=NS) or None}
+            for b in x("//tei:sourceDesc/tei:bibl[@type='source']")
+        ],
+        "rights": " ".join(x("string(//tei:availability)").split()),
+        "notes": [" ".join("".join(n.itertext()).split()) for n in x("//tei:notesStmt/tei:note")],
+        "form": "prose" if prose else "verse",
+        "stanzas": stanzas,
+    }
+
+
+def translations_json(entry: dict, trad_dir: Path, base_path: Path) -> dict:
+    """The Italian base text and every translation of the poem, by language then year."""
+    n = entry["n"]
+    items = [_translation(d.name, d / f"c{n}.xml") for d in sorted(Path(trad_dir).iterdir()) if (d / f"c{n}.xml").exists()]
+    items.sort(key=lambda t: (t["lang"], t["year"] is None, t["year"] or 0, t["id"]))
+    italian = poem_json(entry, base_path)
+    return {
+        "n": n, "roman": entry["roman"], "title": entry["title"], "slug": entry["slug"],
+        "italian": {"head": italian["head"], "stanzas": italian["stanzas"]},
+        "translations": items,
+    }
+
+
 def build_site(
     manifest: list[dict], tei_dir: Path, out_dir: Path,
-    team_dir: Path | None = None, facs_dir: Path | None = None,
+    team_dir: Path | None = None, facs_dir: Path | None = None, trad_dir: Path | None = None,
 ) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     index = []
@@ -149,6 +192,13 @@ def build_site(
             (out_dir / "facs" / f"c{n}.json").write_text(
                 json.dumps(facsimile_json(entry, team_path, facs_path), ensure_ascii=False) + "\n", encoding="utf-8"
             )
+        if trad_dir and any((d / f"c{n}.xml").exists() for d in Path(trad_dir).iterdir()):
+            entry = dict(entry, status=dict(entry["status"], traduco="provisional"))
+            (out_dir / "trad").mkdir(exist_ok=True)
+            (out_dir / "trad" / f"c{n}.json").write_text(
+                json.dumps(translations_json(entry, trad_dir, Path(tei_dir) / f"c{n}.xml"), ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
         data = poem_json(entry, Path(tei_dir) / f"c{n}.xml")
         (out_dir / f"c{n}.json").write_text(json.dumps(data, ensure_ascii=False) + "\n", encoding="utf-8")
         index.append({k: data[k] for k in INDEX_KEYS})
@@ -157,7 +207,7 @@ def build_site(
 
 def main() -> int:
     manifest = load_manifest(paths.CANTI)
-    build_site(manifest, paths.TEI_BASE, paths.DATA, paths.TEI_GENETIC, paths.TEI_FACS)
+    build_site(manifest, paths.TEI_BASE, paths.DATA, paths.TEI_GENETIC, paths.TEI_FACS, paths.ROOT / "tei" / "traduzioni")
     print(f"wrote {len(manifest)} poems to {paths.DATA}")
     return 0
 

@@ -37,5 +37,19 @@
     "close": "Chiudi",
     "popover": "Varianti"
   },
-  "footerSource": "Testo base: trascrizione WikiLeopardi dell’esemplare corretto dell’edizione Starita (N35c)."
+  "footerSource": "Testo base: trascrizione WikiLeopardi dell’esemplare corretto dell’edizione Starita (N35c).",
+  "trad": {
+    "translation": "Traduzione",
+    "second": "Seconda traduzione",
+    "none": "— nessuna —",
+    "source": "Fonte",
+    "italian": "Leopardi · N35c",
+    "lang": {
+      "de": "Tedesco",
+      "en": "Inglese",
+      "es": "Spagnolo",
+      "fr": "Francese",
+      "ru": "Russo"
+    }
+  }
 }

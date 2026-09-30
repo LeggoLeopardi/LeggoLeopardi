@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XII / L’INFINI. / (1819.)</title>
+<author>Alphonse Aulard</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (fr.wikisource)</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Alphonse Aulard, Poésies et Œuvres morales de Leopardi, 1880<date when="1880">1880</date></bibl>
+<bibl type="source">Wikisource<ptr target="https://fr.wikisource.org/wiki/Po%C3%A9sies_et_%C5%92uvres_morales_%28Leopardi%29/Po%C3%A9sies/XII"/></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="fr"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="fr">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>XII<lb/>L’INFINI.<lb/>(1819.)</head>
+<p>Toujours chères me furent cette colline déserte et cette haie qui, sur un long espace, cache au regard l’extrême horizon. Mais, m’asseyant et regardant, au delà de la haie j’imagine d’interminables espaces, des silences surhumains, un profond repos où peu s’en faut que le cœur ne s’effraie. Et comme j’entends bruire le vent à travers le feuillage, je vais comparant le silence infini à cette voix : et je me souviens de l’éternité, des siècles morts, du siècle présent et vivant et du bruit qu’il fait. Ainsi dans cette immensité s’anéantit ma pensée et il m’est doux de faire naufrage dans cette mer.</p>
+</div>
+</body>
+</text>
+</TEI>

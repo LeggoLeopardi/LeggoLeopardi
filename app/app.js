@@ -54,6 +54,33 @@ app.get('/lang/:code', (req, res) => {
   res.redirect(next);
 });
 
+app.get('/traduco', (req, res) => {
+  const requested = data.poem(req.query.n);
+  const target = requested && data.translations(requested.n)
+    ? requested : data.index().find((p) => data.translations(p.n));
+  if (!target) return res.status(404).render('404');
+  return res.redirect(`/traduco/${target.n}`);
+});
+
+app.get('/traduco/:n', (req, res, next) => {
+  const poem = data.poem(req.params.n);
+  const trad = poem && data.translations(poem.n);
+  if (!trad) return next();
+  const byId = (id) => trad.translations.find((t) => t.id === id);
+  const t1 = byId(req.query.t) || trad.translations[0];
+  const t2 = req.query.t2 && req.query.t2 !== t1.id ? byId(req.query.t2) : null;
+  const groups = [];
+  trad.translations.forEach((t) => {
+    let g = groups.find((x) => x.lang === t.lang);
+    if (!g) groups.push((g = { lang: t.lang, items: [] }));
+    g.items.push(t);
+  });
+  return res.render('traduco', {
+    poem, trad, t1, t2, groups, selectModule: 'traduco',
+    title: `${poem.roman}. ${poem.title || poem.incipit} · Traduco`,
+  });
+});
+
 // The facsimile view became the default Leggo view for its poems; keep old links working.
 app.get('/leggo/:n/facsimile', (req, res, next) => {
   const poem = data.poem(req.params.n);

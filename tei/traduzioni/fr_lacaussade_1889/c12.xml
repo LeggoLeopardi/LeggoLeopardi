@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XII / L’INFINI / (1819)</title>
+<author>Auguste Lacaussade</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (fr.wikisource)</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Auguste Lacaussade, La Poésie de Leopardi, 1889<date when="1889">1889</date></bibl>
+<bibl type="source">Wikisource<ptr target="https://fr.wikisource.org/wiki/La_Po%C3%A9sie_de_Leopardi_%28trad._Lacaussade%29/L%E2%80%99Infini"/></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="fr"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="fr">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>XII<lb/>L’INFINI<lb/>(1819)</head>
+<lg>
+<l>Toujours tu me fus chère, ô déserte colline,</l>
+<l>Où la haie épineuse à l’âpre floraison</l>
+<l>Cache au regard l’espace et l’extrême horizon.</l>
+<l>Dans l’herbe assis, j’évoque en rêve, j’imagine,</l>
+<l>Derrière cette haie, où verdit le gazon,</l>
+<l>Des espaces sans borne, un surhumain silence,</l>
+<l>De l’absolu repos la morne somnolence.</l>
+<l>Le silence infini de cette immensité</l>
+<l>Verse en moi les stupeurs de sa sérénité ;</l>
+<l>Et, percevant le bruit du vent dans les feuillages,</l>
+<l>J’oppose à cette voix ce silence éternel.</l>
+<l>Ô vide immesurable où roule en paix le ciel !</l>
+<l>Alors me souvenant des siècles morts, des âges</l>
+<l>Disparus, je compare aux stériles efforts,</l>
+<l>Aux vains bruits des vivants le silence des morts.</l>
+<l>D’un ineffable émoi mon âme est oppressée ;</l>
+<l>Et du néant humain sondant le gouffre amer,</l>
+<l>Dans cette immensité s’abîme ma pensée :</l>
+<l>Et doux m’est le naufrage en une telle mer.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>
