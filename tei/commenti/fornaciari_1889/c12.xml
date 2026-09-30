@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Commento a XII. L'infinito</title>
+<title type="short">Fornaciari</title>
+<author>Raffaello Fornaciari</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dall'immagine della pagina, da verificare.</note>
+<note>Selezione: esempio: una nota.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Poesie di Giacomo Leopardi scelte e commentate a uso delle scuole dal professore Raffaello Fornaciari, Firenze, G. Barbèra, 1889<date when="1889">1889</date><note type="source">commenti/Fornaciari_Poesie_di_Giacomo_Leopardi_scelte_e_comm.pdf, p. 83 (pagina 110 del PDF)</note></bibl>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<div type="commentary" corresp="../../base/c12.xml#c12">
+<note type="comm" n="1" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v3"><ref>Sempre caro mi fu quest'ermo colle.</ref> «Uscendo dalla città per la Porta di Monte Morello, la più vicina al palazzo Leopardi, Giacomo, quando facea la passeggiata a ponente, solea recarsi per un piccolo sentiero al colle detto popolarmente Monte Tabor che signoreggia.... la valle sottoposta e tutta la Marca occidentale fino agli Appennini.... A' tempi del poeta.... era veramente <hi rend="italic">ermo</hi> (romito), folto di alberi e irto di sterpi a maniera di siepi.» Mestica. — <hi rend="italic">che da tanta parte,</hi> ec. Costruisci: «che esclude il guardo da tanta parte (cioè, da una parte così estesa) del più lontano orizzonte.» — <hi rend="italic">esclude,</hi> cioè, serra fuori, separa, impedisce.</note>
+</div>
+</body>
+</text>
+</TEI>

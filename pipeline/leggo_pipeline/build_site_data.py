@@ -176,9 +176,58 @@ def translations_json(entry: dict, trad_dir: Path, base_path: Path) -> dict:
     }
 
 
+def _rich(el, skip_ref: bool = False) -> str:
+    """HTML of a note: <hi rend="italic|bold"> as <em>/<strong>; the <ref> lemma left out when skip_ref."""
+    parts = [] if skip_ref else [_esc(el.text)]
+    for ch in el:
+        name = etree.QName(ch).localname
+        if name == "ref" and skip_ref:
+            parts.append(_esc((ch.tail or "").lstrip()))
+            continue
+        tag = {"italic": "em", "bold": "strong"}.get(ch.get("rend"), "span")
+        parts.append(f"<{tag}>{_esc(ch.text)}</{tag}>{_esc(ch.tail)}")
+    return "".join(parts).strip()
+
+
+def commentaries_json(entry: dict, comm_dir: Path) -> dict:
+    """Every commentator's notes on the poem, oldest edition first."""
+    n = entry["n"]
+    items = []
+    for d in sorted(Path(comm_dir).iterdir()):
+        path = d / f"c{n}.xml"
+        if not path.exists():
+            continue
+        root = etree.parse(str(path)).getroot()
+        x = lambda q, r=root: r.xpath(q, namespaces=NS)
+        notes = []
+        for note in x("//tei:note[@type='comm']"):
+            verse = lambda attr: int(note.get(attr).rsplit(".v", 1)[1])
+            notes.append({
+                "from": verse("target"), "to": verse("targetEnd"),
+                "lemma": note.findtext(f"{TEI}ref") or "",
+                "html": _rich(note, skip_ref=True),
+                "added": note.get("subtype") == "added",
+            })
+        bibl = x("//tei:sourceDesc/tei:bibl")[0]
+        items.append({
+            "id": d.name,
+            "author": x("string(//tei:titleStmt/tei:author)"),
+            "short": x("string(//tei:titleStmt/tei:title[@type='short'])"),
+            "year": int(x("string(//tei:sourceDesc/tei:bibl/tei:date/@when)")),
+            "bibl": " ".join((bibl.text or "").split()),
+            "source": x("string(//tei:sourceDesc/tei:bibl/tei:note[@type='source'])"),
+            "status": [" ".join("".join(t.itertext()).split()) for t in x("//tei:notesStmt/tei:note")],
+            "intro": [_rich(p) for p in x("//tei:note[@type='intro']")],
+            "notes": notes,
+        })
+    items.sort(key=lambda c: (c["year"], c["id"]))
+    return {"n": n, "roman": entry["roman"], "title": entry["title"], "slug": entry["slug"], "commentators": items}
+
+
 def build_site(
     manifest: list[dict], tei_dir: Path, out_dir: Path,
     team_dir: Path | None = None, facs_dir: Path | None = None, trad_dir: Path | None = None,
+    comm_dir: Path | None = None,
 ) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     index = []
@@ -191,6 +240,12 @@ def build_site(
             (out_dir / "facs").mkdir(exist_ok=True)
             (out_dir / "facs" / f"c{n}.json").write_text(
                 json.dumps(facsimile_json(entry, team_path, facs_path), ensure_ascii=False) + "\n", encoding="utf-8"
+            )
+        if comm_dir and any((d / f"c{n}.xml").exists() for d in Path(comm_dir).iterdir()):
+            entry = dict(entry, status=dict(entry["status"], commenti="provisional"))
+            (out_dir / "comm").mkdir(exist_ok=True)
+            (out_dir / "comm" / f"c{n}.json").write_text(
+                json.dumps(commentaries_json(entry, comm_dir), ensure_ascii=False) + "\n", encoding="utf-8"
             )
         if trad_dir and any((d / f"c{n}.xml").exists() for d in Path(trad_dir).iterdir()):
             entry = dict(entry, status=dict(entry["status"], traduco="provisional"))
@@ -207,7 +262,8 @@ def build_site(
 
 def main() -> int:
     manifest = load_manifest(paths.CANTI)
-    build_site(manifest, paths.TEI_BASE, paths.DATA, paths.TEI_GENETIC, paths.TEI_FACS, paths.ROOT / "tei" / "traduzioni")
+    build_site(manifest, paths.TEI_BASE, paths.DATA, paths.TEI_GENETIC, paths.TEI_FACS, paths.ROOT / "tei" / "traduzioni",
+               paths.ROOT / "tei" / "commenti")
     print(f"wrote {len(manifest)} poems to {paths.DATA}")
     return 0
 

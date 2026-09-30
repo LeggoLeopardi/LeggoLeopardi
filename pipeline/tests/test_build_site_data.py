@@ -119,3 +119,35 @@ def test_build_site_marks_poems_with_translations(tmp_path):
     build_site([dict(INFINITO_ENTRY, status=STATUS)], tei, out, trad_dir=TRAD)
     assert json.loads((out / "index.json").read_text(encoding="utf-8"))[0]["status"]["traduco"] == "provisional"
     assert (out / "trad" / "c12.json").is_file()
+
+
+from leggo_pipeline.build_site_data import commentaries_json
+
+COMM = paths.ROOT / "tei" / "commenti"
+
+
+def test_commentaries_json():
+    data = commentaries_json(dict(INFINITO_ENTRY, status=STATUS), COMM)
+    ids = [c["id"] for c in data["commentators"]]
+    assert ids == ["fornaciari_1889", "castagnola_1893", "straccali_1895", "straccali-antognoni_1919", "levi_1921"]  # by year
+    st = next(c for c in data["commentators"] if c["id"] == "straccali_1895")
+    assert st["short"] == "Straccali" and st["year"] == 1895 and st["bibl"].startswith("I canti di Giacomo Leopardi")
+    assert len(st["notes"]) == 10 and len(st["intro"]) == 2
+    first = st["notes"][0]
+    assert (first["from"], first["to"], first["lemma"]) == (1, 1, "ermo colle.")
+    assert first["html"].startswith("Il monte Tabor. «Il quale oggidì»")
+    assert "<em>Il passero solitario</em>" in first["html"]
+    assert st["intro"][1] == "<strong>Metrica.</strong> Endecasillabi sciolti."
+    ant = next(c for c in data["commentators"] if c["id"] == "straccali-antognoni_1919")
+    assert ant["notes"][0]["added"] is True and st["notes"][0]["added"] is False
+    fo = next(c for c in data["commentators"] if c["id"] == "fornaciari_1889")
+    assert (fo["notes"][0]["from"], fo["notes"][0]["to"]) == (1, 3)
+
+
+def test_build_site_marks_poems_with_commentaries(tmp_path):
+    tei, out = tmp_path / "tei", tmp_path / "out"
+    tei.mkdir()
+    (tei / "c12.xml").write_bytes(etree.tostring(infinito_tree(), xml_declaration=True, encoding="UTF-8"))
+    build_site([dict(INFINITO_ENTRY, status=STATUS)], tei, out, comm_dir=COMM)
+    assert json.loads((out / "index.json").read_text(encoding="utf-8"))[0]["status"]["commenti"] == "provisional"
+    assert (out / "comm" / "c12.json").is_file()

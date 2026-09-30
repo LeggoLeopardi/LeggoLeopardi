@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Commento a XII. L'infinito</title>
+<title type="short">Castagnola</title>
+<author>Paolo Emilio Castagnola</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dall'immagine della pagina, da verificare.</note>
+<note>Selezione: esempio: una nota.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Canti di Giacomo Leopardi con interpretazione e commento di Paolo Emilio Castagnola, per uso delle scuole, Firenze, Successori Le Monnier, 1893<date when="1893">1893</date><note type="source">commenti/Castagnola.pdf, p. 82 (pagina 104 del PDF)</note></bibl>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<div type="commentary" corresp="../../base/c12.xml#c12">
+<note type="comm" n="1" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v1"><ref>Ermo;</ref> solitario, deserto. Giacomo Leopardi era solito nella giovinezza di recarsi verso il tramonto sull'altura da lui qui descritta, e poco lunge dal caseggiato di Recanati.</note>
+</div>
+</body>
+</text>
+</TEI>

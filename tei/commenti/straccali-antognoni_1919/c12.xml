@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Commento a XII. L'infinito</title>
+<title type="short">Straccali–Antognoni</title>
+<author>Alfredo Straccali, Oreste Antognoni</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dall'immagine della pagina, da verificare.</note>
+<note>Selezione: esempio: una nota aggiunta da Antognoni.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>I canti di Giacomo Leopardi commentati da Alfredo Straccali, terza edizione corretta e accresciuta da Oreste Antognoni, Firenze, G. C. Sansoni, 1919<date when="1919">1919</date><note type="source">commenti/Canti_ Commentati da Alfredo Straccali_ … 1919 … Sansoni ….pdf, p. 38 (pagina 54 del PDF)</note></bibl>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<div type="commentary" corresp="../../base/c12.xml#c12">
+<note type="comm" n="1" target="../../base/c12.xml#c12.v4" targetEnd="../../base/c12.xml#c12.v4" subtype="added"><ref>mirando,</ref> cfr. la n. al v. 45 del canto <hi rend="italic">Il primo amore</hi>. — Il Tambara crede che sia associata alla visione delle cose immaginarie anche quella delle reali. Ben poca cosa egli vedeva, né la siepe poteva generare nella fantasia del poeta l'immensità degli spazî; impediva solo la vista di un panorama pur bello, ma senza paragone piú limitato di quello ideale.</note>
+</div>
+</body>
+</text>
+</TEI>
