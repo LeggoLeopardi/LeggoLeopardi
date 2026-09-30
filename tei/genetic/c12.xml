@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Canti</title>
+            <author>Giacomo Leopardi</author>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName xml:id="RP">Roberta Priore</persName>
+               <persName xml:id="BN">Beatrice Nava</persName>
+               <orgName>Alma Mater Studiorum - University of Bologna</orgName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <interpGrp>
+                  <interp xml:id="altVariant">Varianti alternative</interp>
+               </interpGrp>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>DH.ARC</publisher>
+            <pubPlace>Bologna</pubPlace>
+            <date>2025</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+                  4.0</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Giacomo Leopardi</author>
+               <title>Canti</title>
+               <publisher>Accademia della Crusca</publisher>
+               <pubPlace>Firenze</pubPlace>
+               <date>2009</date>
+               <editor>Franco Gavazzeni</editor>
+               <editor>Cristiano Animosi</editor>
+               <editor>Paola Italia</editor>
+               <editor>Maria Maddalena Lombardi</editor>
+               <editor>Federica Lucchesini</editor>
+               <editor>Rossano Pestarino</editor>
+               <editor>Sara Rosini</editor>
+            </bibl>
+            <bibl>
+               <author>Paola Italia</author>
+               <title>Proposta di edizione del quaderno napoletano</title>
+               <publisher>Carocci</publisher>
+               <pubPlace>Roma</pubPlace>
+               <date>2016</date>
+            </bibl>
+            <listWit>
+               <witness xml:id="AN">
+                  <msDesc type="ms">
+                     <msIdentifier>
+                        <settlement>Napoli</settlement>
+                        <repository>Biblioteca Nazionale «Vittorio Emanuele III»</repository>
+                        <idno>C.L. XIII.22</idno>
+                     </msIdentifier>
+                     <physDesc>
+                        <handDesc>
+                           <handNote corresp="#layer0" scope="major"/>
+                           <handNote corresp="#layer1" scope="minor"/>
+                           <handNote corresp="#layer2" scope="minor"/>
+                           <handNote corresp="#layer3" scope="minor"/>
+                        </handDesc>
+                     </physDesc>
+                  </msDesc>
+               </witness>
+               <witness xml:id="AV">
+                  <msDesc type="ms">
+                     <msIdentifier>
+                        <settlement>Visso</settlement>
+                        <repository>Archivio comunale di Visso</repository>
+                     </msIdentifier>
+                  </msDesc>
+               </witness>
+               <witness xml:id="NR25">
+                  <bibl>Nuovo ricoglitore 1825</bibl>
+               </witness>
+               <witness xml:id="B26">
+                  <bibl>Versi del Conte Giacomo Leopardi, Bologna, Stamperia delle Muse,
+                     1826.</bibl>
+               </witness>
+               <witness xml:id="F31">
+                  <bibl>Canti del Conte Giacomo Leopardi, Firenze, Piatti, 1831.</bibl>
+               </witness>
+               <witness xml:id="N35">
+                  <bibl>Opere di Giacomo Leopardi, Vol. I. Canti di Giacomo Leopardi, Napoli,
+                     Starita, 1835.</bibl>
+               </witness>
+               <witness xml:id="N35c">
+                  <bibl>Esemplare sciolto dell’edizione Starita con errori che vennero poi eliminati
+                     prima della tiratura di N35, su cui Leopardi fece correzioni e aggiunte per la
+                     stampa progettata da Baudry. </bibl>
+               </witness>
+            </listWit>
+         </sourceDesc>
+         
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <listChange corresp="#AN">
+               <change xml:id="layer0">Penna A <date when="1819" cert="high">1819</date></change>
+               <change xml:id="layer1">Penna B <date when="1820" cert="high">1820</date></change>
+               <change xml:id="layer2">Penna C <date when="1821" cert="high">1821</date></change>
+               <change xml:id="layer3">Penna D <date when="1825" cert="medium">1825</date></change>
+            </listChange>
+         </creation>
+      </profileDesc>
+      <encodingDesc>
+         <variantEncoding location="internal" method="parallel-segmentation"/>
+         <variantEncoding location="internal" method="double-end-point"/>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head><app>
+               <lem wit="#N35 #N35c">XII. | L'INFINITO.</lem>
+               <rdg wit="#AN">Idillio | L'Infinito</rdg>
+               <rdg wit="#AV">Idilli | MDCCCXIX V L'Infinito | Idillio I</rdg>
+               <rdg wit="#NR25">L'INFINITO. | Idillio I.</rdg>
+               <rdg wit="#B26">L'INFINITO | Idillio I</rdg>
+               <rdg wit="#F31">XI. | L'INFINITO.</rdg>
+            </app></head>
+         <lg>
+            <l n="1">Sempre caro mi fu quest’ermo <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">colle,</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">colle </mod><mod change="#layer3"
+                        type="reuse" seq="2">colle,</mod></rdg>
+               </app></l>
+            <l n="2">E questa <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">siepe,</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">siepe </mod><mod change="#layer3"
+                        type="reuse" seq="2">siepe,</mod></rdg>
+               </app>che da tanta parte</l>
+            <l n="3"><app>
+                  <lem wit="#N35 #N35c">Dell'ultimo orizzonte</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">Del celeste confine </mod><mod
+                        change="#layer1" type="reuse" seq="2">De l'ultimo orizzonte</mod></rdg>
+                  <rdg wit="#AV #NR25 #B26 #F31">De l'ultimo orizzonte</rdg>
+               </app> il guardo esclude.</l>
+            <l n="4">Ma sedendo e <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">mirando,</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">mirando </mod><mod change="#layer3"
+                        type="reuse" seq="2">mirando,</mod></rdg>
+               </app>
+               <anchor xml:id="v.4-5"/>interminati</l>
+            <l n="5">Spazi <app from="#v.4-5">
+                  <lem wit="#N35 #N35c">interminati / Spazi</lem>
+                  <rdg wit="#AN">
+                     <mod change="#layer0" seq="1">un infinito / spazio</mod>
+                     <mod change="#layer1" seq="2" type="reuse">interminato / spazio</mod></rdg>
+                  <rdg wit="#AV #NR25 #B26 #F31">interminato / spazio</rdg>
+               </app> di là da quella, e sovrumani</l>
+            <l n="6">Silenzi, e profondissima quiete</l>
+            <l n="7">Io <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">nel pensier mi</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">mi </mod><mod change="#layer0"
+                        type="immediate" seq="2">nel pensier mi</mod></rdg>
+               </app>
+               <app>
+                  <lem wit="#B26 #F31 #N35 #N35c">fingo;</lem>
+                  <rdg wit="#AN #AV #NR25">fingo,</rdg>
+               </app> ove per poco</l>
+            <l n="8">Il cor non si spaura. E come il vento</l>
+            <l n="9">Odo stormir <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">tra</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">fra </mod><mod change="#layer3"
+                        type="superscript" seq="2">tra</mod></rdg>
+               </app> queste piante, io quello</l>
+            <l n="10">Infinito silenzio a questa voce</l>
+            <l n="11">Vo <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">comparando: e</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">comparando. E </mod><mod
+                        change="#layer0" type="reuse" seq="2">comparando: e</mod></rdg>
+               </app> mi sovvien l’eterno,</l>
+            <l n="12">E le morte stagioni, e la presente</l>
+            <l n="13">E viva, <app>
+                  <lem wit="#N35 #N35c">e il</lem>
+                  <rdg wit=" #AN" resp="#BN #RP"><mod change="#layer0" seq="1">e' l</mod><mod
+                        change="#layer0" type="immediate" seq="2">e 'l</mod></rdg>
+                  <rdg wit="#AV #NR25 #B26 #F31">e 'l</rdg>
+               </app> suon di lei. Così <app>
+                  <lem wit="#AV #NR25 #B26 #F31 #N35 #N35c">tra</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">fra</mod>
+                     <mod change="#layer1" type="superscript" seq="2">tra</mod></rdg>
+               </app> questa</l>
+            <l n="14"><app>
+                  <lem wit="#F31 #N35 #N35c">Immensità s’annega il pensier mio:</lem>
+                  <rdg wit="#AN"><mod change="#layer0" seq="1">Immensit<subst>
+                           <del>ade</del>
+                           <add>à</add>
+                        </subst> il mio pensier s'annega, </mod><mod change="#layer1" type="reuse"
+                        seq="2">Infinità s'annega il pensier mio;</mod>
+                     <mod change="#layer3" type="reuse" seq="3">Infinità s'annega il pensier
+                        mio:</mod></rdg>
+                  <rdg wit="#AV"><mod seq="1">immensità s'annega il pensier mio: </mod><mod
+                        type="reuse" seq="2">Infinità s'annega il pensier mio:</mod></rdg>
+                  <rdg wit="#NR25 #B26">Infinità s'annega il pensier mio:</rdg>
+               </app></l>
+            <l n="15">E <app>
+                  <lem wit="#N35 #N35c">il</lem>
+                  <rdg wit="#AN #AV #NR25 #B26 #F31">'l</rdg>
+               </app> naufragar m’è dolce in questo mare.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

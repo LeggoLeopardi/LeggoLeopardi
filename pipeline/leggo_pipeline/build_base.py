@@ -36,13 +36,13 @@ def _el(parent, tag: str, text: str | None = None, **attrs: str):
     return el
 
 
-def _layout(root) -> None:
+def _layout(root, structural: set[str] = STRUCTURAL) -> None:
     for el in root.iter():
         name = etree.QName(el).localname
-        if name in STRUCTURAL and len(el) and not (el.text and el.text.strip()):
+        if name in structural and len(el) and not (el.text and el.text.strip()):
             el.text = "\n"
         parent = el.getparent()
-        if parent is not None and etree.QName(parent).localname in STRUCTURAL and not (el.tail and el.tail.strip()):
+        if parent is not None and etree.QName(parent).localname in structural and not (el.tail and el.tail.strip()):
             el.tail = "\n"
 
 
