@@ -97,10 +97,9 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 
 /* facsimile (text and page aligned) */
 .facs { padding-block: clamp(20px, 4vw, 40px); }
-.wtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 6px; font-family: var(--label); }
+.wtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 20px; font-family: var(--label); }
 .wtab { text-decoration: none; padding: 3px 12px; border: 1px solid var(--tint); border-radius: 3px; color: var(--main); }
 .wtab.on { background: var(--main); border-color: var(--main); color: var(--paper); }
-.hint { color: var(--muted); font-size: 1rem; margin: 4px 0 16px; }
 .facs-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; }
 .wlabel { font-size: 1rem; color: var(--muted); margin: 0 0 .6em; }
 .facs-head { font-weight: 500; color: var(--dark); font-size: 1.4rem; line-height: 1.2; margin: 0 0 .8em; }

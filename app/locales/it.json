@@ -39,13 +39,11 @@
     "witnesses": "Testimoni",
     "variants": "Varianti",
     "title": "Titolo",
-    "hint": "Passa sopra un verso per vederlo sulla pagina, e viceversa. Clic su una parola sottolineata per le varianti.",
     "text": "Testo di {{w}}",
     "alt": "Pagina di L’infinito in {{w}}",
     "caption": "Pagina di {{w}} (immagine WikiLeopardi). Clic per ingrandire.",
     "noZones": "Per questa pagina l’allineamento verso per verso non è ancora disponibile.",
     "credit": "Testo e varianti: codifica TEI di {{credits}} (DH.ARC, Università di Bologna). Immagini dei facsimili: WikiLeopardi.",
-    "provisional": "Provvisorio",
     "close": "Chiudi",
     "popover": "Varianti"
   }

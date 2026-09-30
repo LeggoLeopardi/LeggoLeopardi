@@ -91,3 +91,9 @@ test('the popover has everything it needs in the page', async () => {
   assert.match(res.text, /<button type="button" class="popover-close"/);
   for (let k = 1; k <= 14; k += 1) assert.match(res.text, new RegExp(`<li id="place-p${k}">`));
 });
+
+test('no instructions or provisional notice on the facsimile page', async () => {
+  const res = await request(app).get(`/leggo/${inf}/facsimile`);
+  assert.doesNotMatch(res.text, /class="hint"/);
+  assert.doesNotMatch(res.text, /Provvisorio|Provisional/);
+});
