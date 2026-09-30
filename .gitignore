@@ -5,3 +5,4 @@ __pycache__/
 .venv/
 pipeline/cache/
 .DS_Store
+.superpowers/
