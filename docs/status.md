@@ -15,6 +15,7 @@ Last updated: 2026-09-30.
 | 1a Skeleton: N35c base text of all 41 Canti from WikiLeopardi, Leggo view, CI, deploy | **Done** (PR #1, 2026-09-30) |
 | *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (branch `infinito-facsimile`) |
 | Traduco for *L'infinito*: 19 translations (EN, FR, DE, ES, RU), whole poem side by side | **Done** (`/traduco/12`) |
+| Leggo = commented reading of *L'infinito* (example notes from 5 editions); former Leggo renamed Confronto | **Done** (`/leggo/12`, `/confronto/12`) |
 | 1b rest: Collaziono (parked plan on branch `phase-1b-collation`), commentaries in Leggo, Concordanza; verse alignment of translations (after the admin panel) | Next |
 | 1c Other poems | – |
 | 2 Team workspace | – |
@@ -60,6 +61,13 @@ Last updated: 2026-09-30.
 - Cliffe 1893 and 1896 are two versions (revised wording). Sainte-Beuve: one text, two sources (Zecchini's transcription and Wikisource).
 - To review: De Montlaur's text opens with the Italian verse *E il naufragar…* (as in Zecchini's transcription); Amiel's verse line breaks were lost in the transcription; Pomyan, Ivanov and Tkhorzhevsky are OCR, not collated.
 - On phones the columns stack (Italian, then the translation) instead of a switch.
+
+## Commentaries (Leggo)
+
+- Source: `pipeline/commenti.json`, transcribed by reading the page images on 2026-09-30 (not the OCR text layer); TEI in `tei/commenti/`.
+- Straccali 1895: all 10 notes on *L'infinito* plus introduction and metre. One note each (examples) from Straccali–Antognoni 1919 (v. 4, added by Antognoni), Fornaciari 1889 (vv. 1–3), Castagnola 1893 (v. 1), G. A. Levi 1921 (v. 1).
+- The file named "Battistelli 1921" is G. A. Levi's commentary (Firenze, Battistelli 1921), not on Flori's list.
+- No notes to use: Mestica 1886 (text edition without commentary), Scherillo 1900 (no notes on the verses of *L'infinito*), Cappelletti 1881 (anthology without *L'infinito*).
 
 ## Open items
 

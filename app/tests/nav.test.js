@@ -45,14 +45,17 @@ test('the navbar keeps the current poem and hides modules that do not exist yet'
   let nav = navbar(await get(`/traduco/${inf}`));
   assert.match(nav, new RegExp(`<a href="/leggo/${inf}" class="">Leggo</a>`));
   assert.match(nav, new RegExp(`<a href="/traduco/${inf}" class="on">Traduco</a>`));
+  assert.match(nav, new RegExp(`<a href="/confronto/${inf}" class="">Confronto</a>`));
   nav = navbar(await get(`/leggo/${plain}`));
   assert.match(nav, /<a href="\/traduco" class="">Traduco<\/a>/);
+  assert.match(nav, /<a href="\/confronto" class="">Confronto<\/a>/);
   assert.doesNotMatch(nav, /Collaziono|Concordanza/);
 });
 
 test('the printed title belongs to the text, the same in every view', async () => {
   assert.match(await get(`/leggo/${plain}`), /<p class="print-head"><span>XXVIII\.<\/span><span>A SE STESSO\.<\/span><\/p>/);
   assert.match(await get(`/leggo/${inf}`), /<p class="print-head">/);
+  assert.match(await get(`/confronto/${inf}`), /<p class="print-head">/);
   assert.match(await get(`/traduco/${inf}`), /<p class="print-head"><span>XII\.<\/span><span>L(?:'|&#39;)INFINITO\.<\/span><\/p>/);
 });
 
