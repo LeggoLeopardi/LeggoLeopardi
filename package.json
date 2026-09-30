@@ -1,0 +1,25 @@
+{
+  "name": "leggoleopardi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LeggoLeopardi: digital edition of Leopardi's Canti",
+  "main": "app/app.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node app/server.js",
+    "dev": "node --watch app/server.js",
+    "test": "node --test app/tests/*.test.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.22.3",
+    "i18n": "^0.15.4"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.0"
+  }
+}

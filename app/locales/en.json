@@ -1,0 +1,25 @@
+{
+  "nav": { "label": "Modules", "soon": "Coming soon" },
+  "home": {
+    "eyebrow": "Digital edition of the Canti · University of Bologna",
+    "lede": "The Canti in the text of the corrected copy of the Starita edition (N35c), with historical commentaries, verse-by-verse translations and the collation of the printed editions.",
+    "readInfinito": "Read L’infinito",
+    "index": "Index of the Canti",
+    "canti": "The Canti",
+    "vignetteAlt": "Page 62 of the Canti, Naples, Starita 1835: XII. L’infinito",
+    "vignetteCaption": "<i>Canti</i>, Naples, Starita 1835, p. 62: XII. L’infinito. Corrected copy (N35c). Image: WikiLeopardi."
+  },
+  "status": { "none": "coming soon", "provisional": "provisional text", "verified": "verified" },
+  "leggo": {
+    "choose": "Choose a poem",
+    "go": "Go",
+    "source": {
+      "provisional": "Provisional text (WikiLeopardi transcription, to be verified)",
+      "verified": "Verified text"
+    },
+    "missingVerse": "[verse missing in the source]",
+    "unnumbered": "line without a number in the source"
+  },
+  "notFound": { "title": "Page not found", "body": "The page you asked for does not exist.", "home": "Back to the start" },
+  "footer": "Leggo Leopardi · DH.ARC, University of Bologna"
+}

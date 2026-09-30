@@ -1,0 +1,25 @@
+{
+  "nav": { "label": "Moduli", "soon": "In preparazione" },
+  "home": {
+    "eyebrow": "Edizione digitale dei Canti · Università di Bologna",
+    "lede": "I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i commenti storici, le traduzioni verso per verso e la collazione delle stampe.",
+    "readInfinito": "Leggi L’infinito",
+    "index": "Indice dei Canti",
+    "canti": "I Canti",
+    "vignetteAlt": "Pagina 62 dei Canti, Napoli, Starita 1835: XII. L’infinito",
+    "vignetteCaption": "<i>Canti</i>, Napoli, Starita 1835, p. 62: XII. L’infinito. Esemplare corretto (N35c). Immagine: WikiLeopardi."
+  },
+  "status": { "none": "in preparazione", "provisional": "testo provvisorio", "verified": "verificato" },
+  "leggo": {
+    "choose": "Scegli un canto",
+    "go": "Vai",
+    "source": {
+      "provisional": "Testo provvisorio (trascrizione WikiLeopardi, da verificare)",
+      "verified": "Testo verificato"
+    },
+    "missingVerse": "[verso mancante nella fonte]",
+    "unnumbered": "riga senza numero nella fonte"
+  },
+  "notFound": { "title": "Pagina non trovata", "body": "La pagina richiesta non esiste.", "home": "Torna all’inizio" },
+  "footer": "Leggo Leopardi · DH.ARC, Università di Bologna"
+}
