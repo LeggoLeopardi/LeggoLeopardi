@@ -40,3 +40,13 @@ test('language switch rejects backslash tricks that browsers read as //', async 
     assert.equal(res.headers.location, '/', next);
   }
 });
+
+test('no status tags in the poem list and no source badge in Leggo; WikiLeopardi credited in the footer', async () => {
+  const home = (await request(app).get('/')).text;
+  assert.doesNotMatch(home, /class="st /);
+  const leggo = (await request(app).get('/leggo/12')).text;
+  assert.doesNotMatch(leggo, /class="badge"/);
+  for (const html of [home, leggo]) {
+    assert.match(html.slice(html.indexOf('<footer')), /WikiLeopardi/);
+  }
+});

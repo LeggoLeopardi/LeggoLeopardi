@@ -21,7 +21,7 @@
     <div class="wrap">
       <h2><%= __('home.canti') %></h2>
       <ol class="canti">
-        <% canti.forEach((p) => { %><li class="canto"><span class="num"><%= p.roman %></span><a class="t" href="/leggo/<%= p.n %>"><%= p.title || p.incipit %></a><span class="st st-<%= p.status.leggo %>"><%= __('status.' + p.status.leggo) %></span></li>
+        <% canti.forEach((p) => { %><li class="canto"><span class="num"><%= p.roman %></span><a class="t" href="/leggo/<%= p.n %>"><%= p.title || p.incipit %></a></li>
         <% }) %>
       </ol>
     </div>

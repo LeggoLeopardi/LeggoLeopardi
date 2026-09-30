@@ -12,18 +12,9 @@
     "vignetteAlt": "Page 62 of the Canti, Naples, Starita 1835: XII. L’infinito",
     "vignetteCaption": "<i>Canti</i>, Naples, Starita 1835, p. 62: XII. L’infinito. Corrected copy (N35c). Image: WikiLeopardi."
   },
-  "status": {
-    "none": "coming soon",
-    "provisional": "provisional text",
-    "verified": "verified"
-  },
   "leggo": {
     "choose": "Choose a poem",
     "go": "Go",
-    "source": {
-      "provisional": "Provisional text (WikiLeopardi transcription, to be verified)",
-      "verified": "Verified text"
-    },
     "missingVerse": "[verse missing in the source]",
     "unnumbered": "line without a number in the source",
     "facsimile": "Text, variants and facsimile"
@@ -46,5 +37,6 @@
     "credit": "Text and variants: TEI encoding by {{credits}} (DH.ARC, University of Bologna). Facsimile images: WikiLeopardi.",
     "close": "Close",
     "popover": "Variants"
-  }
+  },
+  "footerSource": "Base text: WikiLeopardi transcription of the corrected copy of the Starita edition (N35c)."
 }
