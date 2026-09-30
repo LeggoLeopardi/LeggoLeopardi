@@ -85,3 +85,37 @@ def test_build_site_marks_poems_with_facsimile(tmp_path):
     index = json.loads((out / "index.json").read_text(encoding="utf-8"))
     assert index[0]["status"]["facsimile"] == "provisional"
     assert (out / "facs" / "c12.json").is_file()
+
+
+from leggo_pipeline.build_site_data import translations_json
+
+TRAD = paths.ROOT / "tei" / "traduzioni"
+
+
+def test_translations_json(tmp_path):
+    base = tmp_path / "c12.xml"
+    base.write_bytes(etree.tostring(infinito_tree(), xml_declaration=True, encoding="UTF-8"))
+    data = translations_json(dict(INFINITO_ENTRY, status=STATUS), TRAD, base)
+    ids = [t["id"] for t in data["translations"]]
+    assert len(ids) == 19
+    assert ids[:4] == ["de_arentsschildt_1847", "de_hoffinger_1868", "en_townsend_1887", "en_cliffe_1893"]
+    assert ids[-1] == "ru_akhmatova_1967" or ids[-1].startswith("ru_")
+    sb = next(t for t in data["translations"] if t["id"] == "fr_sainte-beuve_1844")
+    assert sb["lang"] == "fr" and sb["translator"] == "Charles-Augustin Sainte-Beuve" and sb["year"] == 1844
+    assert sb["title"] == ["L’infini"]
+    assert sb["bibl"].startswith("Sainte- Beve C. A. de, «Revue des deux mondes»")
+    assert [s["label"] for s in sb["sources"]][1] == "Wikisource" and sb["sources"][1]["url"].startswith("https://fr.wikisource")
+    assert sb["stanzas"][0][0] == "J’aimai toujours ce point de colline déserte,"
+    assert sb["form"] == "verse" and sb["rights"] == "Pubblico dominio"
+    aulard = next(t for t in data["translations"] if t["id"] == "fr_aulard_1880")
+    assert aulard["form"] == "prose" and aulard["title"] == ["XII", "L’INFINI.", "(1819.)"]
+    assert [i["text"] for i in data["italian"]["stanzas"][0]][0] == "Sempre caro mi fu quest’ermo colle,"
+
+
+def test_build_site_marks_poems_with_translations(tmp_path):
+    tei, out = tmp_path / "tei", tmp_path / "out"
+    tei.mkdir()
+    (tei / "c12.xml").write_bytes(etree.tostring(infinito_tree(), xml_declaration=True, encoding="UTF-8"))
+    build_site([dict(INFINITO_ENTRY, status=STATUS)], tei, out, trad_dir=TRAD)
+    assert json.loads((out / "index.json").read_text(encoding="utf-8"))[0]["status"]["traduco"] == "provisional"
+    assert (out / "trad" / "c12.json").is_file()
