@@ -132,7 +132,7 @@ def test_commentaries_json():
     assert ids == ["fornaciari_1889", "castagnola_1893", "straccali_1895", "straccali-antognoni_1919", "levi_1921"]  # by year
     st = next(c for c in data["commentators"] if c["id"] == "straccali_1895")
     assert st["short"] == "Straccali" and st["year"] == 1895 and st["bibl"].startswith("I canti di Giacomo Leopardi")
-    assert len(st["notes"]) == 10 and len(st["intro"]) == 2
+    assert len(st["notes"]) == 15 and len(st["intro"]) == 2
     first = st["notes"][0]
     assert (first["from"], first["to"], first["lemma"]) == (1, 1, "ermo colle.")
     assert first["html"].startswith("Il monte Tabor. «Il quale oggidì»")
@@ -141,7 +141,7 @@ def test_commentaries_json():
     ant = next(c for c in data["commentators"] if c["id"] == "straccali-antognoni_1919")
     assert ant["notes"][0]["added"] is True and st["notes"][0]["added"] is False
     fo = next(c for c in data["commentators"] if c["id"] == "fornaciari_1889")
-    assert (fo["notes"][0]["from"], fo["notes"][0]["to"]) == (1, 3)
+    assert [(n["from"], n["to"], n["lemma"]) for n in fo["notes"]] == [(1, 1, "Sempre caro mi fu quest'ermo colle."), (2, 3, "che da tanta parte, ec."), (3, 3, "esclude,")]
 
 
 def test_build_site_marks_poems_with_commentaries(tmp_path):

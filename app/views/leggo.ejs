@@ -46,7 +46,7 @@
       <% cview.sel.intro.forEach((para) => { %><p class="cintro"><%- para %></p><% }) %>
       <ol class="cnotes"><% cview.sel.notes.forEach((nt) => { %><%- note(cview.sel, nt, false) %><% }) %></ol>
     <% } else { %>
-      <% cview.groups.forEach((g) => { %><div class="cgroup" data-v="<%= g.v %>"><ol class="cnotes"><% g.items.forEach(({ c, nt }) => { %><%- note(c, nt, true) %><% }) %></ol></div>
+      <% cview.groups.forEach((g) => { %><div class="cgroup" data-v="<%= g.v %>"><ol class="cnotes"><% g.items.forEach(({ c, nt }, i) => { %><%- note(c, nt, i === 0 || g.items[i - 1].c !== c) %><% }) %></ol></div>
       <% }) %>
     <% } %>
 

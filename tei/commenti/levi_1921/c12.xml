@@ -15,7 +15,7 @@
 </publicationStmt>
 <notesStmt>
 <note>Trascrizione dall'immagine della pagina, da verificare.</note>
-<note>Selezione: esempio: una nota.</note>
+<note>Selezione: esempio: le note al v. 1.</note>
 </notesStmt>
 <sourceDesc>
 <bibl>Giacomo Leopardi, Canti, con introduzione e note di Giulio Augusto Levi, Firenze, Luigi Battistelli, 1921<date when="1921">1921</date><note type="source">commenti/Leopardi_-_Canti,_Battistelli_1921.djvu, p. 131</note></bibl>
@@ -25,7 +25,9 @@
 <text>
 <body>
 <div type="commentary" corresp="../../base/c12.xml#c12">
-<note type="comm" n="1" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v1"><ref>Sempre caro mi fu:</ref> l'ermo colle non è insigne per bellezza, anzi umile; ma caro al poeta per il motivo che dirà. <hi rend="bold">ermo,</hi> solitario. <hi rend="bold">colle,</hi> il M. Tabor, di cui vedi <hi rend="italic">Il passero solitario</hi>, n. al v. 1.</note>
+<note type="comm" n="1" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v1"><ref>Sempre caro mi fu:</ref> l'ermo colle non è insigne per bellezza, anzi umile; ma caro al poeta per il motivo che dirà.</note>
+<note type="comm" n="2" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v1"><ref>ermo,</ref> solitario.</note>
+<note type="comm" n="3" target="../../base/c12.xml#c12.v1" targetEnd="../../base/c12.xml#c12.v1"><ref>colle,</ref> il M. Tabor, di cui vedi <hi rend="italic">Il passero solitario</hi>, n. al v. 1.</note>
 </div>
 </body>
 </text>

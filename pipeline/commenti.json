@@ -1,5 +1,5 @@
 {
-  "_about": "Commentaries per poem, transcribed by reading the page images (not the OCR layer) on 2026-09-30; to be checked. Inline marks: *italic*, **bold**. verses: [from, to]. added: a note marked * (added in a later edition).",
+  "_about": "Commentaries per poem, transcribed by reading the page images (not the OCR layer) on 2026-09-30; to be checked. Inline marks: *italic*, **bold**. verses: [from, to]. One note per lemma: a printed paragraph with several lemmas (— **ove.** …) is split into one note each. added: a note marked * (added in a later edition).",
   "12": [
     {"id": "straccali_1895", "author": "Alfredo Straccali", "short": "Straccali", "year": 1895,
      "bibl": "I canti di Giacomo Leopardi commentati da Alfredo Straccali, 2ª edizione riveduta e corretta, Firenze, G. C. Sansoni, 1895",
@@ -14,11 +14,16 @@
        {"verses": [2, 3], "lemma": "che da tanta ecc.:", "text": "la quale esclude, chiude fuori, il guardo da tanta parte dell'ultimo orizzonte; ossia, impedisce la vista di tanta parte dell'estremo orizzonte."},
        {"verses": [4, 5], "lemma": "interminati Spazi.", "text": "È l'infinito nello spazio. — Var. [Ric. '25; B. '26; F. '31] *interminato Spazio*."},
        {"verses": [5, 5], "lemma": "di là da quella:", "text": "oltre quella siepe. Il poeta, che è seduto, non vede, sensibilmente, che la siepe e il cielo."},
-       {"verses": [7, 8], "lemma": "fingo,", "text": "immagino. — **ove.** Mi par da riferire, come fa il Mestica, comprensivamente a *spazi ... silenzi ... quiete* ... — **per poco ecc.**: poco manca che il cuore non impaurisca, sbigottisca. *Spaurare* e *spaurarsi* son forme care al nostro. Cfr. *La vita solitaria*, 89; *Amore e Morte*, 34: *Palinodia*, 273."},
+       {"verses": [7, 7], "lemma": "fingo,", "text": "immagino."},
+       {"verses": [7, 7], "lemma": "ove.", "text": "Mi par da riferire, come fa il Mestica, comprensivamente a *spazi ... silenzi ... quiete* ..."},
+       {"verses": [7, 8], "lemma": "per poco ecc.:", "text": "poco manca che il cuore non impaurisca, sbigottisca. *Spaurare* e *spaurarsi* son forme care al nostro. Cfr. *La vita solitaria*, 89; *Amore e Morte*, 34: *Palinodia*, 273."},
        {"verses": [8, 8], "lemma": "come:", "text": "allorché, quando."},
-       {"verses": [9, 10], "lemma": "quello Infinito silenzio:", "text": "cioè l'infinito silenzio, la profondissima quiete che e' si finge nel pensiero. — **a questa voce**: al suono, allo stormir del vento."},
+       {"verses": [9, 10], "lemma": "quello Infinito silenzio:", "text": "cioè l'infinito silenzio, la profondissima quiete che e' si finge nel pensiero."},
+       {"verses": [10, 10], "lemma": "a questa voce:", "text": "al suono, allo stormir del vento."},
        {"verses": [11, 11], "lemma": "l'eterno:", "text": "l'eternità. È l'infinito nel tempo."},
-       {"verses": [12, 13], "lemma": "le morte stagioni:", "text": "le età trascorse. — **e la presente.** Intendi *stagione*. Il suono di una età, la vita fuggente di una generazione nella infinità del tempo, è al poeta come un fiato di vento nel silenzio infinito di spazî interminati. Qui hai il sublime! — **Suon.** Cfr. *La sera del di di festa*, 33."},
+       {"verses": [12, 12], "lemma": "le morte stagioni:", "text": "le età trascorse."},
+       {"verses": [12, 12], "lemma": "e la presente.", "text": "Intendi *stagione*. Il suono di una età, la vita fuggente di una generazione nella infinità del tempo, è al poeta come un fiato di vento nel silenzio infinito di spazî interminati. Qui hai il sublime!"},
+       {"verses": [13, 13], "lemma": "Suon.", "text": "Cfr. *La sera del di di festa*, 33."},
        {"verses": [14, 14], "lemma": "Immensità.", "text": "È l'infinito nello spazio e nel tempo. — Var. [Ric. '25; B. '26] *Infinità*."}
      ]},
     {"id": "straccali-antognoni_1919", "author": "Alfredo Straccali, Oreste Antognoni", "short": "Straccali–Antognoni", "year": 1919,
@@ -31,9 +36,11 @@
     {"id": "fornaciari_1889", "author": "Raffaello Fornaciari", "short": "Fornaciari", "year": 1889,
      "bibl": "Poesie di Giacomo Leopardi scelte e commentate a uso delle scuole dal professore Raffaello Fornaciari, Firenze, G. Barbèra, 1889",
      "source": "commenti/Fornaciari_Poesie_di_Giacomo_Leopardi_scelte_e_comm.pdf, p. 83 (pagina 110 del PDF)",
-     "selection": "esempio: una nota",
+     "selection": "esempio: le note ai vv. 1-3",
      "notes": [
-       {"verses": [1, 3], "lemma": "Sempre caro mi fu quest'ermo colle.", "text": "«Uscendo dalla città per la Porta di Monte Morello, la più vicina al palazzo Leopardi, Giacomo, quando facea la passeggiata a ponente, solea recarsi per un piccolo sentiero al colle detto popolarmente Monte Tabor che signoreggia.... la valle sottoposta e tutta la Marca occidentale fino agli Appennini.... A' tempi del poeta.... era veramente *ermo* (romito), folto di alberi e irto di sterpi a maniera di siepi.» Mestica. — *che da tanta parte,* ec. Costruisci: «che esclude il guardo da tanta parte (cioè, da una parte così estesa) del più lontano orizzonte.» — *esclude,* cioè, serra fuori, separa, impedisce."}
+       {"verses": [1, 1], "lemma": "Sempre caro mi fu quest'ermo colle.", "text": "«Uscendo dalla città per la Porta di Monte Morello, la più vicina al palazzo Leopardi, Giacomo, quando facea la passeggiata a ponente, solea recarsi per un piccolo sentiero al colle detto popolarmente Monte Tabor che signoreggia.... la valle sottoposta e tutta la Marca occidentale fino agli Appennini.... A' tempi del poeta.... era veramente *ermo* (romito), folto di alberi e irto di sterpi a maniera di siepi.» Mestica."},
+       {"verses": [2, 3], "lemma": "che da tanta parte, ec.", "text": "Costruisci: «che esclude il guardo da tanta parte (cioè, da una parte così estesa) del più lontano orizzonte.»"},
+       {"verses": [3, 3], "lemma": "esclude,", "text": "cioè, serra fuori, separa, impedisce."}
      ]},
     {"id": "castagnola_1893", "author": "Paolo Emilio Castagnola", "short": "Castagnola", "year": 1893,
      "bibl": "Canti di Giacomo Leopardi con interpretazione e commento di Paolo Emilio Castagnola, per uso delle scuole, Firenze, Successori Le Monnier, 1893",
@@ -45,9 +52,11 @@
     {"id": "levi_1921", "author": "Giulio Augusto Levi", "short": "Levi", "year": 1921,
      "bibl": "Giacomo Leopardi, Canti, con introduzione e note di Giulio Augusto Levi, Firenze, Luigi Battistelli, 1921",
      "source": "commenti/Leopardi_-_Canti,_Battistelli_1921.djvu, p. 131",
-     "selection": "esempio: una nota",
+     "selection": "esempio: le note al v. 1",
      "notes": [
-       {"verses": [1, 1], "lemma": "Sempre caro mi fu:", "text": "l'ermo colle non è insigne per bellezza, anzi umile; ma caro al poeta per il motivo che dirà. **ermo,** solitario. **colle,** il M. Tabor, di cui vedi *Il passero solitario*, n. al v. 1."}
+       {"verses": [1, 1], "lemma": "Sempre caro mi fu:", "text": "l'ermo colle non è insigne per bellezza, anzi umile; ma caro al poeta per il motivo che dirà."},
+       {"verses": [1, 1], "lemma": "ermo,", "text": "solitario."},
+       {"verses": [1, 1], "lemma": "colle,", "text": "il M. Tabor, di cui vedi *Il passero solitario*, n. al v. 1."}
      ]}
   ]
 }
