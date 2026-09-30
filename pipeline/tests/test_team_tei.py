@@ -53,3 +53,14 @@ def test_place_marks_and_the_two_verse_variant():
     assert [s for s, pid in POEM.texts["B26"]["verses"][5] if pid == four_five.id] == ["spazio"]
     assert len(POEM.places) == 14
     assert [p.verses for p in POEM.places][:3] == [[0], [1], [2]]
+
+
+def test_compare_with_base_reports_differences():
+    from leggo_pipeline.build_facsimile import compare_with_base
+
+    base = {n: "".join(t for t, _ in POEM.texts["N35c"]["verses"][n]) for n in range(1, 16)}
+    assert compare_with_base(POEM, base) == []
+    base[2] = "E questa siepe, che da tanta parte"
+    assert compare_with_base(POEM, base) == [
+        "v2: team TEI 'E questa siepe,che da tanta parte' ≠ WikiLeopardi 'E questa siepe, che da tanta parte'"
+    ]

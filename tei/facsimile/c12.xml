@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XII. L'infinito (facsimili delle stampe)</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Allineamento provvisorio testo-immagine, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Immagini: WikiLeopardi. Zone dei versi: rilevamento semi-automatico.</bibl>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<facsimile>
+<surface n="NR25" ulx="0" uly="0" lrx="1200" lry="1812" xml:id="c12.NR25">
+<graphic url="/img/facs/c12-NR25.jpg" width="1200px" height="1812px"/>
+<zone n="1" ulx="234" uly="605" lrx="698" lry="635" xml:id="c12.NR25.v1"/>
+<zone n="2" ulx="230" uly="635" lrx="750" lry="664" xml:id="c12.NR25.v2"/>
+<zone n="3" ulx="264" uly="664" lrx="828" lry="694" xml:id="c12.NR25.v3"/>
+<zone n="4" ulx="264" uly="694" lrx="707" lry="724" xml:id="c12.NR25.v4"/>
+<zone n="5" ulx="265" uly="724" lrx="753" lry="754" xml:id="c12.NR25.v5"/>
+<zone n="6" ulx="264" uly="754" lrx="792" lry="784" xml:id="c12.NR25.v6"/>
+<zone n="7" ulx="264" uly="784" lrx="833" lry="814" xml:id="c12.NR25.v7"/>
+<zone n="8" ulx="265" uly="814" lrx="816" lry="844" xml:id="c12.NR25.v8"/>
+<zone n="9" ulx="269" uly="844" lrx="770" lry="874" xml:id="c12.NR25.v9"/>
+<zone n="10" ulx="268" uly="874" lrx="736" lry="903" xml:id="c12.NR25.v10"/>
+<zone n="11" ulx="266" uly="903" lrx="828" lry="933" xml:id="c12.NR25.v11"/>
+<zone n="12" ulx="266" uly="933" lrx="860" lry="963" xml:id="c12.NR25.v12"/>
+<zone n="13" ulx="266" uly="963" lrx="801" lry="993" xml:id="c12.NR25.v13"/>
+<zone n="14" ulx="239" uly="993" lrx="672" lry="1022" xml:id="c12.NR25.v14"/>
+<zone n="15" ulx="265" uly="1022" lrx="772" lry="1042" xml:id="c12.NR25.v15"/>
+</surface>
+<surface n="B26" ulx="0" uly="0" lrx="560" lry="924" xml:id="c12.B26">
+<graphic url="/img/facs/c12-B26.jpg" width="560px" height="924px"/>
+<zone n="1" ulx="74" uly="358" lrx="391" lry="383" xml:id="c12.B26.v1"/>
+<zone n="2" ulx="72" uly="383" lrx="369" lry="407" xml:id="c12.B26.v2"/>
+<zone n="3" ulx="74" uly="407" lrx="404" lry="431" xml:id="c12.B26.v3"/>
+<zone n="4" ulx="72" uly="431" lrx="373" lry="455" xml:id="c12.B26.v4"/>
+<zone n="5" ulx="71" uly="455" lrx="375" lry="479" xml:id="c12.B26.v5"/>
+<zone n="6" ulx="71" uly="479" lrx="327" lry="504" xml:id="c12.B26.v6"/>
+<zone n="7" ulx="69" uly="504" lrx="386" lry="528" xml:id="c12.B26.v7"/>
+<zone n="8" ulx="69" uly="528" lrx="390" lry="551" xml:id="c12.B26.v8"/>
+<zone n="9" ulx="68" uly="551" lrx="407" lry="575" xml:id="c12.B26.v9"/>
+<zone n="10" ulx="69" uly="575" lrx="318" lry="599" xml:id="c12.B26.v10"/>
+<zone n="11" ulx="68" uly="599" lrx="399" lry="623" xml:id="c12.B26.v11"/>
+<zone n="12" ulx="69" uly="623" lrx="353" lry="646" xml:id="c12.B26.v12"/>
+<zone n="13" ulx="68" uly="646" lrx="412" lry="669" xml:id="c12.B26.v13"/>
+<zone n="14" ulx="69" uly="669" lrx="337" lry="693" xml:id="c12.B26.v14"/>
+<zone n="15" ulx="69" uly="693" lrx="414" lry="716" xml:id="c12.B26.v15"/>
+</surface>
+<surface n="F31" ulx="0" uly="0" lrx="1200" lry="1812" xml:id="c12.F31">
+<graphic url="/img/facs/c12-F31.jpg" width="1200px" height="1812px"/>
+<zone n="1" ulx="188" uly="549" lrx="784" lry="594" xml:id="c12.F31.v1"/>
+<zone n="2" ulx="185" uly="594" lrx="728" lry="637" xml:id="c12.F31.v2"/>
+<zone n="3" ulx="185" uly="637" lrx="813" lry="682" xml:id="c12.F31.v3"/>
+<zone n="4" ulx="173" uly="682" lrx="749" lry="727" xml:id="c12.F31.v4"/>
+<zone n="5" ulx="185" uly="727" lrx="750" lry="770" xml:id="c12.F31.v5"/>
+<zone n="6" ulx="187" uly="770" lrx="874" lry="819" xml:id="c12.F31.v6"/>
+<zone n="7" ulx="185" uly="819" lrx="770" lry="866" xml:id="c12.F31.v7"/>
+<zone n="8" ulx="186" uly="866" lrx="775" lry="911" xml:id="c12.F31.v8"/>
+<zone n="9" ulx="185" uly="911" lrx="821" lry="956" xml:id="c12.F31.v9"/>
+<zone n="10" ulx="185" uly="956" lrx="645" lry="1002" xml:id="c12.F31.v10"/>
+<zone n="11" ulx="185" uly="1002" lrx="817" lry="1047" xml:id="c12.F31.v11"/>
+<zone n="12" ulx="185" uly="1047" lrx="712" lry="1090" xml:id="c12.F31.v12"/>
+<zone n="13" ulx="185" uly="1090" lrx="807" lry="1136" xml:id="c12.F31.v13"/>
+<zone n="14" ulx="187" uly="1136" lrx="936" lry="1184" xml:id="c12.F31.v14"/>
+<zone n="15" ulx="184" uly="1184" lrx="823" lry="1229" xml:id="c12.F31.v15"/>
+</surface>
+<surface n="N35" ulx="0" uly="0" lrx="1200" lry="1812" xml:id="c12.N35">
+<graphic url="/img/facs/c12-N35.jpg" width="1200px" height="1812px"/>
+<zone n="1" ulx="297" uly="499" lrx="915" lry="547" xml:id="c12.N35.v1"/>
+<zone n="2" ulx="297" uly="547" lrx="986" lry="593" xml:id="c12.N35.v2"/>
+<zone n="3" ulx="298" uly="593" lrx="972" lry="637" xml:id="c12.N35.v3"/>
+<zone n="4" ulx="298" uly="637" lrx="942" lry="683" xml:id="c12.N35.v4"/>
+<zone n="5" ulx="298" uly="683" lrx="857" lry="731" xml:id="c12.N35.v5"/>
+<zone n="6" ulx="298" uly="731" lrx="878" lry="780" xml:id="c12.N35.v6"/>
+<zone n="7" ulx="300" uly="780" lrx="913" lry="827" xml:id="c12.N35.v7"/>
+<zone n="8" ulx="300" uly="827" lrx="906" lry="873" xml:id="c12.N35.v8"/>
+<zone n="9" ulx="303" uly="873" lrx="943" lry="919" xml:id="c12.N35.v9"/>
+<zone n="10" ulx="301" uly="919" lrx="943" lry="966" xml:id="c12.N35.v10"/>
+<zone n="11" ulx="301" uly="966" lrx="950" lry="1012" xml:id="c12.N35.v11"/>
+<zone n="12" ulx="301" uly="1012" lrx="844" lry="1056" xml:id="c12.N35.v12"/>
+<zone n="13" ulx="301" uly="1056" lrx="971" lry="1102" xml:id="c12.N35.v13"/>
+<zone n="14" ulx="302" uly="1102" lrx="857" lry="1148" xml:id="c12.N35.v14"/>
+<zone n="15" ulx="304" uly="1148" lrx="960" lry="1192" xml:id="c12.N35.v15"/>
+</surface>
+<surface n="N35c" ulx="0" uly="0" lrx="1200" lry="1864" xml:id="c12.N35c">
+<graphic url="/img/facs/c12-N35c.jpg" width="1200px" height="1864px"/>
+<zone n="1" ulx="301" uly="566" lrx="888" lry="610" xml:id="c12.N35c.v1"/>
+<zone n="2" ulx="301" uly="610" lrx="948" lry="653" xml:id="c12.N35c.v2"/>
+<zone n="3" ulx="302" uly="653" lrx="890" lry="696" xml:id="c12.N35c.v3"/>
+<zone n="4" ulx="302" uly="696" lrx="935" lry="740" xml:id="c12.N35c.v4"/>
+<zone n="5" ulx="303" uly="740" lrx="917" lry="783" xml:id="c12.N35c.v5"/>
+<zone n="6" ulx="303" uly="783" lrx="940" lry="827" xml:id="c12.N35c.v6"/>
+<zone n="7" ulx="304" uly="827" lrx="880" lry="870" xml:id="c12.N35c.v7"/>
+<zone n="8" ulx="305" uly="870" lrx="942" lry="914" xml:id="c12.N35c.v8"/>
+<zone n="9" ulx="307" uly="914" lrx="942" lry="959" xml:id="c12.N35c.v9"/>
+<zone n="10" ulx="286" uly="959" lrx="749" lry="1003" xml:id="c12.N35c.v10"/>
+<zone n="11" ulx="307" uly="1003" lrx="918" lry="1047" xml:id="c12.N35c.v11"/>
+<zone n="12" ulx="309" uly="1047" lrx="863" lry="1088" xml:id="c12.N35c.v12"/>
+<zone n="13" ulx="310" uly="1088" lrx="920" lry="1130" xml:id="c12.N35c.v13"/>
+<zone n="14" ulx="312" uly="1130" lrx="834" lry="1175" xml:id="c12.N35c.v14"/>
+<zone n="15" ulx="314" uly="1175" lrx="928" lry="1218" xml:id="c12.N35c.v15"/>
+</surface>
+</facsimile>
+</TEI>

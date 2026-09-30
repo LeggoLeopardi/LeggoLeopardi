@@ -207,5 +207,14 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
+def base_verses(path: Path) -> dict[int, str | None]:
+    """Numbered verses of tei/base/c{n}.xml; None for a verse missing in the source."""
+    root = etree.parse(str(path)).getroot()
+    out: dict[int, str | None] = {}
+    for l in root.iter(f"{{{TEI_NS}}}l"):
+        if l.get("n") and etree.QName(l.getparent()).localname == "lg":
+            out[int(l.get("n"))] = None if l.find(f"{{{TEI_NS}}}gap") is not None else "".join(l.itertext())
+    return out
+
 if __name__ == "__main__":
     sys.exit(main())

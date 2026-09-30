@@ -10,6 +10,7 @@ from lxml import etree
 
 from . import paths
 from .manifest import load_manifest
+from .team_tei import read_team_poem
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
@@ -73,19 +74,90 @@ def poem_json(entry: dict, tei_path: Path) -> dict:
     }
 
 
-def build_site(manifest: list[dict], tei_dir: Path, out_dir: Path) -> None:
+def _esc(s: str | None) -> str:
+    return html.escape(s or "", quote=False)
+
+
+def _segments_html(segs) -> str:
+    out = []
+    for text, pid in segs:
+        if pid:
+            out.append(f'<a class="place" href="#place-{pid}" data-place="{pid}">{_esc(text)}</a>')
+        else:
+            out.append(_esc(text))
+    return "".join(out)
+
+
+def facsimile_json(entry: dict, team_path: Path, facs_path: Path) -> dict:
+    """Text of every witness (with its variant places marked), page images and verse zones in percent."""
+    team = read_team_poem(team_path)
+    facs = etree.parse(str(facs_path)).getroot()
+    surfaces = {}
+    for s in facs.iter(f"{TEI}surface"):
+        w, h = float(s.get("lrx")), float(s.get("lry"))
+        zones = {
+            z.get("n"): [
+                round(100 * int(z.get("ulx")) / w, 2), round(100 * int(z.get("uly")) / h, 2),
+                round(100 * (int(z.get("lrx")) - int(z.get("ulx"))) / w, 2),
+                round(100 * (int(z.get("lry")) - int(z.get("uly"))) / h, 2),
+            ]
+            for z in s.findall(f"{TEI}zone")
+        }
+        surfaces[s.get("n")] = {"image": s.find(f"{TEI}graphic").get("url"), "zones": zones or None}
+    witnesses = []
+    for wit in team.witnesses:
+        sig = wit["siglum"]
+        text = team.texts[sig]
+        surface = surfaces.get(sig, {"image": None, "zones": None})
+        witnesses.append({
+            "siglum": sig,
+            "label": wit["label"],
+            "image": surface["image"],
+            "zones": surface["zones"],
+            "head": [_segments_html(line) for line in text["head"]],
+            "verses": [{"n": n, "html": _segments_html(segs)} for n, segs in sorted(text["verses"].items())],
+        })
+    places = {
+        p.id: {
+            "verses": p.verses,
+            "readings": [
+                dict(r, layers=[dict(l, label=team.layers.get(l["layer"])) for l in r["layers"]])
+                for r in p.readings
+            ],
+        }
+        for p in team.places
+    }
+    return {
+        "n": entry["n"], "roman": entry["roman"], "title": entry["title"], "slug": entry["slug"],
+        "credits": team.credits, "layers": team.layers, "witnesses": witnesses, "places": places,
+    }
+
+
+def build_site(
+    manifest: list[dict], tei_dir: Path, out_dir: Path,
+    team_dir: Path | None = None, facs_dir: Path | None = None,
+) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     index = []
     for entry in manifest:
-        data = poem_json(entry, Path(tei_dir) / f"c{entry['n']}.xml")
-        (out_dir / f"c{entry['n']}.json").write_text(json.dumps(data, ensure_ascii=False) + "\n", encoding="utf-8")
+        n = entry["n"]
+        team_path = Path(team_dir) / f"c{n}.xml" if team_dir else None
+        facs_path = Path(facs_dir) / f"c{n}.xml" if facs_dir else None
+        if team_path and facs_path and team_path.exists() and facs_path.exists():
+            entry = dict(entry, status=dict(entry["status"], facsimile="provisional"))
+            (out_dir / "facs").mkdir(exist_ok=True)
+            (out_dir / "facs" / f"c{n}.json").write_text(
+                json.dumps(facsimile_json(entry, team_path, facs_path), ensure_ascii=False) + "\n", encoding="utf-8"
+            )
+        data = poem_json(entry, Path(tei_dir) / f"c{n}.xml")
+        (out_dir / f"c{n}.json").write_text(json.dumps(data, ensure_ascii=False) + "\n", encoding="utf-8")
         index.append({k: data[k] for k in INDEX_KEYS})
     (out_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def main() -> int:
     manifest = load_manifest(paths.CANTI)
-    build_site(manifest, paths.TEI_BASE, paths.DATA)
+    build_site(manifest, paths.TEI_BASE, paths.DATA, paths.TEI_GENETIC, paths.TEI_FACS)
     print(f"wrote {len(manifest)} poems to {paths.DATA}")
     return 0
 
