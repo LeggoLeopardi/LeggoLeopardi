@@ -16,8 +16,7 @@
     "choose": "Choose a poem",
     "go": "Go",
     "missingVerse": "[verse missing in the source]",
-    "unnumbered": "line without a number in the source",
-    "facsimile": "Text, variants and facsimile"
+    "unnumbered": "line without a number in the source"
   },
   "notFound": {
     "title": "Page not found",

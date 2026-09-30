@@ -38,7 +38,13 @@ app.get('/leggo', (req, res) => {
 app.get('/leggo/:n', (req, res, next) => {
   const poem = data.poem(req.params.n);
   if (!poem) return next();
-  res.render('leggo', { poem, title: `${poem.roman}. ${poem.title || poem.incipit}` });
+  const title = `${poem.roman}. ${poem.title || poem.incipit}`;
+  const facs = data.facsimile(poem.n);
+  if (!facs) return res.render('leggo', { poem, title });
+  // Poems with the team TEI and page images open in the text–variants–facsimile view.
+  const imaged = facs.witnesses.filter((w) => w.image);
+  const sel = imaged.find((w) => w.siglum === req.query.w) || imaged.find((w) => w.siglum === 'N35c') || imaged[0];
+  return res.render('facsimile', { poem, facs, imaged, sel, credits: facs.credits, title });
 });
 
 app.get('/lang/:code', (req, res) => {
@@ -48,13 +54,12 @@ app.get('/lang/:code', (req, res) => {
   res.redirect(next);
 });
 
+// The facsimile view became the default Leggo view for its poems; keep old links working.
 app.get('/leggo/:n/facsimile', (req, res, next) => {
   const poem = data.poem(req.params.n);
-  const facs = poem && data.facsimile(poem.n);
-  if (!facs) return next();
-  const imaged = facs.witnesses.filter((w) => w.image);
-  const sel = imaged.find((w) => w.siglum === req.query.w) || imaged.find((w) => w.siglum === 'N35c') || imaged[0];
-  res.render('facsimile', { poem, facs, imaged, sel, credits: facs.credits, title: `${poem.roman}. ${poem.title || poem.incipit} · Facsimile` });
+  if (!poem) return next();
+  const w = typeof req.query.w === 'string' && /^[A-Z]{1,4}\d{2}c?$/.test(req.query.w) ? `?w=${req.query.w}` : '';
+  res.redirect(301, `/leggo/${poem.n}${w}`);
 });
 
 app.use((req, res) => res.status(404).render('404'));
