@@ -3,12 +3,15 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import sys
+import unicodedata
 from pathlib import Path
 
 from lxml import etree
 
 from . import paths
+from .build_base import base_verses
 from .manifest import load_manifest
 from .team_tei import read_team_poem
 
@@ -189,9 +192,54 @@ def _rich(el, skip_ref: bool = False) -> str:
     return "".join(parts).strip()
 
 
-def commentaries_json(entry: dict, comm_dir: Path) -> dict:
+def _fold(text: str) -> tuple[str, list[int]]:
+    """Text for matching only (lower case, no accents, ’ as '), with each folded char's index in the original."""
+    out, where = [], []
+    for i, ch in enumerate(text):
+        for f in unicodedata.normalize("NFD", ch.replace("’", "'")).lower():
+            if not unicodedata.combining(f):
+                out.append(f)
+                where.append(i)
+    return "".join(out), where
+
+
+def lemma_spans(lemma: str, verses: dict[int, str | None], frm: int, to: int) -> list[list[int]]:
+    """Where a note's lemma stands in its verses: [verse, start, end] offsets into each verse's text; [] if not found.
+    A lemma cut short with "ecc."/"ec." is matched on the words before it."""
+    words = re.split(r"\s+(?:ecc?\.|\.\.\.|…).*$", lemma.strip())[0].strip(" .,:;!?")
+    if not words:
+        return []
+    joined, owner = "", []  # the verses joined by one space; owner[i] = (verse, offset) of joined[i]
+    for v in range(frm, to + 1):
+        text = verses.get(v)
+        if text is None:
+            continue
+        if joined:
+            joined += " "
+            owner.append(None)
+        joined += text
+        owner += [(v, i) for i in range(len(text))]
+    hay, where = _fold(joined)
+    needle = r"\s+".join(re.escape(w) for w in _fold(words)[0].split())
+    m = re.search(rf"(?<!\w){needle}(?!\w)", hay)
+    if not m:
+        return []
+    spans: list[list[int]] = []
+    for i in range(where[m.start()], where[m.end() - 1] + 1):
+        if owner[i] is None:
+            continue
+        v, off = owner[i]
+        if spans and spans[-1][0] == v and spans[-1][2] == off:
+            spans[-1][2] = off + 1
+        else:
+            spans.append([v, off, off + 1])
+    return spans
+
+
+def commentaries_json(entry: dict, comm_dir: Path, base_path: Path | None = None) -> dict:
     """Every commentator's notes on the poem, oldest edition first."""
     n = entry["n"]
+    verses = base_verses(base_path) if base_path else {}
     items = []
     for d in sorted(Path(comm_dir).iterdir()):
         path = d / f"c{n}.xml"
@@ -202,9 +250,11 @@ def commentaries_json(entry: dict, comm_dir: Path) -> dict:
         notes = []
         for note in x("//tei:note[@type='comm']"):
             verse = lambda attr: int(note.get(attr).rsplit(".v", 1)[1])
+            frm, to, lemma = verse("target"), verse("targetEnd"), note.findtext(f"{TEI}ref") or ""
             notes.append({
-                "from": verse("target"), "to": verse("targetEnd"),
-                "lemma": note.findtext(f"{TEI}ref") or "",
+                "from": frm, "to": to,
+                "lemma": lemma,
+                "spans": lemma_spans(lemma, verses, frm, to),
                 "html": _rich(note, skip_ref=True),
                 "added": note.get("subtype") == "added",
             })
@@ -245,7 +295,7 @@ def build_site(
             entry = dict(entry, status=dict(entry["status"], commenti="provisional"))
             (out_dir / "comm").mkdir(exist_ok=True)
             (out_dir / "comm" / f"c{n}.json").write_text(
-                json.dumps(commentaries_json(entry, comm_dir), ensure_ascii=False) + "\n", encoding="utf-8"
+                json.dumps(commentaries_json(entry, comm_dir, Path(tei_dir) / f"c{n}.xml"), ensure_ascii=False) + "\n", encoding="utf-8"
             )
         if trad_dir and any((d / f"c{n}.xml").exists() for d in Path(trad_dir).iterdir()):
             entry = dict(entry, status=dict(entry["status"], traduco="provisional"))
