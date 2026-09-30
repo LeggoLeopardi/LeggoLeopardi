@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>L’infini</title>
+<author>Charles-Augustin Sainte-Beuve</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+<note>Su Wikisource lo stesso testo, con spazi tipografici diversi prima di «:» e «;».</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Sainte- Beve C. A. de, «Revue des deux mondes», pp. 916- 940.<date when="1844">1844</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Francia traduzioni.docx, tabella 2)</bibl>
+<bibl type="source">Wikisource<ptr target="https://fr.wikisource.org/wiki/L%E2%80%99Infini_%28trad._Sainte-Beuve%29"/></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="fr"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="fr">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>L’infini</head>
+<lg>
+<l>J’aimai toujours ce point de colline déserte,</l>
+<l>Avec sa haie au bord, qui clôt la vue ouverte,</l>
+<l>Et m’empêche d’atteindre à l’extrême horizon.</l>
+<l>Je m’assieds: ma pensée a franchi le buisson;</l>
+<l>L’espace d’au-delà m’en devient plus immense,</l>
+<l>Et le calme profond, et l’infini silence,</l>
+<l>Me sont comme un abîme; et mon cœur bien souvent</l>
+<l>En frissonne tout bas. Puis, comme aussi le vent</l>
+<l>Fait bruit dans le feuillage, à mon gré je ramène</l>
+<l>Ce lointain de silence à cette voix prochaine:</l>
+<l>Le grand âge éternel m’apparaît, avec lui</l>
+<l>Tant de mortes saisons, et celle d’aujourd’hui,</l>
+<l>Vague écho. Ma pensée ainsi plonge à la nage,</l>
+<l>Et sur ces mers sans fin j’aime jusqu’au naufrage.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Бесконечность</title>
+<author>Ivan Tkhorzhevsky (Иван Тхоржевский)</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (Tkhorzhevsky m. 1951); trascrizione OCR dall'antologia del 1992</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Antologia «Итальянская поэзия», 1992</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="ru"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="ru">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>Бесконечность</head>
+<lg>
+<l>Мне дорог этот одинокий холм</l>
+<l>И эта изгородь: она далёко</l>
+<l>Здесь тянется, до края горизонта!</l>
+</lg>
+<lg>
+<l>Сидишь и долго смотришь: там, за нею,</l>
+<l>Даль бесконечна. В душу проникает</l>
+<l>Глубокая, немая тишина,</l>
+<l>Покой надмирный,—и невольный трепет</l>
+<l>Смиряется. Когда же на мгновенье</l>
+<l>Зашелестит вблизи кустами ветер,—</l>
+<l>Я сравниваю бедный этот звук</l>
+<l>С той необъятной, ровной тишиною.</l>
+<l>И вспоминаю прошлое, и вечность,</l>
+<l>И нашей жизни мимолетный шум...</l>
+<l>Так в бесконечном тонет мысль моя.</l>
+<l>Но сладко мне исчезнуть в этом море!</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

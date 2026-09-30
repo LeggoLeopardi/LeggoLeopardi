@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Бесконечность</title>
+<author>Anna Akhmatova (Анна Ахматова)</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Protetto da diritto d'autore (Akhmatova m. 1966, Naiman m. 2022); pubblicato per decisione del progetto del 30 settembre 2026</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Giacomo Leopardi, Лирика, 1967<date when="1967">1967</date></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="ru"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="ru">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>Бесконечность</head>
+<lg>
+<l>Всегда был мил мне этот холм пустынный</l>
+<l>И изгородь, отнявшая у взгляда</l>
+<l>Большую часть по краю горизонта.</l>
+<l>Но, сидя здесь и глядя вдаль, пространства</l>
+<l>Бескрайние за ними, и молчанье</l>
+<l>Неведомое, и покой глубокий</l>
+<l>Я представляю в мыслях; оттого</l>
+<l>Почти в испуге сердце. И когда</l>
+<l>Услышу ветерка в деревьях шелест,</l>
+<l>Я с этим шумом сравниваю то</l>
+<l>Молчанье бесконечное: и вечность,</l>
+<l>И умершие года времена,</l>
+<l>И нынешнее, звучное, живое,</l>
+<l>Приходят мне на ум. И среди этой</l>
+<l>Безмерности все мысли исчезают,</l>
+<l>И сладостно тонуть мне в этом море.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

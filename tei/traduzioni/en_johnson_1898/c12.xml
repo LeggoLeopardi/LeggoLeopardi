@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>L’infinito</title>
+<author>W. K. Johnson</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>W. K. Johnson, Giacomo Leopardi-Poet Philosopher, in «The fortnightly review», pp. 17-35.<date when="1898">1898</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Regno Unito traduzioni.docx, tabella 9)</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="en"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="en">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>L’infinito</head>
+<lg>
+<l>This lonely hill was always dear to me</l>
+<l>This hedgerow that defends the wandering eye</l>
+<l>From sight of far horizons Yet when here Seated in contemplation when the mind Imagines space on space boundless beyond, Their sovran silences abysmal calm,</l>
+<l>The heart is stilled with awe And while the wind</l>
+<l>Moans in the leaves its voices side by side Challenge that vast afar So I recall</l>
+<l>Time everlasting all past seasons dead</l>
+<l>The murmur of living hours their voice their sound:</l>
+<l>Then the mind sinks in shoreless oceans merged,</l>
+<l>Yet makes sweet shipwreck upon those calm seas.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Бесконечное</title>
+<author>Vyacheslav Ivanov (Вячеслав Иванов)</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (Ivanov m. 1949); trascrizione OCR dall'antologia del 1992</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Antologia «Итальянская поэзия», 1992</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="ru"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="ru">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>Бесконечное</head>
+<lg>
+<l>Всегда любил я холм пустынный этот</l>
+<l>И изгороди терен, отеснивший</l>
+<l>Пред взором край последних отдалений.</l>
+<l>Я там сижу, гляжу—и беспредельность</l>
+<l>Пространств за терном тесным, и безмолвий</l>
+<l>Нечеловеческих покой сверхмирный</l>
+<l>Впечатлеваю в дух,—и к сердцу близко</l>
+<l>Приступит ужас... Слышу: ветр шуршащий</l>
+<l>Отронул заросль,—и сличаю в мыслях</l>
+<l>Ту тишину глубокого покоя</l>
+<l>И этот голос,—и воспомню вечность,</l>
+<l>И мертвые века, и время наше,</l>
+<l>Живущий век, и звук его... Так помысл</l>
+<l>В неизмеримости плывет—и тонет,</l>
+<l>И сладко мне крушенье в этом море.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

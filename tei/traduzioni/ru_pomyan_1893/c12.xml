@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Безконечность</title>
+<author>Vladimir Pomyan (Владимир Помян)</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (1893); trascrizione OCR, non collazionata</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Vladimir Pomyan, traduzione dei Canti, 1893<date when="1893">1893</date></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="ru"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="ru">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>Безконечность</head>
+<lg>
+<l>Мнѣ этотъ милъ всегда уединенный холмъ</l>
+<l>И эта изгородь, которая скрываетъ</l>
+<l>Отъ взора моего далекій небосклонъ.</l>
+<l>Недвижно здѣсь сижу, но мысль моя несется</l>
+<l>Туда, за этотъ холмъ, въ безбрежныя пространства,</l>
+<l>Сверхчеловѣческій покой я постигаю</l>
+<l>И тишь глубокую, — и страхъ объемлетъ сердце.</l>
+<l>Вотъ вѣтръ въ кустахъ шумитъ, — и сравнивать го-</l>
+<l>товъ</l>
+</lg>
+<lg>
+<l>Я этотъ шумъ съ покоемъ безконечнымъ;</l>
+<l>Я думаю о вѣчности тогда,</l>
+<l>Минувшіе вѣка я вспоминаю</l>
+<l>И настоящій вѣкъ, и суету его.</l>
+<l>Такъ въ необъятномъ тонетъ мысль моя,</l>
+<l>И сладко мнѣ погибнуть въ этомъ морѣ.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

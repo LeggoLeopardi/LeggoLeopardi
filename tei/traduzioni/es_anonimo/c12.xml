@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>El infinito</title>
+<author>Anonimo</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio (es.wikisource)</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>El infinito (traducción de Wikisource)</bibl>
+<bibl type="source">Wikisource<ptr target="https://es.wikisource.org/wiki/El_infinito_%28traducci%C3%B3n_de_Wikisource%29"/></bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="es"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="es">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>El infinito</head>
+<lg>
+<l>Siempre querido me fue este yermo cerro</l>
+<l>y este cerco que tanta parte</l>
+<l>del último horizonte la mirada excluye.</l>
+<l>Mas, sentado y mirando interminables</l>
+<l>espacios de allá lejos, sobrehumanos</l>
+<l>silencios y su hondísima quietud,</l>
+<l>me quedo enmimismado hasta que casi</l>
+<l>el corazón no tiembla. Y como el viento</l>
+<l>cuyo tráfago escucho entre las hojas, a este</l>
+<l>silencio sin fin esta voz</l>
+<l>voy comparando, y me acuerdo de lo eterno</l>
+<l>y de las muertas estaciones y la presente y viva,</l>
+<l>y sus sonidos. Así a través de esta</l>
+<l>inmensidad se ahoga el pensamiento mío;</l>
+<l>y naufragar en este mar me es dulce.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

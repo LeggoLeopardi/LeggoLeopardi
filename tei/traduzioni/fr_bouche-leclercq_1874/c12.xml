@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>L’infinito</title>
+<author>Bouché-Leclercq</author>
+</titleStmt>
+<publicationStmt>
+<publisher>LeggoLeopardi</publisher>
+<availability>
+<p>Pubblico dominio</p>
+</availability>
+</publicationStmt>
+<notesStmt>
+<note>Trascrizione dalla fonte indicata, non collazionata.</note>
+</notesStmt>
+<sourceDesc>
+<bibl>Bouché- Leclerq, Giacomo leopardi. Sa vie et ses oeuvres.<date when="1874">1874</date></bibl>
+<bibl type="source">Trascrizione di Sofia Zecchini (Zecchini_Francia traduzioni.docx, tabella 7)</bibl>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<langUsage>
+<language ident="fr"/>
+</langUsage>
+</profileDesc>
+</teiHeader>
+<text xml:lang="fr">
+<body>
+<div type="translation" corresp="../../base/c12.xml#c12">
+<head>L’infinito</head>
+<p>Elle me fut toujours chère, cette colline déserte et cette haie qui cache au regard sur une si grande étendue les profondeurs de l'horizon. Mais, assis et en contemplation, je me figure par-delà des espaces illimités, des silences surhumains et un repos absolu, où peu s'en faut que le cœur ne s'épouvante : et comme j'entends le vent frémir dans ces broussailles, je me prends à comparer le silence infini à ce murmure ; et je pense à l'éternité, aux âges passés, à celui qui vit présentement et au bruit qu'il mène. Ainsi, ma pensée se noie dans cette immensité et le naufrage m'est doux dans cette mer.</p>
+</div>
+</body>
+</text>
+</TEI>
