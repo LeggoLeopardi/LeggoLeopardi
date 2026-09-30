@@ -1,6 +1,7 @@
 <%- include('partials/head') %>
 <%- include('partials/nav') %>
 <main class="wrap facs">
+  <%- include('partials/poem-select') %>
   <h1 class="poem-head"><span><%= poem.roman %>. <%= poem.title || poem.incipit %></span></h1>
 
   <nav class="wtabs" aria-label="<%= __('facs.witnesses') %>">

@@ -16,8 +16,7 @@
     "choose": "Scegli un canto",
     "go": "Vai",
     "missingVerse": "[verso mancante nella fonte]",
-    "unnumbered": "riga senza numero nella fonte",
-    "facsimile": "Testo, varianti e facsimile"
+    "unnumbered": "riga senza numero nella fonte"
   },
   "notFound": {
     "title": "Pagina non trovata",

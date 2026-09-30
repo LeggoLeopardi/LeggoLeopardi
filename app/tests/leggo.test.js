@@ -16,13 +16,11 @@ test('every canto has a Leggo page', async () => {
   }
 });
 
-test("L'infinito renders all 15 verses exactly, numbered every 5", async () => {
-  const n = index.find((p) => p.slug === 'l-infinito').n;
+test('a text-only poem renders all its verses exactly, numbered every 5', async () => {
+  const n = index.find((p) => p.slug === 'a-se-stesso').n;
   const res = await request(app).get(`/leggo/${n}`);
-  assert.match(res.text, /Sempre caro mi fu quest’ermo colle,/);
-  assert.match(res.text, /Dell'ultimo orizzonte il guardo esclude\./);
-  assert.match(res.text, /E il naufragar m’è dolce in questo mare\./);
-  assert.equal((res.text.match(/<p class="verse/g) || []).length, 15);
+  assert.match(res.text, /Or poserai per sempre,/);
+  assert.equal((res.text.match(/<p class="verse/g) || []).length, 16);
   assert.match(res.text, /<span class="vn">5<\/span>/);
   assert.doesNotMatch(res.text, /<span class="vn">4<\/span>/);
 });
