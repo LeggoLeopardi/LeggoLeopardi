@@ -16,7 +16,7 @@ test("L'infinito: N35c text next to its page, one zone per verse", async () => {
   const res = await request(app).get(`/leggo/${inf}`);
   assert.equal(res.status, 200);
   assert.deepEqual(tabs(res.text), ['NR25', 'B26', 'F31', 'N35', 'N35c']);
-  assert.match(res.text, /class="wtab on" aria-current="page"[^>]*>N35c</);
+  assert.match(res.text, /class="wtab on" aria-current="page"><span>N35c<\/span>/);
   assert.match(res.text, /<img src="\/img\/facs\/c12-N35c.jpg"/);
   assert.equal(zones(res.text), 15);
   assert.equal((res.text.match(/<p class="fverse" id="v\d+" data-v="\d+">/g) || []).length, 15);
@@ -75,13 +75,10 @@ test('L\'infinito opens in the facsimile view; other poems keep the text view; o
   assert.equal((await request(app).get('/js/facsimile.js')).status, 200);
 });
 
-test('the poem selector changes poem by itself; the button exists only without JavaScript', async () => {
-  for (const n of [inf, index.find((p) => p.n !== inf).n]) {
-    const html = (await request(app).get(`/leggo/${n}`)).text;
-    assert.match(html, /<select id="poem-select" name="n" onchange="this.form.submit\(\)">/);
-    assert.match(html, /<noscript><button type="submit">/);
-    assert.equal((html.match(/<button type="submit">/g) || []).length, 1);
-  }
+test('the witness description is a tooltip on its tab, not a line of text', async () => {
+  const html = (await request(app).get(`/leggo/${inf}`)).text;
+  assert.doesNotMatch(html, /class="wlabel"/);
+  assert.match(html, /<a href="\?w=B26" data-w="B26" class="wtab"[^>]*><span>B26<\/span><span class="tip" role="tooltip">Versi del Conte Giacomo Leopardi, Bologna/);
 });
 
 test('credits are in the footer, not at the top; no breadcrumb', async () => {

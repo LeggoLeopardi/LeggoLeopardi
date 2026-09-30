@@ -13,11 +13,17 @@ const get = async (url) => (await request(app).get(url)).text;
 const navbar = (html) => html.slice(html.indexOf('<nav class="links"'), html.indexOf('</nav>'));
 const tabs = (html) => [...html.matchAll(/<a href="(\/\w+\/\d+)" class="ptab( on)?"/g)].map((m) => `${m[1]}${m[2] ? '*' : ''}`);
 
-test('the page title is the poem selector, with no visible label', async () => {
+test('the title opens a list of the poems (no dropdown, no label)', async () => {
   const html = await get(`/leggo/${plain}`);
-  assert.match(html, /<h1 class="poem-title">/);
-  assert.match(html, /<option value="28" selected>XXVIII\. A se stesso<\/option>/);
-  assert.match(html, /<label for="poem-select" class="visually-hidden">/);
+  assert.match(html, /<details class="poem-picker"><summary><h1 class="poem-title">XXVIII\. A se stesso<\/h1><\/summary>/);
+  assert.doesNotMatch(html, /<select id="poem-select"/);
+  const items = html.slice(html.indexOf('<ol class="picker"'), html.indexOf('</ol>', html.indexOf('<ol class="picker"')));
+  assert.equal((items.match(/<li/g) || []).length, index.length);
+  assert.match(items, /<a href="\/leggo\/28" aria-current="page">/);
+  const trad = await get(`/traduco/${inf}`);
+  const tItems = trad.slice(trad.indexOf('<ol class="picker"'), trad.indexOf('</ol>', trad.indexOf('<ol class="picker"')));
+  assert.equal((tItems.match(/<a href=/g) || []).length, 1); // only L'infinito has translations
+  assert.match(tItems, /<span class="off">/);
 });
 
 test('previous and next poem arrows follow the module', async () => {
@@ -30,10 +36,9 @@ test('previous and next poem arrows follow the module', async () => {
   assert.doesNotMatch(html, /class="step (prev|next)"/); // only one poem has translations
 });
 
-test('poem tabs show the modules this poem has', async () => {
-  assert.deepEqual(tabs(await get(`/leggo/${inf}`)), [`/leggo/${inf}*`, `/traduco/${inf}`]);
-  assert.deepEqual(tabs(await get(`/traduco/${inf}`)), [`/leggo/${inf}`, `/traduco/${inf}*`]);
-  assert.deepEqual(tabs(await get(`/leggo/${plain}`)), []);
+test('no duplicate module tabs under the title', async () => {
+  assert.doesNotMatch(await get(`/leggo/${inf}`), /class="ptabs"/);
+  assert.doesNotMatch(await get(`/traduco/${inf}`), /class="ptabs"/);
 });
 
 test('the navbar keeps the current poem and hides modules that do not exist yet', async () => {

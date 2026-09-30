@@ -36,18 +36,16 @@ const MODULES = [
   { mod: 'traduco', has: (n) => Boolean(data.translations(n)) },
 ];
 
-/** Poem header data: selector options, previous/next poem within the module, and the poem's module tabs. */
+/** Poem header data: the list of poems (available ones as links), previous/next poem within the module. */
 function poemNav(poem, mod) {
   const has = MODULES.find((m) => m.mod === mod).has;
   const list = data.index().filter((p) => has(p.n));
   const i = list.findIndex((p) => p.n === poem.n);
-  const tabs = MODULES.filter((m) => m.has(poem.n)).map((m) => ({ mod: m.mod, href: `/${m.mod}/${poem.n}`, on: m.mod === mod }));
   return {
     mod,
     prev: i > 0 ? list[i - 1] : null,
     next: i >= 0 && i < list.length - 1 ? list[i + 1] : null,
-    tabs: tabs.length > 1 ? tabs : [],
-    options: data.index().map((p) => ({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}`, disabled: !has(p.n) })),
+    options: data.index().map((p) => ({ n: p.n, roman: p.roman, title: p.title || p.incipit, disabled: !has(p.n) })),
   };
 }
 

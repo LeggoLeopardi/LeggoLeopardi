@@ -28,8 +28,9 @@ test('the Italian text next to the first translation, the pickers grouped by lan
   assert.match(res.text, /<select id="t-select" name="t" onchange="this.form.submit\(\)"/);
   assert.deepEqual([...res.text.matchAll(/<optgroup label="([^"]+)">/g)].map((m) => m[1]).slice(0, 5),
     ['Tedesco', 'Inglese', 'Spagnolo', 'Francese', 'Russo']);
-  assert.match(res.text, /<details class="tsource">/);
-  assert.doesNotMatch(res.text, /<details class="tsource" open/);
+  // the texts start side by side; the sources come after them
+  assert.doesNotMatch(res.text, /class="tsource"/);
+  assert.ok(res.text.indexOf('<section class="tsources"') > res.text.lastIndexOf('<section class="tcol'));
 });
 
 test('choosing one or two translations; bad ids fall back', async () => {
