@@ -264,10 +264,17 @@ a.step:hover { background: var(--panel); }
 .cv { font-family: var(--label); color: var(--muted); font-size: .9rem; }
 .clemma { font-weight: 600; color: var(--dark); }
 .cnote.added .cv::before { content: "* "; color: var(--accent); }
-.csources { margin-top: 22px; padding-top: 12px; border-top: 1px solid var(--line); display: grid; gap: 10px; font-size: .95rem; color: var(--muted); }
-.csrc h2 { font-family: var(--label); font-weight: 500; font-size: 1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .2em; }
-.csrc p { margin: .15em 0; }
-.csrc .small { font-size: .85rem; }
+.cwho a { color: inherit; text-decoration: none; }
+.cwho a:hover { text-decoration: underline; }
+.progetto { max-width: 46rem; }
+.progetto .lede { font-size: 1.1rem; }
+.progetto h2 { font-family: var(--label); font-weight: 500; letter-spacing: .03em; color: var(--main); margin-top: 1.6em; }
+.editions { list-style: none; padding: 0; display: grid; gap: 18px; }
+.edition { scroll-margin-top: 80px; }
+.edition:target { background: var(--panel); }
+.edition h3 { font-family: var(--label); font-weight: 500; font-size: 1.05rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .2em; }
+.edition p { margin: .15em 0; }
+.edition .small { font-size: .88rem; color: var(--muted); }
 @media (max-width: 860px) {
   .lcols { grid-template-columns: 1fr; }
   .comm { position: static; max-height: none; overflow: visible; }

@@ -1,7 +1,8 @@
 {
   "nav": {
     "label": "Moduli",
-    "soon": "In preparazione"
+    "soon": "In preparazione",
+    "progetto": "Progetto"
   },
   "home": {
     "eyebrow": "Edizione digitale dei Canti · Università di Bologna",
@@ -63,5 +64,11 @@
     "label": "Commento",
     "all": "Tutti i commentatori",
     "sources": "Edizioni commentate"
+  },
+  "progetto": {
+    "title": "Progetto",
+    "lede": "Leggo Leopardi è l’edizione digitale dei Canti di Giacomo Leopardi: il testo con i commenti (Leggo), i testimoni manoscritti e a stampa (Confronto), le traduzioni (Traduco).",
+    "editions": "Edizioni commentate",
+    "poems": "Canti commentati"
   }
 }
