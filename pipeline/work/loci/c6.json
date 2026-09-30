@@ -1,0 +1,408 @@
+[
+ {
+  "verse": 1,
+  "target": "nella tracia",
+  "shown": "nella",
+  "start": 17,
+  "end": 22
+ },
+ {
+  "verse": 3,
+  "target": "alle valli",
+  "shown": "alle",
+  "start": 24,
+  "end": 28
+ },
+ {
+  "verse": 4,
+  "target": "verde,",
+  "shown": "verde,",
+  "start": 10,
+  "end": 16
+ },
+ {
+  "verse": 4,
+  "target": "lido,",
+  "shown": "lido,",
+  "start": 31,
+  "end": 36
+ },
+ {
+  "verse": 6,
+  "target": "dalle selve",
+  "shown": "dalle",
+  "start": 19,
+  "end": 24
+ },
+ {
+  "verse": 7,
+  "target": "preme,",
+  "shown": "preme,",
+  "start": 18,
+  "end": 24
+ },
+ {
+  "verse": 12,
+  "target": "Fermo",
+  "shown": "Fermo",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 13,
+  "target": "averno accusa,",
+  "shown": "averno accusa,",
+  "start": 9,
+  "end": 23
+ },
+ {
+  "verse": 16,
+  "target": "nebbie, ... scole,",
+  "shown": "nebbie, i campi",
+  "start": 22,
+  "end": 37
+ },
+ {
+  "verse": 17,
+  "target": "nebbie, ... scole,",
+  "shown": "Dell'inquiete larve",
+  "start": 0,
+  "end": 19
+ },
+ {
+  "verse": 18,
+  "target": "nebbie, ... scole,",
+  "shown": "Son le tue scole,",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 21,
+  "target": "O su le nubi) a voi",
+  "shown": "O su le nubi) a voi",
+  "start": 0,
+  "end": 19
+ },
+ {
+  "verse": 26,
+  "target": "Degli empi",
+  "shown": "degli",
+  "start": 25,
+  "end": 30
+ },
+ {
+  "verse": 33,
+  "target": "Se a cessar",
+  "shown": "se a cessar",
+  "start": 20,
+  "end": 31
+ },
+ {
+  "verse": 34,
+  "target": "necessari",
+  "shown": "necessari",
+  "start": 22,
+  "end": 31
+ },
+ {
+  "verse": 35,
+  "target": "Il male",
+  "shown": "il",
+  "start": 33,
+  "end": 35
+ },
+ {
+  "verse": 38,
+  "target": "Mortale",
+  "shown": "mortale",
+  "start": 7,
+  "end": 14
+ },
+ {
+  "verse": 39,
+  "target": "guerreggia,",
+  "shown": "guerreggia,",
+  "start": 14,
+  "end": 25
+ },
+ {
+  "verse": 43,
+  "target": "Nell'alto",
+  "shown": "nell'",
+  "start": 7,
+  "end": 12
+ },
+ {
+  "verse": 45,
+  "target": "Alle nere",
+  "shown": "alle",
+  "start": 10,
+  "end": 14
+ },
+ {
+  "verse": 46,
+  "target": "Agli dei",
+  "shown": "agli",
+  "start": 7,
+  "end": 11
+ },
+ {
+  "verse": 46,
+  "target": "Irrompe",
+  "shown": "irrompe",
+  "start": 29,
+  "end": 36
+ },
+ {
+  "verse": 47,
+  "target": "Non fora",
+  "shown": "fora",
+  "start": 17,
+  "end": 21
+ },
+ {
+  "verse": 49,
+  "target": "I travagli nostri",
+  "shown": "i travagli nostri",
+  "start": 6,
+  "end": 23
+ },
+ {
+  "verse": 49,
+  "target": "Forse il cielo",
+  "shown": "cielo",
+  "start": 36,
+  "end": 41
+ },
+ {
+  "verse": 50,
+  "target": "I casi acerbi",
+  "shown": "I casi acerbi",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 51,
+  "target": "Agli ozi suoi",
+  "shown": "agli",
+  "start": 9,
+  "end": 13
+ },
+ {
+  "verse": 52,
+  "target": "Sciagure e colpe",
+  "shown": "sciagure",
+  "start": 8,
+  "end": 16
+ },
+ {
+  "verse": 54,
+  "target": "prescrisse,",
+  "shown": "prescrisse,",
+  "start": 13,
+  "end": 24
+ },
+ {
+  "verse": 57,
+  "target": "Il viver macro",
+  "shown": "il",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 57,
+  "target": "Ad altre leggi",
+  "shown": "ad altre leggi",
+  "start": 17,
+  "end": 31
+ },
+ {
+  "verse": 58,
+  "target": "Gl’infausti giorni",
+  "shown": "gl’infausti giorni",
+  "start": 7,
+  "end": 25
+ },
+ {
+  "verse": 60,
+  "target": "Riede natura",
+  "shown": "natura",
+  "start": 6,
+  "end": 12
+ },
+ {
+  "verse": 60,
+  "target": "Il non suo",
+  "shown": "il",
+  "start": 16,
+  "end": 18
+ },
+ {
+  "verse": 61,
+  "target": "De' lor",
+  "shown": "de'",
+  "start": 18,
+  "end": 21
+ },
+ {
+  "verse": 61,
+  "target": "Propri",
+  "shown": "propri",
+  "start": 26,
+  "end": 32
+ },
+ {
+  "verse": 67,
+  "target": "affanno;",
+  "shown": "affanno;",
+  "start": 13,
+  "end": 21
+ },
+ {
+  "verse": 68,
+  "target": "Misero",
+  "shown": "misero",
+  "start": 3,
+  "end": 9
+ },
+ {
+  "verse": 71,
+  "target": "Soli fra ... increbbe;",
+  "shown": "soli fra tutte,",
+  "start": 24,
+  "end": 39
+ },
+ {
+  "verse": 72,
+  "target": "Soli fra ... increbbe;",
+  "shown": "Figli di Prometeo, la vita increbbe;",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 73,
+  "target": "ripe,",
+  "shown": "ripe,",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 74,
+  "target": "Se il fato ignavo pende",
+  "shown": "Se il fato ignavo pende",
+  "start": 0,
+  "end": 23
+ },
+ {
+  "verse": 76,
+  "target": "Dal",
+  "shown": "dal",
+  "start": 5,
+  "end": 8
+ },
+ {
+  "verse": 79,
+  "target": "All'ausonio",
+  "shown": "All'",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 81,
+  "target": "Dalle somme",
+  "shown": "dalle",
+  "start": 17,
+  "end": 22
+ },
+ {
+  "verse": 85,
+  "target": "vedesti,",
+  "shown": "vedesti,",
+  "start": 6,
+  "end": 14
+ },
+ {
+  "verse": 90,
+  "target": "Quella solinga",
+  "shown": "quella solinga",
+  "start": 11,
+  "end": 25
+ },
+ {
+  "verse": 98,
+  "target": "Quel desterà le valli, e",
+  "shown": "Quel desterà le valli, e",
+  "start": 0,
+  "end": 24
+ },
+ {
+  "verse": 99,
+  "target": "Quella l’inferma",
+  "shown": "Quella l’inferma",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 100,
+  "target": "Delle minori",
+  "shown": "delle",
+  "start": 8,
+  "end": 13
+ },
+ {
+  "verse": 101,
+  "target": "Oh",
+  "shown": "oh",
+  "start": 9,
+  "end": 11
+ },
+ {
+  "verse": 101,
+  "target": "Vano",
+  "shown": "vano",
+  "start": 18,
+  "end": 22
+ },
+ {
+  "verse": 102,
+  "target": "Siam delle cose",
+  "shown": "delle",
+  "start": 5,
+  "end": 10
+ },
+ {
+  "verse": 104,
+  "target": "Sciagura",
+  "shown": "sciagura",
+  "start": 13,
+  "end": 21
+ },
+ {
+  "verse": 109,
+  "target": "Dell'atra",
+  "shown": "dell'",
+  "start": 8,
+  "end": 13
+ },
+ {
+  "verse": 111,
+  "target": "Singulti, ornar parole e doni",
+  "shown": "singulti, ornàr parole e doni",
+  "start": 7,
+  "end": 36
+ },
+ {
+  "verse": 114,
+  "target": "A putridi",
+  "shown": "A",
+  "start": 0,
+  "end": 1
+ },
+ {
+  "verse": 118,
+  "target": "Il nembo",
+  "shown": "il",
+  "start": 17,
+  "end": 19
+ }
+]

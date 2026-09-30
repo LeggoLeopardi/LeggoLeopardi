@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XII. L'infinito</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XII._%E2%80%96_L%27INFINITO._p._62"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="12" xml:id="c12">
+<head>XII.<lb/>L'INFINITO.</head>
+<lg type="stanza">
+<l n="1" xml:id="c12.v1"><w xml:id="c12.v1.w1">Sempre</w> <w xml:id="c12.v1.w2">caro</w> <w xml:id="c12.v1.w3">mi</w> <w xml:id="c12.v1.w4">fu</w> <w xml:id="c12.v1.w5">quest’</w><w xml:id="c12.v1.w6">ermo</w> <w xml:id="c12.v1.w7">colle</w><pc>,</pc></l>
+<l n="2" xml:id="c12.v2"><w xml:id="c12.v2.w1">E</w> <w xml:id="c12.v2.w2">questa</w> <w xml:id="c12.v2.w3">siepe</w><pc>,</pc> <w xml:id="c12.v2.w4">che</w> <w xml:id="c12.v2.w5">da</w> <w xml:id="c12.v2.w6">tanta</w> <w xml:id="c12.v2.w7">parte</w></l>
+<l n="3" xml:id="c12.v3"><w xml:id="c12.v3.w1">Dell'</w><w xml:id="c12.v3.w2">ultimo</w> <w xml:id="c12.v3.w3">orizzonte</w> <w xml:id="c12.v3.w4">il</w> <w xml:id="c12.v3.w5">guardo</w> <w xml:id="c12.v3.w6">esclude</w><pc>.</pc></l>
+<l n="4" xml:id="c12.v4"><w xml:id="c12.v4.w1">Ma</w> <w xml:id="c12.v4.w2">sedendo</w> <w xml:id="c12.v4.w3">e</w> <w xml:id="c12.v4.w4">mirando</w><pc>,</pc> <w xml:id="c12.v4.w5">interminati</w></l>
+<l n="5" xml:id="c12.v5"><w xml:id="c12.v5.w1">Spazi</w> <w xml:id="c12.v5.w2">di</w> <w xml:id="c12.v5.w3">là</w> <w xml:id="c12.v5.w4">da</w> <w xml:id="c12.v5.w5">quella</w><pc>,</pc> <w xml:id="c12.v5.w6">e</w> <w xml:id="c12.v5.w7">sovrumani</w></l>
+<l n="6" xml:id="c12.v6"><w xml:id="c12.v6.w1">Silenzi</w><pc>,</pc> <w xml:id="c12.v6.w2">e</w> <w xml:id="c12.v6.w3">profondissima</w> <w xml:id="c12.v6.w4">quiete</w></l>
+<l n="7" xml:id="c12.v7"><w xml:id="c12.v7.w1">Io</w> <w xml:id="c12.v7.w2">nel</w> <w xml:id="c12.v7.w3">pensier</w> <w xml:id="c12.v7.w4">mi</w> <w xml:id="c12.v7.w5">fingo</w><pc>;</pc> <w xml:id="c12.v7.w6">ove</w> <w xml:id="c12.v7.w7">per</w> <w xml:id="c12.v7.w8">poco</w></l>
+<l n="8" xml:id="c12.v8"><w xml:id="c12.v8.w1">Il</w> <w xml:id="c12.v8.w2">cor</w> <w xml:id="c12.v8.w3">non</w> <w xml:id="c12.v8.w4">si</w> <w xml:id="c12.v8.w5">spaura</w><pc>.</pc> <w xml:id="c12.v8.w6">E</w> <w xml:id="c12.v8.w7">come</w> <w xml:id="c12.v8.w8">il</w> <w xml:id="c12.v8.w9">vento</w></l>
+<l n="9" xml:id="c12.v9"><w xml:id="c12.v9.w1">Odo</w> <w xml:id="c12.v9.w2">stormir</w> <w xml:id="c12.v9.w3">tra</w> <w xml:id="c12.v9.w4">queste</w> <w xml:id="c12.v9.w5">piante</w><pc>,</pc> <w xml:id="c12.v9.w6">io</w> <w xml:id="c12.v9.w7">quello</w></l>
+<l n="10" xml:id="c12.v10"><w xml:id="c12.v10.w1">Infinito</w> <w xml:id="c12.v10.w2">silenzio</w> <w xml:id="c12.v10.w3">a</w> <w xml:id="c12.v10.w4">questa</w> <w xml:id="c12.v10.w5">voce</w></l>
+<l n="11" xml:id="c12.v11"><w xml:id="c12.v11.w1">Vo</w> <w xml:id="c12.v11.w2">comparando</w><pc>:</pc> <w xml:id="c12.v11.w3">e</w> <w xml:id="c12.v11.w4">mi</w> <w xml:id="c12.v11.w5">sovvien</w> <w xml:id="c12.v11.w6">l’</w><w xml:id="c12.v11.w7">eterno</w><pc>,</pc></l>
+<l n="12" xml:id="c12.v12"><w xml:id="c12.v12.w1">E</w> <w xml:id="c12.v12.w2">le</w> <w xml:id="c12.v12.w3">morte</w> <w xml:id="c12.v12.w4">stagioni</w><pc>,</pc> <w xml:id="c12.v12.w5">e</w> <w xml:id="c12.v12.w6">la</w> <w xml:id="c12.v12.w7">presente</w></l>
+<l n="13" xml:id="c12.v13"><w xml:id="c12.v13.w1">E</w> <w xml:id="c12.v13.w2">viva</w><pc>,</pc> <w xml:id="c12.v13.w3">e</w> <w xml:id="c12.v13.w4">il</w> <w xml:id="c12.v13.w5">suon</w> <w xml:id="c12.v13.w6">di</w> <w xml:id="c12.v13.w7">lei</w><pc>.</pc> <w xml:id="c12.v13.w8">Così</w> <w xml:id="c12.v13.w9">tra</w> <w xml:id="c12.v13.w10">questa</w></l>
+<l n="14" xml:id="c12.v14"><w xml:id="c12.v14.w1">Immensità</w> <w xml:id="c12.v14.w2">s’</w><w xml:id="c12.v14.w3">annega</w> <w xml:id="c12.v14.w4">il</w> <w xml:id="c12.v14.w5">pensier</w> <w xml:id="c12.v14.w6">mio</w><pc>:</pc></l>
+<l n="15" xml:id="c12.v15"><w xml:id="c12.v15.w1">E</w> <w xml:id="c12.v15.w2">il</w> <w xml:id="c12.v15.w3">naufragar</w> <w xml:id="c12.v15.w4">m’</w><w xml:id="c12.v15.w5">è</w> <w xml:id="c12.v15.w6">dolce</w> <w xml:id="c12.v15.w7">in</w> <w xml:id="c12.v15.w8">questo</w> <w xml:id="c12.v15.w9">mare</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,58 @@
+[
+ {
+  "verse": 1,
+  "target": "Io qui vagando al limitare intorno,",
+  "shown": "Io qui vagando al limitare intorno,",
+  "start": 0,
+  "end": 35
+ },
+ {
+  "verse": 2,
+  "target": "tempesta,",
+  "shown": "tempesta,",
+  "start": 29,
+  "end": 38
+ },
+ {
+  "verse": 4,
+  "target": "nella foresta,",
+  "shown": "nella foresta,",
+  "start": 21,
+  "end": 35
+ },
+ {
+  "verse": 6,
+  "target": "Pria che l’aurora in ciel fosse ridesta.",
+  "shown": "Pria che l’aurora in ciel fosse ridesta.",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 8,
+  "target": "mia: pietà",
+  "shown": "mia: pietà",
+  "start": 15,
+  "end": 25
+ },
+ {
+  "verse": 9,
+  "target": "Pietà nel",
+  "shown": "Pietà nel",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 10,
+  "target": "O turbine, or ti sveglia, or",
+  "shown": "O turbine, or ti sveglia, or",
+  "start": 0,
+  "end": 28
+ },
+ {
+  "verse": 12,
+  "target": "Che il sole",
+  "shown": "Che il sole",
+  "start": 0,
+  "end": 11
+ }
+]

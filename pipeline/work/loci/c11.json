@@ -1,0 +1,44 @@
+[
+ {
+  "verse": 3,
+  "target": "more",
+  "shown": "more",
+  "start": 24,
+  "end": 28
+ },
+ {
+  "verse": 16,
+  "target": "Dell’anno e di tua vita",
+  "shown": "Dell’anno e di tua vita",
+  "start": 0,
+  "end": 23
+ },
+ {
+  "verse": 18,
+  "target": "mio!",
+  "shown": "mio!",
+  "start": 18,
+  "end": 22
+ },
+ {
+  "verse": 20,
+  "target": "te",
+  "shown": "te",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 20,
+  "target": "giovinezza,",
+  "shown": "giovinezza,",
+  "start": 15,
+  "end": 26
+ },
+ {
+  "verse": 39,
+  "target": "in altro",
+  "shown": "in",
+  "start": 8,
+  "end": 10
+ }
+]

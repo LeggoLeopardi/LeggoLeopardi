@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XXXVIII.</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXXVIII._p._163"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="38" xml:id="c38">
+<head>XXXVIII.</head>
+<lg type="stanza">
+<l n="1" xml:id="c38.v1"><w xml:id="c38.v1.w1">Io</w> <w xml:id="c38.v1.w2">qui</w> <w xml:id="c38.v1.w3">vagando</w> <w xml:id="c38.v1.w4">al</w> <w xml:id="c38.v1.w5">limitare</w> <w xml:id="c38.v1.w6">intorno</w><pc>,</pc></l>
+<l n="2" xml:id="c38.v2"><w xml:id="c38.v2.w1">Invan</w> <w xml:id="c38.v2.w2">la</w> <w xml:id="c38.v2.w3">pioggia</w> <w xml:id="c38.v2.w4">invoco</w> <w xml:id="c38.v2.w5">e</w> <w xml:id="c38.v2.w6">la</w> <w xml:id="c38.v2.w7">tempesta</w><pc>,</pc></l>
+<l n="3" xml:id="c38.v3"><w xml:id="c38.v3.w1">Acciò</w> <w xml:id="c38.v3.w2">che</w> <w xml:id="c38.v3.w3">la</w> <w xml:id="c38.v3.w4">ritenga</w> <w xml:id="c38.v3.w5">al</w> <w xml:id="c38.v3.w6">mio</w> <w xml:id="c38.v3.w7">soggiorno</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="4" xml:id="c38.v4"><w xml:id="c38.v4.w1">Pure</w> <w xml:id="c38.v4.w2">il</w> <w xml:id="c38.v4.w3">vento</w> <w xml:id="c38.v4.w4">muggia</w> <w xml:id="c38.v4.w5">nella</w> <w xml:id="c38.v4.w6">foresta</w><pc>,</pc></l>
+<l n="5" xml:id="c38.v5"><w xml:id="c38.v5.w1">E</w> <w xml:id="c38.v5.w2">muggia</w> <w xml:id="c38.v5.w3">tra</w> <w xml:id="c38.v5.w4">le</w> <w xml:id="c38.v5.w5">nubi</w> <w xml:id="c38.v5.w6">il</w> <w xml:id="c38.v5.w7">tuono</w> <w xml:id="c38.v5.w8">errante</w><pc>,</pc></l>
+<l n="6" xml:id="c38.v6"><w xml:id="c38.v6.w1">Pria</w> <w xml:id="c38.v6.w2">che</w> <w xml:id="c38.v6.w3">l’</w><w xml:id="c38.v6.w4">aurora</w> <w xml:id="c38.v6.w5">in</w> <w xml:id="c38.v6.w6">ciel</w> <w xml:id="c38.v6.w7">fosse</w> <w xml:id="c38.v6.w8">ridesta</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="7" xml:id="c38.v7"><w xml:id="c38.v7.w1">O</w> <w xml:id="c38.v7.w2">care</w> <w xml:id="c38.v7.w3">nubi</w><pc>,</pc> <w xml:id="c38.v7.w4">o</w> <w xml:id="c38.v7.w5">cielo</w><pc>,</pc> <w xml:id="c38.v7.w6">o</w> <w xml:id="c38.v7.w7">terra</w><pc>,</pc> <w xml:id="c38.v7.w8">o</w> <w xml:id="c38.v7.w9">piante</w><pc>,</pc></l>
+<l n="8" xml:id="c38.v8"><w xml:id="c38.v8.w1">Parte</w> <w xml:id="c38.v8.w2">la</w> <w xml:id="c38.v8.w3">donna</w> <w xml:id="c38.v8.w4">mia</w><pc>:</pc> <w xml:id="c38.v8.w5">pietà</w><pc>,</pc> <w xml:id="c38.v8.w6">se</w> <w xml:id="c38.v8.w7">trova</w></l>
+<l n="9" xml:id="c38.v9"><w xml:id="c38.v9.w1">Pietà</w> <w xml:id="c38.v9.w2">nel</w> <w xml:id="c38.v9.w3">mondo</w> <w xml:id="c38.v9.w4">un</w> <w xml:id="c38.v9.w5">infelice</w> <w xml:id="c38.v9.w6">amante</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="10" xml:id="c38.v10"><w xml:id="c38.v10.w1">O</w> <w xml:id="c38.v10.w2">turbine</w><pc>,</pc> <w xml:id="c38.v10.w3">or</w> <w xml:id="c38.v10.w4">ti</w> <w xml:id="c38.v10.w5">sveglia</w><pc>,</pc> <w xml:id="c38.v10.w6">or</w> <w xml:id="c38.v10.w7">fate</w> <w xml:id="c38.v10.w8">prova</w></l>
+<l n="11" xml:id="c38.v11"><w xml:id="c38.v11.w1">Di</w> <w xml:id="c38.v11.w2">sommergermi</w> <w xml:id="c38.v11.w3">o</w> <w xml:id="c38.v11.w4">nembi</w><pc>,</pc> <w xml:id="c38.v11.w5">insino</w> <w xml:id="c38.v11.w6">a</w> <w xml:id="c38.v11.w7">tanto</w></l>
+<l n="12" xml:id="c38.v12"><w xml:id="c38.v12.w1">Che</w> <w xml:id="c38.v12.w2">il</w> <w xml:id="c38.v12.w3">sole</w> <w xml:id="c38.v12.w4">ad</w> <w xml:id="c38.v12.w5">altre</w> <w xml:id="c38.v12.w6">terre</w> <w xml:id="c38.v12.w7">il</w> <w xml:id="c38.v12.w8">dì</w> <w xml:id="c38.v12.w9">rinnova</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="13" xml:id="c38.v13"><w xml:id="c38.v13.w1">S’</w><w xml:id="c38.v13.w2">apre</w> <w xml:id="c38.v13.w3">il</w> <w xml:id="c38.v13.w4">ciel</w><pc>,</pc> <w xml:id="c38.v13.w5">cade</w> <w xml:id="c38.v13.w6">il</w> <w xml:id="c38.v13.w7">soffio</w><pc>,</pc> <w xml:id="c38.v13.w8">in</w> <w xml:id="c38.v13.w9">ogni</w> <w xml:id="c38.v13.w10">canto</w></l>
+<l n="14" xml:id="c38.v14"><w xml:id="c38.v14.w1">Posan</w> <w xml:id="c38.v14.w2">l’</w><w xml:id="c38.v14.w3">erbe</w> <w xml:id="c38.v14.w4">e</w> <w xml:id="c38.v14.w5">le</w> <w xml:id="c38.v14.w6">frondi</w><pc>,</pc> <w xml:id="c38.v14.w7">e</w> <w xml:id="c38.v14.w8">m’</w><w xml:id="c38.v14.w9">abbarbaglia</w></l>
+<l n="15" xml:id="c38.v15"><w xml:id="c38.v15.w1">Le</w> <w xml:id="c38.v15.w2">luci</w> <w xml:id="c38.v15.w3">il</w> <w xml:id="c38.v15.w4">crudo</w> <w xml:id="c38.v15.w5">Sol</w> <w xml:id="c38.v15.w6">pregne</w> <w xml:id="c38.v15.w7">di</w> <w xml:id="c38.v15.w8">pianto</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

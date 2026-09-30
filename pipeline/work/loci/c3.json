@@ -1,0 +1,1185 @@
+[
+ {
+  "verse": 1,
+  "target": "ardito",
+  "shown": "ardito",
+  "start": 6,
+  "end": 12
+ },
+ {
+  "verse": 1,
+  "target": "giammai",
+  "shown": "giammai",
+  "start": 20,
+  "end": 27
+ },
+ {
+  "verse": 1,
+  "target": "posi",
+  "shown": "posi",
+  "start": 32,
+  "end": 36
+ },
+ {
+  "verse": 2,
+  "target": "dalle tombe",
+  "shown": "dalle",
+  "start": 12,
+  "end": 17
+ },
+ {
+  "verse": 3,
+  "target": "ed a parlar",
+  "shown": "ed a parlar",
+  "start": 16,
+  "end": 27
+ },
+ {
+  "verse": 4,
+  "target": "morto,",
+  "shown": "morto,",
+  "start": 15,
+  "end": 21
+ },
+ {
+  "verse": 5,
+  "target": "Tanta nebbia",
+  "shown": "Tanta",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 7,
+  "target": "de' nostri,",
+  "shown": "nostri,",
+  "start": 16,
+  "end": 23
+ },
+ {
+  "verse": 10,
+  "target": "alla stagion",
+  "shown": "alla",
+  "start": 17,
+  "end": 21
+ },
+ {
+  "verse": 11,
+  "target": "chiostri",
+  "shown": "chiostri",
+  "start": 12,
+  "end": 20
+ },
+ {
+  "verse": 12,
+  "target": "occulti",
+  "shown": "occulti",
+  "start": 8,
+  "end": 15
+ },
+ {
+  "verse": 13,
+  "target": "degli avi.",
+  "shown": "degli",
+  "start": 6,
+  "end": 11
+ },
+ {
+  "verse": 13,
+  "target": "infonde,",
+  "shown": "infonde,",
+  "start": 31,
+  "end": 39
+ },
+ {
+  "verse": 14,
+  "target": "Italo egregio ... invano",
+  "shown": "Italo egregio, il fato? O con l’umano",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 15,
+  "target": "Italo egregio ... invano",
+  "shown": "Valor forse contrasta il fato invano?",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 16,
+  "target": "de' numi",
+  "shown": "de' numi",
+  "start": 12,
+  "end": 20
+ },
+ {
+  "verse": 18,
+  "target": "il nostro",
+  "shown": "il",
+  "start": 10,
+  "end": 12
+ },
+ {
+  "verse": 21,
+  "target": "all'Italia il",
+  "shown": "all'",
+  "start": 7,
+  "end": 11
+ },
+ {
+  "verse": 21,
+  "target": "Italia il",
+  "shown": "Italia",
+  "start": 11,
+  "end": 17
+ },
+ {
+  "verse": 21,
+  "target": "cielo;",
+  "shown": "cielo;",
+  "start": 21,
+  "end": 27
+ },
+ {
+  "verse": 22,
+  "target": "immortale:",
+  "shown": "immortale:",
+  "start": 15,
+  "end": 25
+ },
+ {
+  "verse": 23,
+  "target": "Ch’essendo",
+  "shown": "Ch’essendo",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 24,
+  "target": "alla virtude",
+  "shown": "alla",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 25,
+  "target": "dell'itala",
+  "shown": "dell'",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 26,
+  "target": "Veggiam ... dischiude,",
+  "shown": "Veggiam che tanto e tale",
+  "start": 0,
+  "end": 24
+ },
+ {
+  "verse": 27,
+  "target": "Veggiam ... dischiude,",
+  "shown": "È il clamor de’ sepolti, e che gli eroi",
+  "start": 0,
+  "end": 39
+ },
+ {
+  "verse": 28,
+  "target": "Veggiam ... dischiude,",
+  "shown": "Dimenticati il suol quasi dischiude,",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 29,
+  "target": "A ricercar ... codarda.",
+  "shown": "A ricercar s'a questa età sì tarda",
+  "start": 0,
+  "end": 34
+ },
+ {
+  "verse": 30,
+  "target": "A ricercar ... codarda.",
+  "shown": "Anco ti giovi, o patria, esser codarda.",
+  "start": 0,
+  "end": 39
+ },
+ {
+  "verse": 31,
+  "target": "Di noi ... speranza",
+  "shown": "Di noi serbate, o gloriosi, ancora",
+  "start": 0,
+  "end": 34
+ },
+ {
+  "verse": 32,
+  "target": "Di noi ... speranza",
+  "shown": "Qualche speranza?",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 33,
+  "target": "forse il",
+  "shown": "forse",
+  "start": 23,
+  "end": 28
+ },
+ {
+  "verse": 34,
+  "target": "Conoscer ... scuro",
+  "shown": "Conoscer non si toglie. Io son distrutto",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 35,
+  "target": "Conoscer ... scuro",
+  "shown": "Nè schermo alcuno ho dal dolor, che scuro",
+  "start": 0,
+  "end": 41
+ },
+ {
+  "verse": 39,
+  "target": "Ai tetti ... sangue",
+  "shown": "Ai tetti vostri inonorata, immonda",
+  "start": 0,
+  "end": 34
+ },
+ {
+  "verse": 40,
+  "target": "Ai tetti ... sangue",
+  "shown": "Plebe successe; al vostro sangue",
+  "start": 0,
+  "end": 32
+ },
+ {
+  "verse": 42,
+  "target": "eterne lodi ... etade",
+  "shown": "eterne lodi",
+  "start": 22,
+  "end": 33
+ },
+ {
+  "verse": 43,
+  "target": "eterne lodi ... etade",
+  "shown": "Nè rossor più nè invidia; ozio circonda",
+  "start": 0,
+  "end": 39
+ },
+ {
+  "verse": 44,
+  "target": "eterne lodi ... etade",
+  "shown": "I monumenti vostri; e di viltade",
+  "start": 0,
+  "end": 32
+ },
+ {
+  "verse": 45,
+  "target": "eterne lodi ... etade",
+  "shown": "Siam fatti esempio alla futura etade.",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 48,
+  "target": "fato",
+  "shown": "fato",
+  "start": 25,
+  "end": 29
+ },
+ {
+  "verse": 50,
+  "target": "dalla dira",
+  "shown": "dalla",
+  "start": 28,
+  "end": 33
+ },
+ {
+  "verse": 51,
+  "target": "Obblivione antica",
+  "shown": "Obblivione",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 51,
+  "target": "chioma,",
+  "shown": "chioma,",
+  "start": 28,
+  "end": 35
+ },
+ {
+  "verse": 52,
+  "target": "sepolti,",
+  "shown": "sepolti,",
+  "start": 14,
+  "end": 22
+ },
+ {
+  "verse": 53,
+  "target": "divini,",
+  "shown": "divini,",
+  "start": 10,
+  "end": 17
+ },
+ {
+  "verse": 53,
+  "target": "natura ‖ Parlò",
+  "shown": "natura",
+  "start": 24,
+  "end": 30
+ },
+ {
+  "verse": 54,
+  "target": "senza svelarsi",
+  "shown": "senza svelarsi",
+  "start": 6,
+  "end": 20
+ },
+ {
+  "verse": 55,
+  "target": "allegràr",
+  "shown": "allegràr",
+  "start": 10,
+  "end": 18
+ },
+ {
+  "verse": 56,
+  "target": "tempi, oh",
+  "shown": "tempi, oh",
+  "start": 3,
+  "end": 12
+ },
+ {
+  "verse": 57,
+  "target": "eterno! Allora",
+  "shown": "eterno! Allora",
+  "start": 9,
+  "end": 23
+ },
+ {
+  "verse": 58,
+  "target": "Italia, anco",
+  "shown": "Italia",
+  "start": 11,
+  "end": 17
+ },
+ {
+  "verse": 59,
+  "target": "aura",
+  "shown": "aura",
+  "start": 25,
+  "end": 29
+ },
+ {
+  "verse": 60,
+  "target": "Più faville rapia",
+  "shown": "Più faville rapia",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 63,
+  "target": "Della fortuna",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 63,
+  "target": "fortuna",
+  "shown": "fortuna",
+  "start": 6,
+  "end": 13
+ },
+ {
+  "verse": 64,
+  "target": "averno",
+  "shown": "averno",
+  "start": 9,
+  "end": 15
+ },
+ {
+  "verse": 64,
+  "target": "amico.",
+  "shown": "amico.",
+  "start": 29,
+  "end": 35
+ },
+ {
+  "verse": 65,
+  "target": "averno:",
+  "shown": "averno:",
+  "start": 2,
+  "end": 9
+ },
+ {
+  "verse": 67,
+  "target": "Susurravano",
+  "shown": "Susurravano",
+  "start": 0,
+  "end": 11
+ },
+ {
+  "verse": 68,
+  "target": "destra, o",
+  "shown": "destra, o",
+  "start": 17,
+  "end": 26
+ },
+ {
+  "verse": 70,
+  "target": "men",
+  "shown": "men",
+  "start": 21,
+  "end": 24
+ },
+ {
+  "verse": 72,
+  "target": "beato,",
+  "shown": "beato,",
+  "start": 30,
+  "end": 36
+ },
+ {
+  "verse": 73,
+  "target": "pianto!",
+  "shown": "pianto!",
+  "start": 17,
+  "end": 24
+ },
+ {
+  "verse": 74,
+  "target": "il fastidio ... nulla.",
+  "shown": "il fastidio; a noi presso la culla",
+  "start": 6,
+  "end": 40
+ },
+ {
+  "verse": 75,
+  "target": "il fastidio ... nulla.",
+  "shown": "Immoto siede, e su la tomba, il nulla.",
+  "start": 0,
+  "end": 38
+ },
+ {
+  "verse": 76,
+  "target": "il mare",
+  "shown": "il",
+  "start": 38,
+  "end": 40
+ },
+ {
+  "verse": 78,
+  "target": "alle colonne",
+  "shown": "alle",
+  "start": 12,
+  "end": 16
+ },
+ {
+  "verse": 78,
+  "target": "colonne,",
+  "shown": "colonne,",
+  "start": 17,
+  "end": 25
+ },
+ {
+  "verse": 78,
+  "target": "ai liti",
+  "shown": "ai",
+  "start": 35,
+  "end": 37
+ },
+ {
+  "verse": 79,
+  "target": "l'onde ... sera,",
+  "shown": "l’onde all’attuffar del sole",
+  "start": 12,
+  "end": 40
+ },
+ {
+  "verse": 80,
+  "target": "l'onde ... sera,",
+  "shown": "Parve udir su la sera",
+  "start": 0,
+  "end": 21
+ },
+ {
+  "verse": 80,
+  "target": "agl'infiniti",
+  "shown": "agl'",
+  "start": 27,
+  "end": 31
+ },
+ {
+  "verse": 82,
+  "target": "Sol caduto",
+  "shown": "Sol",
+  "start": 4,
+  "end": 7
+ },
+ {
+  "verse": 82,
+  "target": "il giorno",
+  "shown": "il",
+  "start": 18,
+  "end": 20
+ },
+ {
+  "verse": 83,
+  "target": "ai nostri è",
+  "shown": "ai",
+  "start": 19,
+  "end": 21
+ },
+ {
+  "verse": 84,
+  "target": "rotto",
+  "shown": "rotto",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 84,
+  "target": "natura ogni",
+  "shown": "natura",
+  "start": 11,
+  "end": 17
+ },
+ {
+  "verse": 86,
+  "target": "gloria,",
+  "shown": "gloria,",
+  "start": 3,
+  "end": 10
+ },
+ {
+  "verse": 87,
+  "target": "Ai rischi",
+  "shown": "Ai",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 87,
+  "target": "ahi ... anzi",
+  "shown": "ahi, ma conosciuto il mondo",
+  "start": 15,
+  "end": 42
+ },
+ {
+  "verse": 88,
+  "target": "ahi ... anzi",
+  "shown": "Non cresce, anzi",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 89,
+  "target": "L'etra ... appare.",
+  "shown": "L’etra sonante e l’alma terra e il mare",
+  "start": 0,
+  "end": 39
+ },
+ {
+  "verse": 90,
+  "target": "L'etra ... appare.",
+  "shown": "Al fanciullin, che non al saggio, appare.",
+  "start": 0,
+  "end": 41
+ },
+ {
+  "verse": 91,
+  "target": "sogni leggiadri",
+  "shown": "sogni leggiadri",
+  "start": 7,
+  "end": 22
+ },
+ {
+  "verse": 92,
+  "target": "Dell'ignoto",
+  "shown": "Dell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 94,
+  "target": "Degli astri albergo",
+  "shown": "Degli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 95,
+  "target": "Della giovane",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 95,
+  "target": "Aurora",
+  "shown": "Aurora",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 97,
+  "target": "Ecco svaniro",
+  "shown": "Ecco svaniro",
+  "start": 0,
+  "end": 12
+ },
+ {
+  "verse": 97,
+  "target": "punto,",
+  "shown": "punto,",
+  "start": 18,
+  "end": 24
+ },
+ {
+  "verse": 98,
+  "target": "E figurato è il",
+  "shown": "E figurato è il",
+  "start": 0,
+  "end": 15
+ },
+ {
+  "verse": 98,
+  "target": "carta;",
+  "shown": "carta;",
+  "start": 31,
+  "end": 37
+ },
+ {
+  "verse": 99,
+  "target": "simile,",
+  "shown": "simile,",
+  "start": 13,
+  "end": 20
+ },
+ {
+  "verse": 99,
+  "target": "discoprendo",
+  "shown": "discoprendo",
+  "start": 23,
+  "end": 34
+ },
+ {
+  "verse": 103,
+  "target": "in eterno",
+  "shown": "in eterno",
+  "start": 13,
+  "end": 22
+ },
+ {
+  "verse": 103,
+  "target": "allo stupendo",
+  "shown": "allo stupendo",
+  "start": 24,
+  "end": 37
+ },
+ {
+  "verse": 104,
+  "target": "anni;",
+  "shown": "anni;",
+  "start": 34,
+  "end": 39
+ },
+ {
+  "verse": 105,
+  "target": "E il conforto perì de’",
+  "shown": "E il conforto perì de’",
+  "start": 0,
+  "end": 22
+ },
+ {
+  "verse": 106,
+  "target": "ai dolci",
+  "shown": "ai",
+  "start": 8,
+  "end": 10
+ },
+ {
+  "verse": 106,
+  "target": "il primo ‖ Sole",
+  "shown": "il",
+  "start": 34,
+  "end": 36
+ },
+ {
+  "verse": 108,
+  "target": "dell'arme",
+  "shown": "dell'",
+  "start": 12,
+  "end": 17
+ },
+ {
+  "verse": 108,
+  "target": "degli amori,",
+  "shown": "degli amori,",
+  "start": 24,
+  "end": 36
+ },
+ {
+  "verse": 109,
+  "target": "della nostra",
+  "shown": "della",
+  "start": 11,
+  "end": 16
+ },
+ {
+  "verse": 111,
+  "target": "Italia.",
+  "shown": "Italia",
+  "start": 13,
+  "end": 19
+ },
+ {
+  "verse": 111,
+  "target": "O torri, o celle,",
+  "shown": "O torri, o celle,",
+  "start": 21,
+  "end": 38
+ },
+ {
+  "verse": 112,
+  "target": "O donne, o cavalieri,",
+  "shown": "O donne, o cavalieri,",
+  "start": 0,
+  "end": 21
+ },
+ {
+  "verse": 113,
+  "target": "O giardini, o palagi!",
+  "shown": "O giardini, o palagi!",
+  "start": 0,
+  "end": 21
+ },
+ {
+  "verse": 113,
+  "target": "pensando,",
+  "shown": "pensando,",
+  "start": 28,
+  "end": 37
+ },
+ {
+  "verse": 115,
+  "target": "La mente mia.",
+  "shown": "La mente mia.",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 116,
+  "target": "Fole",
+  "shown": "Fole",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 118,
+  "target": "Li cacciamo",
+  "shown": "Li",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 118,
+  "target": "il verde",
+  "shown": "il",
+  "start": 39,
+  "end": 41
+ },
+ {
+  "verse": 119,
+  "target": "spogliato",
+  "shown": "spogliato",
+  "start": 2,
+  "end": 11
+ },
+ {
+  "verse": 119,
+  "target": "alle cose",
+  "shown": "alle",
+  "start": 12,
+  "end": 16
+ },
+ {
+  "verse": 119,
+  "target": "Il certo",
+  "shown": "Il",
+  "start": 23,
+  "end": 25
+ },
+ {
+  "verse": 120,
+  "target": "il duolo",
+  "shown": "il",
+  "start": 33,
+  "end": 35
+ },
+ {
+  "verse": 121,
+  "target": "O Torquato, o Torquato,",
+  "shown": "O Torquato, o Torquato,",
+  "start": 0,
+  "end": 23
+ },
+ {
+  "verse": 121,
+  "target": "l’eccelsa ... mente",
+  "shown": "l'eccelsa",
+  "start": 30,
+  "end": 39
+ },
+ {
+  "verse": 122,
+  "target": "l’eccelsa ... mente",
+  "shown": "Tua mente",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 122,
+  "target": "allora,",
+  "shown": "allora,",
+  "start": 10,
+  "end": 17
+ },
+ {
+  "verse": 123,
+  "target": "non altro, preparava",
+  "shown": "non altro, preparava",
+  "start": 6,
+  "end": 26
+ },
+ {
+  "verse": 123,
+  "target": "cielo.",
+  "shown": "cielo",
+  "start": 30,
+  "end": 35
+ },
+ {
+  "verse": 124,
+  "target": "Oh misero",
+  "shown": "Oh",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 124,
+  "target": "Torquato!",
+  "shown": "Torquato!",
+  "start": 10,
+  "end": 19
+ },
+ {
+  "verse": 125,
+  "target": "consolarti o",
+  "shown": "consolarti o",
+  "start": 12,
+  "end": 24
+ },
+ {
+  "verse": 126,
+  "target": "avean,",
+  "shown": "avean,",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 129,
+  "target": "Amor ... inganno",
+  "shown": "Amor, di nostra vita ultimo inganno,",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 131,
+  "target": "il mondo",
+  "shown": "il",
+  "start": 21,
+  "end": 23
+ },
+ {
+  "verse": 132,
+  "target": "Inabitata ... danno,",
+  "shown": "Inabitata piaggia. Al tardo onore",
+  "start": 0,
+  "end": 33
+ },
+ {
+  "verse": 133,
+  "target": "Inabitata ... danno,",
+  "shown": "Non sorser gli occhi tuoi; mercè, non danno,",
+  "start": 0,
+  "end": 44
+ },
+ {
+  "verse": 134,
+  "target": "L’ora estrema",
+  "shown": "L’ora estrema",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 135,
+  "target": "nostro mal",
+  "shown": "nostro",
+  "start": 4,
+  "end": 10
+ },
+ {
+  "verse": 137,
+  "target": "avello,",
+  "shown": "avello,",
+  "start": 13,
+  "end": 20
+ },
+ {
+  "verse": 138,
+  "target": "d’angoscia sei vago,",
+  "shown": "d’angoscia sei vago,",
+  "start": 3,
+  "end": 23
+ },
+ {
+  "verse": 139,
+  "target": "Esemplo",
+  "shown": "Esemplo",
+  "start": 0,
+  "end": 7
+ },
+ {
+  "verse": 139,
+  "target": "sciagura.",
+  "shown": "sciagura.",
+  "start": 11,
+  "end": 20
+ },
+ {
+  "verse": 139,
+  "target": "quello ‖ Che",
+  "shown": "quello",
+  "start": 30,
+  "end": 36
+ },
+ {
+  "verse": 140,
+  "target": "nefando,",
+  "shown": "nefando,",
+  "start": 27,
+  "end": 35
+ },
+ {
+  "verse": 143,
+  "target": "Se, fuor che di se stesso,",
+  "shown": "Se, fuor che di se stesso,",
+  "start": 0,
+  "end": 26
+ },
+ {
+  "verse": 145,
+  "target": "il ... il",
+  "shown": "il grande e il",
+  "start": 25,
+  "end": 39
+ },
+ {
+  "verse": 146,
+  "target": "Ha nome di",
+  "shown": "Ha nome di",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 147,
+  "target": "più,",
+  "shown": "più,",
+  "start": 9,
+  "end": 13
+ },
+ {
+  "verse": 147,
+  "target": "di lui più",
+  "shown": "di lui più",
+  "start": 21,
+  "end": 31
+ },
+ {
+  "verse": 148,
+  "target": "ai sommi",
+  "shown": "ai",
+  "start": 22,
+  "end": 24
+ },
+ {
+  "verse": 150,
+  "target": "Ti",
+  "shown": "Ti",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 151,
+  "target": "sorto,",
+  "shown": "sorto,",
+  "start": 33,
+  "end": 39
+ },
+ {
+  "verse": 152,
+  "target": "O sventurato ingegno,",
+  "shown": "O sventurato ingegno,",
+  "start": 0,
+  "end": 21
+ },
+ {
+  "verse": 153,
+  "target": "all'italo",
+  "shown": "all'",
+  "start": 5,
+  "end": 9
+ },
+ {
+  "verse": 156,
+  "target": "Maschia virtù",
+  "shown": "Maschia virtù",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 156,
+  "target": "già da questa",
+  "shown": "già da questa",
+  "start": 19,
+  "end": 32
+ },
+ {
+  "verse": 158,
+  "target": "Venne nel petto;",
+  "shown": "Venne nel petto;",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 158,
+  "target": "inerme,",
+  "shown": "inerme,",
+  "start": 31,
+  "end": 38
+ },
+ {
+  "verse": 162,
+  "target": "all'ire",
+  "shown": "all'",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 163,
+  "target": "all'arena",
+  "shown": "all'",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 164,
+  "target": "che l'ozio",
+  "shown": "che",
+  "start": 25,
+  "end": 28
+ },
+ {
+  "verse": 164,
+  "target": "il brutto",
+  "shown": "il",
+  "start": 38,
+  "end": 40
+ },
+ {
+  "verse": 165,
+  "target": "ai nostri innanzi",
+  "shown": "ai",
+  "start": 18,
+  "end": 20
+ },
+ {
+  "verse": 171,
+  "target": "Conviene",
+  "shown": "Conviene",
+  "start": 0,
+  "end": 8
+ },
+ {
+  "verse": 171,
+  "target": "agli alti ingegni",
+  "shown": "agli",
+  "start": 9,
+  "end": 13
+ },
+ {
+  "verse": 172,
+  "target": "Paghi viviamo",
+  "shown": "Paghi viviamo",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 173,
+  "target": "Da mediocrità:",
+  "shown": "Da mediocrità:",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 173,
+  "target": "il sapiente",
+  "shown": "il",
+  "start": 21,
+  "end": 23
+ },
+ {
+  "verse": 174,
+  "target": "confine,",
+  "shown": "confine,",
+  "start": 29,
+  "end": 37
+ },
+ {
+  "verse": 175,
+  "target": "il mondo agguaglia",
+  "shown": "il",
+  "start": 4,
+  "end": 6
+ },
+ {
+  "verse": 176,
+  "target": "Segui;",
+  "shown": "Segui;",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 176,
+  "target": "morti,",
+  "shown": "morti,",
+  "start": 19,
+  "end": 25
+ },
+ {
+  "verse": 177,
+  "target": "vivi;",
+  "shown": "vivi;",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 178,
+  "target": "eroi;",
+  "shown": "eroi;",
+  "start": 19,
+  "end": 24
+ }
+]

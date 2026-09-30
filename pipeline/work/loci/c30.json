@@ -1,0 +1,30 @@
+[
+ {
+  "verse": 19,
+  "target": "parti,",
+  "shown": "parti,",
+  "start": 34,
+  "end": 40
+ },
+ {
+  "verse": 23,
+  "target": "movi,",
+  "shown": "movi,",
+  "start": 6,
+  "end": 11
+ },
+ {
+  "verse": 26,
+  "target": "destin,",
+  "shown": "destin,",
+  "start": 22,
+  "end": 29
+ },
+ {
+  "verse": 66,
+  "target": "anzi colei",
+  "shown": "anzi",
+  "start": 25,
+  "end": 29
+ }
+]

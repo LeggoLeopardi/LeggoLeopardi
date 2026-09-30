@@ -1,0 +1,1066 @@
+[
+ {
+  "verse": 4,
+  "target": "Dell'antico",
+  "shown": "Dell’",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 4,
+  "target": "menti",
+  "shown": "menti",
+  "start": 26,
+  "end": 31
+ },
+ {
+  "verse": 5,
+  "target": "S'ai",
+  "shown": "ai",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 5,
+  "target": "patrii esempi",
+  "shown": "patrii",
+  "start": 5,
+  "end": 11
+ },
+ {
+  "verse": 5,
+  "target": "della prisca",
+  "shown": "della",
+  "start": 19,
+  "end": 24
+ },
+ {
+  "verse": 8,
+  "target": "ai passati",
+  "shown": "ai",
+  "start": 4,
+  "end": 6
+ },
+ {
+  "verse": 8,
+  "target": "onor;",
+  "shown": "onor;",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 10,
+  "target": "v’è",
+  "shown": "v’è",
+  "start": 3,
+  "end": 6
+ },
+ {
+  "verse": 11,
+  "target": "indietro, e guarda,",
+  "shown": "indietro, e guarda,",
+  "start": 8,
+  "end": 27
+ },
+ {
+  "verse": 12,
+  "target": "schiera",
+  "shown": "schiera",
+  "start": 7,
+  "end": 14
+ },
+ {
+  "verse": 14,
+  "target": "Che senza sdegno omai la doglia è stolta:",
+  "shown": "Che senza sdegno omai la doglia è stolta:",
+  "start": 0,
+  "end": 41
+ },
+ {
+  "verse": 17,
+  "target": "degli avi nostri",
+  "shown": "degli",
+  "start": 8,
+  "end": 13
+ },
+ {
+  "verse": 17,
+  "target": "nepoti",
+  "shown": "nepoti",
+  "start": 31,
+  "end": 37
+ },
+ {
+  "verse": 22,
+  "target": "meonio",
+  "shown": "meonio",
+  "start": 3,
+  "end": 9
+ },
+ {
+  "verse": 22,
+  "target": "non è più solo.",
+  "shown": "solo.",
+  "start": 27,
+  "end": 32
+ },
+ {
+  "verse": 23,
+  "target": "Ed, oh vergogna!",
+  "shown": "Ed, oh vergogna!",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 24,
+  "target": "che il cener",
+  "shown": "che il",
+  "start": 8,
+  "end": 14
+ },
+ {
+  "verse": 26,
+  "target": "altro suolo,",
+  "shown": "suolo,",
+  "start": 30,
+  "end": 36
+ },
+ {
+  "verse": 27,
+  "target": "un sasso,",
+  "shown": "sasso,",
+  "start": 35,
+  "end": 41
+ },
+ {
+  "verse": 30,
+  "target": "pietosi,",
+  "shown": "pietosi,",
+  "start": 7,
+  "end": 15
+ },
+ {
+  "verse": 31,
+  "target": "paese!",
+  "shown": "paese!",
+  "start": 24,
+  "end": 30
+ },
+ {
+  "verse": 32,
+  "target": "tolta",
+  "shown": "tolta",
+  "start": 14,
+  "end": 19
+ },
+ {
+  "verse": 35,
+  "target": "Italia, o cari,",
+  "shown": "Italia, o cari,",
+  "start": 7,
+  "end": 22
+ },
+ {
+  "verse": 39,
+  "target": "n'ha il cielo",
+  "shown": "cielo",
+  "start": 34,
+  "end": 39
+ },
+ {
+  "verse": 40,
+  "target": "Spirti v’aggiunga",
+  "shown": "Spirti v’aggiunga",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 41,
+  "target": "Misericordia,",
+  "shown": "Misericordia,",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 42,
+  "target": "cotanto affanno",
+  "shown": "affanno",
+  "start": 28,
+  "end": 35
+ },
+ {
+  "verse": 43,
+  "target": "e il velo",
+  "shown": "e il",
+  "start": 28,
+  "end": 32
+ },
+ {
+  "verse": 44,
+  "target": "Ma voi di quale ornar parola o canto ‖ Si debbe, a cui non pur cure o consigli,",
+  "shown": "Ma voi di quale ornar parola o canto",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 45,
+  "target": "Ma voi di quale ornar parola o canto ‖ Si debbe, a cui non pur cure o consigli,",
+  "shown": "Si debbe, a cui non pur cure o consigli,",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 46,
+  "target": "dell'ingegno",
+  "shown": "dell’",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 46,
+  "target": "della man",
+  "shown": "della",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 47,
+  "target": "I sensi e le virtudi eterno vanto",
+  "shown": "I sensi e le virtudi eterno vanto",
+  "start": 0,
+  "end": 33
+ },
+ {
+  "verse": 48,
+  "target": "nella dolce",
+  "shown": "nella",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 49,
+  "target": "Quali a voi note invio, sì che nel core, ‖Sì che nell’alma accesa ‖ Nova favilla indurre abbian valore?",
+  "shown": "Quali a voi note invio, sì che nel core,",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 50,
+  "target": "Quali a voi note invio, sì che nel core, ‖Sì che nell’alma accesa ‖ Nova favilla indurre abbian valore?",
+  "shown": "Sì che nell’alma accesa",
+  "start": 0,
+  "end": 23
+ },
+ {
+  "verse": 51,
+  "target": "Quali a voi note invio, sì che nel core, ‖Sì che nell’alma accesa ‖ Nova favilla indurre abbian valore?",
+  "shown": "Nova favilla indurre abbian valore?",
+  "start": 0,
+  "end": 35
+ },
+ {
+  "verse": 54,
+  "target": "e il turbo",
+  "shown": "e il",
+  "start": 16,
+  "end": 20
+ },
+ {
+  "verse": 55,
+  "target": "dell'immenso",
+  "shown": "dell’",
+  "start": 19,
+  "end": 24
+ },
+ {
+  "verse": 57,
+  "target": "degli occhi",
+  "shown": "degli",
+  "start": 4,
+  "end": 9
+ },
+ {
+  "verse": 60,
+  "target": "Lunge sia, lunge alma profana. Oh quante",
+  "shown": "Lunge sia, lunge alma profana. Oh quante",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 61,
+  "target": "Lacrime al nobil sasso Italia serba!",
+  "shown": "Lacrime al nobil sasso Italia serba!",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 62,
+  "target": "rosa",
+  "shown": "rosa",
+  "start": 27,
+  "end": 31
+ },
+ {
+  "verse": 64,
+  "target": "Voi, di ch’il nostro mal si disacerba,",
+  "shown": "Voi, di ch’il nostro mal si disacerba,",
+  "start": 0,
+  "end": 38
+ },
+ {
+  "verse": 65,
+  "target": "vivete,",
+  "shown": "vivete,",
+  "start": 7,
+  "end": 14
+ },
+ {
+  "verse": 67,
+  "target": "Fra",
+  "shown": "Fra",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 72,
+  "target": "all'opra",
+  "shown": "all’",
+  "start": 8,
+  "end": 12
+ },
+ {
+  "verse": 72,
+  "target": "canto mio,",
+  "shown": "mio,",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 74,
+  "target": "dell’etrusco metro",
+  "shown": "dell’etrusco metro",
+  "start": 2,
+  "end": 20
+ },
+ {
+  "verse": 75,
+  "target": "terrena,",
+  "shown": "terrena,",
+  "start": 11,
+  "end": 19
+ },
+ {
+  "verse": 76,
+  "target": "costei che",
+  "shown": "costei",
+  "start": 6,
+  "end": 12
+ },
+ {
+  "verse": 77,
+  "target": "ai vostri lidi",
+  "shown": "ai",
+  "start": 16,
+  "end": 18
+ },
+ {
+  "verse": 79,
+  "target": "Che saldi",
+  "shown": "Che",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 79,
+  "target": "arena,",
+  "shown": "arena,",
+  "start": 32,
+  "end": 38
+ },
+ {
+  "verse": 80,
+  "target": "lasciasti,",
+  "shown": "lasciasti,",
+  "start": 24,
+  "end": 34
+ },
+ {
+  "verse": 81,
+  "target": "marmi;",
+  "shown": "marmi;",
+  "start": 13,
+  "end": 19
+ },
+ {
+  "verse": 81,
+  "target": "dalle nostre menti",
+  "shown": "dalle",
+  "start": 22,
+  "end": 27
+ },
+ {
+  "verse": 83,
+  "target": "sciaura",
+  "shown": "sciaura",
+  "start": 31,
+  "end": 38
+ },
+ {
+  "verse": 86,
+  "target": "te;",
+  "shown": "te;",
+  "start": 11,
+  "end": 14
+ },
+ {
+  "verse": 88,
+  "target": "Degli avi e de' parenti",
+  "shown": "Degli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 90,
+  "target": "che un",
+  "shown": "che un",
+  "start": 12,
+  "end": 18
+ },
+ {
+  "verse": 91,
+  "target": "Ahi, da che lungo scempio ‖ Vedi afflitta costei, che sì meschina ‖ Te salutava allora",
+  "shown": "Ahi, da che lungo scempio",
+  "start": 0,
+  "end": 25
+ },
+ {
+  "verse": 92,
+  "target": "Ahi, da che lungo scempio ‖ Vedi afflitta costei, che sì meschina ‖ Te salutava allora",
+  "shown": "Vedi afflitta costei, che sì meschina",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 93,
+  "target": "Ahi, da che lungo scempio ‖ Vedi afflitta costei, che sì meschina ‖ Te salutava allora",
+  "shown": "Te salutava allora",
+  "start": 0,
+  "end": 18
+ },
+ {
+  "verse": 94,
+  "target": "di novo",
+  "shown": "novo",
+  "start": 7,
+  "end": 11
+ },
+ {
+  "verse": 94,
+  "target": "paradiso!",
+  "shown": "paradiso!",
+  "start": 23,
+  "end": 32
+ },
+ {
+  "verse": 95,
+  "target": "Oggi ridotta sì che a quel che vedi,‖ Fu fortunata allor donna e reina.",
+  "shown": "Oggi ridotta sì che a quel che vedi,",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 96,
+  "target": "Oggi ridotta sì che a quel che vedi,‖ Fu fortunata allor donna e reina.",
+  "shown": "Fu fortunata allor donna e reina.",
+  "start": 0,
+  "end": 33
+ },
+ {
+  "verse": 97,
+  "target": "Tal miseria l’accora ‖ Qual tu forse mirando a te non credi.",
+  "shown": "Tal miseria l’accora",
+  "start": 0,
+  "end": 20
+ },
+ {
+  "verse": 98,
+  "target": "Tal miseria l’accora ‖ Qual tu forse mirando a te non credi.",
+  "shown": "Qual tu forse mirando a te non credi.",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 99,
+  "target": "doglie;",
+  "shown": "doglie;",
+  "start": 34,
+  "end": 41
+ },
+ {
+  "verse": 100,
+  "target": "la più recente e la più fera",
+  "shown": "la più recente e la più fera",
+  "start": 7,
+  "end": 35
+ },
+ {
+  "verse": 101,
+  "target": "alle soglie",
+  "shown": "alle",
+  "start": 15,
+  "end": 19
+ },
+ {
+  "verse": 102,
+  "target": "la patria tua",
+  "shown": "la patria tua",
+  "start": 5,
+  "end": 18
+ },
+ {
+  "verse": 103,
+  "target": "che il fato",
+  "shown": "che il",
+  "start": 9,
+  "end": 15
+ },
+ {
+  "verse": 104,
+  "target": "orrore;",
+  "shown": "orrore;",
+  "start": 28,
+  "end": 35
+ },
+ {
+  "verse": 106,
+  "target": "soldato;",
+  "shown": "soldato;",
+  "start": 25,
+  "end": 33
+ },
+ {
+  "verse": 107,
+  "target": "predar,",
+  "shown": "predar,",
+  "start": 4,
+  "end": 11
+ },
+ {
+  "verse": 107,
+  "target": "e colti",
+  "shown": "colti",
+  "start": 34,
+  "end": 39
+ },
+ {
+  "verse": 108,
+  "target": "L’asta inimica e il peregrin furore;",
+  "shown": "L’asta inimica e il peregrin furore;",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 109,
+  "target": "degl’itali",
+  "shown": "degl'",
+  "start": 4,
+  "end": 9
+ },
+ {
+  "verse": 110,
+  "target": "divine",
+  "shown": "divine",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 111,
+  "target": "de’ folti",
+  "shown": "de'",
+  "start": 32,
+  "end": 35
+ },
+ {
+  "verse": 112,
+  "target": "via;",
+  "shown": "via;",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 113,
+  "target": "regni;",
+  "shown": "regni;",
+  "start": 33,
+  "end": 39
+ },
+ {
+  "verse": 116,
+  "target": "tra il suon",
+  "shown": "il",
+  "start": 4,
+  "end": 6
+ },
+ {
+  "verse": 116,
+  "target": "delle catene",
+  "shown": "delle",
+  "start": 12,
+  "end": 17
+ },
+ {
+  "verse": 119,
+  "target": "tempio,",
+  "shown": "tempio,",
+  "start": 5,
+  "end": 12
+ },
+ {
+  "verse": 121,
+  "target": "Perchè il",
+  "shown": "Perchè il",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 121,
+  "target": "desti o",
+  "shown": "desti",
+  "start": 20,
+  "end": 25
+ },
+ {
+  "verse": 122,
+  "target": "desti il",
+  "shown": "desti",
+  "start": 7,
+  "end": 12
+ },
+ {
+  "verse": 131,
+  "target": "Avesti, o cara;",
+  "shown": "Avesti, o cara;",
+  "start": 0,
+  "end": 15
+ },
+ {
+  "verse": 132,
+  "target": "cruda",
+  "shown": "cruda",
+  "start": 22,
+  "end": 27
+ },
+ {
+  "verse": 133,
+  "target": "Qui l’ira al cor, qui la pietade abbonda:",
+  "shown": "Qui l’ira al cor, qui la pietade abbonda:",
+  "start": 0,
+  "end": 41
+ },
+ {
+  "verse": 134,
+  "target": "Pugnò, cadde",
+  "shown": "Pugnò, cadde",
+  "start": 0,
+  "end": 12
+ },
+ {
+  "verse": 134,
+  "target": "noi:",
+  "shown": "noi:",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 136,
+  "target": "no;",
+  "shown": "no;",
+  "start": 7,
+  "end": 10
+ },
+ {
+  "verse": 137,
+  "target": "sdegni,",
+  "shown": "sdegni,",
+  "start": 17,
+  "end": 24
+ },
+ {
+  "verse": 138,
+  "target": "Mutato sei",
+  "shown": "Mutato sei",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 139,
+  "target": "Morian per",
+  "shown": "Morian per",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 139,
+  "target": "rutene",
+  "shown": "rutene",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 140,
+  "target": "Squallide",
+  "shown": "Squallide",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 141,
+  "target": "prodi;",
+  "shown": "prodi;",
+  "start": 9,
+  "end": 15
+ },
+ {
+  "verse": 141,
+  "target": "e il cielo",
+  "shown": "e il",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 144,
+  "target": "Semivestiti,",
+  "shown": "Semivestiti,",
+  "start": 0,
+  "end": 12
+ },
+ {
+  "verse": 144,
+  "target": "cruenti,",
+  "shown": "cruenti,",
+  "start": 22,
+  "end": 30
+ },
+ {
+  "verse": 145,
+  "target": "agli egri",
+  "shown": "agli",
+  "start": 13,
+  "end": 17
+ },
+ {
+  "verse": 147,
+  "target": "Membrando",
+  "shown": "Membrando",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 147,
+  "target": "madre,",
+  "shown": "madre,",
+  "start": 25,
+  "end": 31
+ },
+ {
+  "verse": 148,
+  "target": "Diceano: oh",
+  "shown": "Diceano: oh",
+  "start": 0,
+  "end": 11
+ },
+ {
+  "verse": 148,
+  "target": "venti,",
+  "shown": "venti,",
+  "start": 32,
+  "end": 38
+ },
+ {
+  "verse": 149,
+  "target": "per tuo",
+  "shown": "per",
+  "start": 28,
+  "end": 31
+ },
+ {
+  "verse": 150,
+  "target": "nostra. Ecco",
+  "shown": "nostra.",
+  "start": 9,
+  "end": 16
+ },
+ {
+  "verse": 151,
+  "target": "più bella a noi l’età sorride,",
+  "shown": "più bella a noi l’età sorride,",
+  "start": 7,
+  "end": 37
+ },
+ {
+  "verse": 152,
+  "target": "ignoti,",
+  "shown": "ignoti,",
+  "start": 17,
+  "end": 24
+ },
+ {
+  "verse": 154,
+  "target": "Di lor ... sibilanti",
+  "shown": "Di lor querela il boreal deserto",
+  "start": 0,
+  "end": 32
+ },
+ {
+  "verse": 155,
+  "target": "Di lor ... sibilanti",
+  "shown": "E conscie fur le sibilanti",
+  "start": 0,
+  "end": 26
+ },
+ {
+  "verse": 157,
+  "target": "all’aperto",
+  "shown": "all'",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 158,
+  "target": "orrido",
+  "shown": "orrido",
+  "start": 22,
+  "end": 28
+ },
+ {
+  "verse": 159,
+  "target": "Dilaceràr",
+  "shown": "Dilaceràr",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 159,
+  "target": "belve;",
+  "shown": "belve;",
+  "start": 13,
+  "end": 19
+ },
+ {
+  "verse": 160,
+  "target": "sarà il nome degli egregi",
+  "shown": "sarà il nome degli egregi",
+  "start": 2,
+  "end": 27
+ },
+ {
+  "verse": 163,
+  "target": "Bench’",
+  "shown": "Bench’",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 163,
+  "target": "sciagura,",
+  "shown": "sciagura,",
+  "start": 26,
+  "end": 35
+ },
+ {
+  "verse": 164,
+  "target": "pace;",
+  "shown": "pace;",
+  "start": 7,
+  "end": 12
+ },
+ {
+  "verse": 166,
+  "target": "nell’età",
+  "shown": "nell'",
+  "start": 19,
+  "end": 24
+ },
+ {
+  "verse": 168,
+  "target": "Posate,",
+  "shown": "Posate,",
+  "start": 0,
+  "end": 7
+ },
+ {
+  "verse": 170,
+  "target": "s’assomigli",
+  "shown": "s’assomigli",
+  "start": 25,
+  "end": 36
+ },
+ {
+  "verse": 173,
+  "target": "lei,",
+  "shown": "lei,",
+  "start": 16,
+  "end": 20
+ },
+ {
+  "verse": 175,
+  "target": "E il suo",
+  "shown": "E il",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 175,
+  "target": "lacrimar",
+  "shown": "lacrimar",
+  "start": 20,
+  "end": 28
+ },
+ {
+  "verse": 176,
+  "target": "costei ch’ogni altra gloria vinse",
+  "shown": "costei ch’ogni altra gloria vinse",
+  "start": 6,
+  "end": 39
+ },
+ {
+  "verse": 178,
+  "target": "ch’",
+  "shown": "ch’",
+  "start": 15,
+  "end": 18
+ },
+ {
+  "verse": 179,
+  "target": "buia vorago",
+  "shown": "buia vorago",
+  "start": 6,
+  "end": 17
+ },
+ {
+  "verse": 180,
+  "target": "ritraesse!",
+  "shown": "ritraesse!",
+  "start": 3,
+  "end": 13
+ },
+ {
+  "verse": 181,
+  "target": "Dimmi: d'Italia",
+  "shown": "Dimmi:",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 182,
+  "target": "Dì: quella fiamma",
+  "shown": "Dì: quella fiamma",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 183,
+  "target": "Dì: nè più mai",
+  "shown": "Dì: nè più mai",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 184,
+  "target": "Ch’alleggiò per gran tempo il",
+  "shown": "Ch’alleggiò per gran tempo il",
+  "start": 0,
+  "end": 29
+ },
+ {
+  "verse": 185,
+  "target": "Nostre corone al suol fien tutte",
+  "shown": "Nostre corone al suol fien tutte",
+  "start": 0,
+  "end": 32
+ },
+ {
+  "verse": 188,
+  "target": "In eterno ... confine?",
+  "shown": "In eterno perimmo? e il nostro scorno",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 189,
+  "target": "In eterno ... confine?",
+  "shown": "Non ha verun confine?",
+  "start": 0,
+  "end": 21
+ },
+ {
+  "verse": 191,
+  "target": "agli avi tuoi",
+  "shown": "agli avi",
+  "start": 8,
+  "end": 16
+ },
+ {
+  "verse": 191,
+  "target": "legnaggio;",
+  "shown": "legnaggio;",
+  "start": 30,
+  "end": 40
+ },
+ {
+  "verse": 193,
+  "target": "templi;",
+  "shown": "templi;",
+  "start": 35,
+  "end": 42
+ },
+ {
+  "verse": 194,
+  "target": "Pensa qual ... cotanti esempli.",
+  "shown": "Pensa qual terra premi; e se destarti",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 195,
+  "target": "Pensa qual ... cotanti esempli.",
+  "shown": "Non può la luce di cotanti esempli,",
+  "start": 0,
+  "end": 35
+ },
+ {
+  "verse": 196,
+  "target": "levati",
+  "shown": "levati",
+  "start": 10,
+  "end": 16
+ },
+ {
+  "verse": 197,
+  "target": "conviene a",
+  "shown": "conviene",
+  "start": 7,
+  "end": 15
+ },
+ {
+  "verse": 198,
+  "target": "d’animi eccelsi",
+  "shown": "d’animi eccelsi",
+  "start": 7,
+  "end": 22
+ },
+ {
+  "verse": 199,
+  "target": "di codardi",
+  "shown": "di codardi",
+  "start": 3,
+  "end": 13
+ },
+ {
+  "verse": 199,
+  "target": "stanza,",
+  "shown": "stanza,",
+  "start": 16,
+  "end": 23
+ }
+]

@@ -1,0 +1,303 @@
+[
+ {
+  "verse": 1,
+  "target": "dell'Orsa",
+  "shown": "dell'",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 4,
+  "target": "dalle finestre",
+  "shown": "dalle finestre",
+  "start": 19,
+  "end": 33
+ },
+ {
+  "verse": 6,
+  "target": "delle gioie",
+  "shown": "delle",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 9,
+  "target": "delle luci",
+  "shown": "delle",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 11,
+  "target": "Delle sere",
+  "shown": "Delle sere",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 13,
+  "target": "Della rana",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 13,
+  "target": "alla campagna",
+  "shown": "alla",
+  "start": 18,
+  "end": 22
+ },
+ {
+  "verse": 17,
+  "target": "nella selva",
+  "shown": "nella",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 34,
+  "target": "che non mi tiene",
+  "shown": "che",
+  "start": 21,
+  "end": 24
+ },
+ {
+  "verse": 42,
+  "target": "degli uomini",
+  "shown": "degli",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 43,
+  "target": "ch'ho",
+  "shown": "ch'ho",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 45,
+  "target": "allor",
+  "shown": "allor",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 49,
+  "target": "dell'arida",
+  "shown": "dell'",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 50,
+  "target": "dell'ora",
+  "shown": "dell'",
+  "start": 31,
+  "end": 36
+ },
+ {
+  "verse": 51,
+  "target": "Dalla torre",
+  "shown": "Dalla",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 52,
+  "target": "alle mie notti",
+  "shown": "alle",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 53,
+  "target": "nella buia",
+  "shown": "nella",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 57,
+  "target": "rimembrar",
+  "shown": "rimembrar",
+  "start": 22,
+  "end": 31
+ },
+ {
+  "verse": 61,
+  "target": "agli estremi",
+  "shown": "agli",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 64,
+  "target": "agli ozi",
+  "shown": "agli",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 68,
+  "target": "delle nevi",
+  "shown": "delle",
+  "start": 11,
+  "end": 16
+ },
+ {
+  "verse": 69,
+  "target": "Ampie finestre",
+  "shown": "finestre",
+  "start": 6,
+  "end": 14
+ },
+ {
+  "verse": 72,
+  "target": "delle cose",
+  "shown": "delle",
+  "start": 8,
+  "end": 13
+ },
+ {
+  "verse": 78,
+  "target": "Della mia prima età",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 79,
+  "target": "che per andar",
+  "shown": "che",
+  "start": 15,
+  "end": 18
+ },
+ {
+  "verse": 82,
+  "target": "gloria e onor;",
+  "shown": "onor;",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 83,
+  "target": "Mero desio;",
+  "shown": "desio;",
+  "start": 5,
+  "end": 11
+ },
+ {
+  "verse": 83,
+  "target": "frutto,",
+  "shown": "frutto,",
+  "start": 30,
+  "end": 37
+ },
+ {
+  "verse": 84,
+  "target": "vóti",
+  "shown": "vóti",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 96,
+  "target": "allato, e sarà giunto",
+  "shown": "allato, e sarà giunto",
+  "start": 8,
+  "end": 29
+ },
+ {
+  "verse": 97,
+  "target": "Della sventura mia",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 100,
+  "target": "quell'imago ancora",
+  "shown": "quell'",
+  "start": 17,
+  "end": 23
+ },
+ {
+  "verse": 110,
+  "target": "della vita in forse",
+  "shown": "della",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 113,
+  "target": "spesso all'ore",
+  "shown": "spesso all'",
+  "start": 10,
+  "end": 21
+ },
+ {
+  "verse": 115,
+  "target": "Alla fioca lucerna",
+  "shown": "Alla",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 120,
+  "target": "entrar di giovinezza,",
+  "shown": "entrar di giovinezza,",
+  "start": 8,
+  "end": 29
+ },
+ {
+  "verse": 126,
+  "target": "Inusitata maraviglia",
+  "shown": "maraviglia",
+  "start": 11,
+  "end": 21
+ },
+ {
+  "verse": 129,
+  "target": "venir nella vita",
+  "shown": "nella",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 142,
+  "target": "ed onde",
+  "shown": "ed onde",
+  "start": 26,
+  "end": 33
+ },
+ {
+  "verse": 143,
+  "target": "riluce delle stelle",
+  "shown": "delle",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 144,
+  "target": "Ove sei,",
+  "shown": "sei,",
+  "start": 15,
+  "end": 19
+ },
+ {
+  "verse": 154,
+  "target": "splendea negli occhi",
+  "shown": "negli",
+  "start": 31,
+  "end": 36
+ },
+ {
+  "verse": 163,
+  "target": "alle fanciulle",
+  "shown": "alle",
+  "start": 23,
+  "end": 27
+ }
+]

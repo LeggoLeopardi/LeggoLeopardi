@@ -1,0 +1,492 @@
+[
+ {
+  "verse": 2,
+  "target": "Voi dell'umana",
+  "shown": "Voi dell'umana",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 3,
+  "target": "ridirà",
+  "shown": "ridirà",
+  "start": 8,
+  "end": 14
+ },
+ {
+  "verse": 3,
+  "target": "all’eterno",
+  "shown": "all'",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 4,
+  "target": "Degli astri agitator",
+  "shown": "Degli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 4,
+  "target": "cari",
+  "shown": "cari",
+  "start": 25,
+  "end": 29
+ },
+ {
+  "verse": 5,
+  "target": "nell’alma",
+  "shown": "nell'",
+  "start": 23,
+  "end": 28
+ },
+ {
+  "verse": 8,
+  "target": "dell’etereo",
+  "shown": "dell'",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 9,
+  "target": "il fato estremo",
+  "shown": "il",
+  "start": 23,
+  "end": 25
+ },
+ {
+  "verse": 9,
+  "target": "estremo,",
+  "shown": "estremo,",
+  "start": 31,
+  "end": 39
+ },
+ {
+  "verse": 10,
+  "target": "la pietà, non la dritta",
+  "shown": "la pietà, non la dritta",
+  "start": 4,
+  "end": 27
+ },
+ {
+  "verse": 11,
+  "target": "del cielo",
+  "shown": "cielo",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 12,
+  "target": "alla tiranna",
+  "shown": "alla",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 14,
+  "target": "dire",
+  "shown": "dire",
+  "start": 32,
+  "end": 36
+ },
+ {
+  "verse": 15,
+  "target": "irrequieto",
+  "shown": "irrequieto",
+  "start": 19,
+  "end": 29
+ },
+ {
+  "verse": 18,
+  "target": "Dell’altrice",
+  "shown": "Dell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 18,
+  "target": "natura;",
+  "shown": "natura;",
+  "start": 13,
+  "end": 20
+ },
+ {
+  "verse": 23,
+  "target": "Delle rotanti",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 23,
+  "target": "sfere,",
+  "shown": "sfere,",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 25,
+  "target": "Dell’umana",
+  "shown": "Dell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 26,
+  "target": "contempli:",
+  "shown": "contempli:",
+  "start": 26,
+  "end": 36
+ },
+ {
+  "verse": 28,
+  "target": "feria",
+  "shown": "feria",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 31,
+  "target": "ignota",
+  "shown": "ignota",
+  "start": 23,
+  "end": 29
+ },
+ {
+  "verse": 36,
+  "target": "sede!",
+  "shown": "sede!",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 39,
+  "target": "destini!",
+  "shown": "destini!",
+  "start": 12,
+  "end": 20
+ },
+ {
+  "verse": 40,
+  "target": "colti",
+  "shown": "colti",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 43,
+  "target": "fraticida",
+  "shown": "fraticida",
+  "start": 20,
+  "end": 29
+ },
+ {
+  "verse": 45,
+  "target": "Nelle profonde",
+  "shown": "Nelle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 47,
+  "target": "Alle macere",
+  "shown": "Alle",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 47,
+  "target": "innalza",
+  "shown": "innalza",
+  "start": 18,
+  "end": 25
+ },
+ {
+  "verse": 53,
+  "target": "Scellerate",
+  "shown": "Scellerate",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 53,
+  "target": "ne’ corpi inerti",
+  "shown": "ne’ corpi inerti",
+  "start": 19,
+  "end": 35
+ },
+ {
+  "verse": 57,
+  "target": "dall'etra",
+  "shown": "dall’",
+  "start": 5,
+  "end": 10
+ },
+ {
+  "verse": 60,
+  "target": "Dall’aer",
+  "shown": "Dall'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 62,
+  "target": "delle antiche",
+  "shown": "delle",
+  "start": 22,
+  "end": 27
+ },
+ {
+  "verse": 65,
+  "target": "alla",
+  "shown": "alla",
+  "start": 6,
+  "end": 10
+ },
+ {
+  "verse": 65,
+  "target": "il crudo affetto",
+  "shown": "il",
+  "start": 20,
+  "end": 22
+ },
+ {
+  "verse": 67,
+  "target": "agl'inaccessi",
+  "shown": "Agl’",
+  "start": 19,
+  "end": 23
+ },
+ {
+  "verse": 69,
+  "target": "il pianto",
+  "shown": "il",
+  "start": 32,
+  "end": 34
+ },
+ {
+  "verse": 70,
+  "target": "nove stelle",
+  "shown": "nove stelle",
+  "start": 14,
+  "end": 25
+ },
+ {
+  "verse": 74,
+  "target": "oscuro in sul",
+  "shown": "oscuro,",
+  "start": 9,
+  "end": 16
+ },
+ {
+  "verse": 74,
+  "target": "all’ombre",
+  "shown": "all'",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 76,
+  "target": "nutrici",
+  "shown": "nutrici",
+  "start": 20,
+  "end": 27
+ },
+ {
+  "verse": 79,
+  "target": "Della saggia Rebecca",
+  "shown": "della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 80,
+  "target": "nella dolce Di",
+  "shown": "nella",
+  "start": 26,
+  "end": 31
+ },
+ {
+  "verse": 83,
+  "target": "Della vezzosa",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 83,
+  "target": "Labanide",
+  "shown": "Labanide",
+  "start": 14,
+  "end": 22
+ },
+ {
+  "verse": 85,
+  "target": "all’odiata",
+  "shown": "all'",
+  "start": 15,
+  "end": 19
+ },
+ {
+  "verse": 88,
+  "target": "della fama il grido",
+  "shown": "della",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 94,
+  "target": "Delle balze materne",
+  "shown": "delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 94,
+  "target": "con le greggi... Il pastorel",
+  "shown": "con le greggi",
+  "start": 23,
+  "end": 36
+ },
+ {
+  "verse": 95,
+  "target": "con le greggi... Il pastorel",
+  "shown": "Mista la tigre ai consueti ovili",
+  "start": 0,
+  "end": 32
+ },
+ {
+  "verse": 96,
+  "target": "con le greggi... Il pastorel",
+  "shown": "Nè guidasse per gioco i lupi al fonte",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 97,
+  "target": "con le greggi... Il pastorel",
+  "shown": "Il pastorel",
+  "start": 0,
+  "end": 11
+ },
+ {
+  "verse": 98,
+  "target": "degli affanni suoi",
+  "shown": "degli",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 98,
+  "target": "vota",
+  "shown": "vota",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 99,
+  "target": "stirpe",
+  "shown": "stirpe",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 99,
+  "target": "alle secrete",
+  "shown": "alle",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 99,
+  "target": "secrete",
+  "shown": "secrete",
+  "start": 27,
+  "end": 34
+ },
+ {
+  "verse": 101,
+  "target": "fraudi, il molle",
+  "shown": "fraudi, il molle",
+  "start": 24,
+  "end": 40
+ },
+ {
+  "verse": 107,
+  "target": "doma",
+  "shown": "doma",
+  "start": 14,
+  "end": 18
+ },
+ {
+  "verse": 108,
+  "target": "onde",
+  "shown": "onde",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 108,
+  "target": "ministra",
+  "shown": "ministra",
+  "start": 25,
+  "end": 33
+ },
+ {
+  "verse": 110,
+  "target": "Dell’atra",
+  "shown": "Dell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 110,
+  "target": "contra il nostro ‖ Scellerato ardimento",
+  "shown": "contra il nostro",
+  "start": 28,
+  "end": 44
+ },
+ {
+  "verse": 111,
+  "target": "contra il nostro ‖ Scellerato ardimento",
+  "shown": "Scellerato ardimento",
+  "start": 0,
+  "end": 20
+ },
+ {
+  "verse": 112,
+  "target": "Della saggia natura!",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 112,
+  "target": "natura!",
+  "shown": "natura!",
+  "start": 13,
+  "end": 20
+ },
+ {
+  "verse": 114,
+  "target": "le violate genti",
+  "shown": "le violate genti",
+  "start": 14,
+  "end": 30
+ },
+ {
+  "verse": 115,
+  "target": "agl’ignorati",
+  "shown": "agl'",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 115,
+  "target": "ignorati",
+  "shown": "ignorati",
+  "start": 26,
+  "end": 34
+ }
+]

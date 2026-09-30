@@ -1,0 +1,590 @@
+[
+ {
+  "verse": 2,
+  "target": "sole",
+  "shown": "sole",
+  "start": 28,
+  "end": 32
+ },
+ {
+  "verse": 3,
+  "target": "Nella mia cieca stanza",
+  "shown": "Nella",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 3,
+  "target": "il primo albore;",
+  "shown": "il primo albore;",
+  "start": 23,
+  "end": 39
+ },
+ {
+  "verse": 4,
+  "target": "in sul tempo",
+  "shown": "in sul tempo",
+  "start": 7,
+  "end": 19
+ },
+ {
+  "verse": 8,
+  "target": "insegnommi,",
+  "shown": "insegnommi,",
+  "start": 6,
+  "end": 17
+ },
+ {
+  "verse": 9,
+  "target": "trista,",
+  "shown": "trista,",
+  "start": 23,
+  "end": 30
+ },
+ {
+  "verse": 10,
+  "target": "Degl’infelici",
+  "shown": "Degl'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 12,
+  "target": "Vivi, mi",
+  "shown": "Vivi, mi",
+  "start": 0,
+  "end": 8
+ },
+ {
+  "verse": 14,
+  "target": "Vieni,",
+  "shown": "Vieni,",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 15,
+  "target": "duol:",
+  "shown": "duol:",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 15,
+  "target": "nè mi credea",
+  "shown": "nè mi credea",
+  "start": 24,
+  "end": 36
+ },
+ {
+  "verse": 16,
+  "target": "Che risaper tu lo dovessi",
+  "shown": "Che risaper tu lo dovessi",
+  "start": 0,
+  "end": 25
+ },
+ {
+  "verse": 16,
+  "target": "questo facea",
+  "shown": "questo",
+  "start": 28,
+  "end": 34
+ },
+ {
+  "verse": 17,
+  "target": "Facea più sconsolato il dolor mio",
+  "shown": "Facea più sconsolato il dolor mio",
+  "start": 0,
+  "end": 33
+ },
+ {
+  "verse": 18,
+  "target": "sei tu per lasciarmi",
+  "shown": "sei",
+  "start": 3,
+  "end": 6
+ },
+ {
+  "verse": 19,
+  "target": "Io n'ho gran tema",
+  "shown": "Io n'ho gran tema",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 19,
+  "target": "t' avvenne",
+  "shown": "t'",
+  "start": 35,
+  "end": 37
+ },
+ {
+  "verse": 20,
+  "target": "Sei tu quella di prima",
+  "shown": "Sei tu quella di prima",
+  "start": 0,
+  "end": 22
+ },
+ {
+  "verse": 20,
+  "target": "E che ti strugge",
+  "shown": "E",
+  "start": 24,
+  "end": 25
+ },
+ {
+  "verse": 21,
+  "target": "Obblivione",
+  "shown": "Obblivione",
+  "start": 14,
+  "end": 24
+ },
+ {
+  "verse": 21,
+  "target": "ingombra",
+  "shown": "ingombra",
+  "start": 25,
+  "end": 33
+ },
+ {
+  "verse": 22,
+  "target": "pensieri,",
+  "shown": "pensieri,",
+  "start": 7,
+  "end": 16
+ },
+ {
+  "verse": 22,
+  "target": "sonno;",
+  "shown": "sonno;",
+  "start": 36,
+  "end": 42
+ },
+ {
+  "verse": 24,
+  "target": "or son più lune",
+  "shown": "or son più lune",
+  "start": 16,
+  "end": 31
+ },
+ {
+  "verse": 26,
+  "target": "seguì: nel",
+  "shown": "seguì: nel",
+  "start": 5,
+  "end": 15
+ },
+ {
+  "verse": 26,
+  "target": "degli anni estinta",
+  "shown": "degli",
+  "start": 21,
+  "end": 26
+ },
+ {
+  "verse": 27,
+  "target": "il viver",
+  "shown": "il",
+  "start": 8,
+  "end": 10
+ },
+ {
+  "verse": 27,
+  "target": "il core",
+  "shown": "il",
+  "start": 39,
+  "end": 41
+ },
+ {
+  "verse": 30,
+  "target": "tragge,",
+  "shown": "tragge,",
+  "start": 22,
+  "end": 29
+ },
+ {
+  "verse": 31,
+  "target": "mortal;",
+  "shown": "mortal;",
+  "start": 7,
+  "end": 14
+ },
+ {
+  "verse": 32,
+  "target": "ai giovanetti",
+  "shown": "ai",
+  "start": 9,
+  "end": 11
+ },
+ {
+  "verse": 32,
+  "target": "il fato",
+  "shown": "il",
+  "start": 33,
+  "end": 35
+ },
+ {
+  "verse": 33,
+  "target": "che sotterra è spenta",
+  "shown": "che sotterra è spenta",
+  "start": 16,
+  "end": 37
+ },
+ {
+  "verse": 34,
+  "target": "saper",
+  "shown": "saper",
+  "start": 7,
+  "end": 12
+ },
+ {
+  "verse": 35,
+  "target": "Agl’inesperti",
+  "shown": "Agl'",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 35,
+  "target": "della vita,",
+  "shown": "della",
+  "start": 14,
+  "end": 19
+ },
+ {
+  "verse": 36,
+  "target": "All’immatura",
+  "shown": "All'",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 38,
+  "target": "Taci, taci",
+  "shown": "Taci, taci",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 38,
+  "target": "che tu mi schianti",
+  "shown": "che",
+  "start": 21,
+  "end": 24
+ },
+ {
+  "verse": 39,
+  "target": "sei morta",
+  "shown": "sei",
+  "start": 32,
+  "end": 35
+ },
+ {
+  "verse": 39,
+  "target": "morta",
+  "shown": "morta",
+  "start": 36,
+  "end": 41
+ },
+ {
+  "verse": 45,
+  "target": "vivi,",
+  "shown": "vivi,",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 49,
+  "target": "potessi,",
+  "shown": "potessi,",
+  "start": 11,
+  "end": 19
+ },
+ {
+  "verse": 49,
+  "target": "il capo",
+  "shown": "il",
+  "start": 22,
+  "end": 24
+ },
+ {
+  "verse": 50,
+  "target": "Agli atroci",
+  "shown": "Agli",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 52,
+  "target": "vecchiezza;",
+  "shown": "vecchiezza;",
+  "start": 23,
+  "end": 34
+ },
+ {
+  "verse": 55,
+  "target": "dell'età mia",
+  "shown": "dell'età mia",
+  "start": 8,
+  "end": 20
+ },
+ {
+  "verse": 57,
+  "target": "nostro;",
+  "shown": "nostro;",
+  "start": 9,
+  "end": 16
+ },
+ {
+  "verse": 57,
+  "target": "cielo ‖ Del",
+  "shown": "cielo",
+  "start": 33,
+  "end": 38
+ },
+ {
+  "verse": 58,
+  "target": "De' nostri affanni",
+  "shown": "De' nostri affanni",
+  "start": 0,
+  "end": 18
+ },
+ {
+  "verse": 61,
+  "target": "cor;",
+  "shown": "cor;",
+  "start": 17,
+  "end": 21
+ },
+ {
+  "verse": 61,
+  "target": "dimmi:",
+  "shown": "dimmi:",
+  "start": 22,
+  "end": 28
+ },
+ {
+  "verse": 62,
+  "target": "Favilla alcuna,",
+  "shown": "Favilla alcuna,",
+  "start": 0,
+  "end": 15
+ },
+ {
+  "verse": 62,
+  "target": "o di pietà, giammai",
+  "shown": "o di pietà, giammai",
+  "start": 16,
+  "end": 35
+ },
+ {
+  "verse": 63,
+  "target": "Verso il",
+  "shown": "Verso il",
+  "start": 0,
+  "end": 8
+ },
+ {
+  "verse": 63,
+  "target": "il cor t'assalse",
+  "shown": "il cor t'assalse",
+  "start": 23,
+  "end": 39
+ },
+ {
+  "verse": 65,
+  "target": "giorni.",
+  "shown": "giorni.",
+  "start": 30,
+  "end": 37
+ },
+ {
+  "verse": 67,
+  "target": "sola",
+  "shown": "sola",
+  "start": 31,
+  "end": 35
+ },
+ {
+  "verse": 68,
+  "target": "Dolor",
+  "shown": "Dolor",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 69,
+  "target": "Non mel celar, ti prego,",
+  "shown": "Non mel celar, ti prego,",
+  "start": 0,
+  "end": 24
+ },
+ {
+  "verse": 70,
+  "target": "il futuro",
+  "shown": "il",
+  "start": 22,
+  "end": 24
+ },
+ {
+  "verse": 71,
+  "target": "Ai nostri giorni.",
+  "shown": "Ai",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 71,
+  "target": "E quella: ti conforta,",
+  "shown": "E quella: ti conforta,",
+  "start": 18,
+  "end": 40
+ },
+ {
+  "verse": 72,
+  "target": "sventurato. Io",
+  "shown": "sventurato. Io",
+  "start": 2,
+  "end": 16
+ },
+ {
+  "verse": 73,
+  "target": "vissi,",
+  "shown": "vissi,",
+  "start": 18,
+  "end": 24
+ },
+ {
+  "verse": 74,
+  "target": "Che fui misera",
+  "shown": "Che",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 76,
+  "target": "sventure nostre,",
+  "shown": "sventure nostre,",
+  "start": 7,
+  "end": 23
+ },
+ {
+  "verse": 77,
+  "target": "Che mi strugge, esclamai;",
+  "shown": "Che mi strugge, esclamai;",
+  "start": 0,
+  "end": 25
+ },
+ {
+  "verse": 79,
+  "target": "dei nostri dì",
+  "shown": "dei",
+  "start": 6,
+  "end": 9
+ },
+ {
+  "verse": 79,
+  "target": "concedi,",
+  "shown": "concedi,",
+  "start": 21,
+  "end": 29
+ },
+ {
+  "verse": 80,
+  "target": "ella,",
+  "shown": "ella,",
+  "start": 32,
+  "end": 37
+ },
+ {
+  "verse": 81,
+  "target": "tristo,",
+  "shown": "tristo,",
+  "start": 8,
+  "end": 15
+ },
+ {
+  "verse": 83,
+  "target": "all’anelante",
+  "shown": "all'",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 85,
+  "target": "il petto,",
+  "shown": "il",
+  "start": 10,
+  "end": 12
+ },
+ {
+  "verse": 85,
+  "target": "nelle fauci",
+  "shown": "nelle",
+  "start": 20,
+  "end": 25
+ },
+ {
+  "verse": 88,
+  "target": "negli occhi miei",
+  "shown": "negli",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 88,
+  "target": "scordi,",
+  "shown": "scordi,",
+  "start": 32,
+  "end": 39
+ },
+ {
+  "verse": 93,
+  "target": "eterno. A",
+  "shown": "eterno. A",
+  "start": 17,
+  "end": 26
+ },
+ {
+  "verse": 94,
+  "target": "vivrai:",
+  "shown": "vivrai:",
+  "start": 14,
+  "end": 21
+ },
+ {
+  "verse": 95,
+  "target": "La fe",
+  "shown": "La fe",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 96,
+  "target": "pregne",
+  "shown": "pregne",
+  "start": 32,
+  "end": 38
+ },
+ {
+  "verse": 98,
+  "target": "negli occhi ‖ Pur",
+  "shown": "negli",
+  "start": 29,
+  "end": 34
+ },
+ {
+  "verse": 99,
+  "target": "nell’incerto",
+  "shown": "nell'",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 100,
+  "target": "Sol vederla",
+  "shown": "Sol",
+  "start": 4,
+  "end": 7
+ }
+]

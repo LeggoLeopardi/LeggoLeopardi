@@ -1,0 +1,359 @@
+[
+ {
+  "verse": 4,
+  "target": "agli occhi tuoi",
+  "shown": "agli",
+  "start": 11,
+  "end": 15
+ },
+ {
+  "verse": 5,
+  "target": "nella polve",
+  "shown": "nella",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 5,
+  "target": "della vita",
+  "shown": "della",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 5,
+  "target": "e il suono",
+  "shown": "e il",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 7,
+  "target": "Che il duro",
+  "shown": "Che il",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 10,
+  "target": "all’infelice",
+  "shown": "all'",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 14,
+  "target": "All’umana virtude",
+  "shown": "All'",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 19,
+  "target": "tardi",
+  "shown": "tardi,",
+  "start": 32,
+  "end": 38
+ },
+ {
+  "verse": 20,
+  "target": "nella sera",
+  "shown": "nella",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 20,
+  "target": "dell’umane cose",
+  "shown": "dell'",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 20,
+  "target": "umane cose,",
+  "shown": "cose,",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 21,
+  "target": "e il senso",
+  "shown": "e il",
+  "start": 32,
+  "end": 36
+ },
+ {
+  "verse": 22,
+  "target": "ciel ne caglia",
+  "shown": "ciel",
+  "start": 3,
+  "end": 7
+ },
+ {
+  "verse": 27,
+  "target": "nell'età",
+  "shown": "nell'",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 30,
+  "target": "sprezziam,",
+  "shown": "sprezziam,",
+  "start": 11,
+  "end": 21
+ },
+ {
+  "verse": 32,
+  "target": "aspetta;",
+  "shown": "aspetta;",
+  "start": 10,
+  "end": 18
+ },
+ {
+  "verse": 33,
+  "target": "Dell'umana progenie",
+  "shown": "Dell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 34,
+  "target": "Delle pupille",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 34,
+  "target": "e il foco",
+  "shown": "e il",
+  "start": 30,
+  "end": 34
+ },
+ {
+  "verse": 36,
+  "target": "E il forte",
+  "shown": "E il",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 39,
+  "target": "chieggo",
+  "shown": "chieggo",
+  "start": 3,
+  "end": 10
+ },
+ {
+  "verse": 45,
+  "target": "valor natio,",
+  "shown": "natio,",
+  "start": 15,
+  "end": 21
+ },
+ {
+  "verse": 46,
+  "target": "Ad atti",
+  "shown": "Ad",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 50,
+  "target": "Non si rallegra il cor",
+  "shown": "Non si rallegra il cor",
+  "start": 0,
+  "end": 22
+ },
+ {
+  "verse": 53,
+  "target": "Della procella",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 53,
+  "target": "spose,",
+  "shown": "spose,",
+  "start": 18,
+  "end": 24
+ },
+ {
+  "verse": 56,
+  "target": "della patria",
+  "shown": "della",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 60,
+  "target": "ardea,",
+  "shown": "ardea,",
+  "start": 9,
+  "end": 15
+ },
+ {
+  "verse": 60,
+  "target": "fanciulle,",
+  "shown": "fanciulle,",
+  "start": 23,
+  "end": 33
+ },
+ {
+  "verse": 62,
+  "target": "e il pianto",
+  "shown": "e il",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 63,
+  "target": "Della virtude",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 65,
+  "target": "La vergognosa età",
+  "shown": "La vergognosa età",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 65,
+  "target": "condanni",
+  "shown": "condanni",
+  "start": 19,
+  "end": 27
+ },
+ {
+  "verse": 66,
+  "target": "alla patria",
+  "shown": "alla",
+  "start": 7,
+  "end": 11
+ },
+ {
+  "verse": 67,
+  "target": "Agli avi",
+  "shown": "Agli",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 69,
+  "target": "e il grido",
+  "shown": "e il",
+  "start": 15,
+  "end": 19
+ },
+ {
+  "verse": 71,
+  "target": "Finchè la sposa",
+  "shown": "Finchè",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 75,
+  "target": "Quando e' reddia",
+  "shown": "Quando e' reddia",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 78,
+  "target": "degli alteri",
+  "shown": "degli",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 81,
+  "target": "Nella stagion",
+  "shown": "Nella",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 81,
+  "target": "ch' ai dolci",
+  "shown": "ch' ai",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 81,
+  "target": "invita,",
+  "shown": "invita,",
+  "start": 33,
+  "end": 40
+ },
+ {
+  "verse": 84,
+  "target": "all'Erebo",
+  "shown": "all'",
+  "start": 2,
+  "end": 6
+ },
+ {
+  "verse": 87,
+  "target": "tomba,",
+  "shown": "tomba,",
+  "start": 10,
+  "end": 16
+ },
+ {
+  "verse": 95,
+  "target": "alla vaga",
+  "shown": "alla",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 98,
+  "target": "crini;",
+  "shown": "crini;",
+  "start": 19,
+  "end": 25
+ },
+ {
+  "verse": 100,
+  "target": "petti;",
+  "shown": "petti;",
+  "start": 15,
+  "end": 21
+ },
+ {
+  "verse": 100,
+  "target": "nella doma",
+  "shown": "nella",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 102,
+  "target": "ai torridi",
+  "shown": "ai",
+  "start": 14,
+  "end": 16
+ },
+ {
+  "verse": 104,
+  "target": "In duri",
+  "shown": "In",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 105,
+  "target": "Femmineo",
+  "shown": "Femmineo",
+  "start": 0,
+  "end": 8
+ }
+]

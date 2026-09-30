@@ -1,0 +1,541 @@
+[
+ {
+  "verse": 9,
+  "target": "procurar",
+  "shown": "procurar",
+  "start": 21,
+  "end": 29
+ },
+ {
+  "verse": 10,
+  "target": "intende,",
+  "shown": "intende,",
+  "start": 13,
+  "end": 21
+ },
+ {
+  "verse": 10,
+  "target": "all'intento",
+  "shown": "all'",
+  "start": 28,
+  "end": 32
+ },
+ {
+  "verse": 13,
+  "target": "e greggi",
+  "shown": "e greggi",
+  "start": 33,
+  "end": 41
+ },
+ {
+  "verse": 15,
+  "target": "Se oziosa",
+  "shown": "Se oziosa",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 17,
+  "target": "all'uom",
+  "shown": "all'",
+  "start": 8,
+  "end": 12
+ },
+ {
+  "verse": 20,
+  "target": "nelle officine",
+  "shown": "nelle",
+  "start": 6,
+  "end": 11
+ },
+ {
+  "verse": 21,
+  "target": "il perigliar",
+  "shown": "il",
+  "start": 20,
+  "end": 22
+ },
+ {
+  "verse": 21,
+  "target": "nell'armi",
+  "shown": "nell'",
+  "start": 33,
+  "end": 38
+ },
+ {
+  "verse": 22,
+  "target": "il mercatante",
+  "shown": "il",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 23,
+  "target": "Che non",
+  "shown": "Che",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 27,
+  "target": "all'aspro",
+  "shown": "all'",
+  "start": 5,
+  "end": 9
+ },
+ {
+  "verse": 28,
+  "target": "che il mondo",
+  "shown": "il",
+  "start": 28,
+  "end": 30
+ },
+ {
+  "verse": 28,
+  "target": "nacque",
+  "shown": "nacque",
+  "start": 37,
+  "end": 43
+ },
+ {
+  "verse": 31,
+  "target": "Nella vita",
+  "shown": "Nella",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 31,
+  "target": "avea natura",
+  "shown": "natura",
+  "start": 25,
+  "end": 31
+ },
+ {
+  "verse": 35,
+  "target": "All'umana",
+  "shown": "All'",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 42,
+  "target": "si scopre e men gravoso",
+  "shown": "si scopre e men gravoso",
+  "start": 7,
+  "end": 30
+ },
+ {
+  "verse": 43,
+  "target": "dell'ore",
+  "shown": "dell'",
+  "start": 26,
+  "end": 31
+ },
+ {
+  "verse": 44,
+  "target": "che il viver",
+  "shown": "il",
+  "start": 12,
+  "end": 14
+ },
+ {
+  "verse": 44,
+  "target": "all'altrui mano",
+  "shown": "all'",
+  "start": 28,
+  "end": 32
+ },
+ {
+  "verse": 51,
+  "target": "dovizia",
+  "shown": "dovizia",
+  "start": 14,
+  "end": 21
+ },
+ {
+  "verse": 54,
+  "target": "I vóti",
+  "shown": "vóti",
+  "start": 2,
+  "end": 6
+ },
+ {
+  "verse": 58,
+  "target": "Della brama",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 62,
+  "target": "Cui natura",
+  "shown": "Cui natura",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 63,
+  "target": "delle vesti",
+  "shown": "delle",
+  "start": 4,
+  "end": 9
+ },
+ {
+  "verse": 63,
+  "target": "delle chiome",
+  "shown": "delle",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 64,
+  "target": "degli atti",
+  "shown": "degli",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 64,
+  "target": "dei passi",
+  "shown": "dei",
+  "start": 15,
+  "end": 18
+ },
+ {
+  "verse": 66,
+  "target": "orti,",
+  "shown": "orti,",
+  "start": 34,
+  "end": 39
+ },
+ {
+  "verse": 67,
+  "target": "Lui giochi e cene e invidiate danze",
+  "shown": "Lui giochi e cene e invidiate danze",
+  "start": 0,
+  "end": 35
+ },
+ {
+  "verse": 68,
+  "target": "il giorno;",
+  "shown": "il",
+  "start": 18,
+  "end": 20
+ },
+ {
+  "verse": 68,
+  "target": "Dal labbro ‖ Mai non si parte",
+  "shown": "dal labbro",
+  "start": 35,
+  "end": 45
+ },
+ {
+  "verse": 69,
+  "target": "Dal labbro ‖ Mai non si parte",
+  "shown": "Mai non si parte",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 70,
+  "target": "Nell'imo",
+  "shown": "Nell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 77,
+  "target": "del ciel",
+  "shown": "ciel",
+  "start": 17,
+  "end": 21
+ },
+ {
+  "verse": 80,
+  "target": "L'età",
+  "shown": "L'",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 82,
+  "target": "Degli spazi",
+  "shown": "Degli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 82,
+  "target": "che all'uom",
+  "shown": "all'",
+  "start": 16,
+  "end": 20
+ },
+ {
+  "verse": 82,
+  "target": "negl'infiniti",
+  "shown": "negl'",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 83,
+  "target": "del tutto",
+  "shown": "tutto",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 83,
+  "target": "la natura",
+  "shown": "natura",
+  "start": 19,
+  "end": 25
+ },
+ {
+  "verse": 88,
+  "target": "Havvi",
+  "shown": "Havvi",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 90,
+  "target": "ed havvi",
+  "shown": "havvi",
+  "start": 33,
+  "end": 38
+ },
+ {
+  "verse": 95,
+  "target": "Perseguitando;",
+  "shown": "Perseguitando;",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 98,
+  "target": "armi,",
+  "shown": "armi,",
+  "start": 20,
+  "end": 25
+ },
+ {
+  "verse": 100,
+  "target": "desio",
+  "shown": "desio",
+  "start": 12,
+  "end": 17
+ },
+ {
+  "verse": 102,
+  "target": "April degli anni",
+  "shown": "degli",
+  "start": 6,
+  "end": 11
+ },
+ {
+  "verse": 103,
+  "target": "del ciel,",
+  "shown": "ciel",
+  "start": 9,
+  "end": 13
+ },
+ {
+  "verse": 105,
+  "target": "de'carmi e di ritrar parlando",
+  "shown": "de' carmi e di ritrar parlando",
+  "start": 7,
+  "end": 37
+ },
+ {
+  "verse": 108,
+  "target": "Di natura",
+  "shown": "natura",
+  "start": 3,
+  "end": 9
+ },
+ {
+  "verse": 108,
+  "target": "e del ciel",
+  "shown": "ciel",
+  "start": 16,
+  "end": 20
+ },
+ {
+  "verse": 110,
+  "target": "E il nostro",
+  "shown": "il",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 115,
+  "target": "nella ferma",
+  "shown": "nella",
+  "start": 4,
+  "end": 9
+ },
+ {
+  "verse": 115,
+  "target": "nella stanca",
+  "shown": "nella",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 116,
+  "target": "nell'età verde",
+  "shown": "nell'",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 119,
+  "target": "il ciel;",
+  "shown": "ciel;",
+  "start": 17,
+  "end": 22
+ },
+ {
+  "verse": 120,
+  "target": "il petto",
+  "shown": "il",
+  "start": 15,
+  "end": 17
+ },
+ {
+  "verse": 122,
+  "target": "Della prima",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 123,
+  "target": "dagli occhi",
+  "shown": "dagli",
+  "start": 29,
+  "end": 34
+ },
+ {
+  "verse": 124,
+  "target": "immagini",
+  "shown": "immagini",
+  "start": 13,
+  "end": 21
+ },
+ {
+  "verse": 125,
+  "target": "all'ora",
+  "shown": "all'",
+  "start": 24,
+  "end": 28
+ },
+ {
+  "verse": 128,
+  "target": "degli aprichi",
+  "shown": "degli",
+  "start": 22,
+  "end": 27
+ },
+ {
+  "verse": 130,
+  "target": "degli augelli mattutini",
+  "shown": "degli",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 139,
+  "target": "della ferrea",
+  "shown": "della",
+  "start": 17,
+  "end": 22
+ },
+ {
+  "verse": 141,
+  "target": "delle mortali",
+  "shown": "delle",
+  "start": 19,
+  "end": 24
+ },
+ {
+  "verse": 142,
+  "target": "dell'eterne",
+  "shown": "dell'",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 145,
+  "target": "spinga il fato",
+  "shown": "fato",
+  "start": 14,
+  "end": 18
+ },
+ {
+  "verse": 145,
+  "target": "e la natura",
+  "shown": "natura",
+  "start": 24,
+  "end": 30
+ },
+ {
+  "verse": 148,
+  "target": "universo",
+  "shown": "universo",
+  "start": 14,
+  "end": 22
+ },
+ {
+  "verse": 151,
+  "target": "Verrò:",
+  "shown": "Verrò:",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 153,
+  "target": "alle genti",
+  "shown": "alle",
+  "start": 24,
+  "end": 28
+ },
+ {
+  "verse": 155,
+  "target": "che già",
+  "shown": "che",
+  "start": 14,
+  "end": 17
+ },
+ {
+  "verse": 156,
+  "target": "gloria",
+  "shown": "gloria",
+  "start": 9,
+  "end": 15
+ },
+ {
+  "verse": 157,
+  "target": "di fortuna",
+  "shown": "fortuna",
+  "start": 25,
+  "end": 32
+ },
+ {
+  "verse": 158,
+  "target": "del fato",
+  "shown": "fato",
+  "start": 6,
+  "end": 10
+ },
+ {
+  "verse": 158,
+  "target": "d'amor",
+  "shown": "amor",
+  "start": 15,
+  "end": 19
+ }
+]

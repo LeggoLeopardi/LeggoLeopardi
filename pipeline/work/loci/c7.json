@@ -1,0 +1,310 @@
+[
+ {
+  "verse": 1,
+  "target": "Perchè i celesti",
+  "shown": "Perchè",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 2,
+  "target": "il sole, e perchè",
+  "shown": "il sole, e perchè",
+  "start": 8,
+  "end": 25
+ },
+ {
+  "verse": 4,
+  "target": "Delle nubi",
+  "shown": "Delle nubi",
+  "start": 0,
+  "end": 10
+ },
+ {
+  "verse": 7,
+  "target": "desio,",
+  "shown": "desio,",
+  "start": 12,
+  "end": 18
+ },
+ {
+  "verse": 9,
+  "target": "alle commosse",
+  "shown": "alle",
+  "start": 14,
+  "end": 18
+ },
+ {
+  "verse": 10,
+  "target": "alle stanche",
+  "shown": "alle",
+  "start": 6,
+  "end": 10
+ },
+ {
+  "verse": 15,
+  "target": "Di febo i raggi al misero non sono ǁ In sempiterno",
+  "shown": "Di febo i raggi al misero non sono",
+  "start": 0,
+  "end": 34
+ },
+ {
+  "verse": 16,
+  "target": "Di febo i raggi al misero non sono ǁ In sempiterno",
+  "shown": "In sempiterno?",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 17,
+  "target": "inspiri",
+  "shown": "inspiri",
+  "start": 19,
+  "end": 26
+ },
+ {
+  "verse": 19,
+  "target": "degli anni suoi",
+  "shown": "degli",
+  "start": 9,
+  "end": 14
+ },
+ {
+  "verse": 20,
+  "target": "Vivi tu, vivi,",
+  "shown": "Vivi tu, vivi,",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 21,
+  "target": "vivi e il",
+  "shown": "vivi e il",
+  "start": 8,
+  "end": 17
+ },
+ {
+  "verse": 22,
+  "target": "Della materna",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 27,
+  "target": "romito ‖ Nido",
+  "shown": "romito",
+  "start": 31,
+  "end": 37
+ },
+ {
+  "verse": 28,
+  "target": "romito ‖ Nido",
+  "shown": "Nido",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 28,
+  "target": "e il pastorel",
+  "shown": "e il",
+  "start": 17,
+  "end": 21
+ },
+ {
+  "verse": 28,
+  "target": "ch'all’ombre",
+  "shown": "all'",
+  "start": 34,
+  "end": 38
+ },
+ {
+  "verse": 29,
+  "target": "ed al fiorito",
+  "shown": "ed al fiorito",
+  "start": 22,
+  "end": 35
+ },
+ {
+  "verse": 34,
+  "target": "che non palese",
+  "shown": "che",
+  "start": 15,
+  "end": 18
+ },
+ {
+  "verse": 36,
+  "target": "dall’immonda",
+  "shown": "dall'",
+  "start": 28,
+  "end": 33
+ },
+ {
+  "verse": 37,
+  "target": "della sanguigna",
+  "shown": "della",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 42,
+  "target": "dell’umana gente",
+  "shown": "dell'",
+  "start": 4,
+  "end": 9
+ },
+ {
+  "verse": 44,
+  "target": "alla deserta",
+  "shown": "alla",
+  "start": 15,
+  "end": 19
+ },
+ {
+  "verse": 46,
+  "target": "alla via",
+  "shown": "alla",
+  "start": 12,
+  "end": 16
+ },
+ {
+  "verse": 50,
+  "target": "nell’ime",
+  "shown": "nell’ime",
+  "start": 33,
+  "end": 41
+ },
+ {
+  "verse": 55,
+  "target": "Filli,",
+  "shown": "Filli,",
+  "start": 17,
+  "end": 23
+ },
+ {
+  "verse": 58,
+  "target": "dell’umano affanno",
+  "shown": "dell'",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 65,
+  "target": "Delle tenere",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 66,
+  "target": "e desolati alberghi,",
+  "shown": "e desolati alberghi,",
+  "start": 16,
+  "end": 36
+ },
+ {
+  "verse": 71,
+  "target": "Musico",
+  "shown": "Musico",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 72,
+  "target": "Or vieni il rinascente anno cantando,",
+  "shown": "Or vieni il rinascente anno cantando,",
+  "start": 0,
+  "end": 37
+ },
+ {
+  "verse": 73,
+  "target": "nell’alto",
+  "shown": "nell’alto",
+  "start": 11,
+  "end": 20
+ },
+ {
+  "verse": 74,
+  "target": "all’aer",
+  "shown": "all’aer",
+  "start": 16,
+  "end": 23
+ },
+ {
+  "verse": 75,
+  "target": "scellerato",
+  "shown": "scellerato",
+  "start": 16,
+  "end": 26
+ },
+ {
+  "verse": 76,
+  "target": "E d’ira e di pietà pallido",
+  "shown": "E d’ira e di pietà pallido",
+  "start": 0,
+  "end": 26
+ },
+ {
+  "verse": 77,
+  "target": "Al nostro ‖ Il gener tuo; quelle tue",
+  "shown": "al nostro",
+  "start": 15,
+  "end": 24
+ },
+ {
+  "verse": 78,
+  "target": "Al nostro ‖ Il gener tuo; quelle tue",
+  "shown": "Il gener tuo; quelle tue",
+  "start": 0,
+  "end": 24
+ },
+ {
+  "verse": 79,
+  "target": "forma,",
+  "shown": "forma,",
+  "start": 10,
+  "end": 16
+ },
+ {
+  "verse": 85,
+  "target": "ch’estrano",
+  "shown": "ch’estrano",
+  "start": 32,
+  "end": 42
+ },
+ {
+  "verse": 87,
+  "target": "educa;",
+  "shown": "educa;",
+  "start": 15,
+  "end": 21
+ },
+ {
+  "verse": 90,
+  "target": "Vaga natura,",
+  "shown": "natura,",
+  "start": 5,
+  "end": 12
+ },
+ {
+  "verse": 91,
+  "target": "allo spirto",
+  "shown": "allo spirto",
+  "start": 6,
+  "end": 17
+ },
+ {
+  "verse": 93,
+  "target": "nell’aprica",
+  "shown": "nell'",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 94,
+  "target": "nell’equoreo",
+  "shown": "nell'",
+  "start": 18,
+  "end": 23
+ }
+]

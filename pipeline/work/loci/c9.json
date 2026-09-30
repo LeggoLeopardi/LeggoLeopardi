@@ -1,0 +1,387 @@
+[
+ {
+  "verse": 2,
+  "target": "Della cadente",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 4,
+  "target": "dilettose e care",
+  "shown": "dilettose e care",
+  "start": 22,
+  "end": 38
+ },
+ {
+  "verse": 5,
+  "target": "Mentre ignote mi fur l’erinni e il fato,",
+  "shown": "Mentre ignote mi fur l’erinni e il fato,",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 6,
+  "target": "agli occhi",
+  "shown": "agli",
+  "start": 10,
+  "end": 14
+ },
+ {
+  "verse": 7,
+  "target": "ai disperati",
+  "shown": "ai",
+  "start": 16,
+  "end": 18
+ },
+ {
+  "verse": 17,
+  "target": "alla dubbia",
+  "shown": "alla",
+  "start": 6,
+  "end": 10
+ },
+ {
+  "verse": 18,
+  "target": "dell’onda",
+  "shown": "dell'",
+  "start": 27,
+  "end": 32
+ },
+ {
+  "verse": 19,
+  "target": "Bello",
+  "shown": "Bello",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 19,
+  "target": "bella",
+  "shown": "bella",
+  "start": 36,
+  "end": 41
+ },
+ {
+  "verse": 20,
+  "target": "Sei tu",
+  "shown": "Sei",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 20,
+  "target": "rorida",
+  "shown": "rorida",
+  "start": 8,
+  "end": 14
+ },
+ {
+  "verse": 20,
+  "target": "di cotesta",
+  "shown": "di cotesta",
+  "start": 26,
+  "end": 36
+ },
+ {
+  "verse": 22,
+  "target": "Alla misera",
+  "shown": "Alla",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 22,
+  "target": "numi",
+  "shown": "numi",
+  "start": 20,
+  "end": 24
+ },
+ {
+  "verse": 24,
+  "target": "o natura",
+  "shown": "natura",
+  "start": 8,
+  "end": 14
+ },
+ {
+  "verse": 25,
+  "target": "alle vezzose",
+  "shown": "alle",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 28,
+  "target": "dall’eterea",
+  "shown": "dall'",
+  "start": 18,
+  "end": 23
+ },
+ {
+  "verse": 29,
+  "target": "albor",
+  "shown": "albor",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 31,
+  "target": "all’ombra",
+  "shown": "all'",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 32,
+  "target": "Degl’inchinati",
+  "shown": "Degl'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 37,
+  "target": "Qual fallo mai, qual sì nefando eccesso",
+  "shown": "Qual fallo mai, qual sì nefando eccesso",
+  "start": 0,
+  "end": 39
+ },
+ {
+  "verse": 38,
+  "target": "anzi il",
+  "shown": "anzi il",
+  "start": 11,
+  "end": 18
+ },
+ {
+  "verse": 38,
+  "target": "torvo",
+  "shown": "torvo",
+  "start": 35,
+  "end": 40
+ },
+ {
+  "verse": 39,
+  "target": "Il ciel",
+  "shown": "Il ciel",
+  "start": 0,
+  "end": 7
+ },
+ {
+  "verse": 39,
+  "target": "volto",
+  "shown": "volto",
+  "start": 33,
+  "end": 38
+ },
+ {
+  "verse": 40,
+  "target": "In che peccai ... poi",
+  "shown": "In che peccai bambina, allor che ignara",
+  "start": 0,
+  "end": 39
+ },
+ {
+  "verse": 41,
+  "target": "In che peccai ... poi",
+  "shown": "Di misfatto è la vita, onde poi",
+  "start": 0,
+  "end": 31
+ },
+ {
+  "verse": 42,
+  "target": "giovanezza, e disfiorato,",
+  "shown": "giovanezza, e disfiorato,",
+  "start": 3,
+  "end": 28
+ },
+ {
+  "verse": 43,
+  "target": "Dell’indomita",
+  "shown": "Dell’indomita",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 43,
+  "target": "si volvesse",
+  "shown": "si volvesse",
+  "start": 20,
+  "end": 31
+ },
+ {
+  "verse": 44,
+  "target": "Il ferrigno mio stame",
+  "shown": "Il ferrigno mio stame",
+  "start": 0,
+  "end": 21
+ },
+ {
+  "verse": 44,
+  "target": "Incaute",
+  "shown": "Incaute",
+  "start": 23,
+  "end": 30
+ },
+ {
+  "verse": 45,
+  "target": "Spande",
+  "shown": "Spande",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 47,
+  "target": "Fuor che il",
+  "shown": "Fuor che il",
+  "start": 0,
+  "end": 11
+ },
+ {
+  "verse": 48,
+  "target": "ragione",
+  "shown": "ragione",
+  "start": 25,
+  "end": 32
+ },
+ {
+  "verse": 49,
+  "target": "celesti",
+  "shown": "celesti",
+  "start": 4,
+  "end": 11
+ },
+ {
+  "verse": 49,
+  "target": "cure,",
+  "shown": "cure,",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 50,
+  "target": "Alle sembianze",
+  "shown": "Alle",
+  "start": 19,
+  "end": 23
+ },
+ {
+  "verse": 51,
+  "target": "Alle amene",
+  "shown": "Alle",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 52,
+  "target": "nelle genti;",
+  "shown": "nelle genti;",
+  "start": 4,
+  "end": 16
+ },
+ {
+  "verse": 54,
+  "target": "luce",
+  "shown": "luce",
+  "start": 10,
+  "end": 14
+ },
+ {
+  "verse": 56,
+  "target": "Dite,",
+  "shown": "Dite,",
+  "start": 27,
+  "end": 32
+ },
+ {
+  "verse": 57,
+  "target": "il crudo",
+  "shown": "il crudo",
+  "start": 2,
+  "end": 10
+ },
+ {
+  "verse": 59,
+  "target": "indarno,",
+  "shown": "indarno,",
+  "start": 6,
+  "end": 14
+ },
+ {
+  "verse": 59,
+  "target": "fede,",
+  "shown": "fede,",
+  "start": 23,
+  "end": 28
+ },
+ {
+  "verse": 63,
+  "target": "Del doglio ... fanciullezza",
+  "shown": "del doglio avaro",
+  "start": 16,
+  "end": 32
+ },
+ {
+  "verse": 64,
+  "target": "Del doglio ... fanciullezza",
+  "shown": "Giove, poi che perìr gl’inganni e il sogno",
+  "start": 0,
+  "end": 42
+ },
+ {
+  "verse": 65,
+  "target": "Del doglio ... fanciullezza",
+  "shown": "Della mia fanciullezza",
+  "start": 0,
+  "end": 22
+ },
+ {
+  "verse": 65,
+  "target": "lieto",
+  "shown": "lieto",
+  "start": 33,
+  "end": 38
+ },
+ {
+  "verse": 67,
+  "target": "morbo,",
+  "shown": "morbo,",
+  "start": 13,
+  "end": 19
+ },
+ {
+  "verse": 68,
+  "target": "Della gelida",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 70,
+  "target": "Tartaro",
+  "shown": "Tartaro",
+  "start": 3,
+  "end": 10
+ },
+ {
+  "verse": 70,
+  "target": "e il prode",
+  "shown": "e il",
+  "start": 21,
+  "end": 25
+ },
+ {
+  "verse": 71,
+  "target": "Diva,",
+  "shown": "Diva,",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 72,
+  "target": "notte,",
+  "shown": "notte,",
+  "start": 9,
+  "end": 15
+ }
+]

@@ -657,7 +657,13 @@
       "N35c XXVII. ‖ AMORE E MORTE. p. 131",
       "N35c XXVII. ‖ AMORE E MORTE. p. 132"
     ],
-    "pre_roles": null,
+    "pre_roles": [
+      "head",
+      "head",
+      "epigraph",
+      "epigraph",
+      "epigraph"
+    ],
     "status": {
       "leggo": "provisional",
       "traduco": "none",
@@ -782,7 +788,13 @@
       "N35c XXXII. Palinodia al marchese Gino Capponi p. 156",
       "N35c XXXII. Palinodia al marchese Gino Capponi p. 157"
     ],
-    "pre_roles": null,
+    "pre_roles": [
+      "head",
+      "head",
+      "head",
+      "epigraph",
+      "epigraph"
+    ],
     "status": {
       "leggo": "provisional",
       "traduco": "none",
@@ -844,7 +856,15 @@
       "N35c XXXIV. La ginestra, o il fiore del deserto p. 21",
       "N35c XXXIV. La ginestra, o il fiore del deserto p. 22"
     ],
-    "pre_roles": null,
+    "pre_roles": [
+      "head",
+      "head",
+      "head",
+      "head",
+      "epigraph",
+      "epigraph",
+      "epigraph"
+    ],
     "status": {
       "leggo": "provisional",
       "traduco": "none",
@@ -908,7 +928,10 @@
       "N35c XXXVII. p. 161",
       "N35c XXXVII. p. 162"
     ],
-    "pre_roles": null,
+    "pre_roles": [
+      "head",
+      "speaker"
+    ],
     "status": {
       "leggo": "provisional",
       "traduco": "none",
