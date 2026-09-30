@@ -3,13 +3,21 @@
 <main class="wrap traduco">
   <%- include('partials/poem-header') %>
 
-  <form class="tpick" action="/traduco/<%= poem.n %>" method="get">
-    <% const esc = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); %>
-    <% const options = (current) => groups.map((g) => `<optgroup label="${esc(__('trad.lang.' + g.lang))}">` + g.items.map((t) => `<option value="${t.id}"${current && t.id === current.id ? ' selected' : ''}>${esc(t.translator)}${t.year ? ', ' + t.year : ''}</option>`).join('') + '</optgroup>').join(''); %>
-    <select id="t-select" name="t" onchange="this.form.submit()" aria-label="<%= __('trad.translation') %>"><%- options(t1) %></select>
-    <select id="t2-select" name="t2" onchange="this.form.submit()" aria-label="<%= __('trad.second') %>"><option value=""><%= __('trad.none') %></option><%- options(t2) %></select>
-    <noscript><button type="submit"><%= __('leggo.go') %></button></noscript>
-  </form>
+  <div class="tpick">
+    <details class="list-picker tp1">
+      <summary><%= t1.translator %><%= t1.year ? ', ' + t1.year : '' %></summary>
+      <div class="list-panel">
+        <% groups.forEach((g) => { %><div class="lgrp"><p class="lgroup"><%= __('trad.lang.' + g.lang) %></p><ul><% g.items.forEach((t) => { const href = '?t=' + t.id + (t2 && t2.id !== t.id ? '&t2=' + t2.id : ''); %><li><a href="<%= href %>"<%- t.id === t1.id ? ' aria-current="true"' : '' %>><%= t.translator %><%= t.year ? ', ' + t.year : '' %></a></li><% }) %></ul></div><% }) %>
+      </div>
+    </details>
+    <details class="list-picker tp2<%= t2 ? "" : " empty" %>">
+      <summary><%= t2 ? t2.translator + (t2.year ? ', ' + t2.year : '') : __('trad.compare') %></summary>
+      <div class="list-panel">
+        <p class="lnone"><a href="?t=<%= t1.id %>"<%- t2 ? '' : ' aria-current="true"' %>><%= __('trad.none') %></a></p>
+        <% groups.forEach((g) => { const items = g.items.filter((t) => t.id !== t1.id); if (!items.length) return; %><div class="lgrp"><p class="lgroup"><%= __('trad.lang.' + g.lang) %></p><ul><% items.forEach((t) => { %><li><a href="?t=<%= t1.id %>&amp;t2=<%= t.id %>"<%- t2 && t.id === t2.id ? ' aria-current="true"' : '' %>><%= t.translator %><%= t.year ? ', ' + t.year : '' %></a></li><% }) %></ul></div><% }) %>
+      </div>
+    </details>
+  </div>
 
   <div class="tcols<%= t2 ? ' three' : '' %>">
     <section class="tcol it" lang="it">
@@ -19,7 +27,7 @@
     </section>
     <% [t1, t2].filter(Boolean).forEach((t) => { %>
     <section class="tcol" lang="<%= t.lang %>">
-      <h2 class="tname"><%= t.translator %><%= t.year ? ', ' + t.year : '' %></h2>
+      <h2 class="tname" title="<%= t.translator %><%= t.year ? ', ' + t.year : '' %>"><%= t.translator %><%= t.year ? ', ' + t.year : '' %></h2>
       <% if (t.title.length) { %><p class="print-head"><% t.title.forEach((line) => { %><span><%= line %></span><% }) %></p><% } %>
       <% t.stanzas.forEach((stanza) => { if (t.form === 'prose') { stanza.forEach((para) => { %><p class="tprose"><%= para %></p><% }) } else { %><div class="tstanza"><% stanza.forEach((line) => { %><p class="tl"><span><%= line %></span></p><% }) %></div><% } }) %>
     </section>

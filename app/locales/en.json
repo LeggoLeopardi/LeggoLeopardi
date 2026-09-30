@@ -50,7 +50,8 @@
       "es": "Spanish",
       "fr": "French",
       "ru": "Russian"
-    }
+    },
+    "compare": "Compare with…"
   },
   "poem": {
     "prev": "Previous poem",

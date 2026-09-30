@@ -158,11 +158,9 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
 
 /* traduco */
 .traduco { padding-block: clamp(20px, 4vw, 40px); }
-.tpick { display: flex; gap: 10px; flex-wrap: wrap; margin: 6px 0 24px; }
-.tpick select { font: inherit; font-size: 1.05rem; max-width: 100%; padding: 4px 8px; border: 1px solid var(--tint); border-radius: 3px; background: var(--paper); color: var(--ink); }
 .tcols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 3vw, 40px); align-items: start; }
 .tcols.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.tname { font-family: var(--label); font-weight: 500; font-size: 1.1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .4em; }
+.tname { font-family: var(--label); font-weight: 500; font-size: 1.1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .4em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tstanza { margin-bottom: 1em; }
 .tl { display: grid; grid-template-columns: 2.2em minmax(0, 1fr); margin: 0; }
 .tcol:not(.it) .tl { grid-template-columns: minmax(0, 1fr); }
@@ -180,7 +178,7 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
 .step { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border-radius: 50%; font-size: 1.9rem; line-height: 1; text-decoration: none; color: var(--main); }
 a.step:hover { background: var(--panel); }
 .print-head { font-family: var(--label); letter-spacing: .06em; color: var(--dark); font-size: 1.15rem; line-height: 1.35; margin: 0 0 1em; }
-.print-head span { display: block; }
+.print-head span + span::before { content: " "; }  /* one line: XII. L'INFINITO. */
 
 /* phones: the navbar in one row, modules scroll sideways if needed */
 @media (max-width: 640px) {
@@ -225,3 +223,24 @@ a.step:hover { background: var(--panel); }
 .tsrc h2 { font-family: var(--label); font-weight: 500; font-size: 1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .3em; }
 .tsrc p, .tsrc ul { margin: .25em 0; }
 .tsrc ul { padding-left: 1.1em; }
+
+/* translation pickers: lists grouped by language, opened like the poem list */
+.tpick { display: flex; gap: 12px 28px; flex-wrap: wrap; margin: 10px 0 26px; }
+.list-picker { position: relative; }
+.list-picker > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .45em; font-size: 1.15rem; color: var(--main); border-bottom: 1px solid var(--tint); padding: 2px 2px 3px; }
+.list-picker > summary::-webkit-details-marker { display: none; }
+.list-picker > summary::after { content: ""; width: 6px; height: 6px; border-right: 2px solid var(--main); border-bottom: 2px solid var(--main); transform: rotate(45deg) translateY(-3px); }
+.list-picker[open] > summary::after { transform: rotate(-135deg) translateY(-1px); }
+.list-picker > summary:hover { border-bottom-color: var(--main); }
+.tp2.empty:not([open]) > summary { color: var(--muted); }
+.list-panel {
+  position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; width: min(46rem, calc(100vw - 32px)); max-height: 70vh; overflow: auto;
+  padding: 12px 18px; columns: 2 18rem; column-gap: 28px;
+  background: var(--paper); border: 1px solid var(--tint); border-radius: 6px; box-shadow: 0 14px 36px -14px rgba(14, 58, 98, .45);
+}
+.lgrp, .lnone { break-inside: avoid; margin: 0 0 10px; }
+.lgroup { font-family: var(--label); letter-spacing: .05em; color: var(--muted); font-size: .95rem; margin: 0 0 2px; }
+.list-panel ul { list-style: none; margin: 0; padding: 0; }
+.list-panel a { display: block; padding: 2px 6px; border-radius: 3px; text-decoration: none; font-size: 1.05rem; }
+.list-panel a:hover { background: var(--panel); }
+.list-panel a[aria-current] { background: var(--panel); color: var(--main); font-weight: 600; }

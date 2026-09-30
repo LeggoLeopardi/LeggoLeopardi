@@ -25,9 +25,12 @@ test('the Italian text next to the first translation, the pickers grouped by lan
   assert.equal(cols(res.text), 2);
   assert.match(res.text, /Sempre caro mi fu quest’ermo colle,/);
   assert.match(res.text, /Stets war mir theuer dieser öde Hügel/);
-  assert.match(res.text, /<select id="t-select" name="t" onchange="this.form.submit\(\)"/);
-  assert.deepEqual([...res.text.matchAll(/<optgroup label="([^"]+)">/g)].map((m) => m[1]).slice(0, 5),
-    ['Tedesco', 'Inglese', 'Spagnolo', 'Francese', 'Russo']);
+  // the translation pickers are lists grouped by language, like the poem list
+  assert.doesNotMatch(res.text, /<select/);
+  const first = res.text.slice(res.text.indexOf('<details class="list-picker tp1">'), res.text.indexOf('</details>', res.text.indexOf('tp1')));
+  assert.deepEqual([...first.matchAll(/<p class="lgroup">([^<]+)<\/p>/g)].map((m) => m[1]), ['Tedesco', 'Inglese', 'Spagnolo', 'Francese', 'Russo']);
+  assert.match(first, /<summary>Louis von Arentsschildt, 1847<\/summary>/);
+  assert.match(first, /<a href="\?t=de_arentsschildt_1847" aria-current="true">/);
   // the texts start side by side; the sources come after them
   assert.doesNotMatch(res.text, /class="tsource"/);
   assert.ok(res.text.indexOf('<section class="tsources"') > res.text.lastIndexOf('<section class="tcol'));
@@ -36,7 +39,7 @@ test('the Italian text next to the first translation, the pickers grouped by lan
 test('choosing one or two translations; bad ids fall back', async () => {
   let res = await request(app).get(`/traduco/${inf}?t=ru_akhmatova_1967`);
   assert.match(res.text, /Всегда был мил мне этот холм пустынный/);
-  assert.match(res.text, /<option value="ru_akhmatova_1967" selected>/);
+  assert.match(res.text, /<a href="\?t=ru_akhmatova_1967" aria-current="true">/);
   res = await request(app).get(`/traduco/${inf}?t=fr_sainte-beuve_1844&t2=en_townsend_1887`);
   assert.equal(cols(res.text), 3);
   assert.match(res.text, /J’aimai toujours ce point de colline déserte,/);
@@ -48,7 +51,15 @@ test('choosing one or two translations; bad ids fall back', async () => {
   assert.equal(cols(res.text), 2);
 });
 
-test('prose translations are paragraphs, sources and rights are in the details', async () => {
+test('the second picker keeps the first translation, and can be cleared', async () => {
+  const res = await request(app).get(`/traduco/${inf}?t=fr_sainte-beuve_1844&t2=en_townsend_1887`);
+  const second = res.text.slice(res.text.indexOf('<details class="list-picker tp2">'), res.text.indexOf('</details>', res.text.indexOf('tp2')));
+  assert.match(second, /<a href="\?t=fr_sainte-beuve_1844">— nessuna —<\/a>|<a href="\?t=fr_sainte-beuve_1844">— none —<\/a>/);
+  assert.match(second, /<a href="\?t=fr_sainte-beuve_1844&amp;t2=ru_akhmatova_1967">/);
+  assert.match(second, /<a href="\?t=fr_sainte-beuve_1844&amp;t2=en_townsend_1887" aria-current="true">/);
+});
+
+test('prose translations are paragraphs, sources and rights are after the texts', async () => {
   let res = await request(app).get(`/traduco/${inf}?t=fr_aulard_1880`);
   assert.match(res.text, /<p class="tprose">Toujours chères me furent/);
   res = await request(app).get(`/traduco/${inf}?t=fr_sainte-beuve_1844`);
