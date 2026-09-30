@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XXXVII.</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXXVII._p._161"/><ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXXVII._p._162"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="37" xml:id="c37">
+<head>XXXVII.</head>
+<lg type="stanza">
+<label type="speaker">ALCETA.</label>
+<l n="1" xml:id="c37.v1"><w xml:id="c37.v1.w1">Odi</w><pc>,</pc> <w xml:id="c37.v1.w2">Melisso</w><pc>:</pc> <w xml:id="c37.v1.w3">io</w> <w xml:id="c37.v1.w4">vo’</w> <w xml:id="c37.v1.w5">contarti</w> <w xml:id="c37.v1.w6">un</w> <w xml:id="c37.v1.w7">sogno</w></l>
+<l n="2" xml:id="c37.v2"><w xml:id="c37.v2.w1">Di</w> <w xml:id="c37.v2.w2">questa</w> <w xml:id="c37.v2.w3">notte</w><pc>,</pc> <w xml:id="c37.v2.w4">che</w> <w xml:id="c37.v2.w5">mi</w> <w xml:id="c37.v2.w6">torna</w> <w xml:id="c37.v2.w7">a</w> <w xml:id="c37.v2.w8">mente</w></l>
+<l n="3" xml:id="c37.v3"><w xml:id="c37.v3.w1">In</w> <w xml:id="c37.v3.w2">riveder</w> <w xml:id="c37.v3.w3">la</w> <w xml:id="c37.v3.w4">luna</w><pc>.</pc> <w xml:id="c37.v3.w5">Io</w> <w xml:id="c37.v3.w6">me</w> <w xml:id="c37.v3.w7">ne</w> <w xml:id="c37.v3.w8">stava</w></l>
+<l n="4" xml:id="c37.v4"><w xml:id="c37.v4.w1">Alla</w> <w xml:id="c37.v4.w2">finestra</w> <w xml:id="c37.v4.w3">che</w> <w xml:id="c37.v4.w4">risponde</w> <w xml:id="c37.v4.w5">al</w> <w xml:id="c37.v4.w6">prato</w><pc>,</pc></l>
+<l n="5" xml:id="c37.v5"><w xml:id="c37.v5.w1">Guardando</w> <w xml:id="c37.v5.w2">in</w> <w xml:id="c37.v5.w3">alto</w><pc>:</pc> <w xml:id="c37.v5.w4">ed</w> <w xml:id="c37.v5.w5">ecco</w> <w xml:id="c37.v5.w6">all'</w><w xml:id="c37.v5.w7">improvviso</w></l>
+<l n="6" xml:id="c37.v6"><w xml:id="c37.v6.w1">Distaccasi</w> <w xml:id="c37.v6.w2">la</w> <w xml:id="c37.v6.w3">luna</w><pc>;</pc> <w xml:id="c37.v6.w4">e</w> <w xml:id="c37.v6.w5">mi</w> <w xml:id="c37.v6.w6">parea</w></l>
+<l n="7" xml:id="c37.v7"><w xml:id="c37.v7.w1">Che</w> <w xml:id="c37.v7.w2">quanto</w> <w xml:id="c37.v7.w3">nel</w> <w xml:id="c37.v7.w4">cader</w> <w xml:id="c37.v7.w5">s’</w><w xml:id="c37.v7.w6">approssimava</w><pc>,</pc></l>
+<l n="8" xml:id="c37.v8"><w xml:id="c37.v8.w1">Tanto</w> <w xml:id="c37.v8.w2">crescesse</w> <w xml:id="c37.v8.w3">al</w> <w xml:id="c37.v8.w4">guardo</w><pc>;</pc> <w xml:id="c37.v8.w5">infin</w> <w xml:id="c37.v8.w6">che</w> <w xml:id="c37.v8.w7">venne</w></l>
+<l n="9" xml:id="c37.v9"><w xml:id="c37.v9.w1">A</w> <w xml:id="c37.v9.w2">dar</w> <w xml:id="c37.v9.w3">di</w> <w xml:id="c37.v9.w4">colpo</w> <w xml:id="c37.v9.w5">in</w> <w xml:id="c37.v9.w6">mezzo</w> <w xml:id="c37.v9.w7">al</w> <w xml:id="c37.v9.w8">prato</w><pc>;</pc> <w xml:id="c37.v9.w9">ed</w> <w xml:id="c37.v9.w10">era</w></l>
+<l n="10" xml:id="c37.v10"><w xml:id="c37.v10.w1">Grande</w> <w xml:id="c37.v10.w2">quanto</w> <w xml:id="c37.v10.w3">una</w> <w xml:id="c37.v10.w4">secchia</w><pc>,</pc> <w xml:id="c37.v10.w5">e</w> <w xml:id="c37.v10.w6">di</w> <w xml:id="c37.v10.w7">scintille</w></l>
+<l n="11" xml:id="c37.v11"><w xml:id="c37.v11.w1">Vomitava</w> <w xml:id="c37.v11.w2">una</w> <w xml:id="c37.v11.w3">nebbia</w><pc>,</pc> <w xml:id="c37.v11.w4">che</w> <w xml:id="c37.v11.w5">stridea</w></l>
+<l n="12" xml:id="c37.v12"><w xml:id="c37.v12.w1">Sì</w> <w xml:id="c37.v12.w2">forte</w> <w xml:id="c37.v12.w3">come</w> <w xml:id="c37.v12.w4">quando</w> <w xml:id="c37.v12.w5">un</w> <w xml:id="c37.v12.w6">carbon</w> <w xml:id="c37.v12.w7">vivo</w></l>
+<l n="13" xml:id="c37.v13"><w xml:id="c37.v13.w1">Nell'</w><w xml:id="c37.v13.w2">acqua</w> <w xml:id="c37.v13.w3">immergi</w> <w xml:id="c37.v13.w4">e</w> <w xml:id="c37.v13.w5">spegni</w><pc>.</pc> <w xml:id="c37.v13.w6">Anzi</w> <w xml:id="c37.v13.w7">a</w> <w xml:id="c37.v13.w8">quel</w> <w xml:id="c37.v13.w9">modo</w></l>
+<l n="14" xml:id="c37.v14"><w xml:id="c37.v14.w1">La</w> <w xml:id="c37.v14.w2">luna</w><pc>,</pc> <w xml:id="c37.v14.w3">come</w> <w xml:id="c37.v14.w4">ho</w> <w xml:id="c37.v14.w5">detto</w><pc>,</pc> <w xml:id="c37.v14.w6">in</w> <w xml:id="c37.v14.w7">mezzo</w> <w xml:id="c37.v14.w8">al</w> <w xml:id="c37.v14.w9">prato</w></l>
+<l n="15" xml:id="c37.v15"><w xml:id="c37.v15.w1">Si</w> <w xml:id="c37.v15.w2">spegneva</w> <w xml:id="c37.v15.w3">annerando</w> <w xml:id="c37.v15.w4">a</w> <w xml:id="c37.v15.w5">poco</w> <w xml:id="c37.v15.w6">a</w> <w xml:id="c37.v15.w7">poco</w><pc>,</pc></l>
+<l n="16" xml:id="c37.v16"><w xml:id="c37.v16.w1">E</w> <w xml:id="c37.v16.w2">ne</w> <w xml:id="c37.v16.w3">fumavan</w> <w xml:id="c37.v16.w4">l’</w><w xml:id="c37.v16.w5">erbe</w> <w xml:id="c37.v16.w6">intorno</w> <w xml:id="c37.v16.w7">intorno</w><pc>.</pc></l>
+<l n="17" xml:id="c37.v17"><w xml:id="c37.v17.w1">Allor</w> <w xml:id="c37.v17.w2">mirando</w> <w xml:id="c37.v17.w3">in</w> <w xml:id="c37.v17.w4">ciel</w><pc>,</pc> <w xml:id="c37.v17.w5">vidi</w> <w xml:id="c37.v17.w6">rimaso</w></l>
+<l n="18" xml:id="c37.v18"><w xml:id="c37.v18.w1">Come</w> <w xml:id="c37.v18.w2">un</w> <w xml:id="c37.v18.w3">barlume</w><pc>,</pc> <w xml:id="c37.v18.w4">o</w> <w xml:id="c37.v18.w5">un’</w><w xml:id="c37.v18.w6">orma</w><pc>,</pc> <w xml:id="c37.v18.w7">anzi</w> <w xml:id="c37.v18.w8">una</w> <w xml:id="c37.v18.w9">nicchia</w><pc>,</pc></l>
+<l n="19" xml:id="c37.v19"><w xml:id="c37.v19.w1">Ond’</w><w xml:id="c37.v19.w2">ella</w> <w xml:id="c37.v19.w3">fosse</w> <w xml:id="c37.v19.w4">svelta</w><pc>;</pc> <w xml:id="c37.v19.w5">in</w> <w xml:id="c37.v19.w6">cotal</w> <w xml:id="c37.v19.w7">guisa</w><pc>,</pc></l>
+<l n="20" xml:id="c37.v20"><w xml:id="c37.v20.w1">Ch'</w><w xml:id="c37.v20.w2">io</w> <w xml:id="c37.v20.w3">n'</w><w xml:id="c37.v20.w4">agghiacciava</w><pc>;</pc> <w xml:id="c37.v20.w5">e</w> <w xml:id="c37.v20.w6">ancor</w> <w xml:id="c37.v20.w7">non</w> <w xml:id="c37.v20.w8">m’</w><w xml:id="c37.v20.w9">assicuro</w><pc>.</pc></l>
+<label type="speaker">MELISSO.</label>
+</lg>
+<lg type="stanza">
+<l n="21" xml:id="c37.v21"><w xml:id="c37.v21.w1">E</w> <w xml:id="c37.v21.w2">ben</w> <w xml:id="c37.v21.w3">hai</w> <w xml:id="c37.v21.w4">che</w> <w xml:id="c37.v21.w5">temer</w><pc>,</pc> <w xml:id="c37.v21.w6">che</w> <w xml:id="c37.v21.w7">agevol</w> <w xml:id="c37.v21.w8">cosa</w></l>
+<l n="22" xml:id="c37.v22"><w xml:id="c37.v22.w1">Fora</w> <w xml:id="c37.v22.w2">cader</w> <w xml:id="c37.v22.w3">la</w> <w xml:id="c37.v22.w4">luna</w> <w xml:id="c37.v22.w5">in</w> <w xml:id="c37.v22.w6">sul</w> <w xml:id="c37.v22.w7">tuo</w> <w xml:id="c37.v22.w8">campo</w><pc>.</pc></l>
+<label type="speaker">ALCETA.</label>
+</lg>
+<lg type="stanza">
+<l n="23" xml:id="c37.v23"><w xml:id="c37.v23.w1">Chi</w> <w xml:id="c37.v23.w2">sa</w><pc>?</pc> <w xml:id="c37.v23.w3">non</w> <w xml:id="c37.v23.w4">veggiam</w> <w xml:id="c37.v23.w5">noi</w> <w xml:id="c37.v23.w6">spesso</w> <w xml:id="c37.v23.w7">di</w> <w xml:id="c37.v23.w8">state</w></l>
+<l n="24" xml:id="c37.v24"><w xml:id="c37.v24.w1">Cader</w> <w xml:id="c37.v24.w2">le</w> <w xml:id="c37.v24.w3">stelle</w><pc>?</pc></l>
+<label type="speaker">MELISSO.</label>
+<l xml:id="c37.v24.u1"><w xml:id="c37.v24.u1.w1">Egli</w> <w xml:id="c37.v24.u1.w2">ci</w> <w xml:id="c37.v24.u1.w3">ha</w> <w xml:id="c37.v24.u1.w4">tante</w> <w xml:id="c37.v24.u1.w5">stelle</w><pc>,</pc></l>
+<l n="25" xml:id="c37.v25"><w xml:id="c37.v25.w1">Che</w> <w xml:id="c37.v25.w2">picciol</w> <w xml:id="c37.v25.w3">danno</w> <w xml:id="c37.v25.w4">è</w> <w xml:id="c37.v25.w5">cader</w> <w xml:id="c37.v25.w6">l’</w><w xml:id="c37.v25.w7">una</w> <w xml:id="c37.v25.w8">o</w> <w xml:id="c37.v25.w9">l’</w><w xml:id="c37.v25.w10">altra</w></l>
+<l n="26" xml:id="c37.v26"><w xml:id="c37.v26.w1">Di</w> <w xml:id="c37.v26.w2">loro</w><pc>,</pc> <w xml:id="c37.v26.w3">e</w> <w xml:id="c37.v26.w4">mille</w> <w xml:id="c37.v26.w5">rimaner</w><pc>.</pc> <w xml:id="c37.v26.w6">Ma</w> <w xml:id="c37.v26.w7">sola</w></l>
+<l n="27" xml:id="c37.v27"><w xml:id="c37.v27.w1">Ha</w> <w xml:id="c37.v27.w2">questa</w> <w xml:id="c37.v27.w3">luna</w> <w xml:id="c37.v27.w4">in</w> <w xml:id="c37.v27.w5">ciel</w><pc>,</pc> <w xml:id="c37.v27.w6">che</w> <w xml:id="c37.v27.w7">da</w> <w xml:id="c37.v27.w8">nessuno</w></l>
+<l n="28" xml:id="c37.v28"><w xml:id="c37.v28.w1">Cader</w> <w xml:id="c37.v28.w2">fu</w> <w xml:id="c37.v28.w3">vista</w> <w xml:id="c37.v28.w4">mai</w> <w xml:id="c37.v28.w5">se</w> <w xml:id="c37.v28.w6">non</w> <w xml:id="c37.v28.w7">in</w> <w xml:id="c37.v28.w8">sogno</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

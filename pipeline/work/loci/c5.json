@@ -1,0 +1,366 @@
+[
+ {
+  "verse": 5,
+  "target": "s’alla veloce",
+  "shown": "alla",
+  "start": 21,
+  "end": 25
+ },
+ {
+  "verse": 6,
+  "target": "Piena",
+  "shown": "Piena",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 6,
+  "target": "degli anni il",
+  "shown": "degli",
+  "start": 6,
+  "end": 11
+ },
+ {
+  "verse": 7,
+  "target": "attendi e il core",
+  "shown": "e il",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 9,
+  "target": "e il circo",
+  "shown": "e il",
+  "start": 6,
+  "end": 10
+ },
+ {
+  "verse": 10,
+  "target": "Ai fatti",
+  "shown": "Ai",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 10,
+  "target": "favore;",
+  "shown": "favore;",
+  "start": 29,
+  "end": 36
+ },
+ {
+  "verse": 11,
+  "target": "dell’età novella",
+  "shown": "dell'",
+  "start": 14,
+  "end": 19
+ },
+ {
+  "verse": 13,
+  "target": "Gli antichi esempi",
+  "shown": "Gli antichi esempi",
+  "start": 0,
+  "end": 18
+ },
+ {
+  "verse": 14,
+  "target": "Del barbarico",
+  "shown": "Del barbarico",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 15,
+  "target": "Non colorò la",
+  "shown": "Non colorò la",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 16,
+  "target": "Quei",
+  "shown": "Quei",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 16,
+  "target": "e il campo",
+  "shown": "e il",
+  "start": 27,
+  "end": 31
+ },
+ {
+  "verse": 19,
+  "target": "nell’Alfeo",
+  "shown": "nell'",
+  "start": 26,
+  "end": 31
+ },
+ {
+  "verse": 20,
+  "target": "Forse",
+  "shown": "Forse",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 21,
+  "target": "Delle cavalle",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 22,
+  "target": "e il greco",
+  "shown": "e il",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 23,
+  "target": "Guidò",
+  "shown": "Guidò",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 24,
+  "target": "Nelle pallide",
+  "shown": "Nelle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 26,
+  "target": "L’alto sen dell’",
+  "shown": "L’alto sen dell’",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 26,
+  "target": "e il servo",
+  "shown": "e il",
+  "start": 24,
+  "end": 28
+ },
+ {
+  "verse": 28,
+  "target": "Della virtù",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 30,
+  "target": "negli egri",
+  "shown": "negli",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 33,
+  "target": "l’opre de’",
+  "shown": "l’opre de’",
+  "start": 4,
+  "end": 14
+ },
+ {
+  "verse": 34,
+  "target": "Della menzogna",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 36,
+  "target": "stessa:",
+  "shown": "stessa:",
+  "start": 7,
+  "end": 14
+ },
+ {
+  "verse": 37,
+  "target": "ai forti",
+  "shown": "ai",
+  "start": 8,
+  "end": 10
+ },
+ {
+  "verse": 38,
+  "target": "Negli ozi",
+  "shown": "Negli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 38,
+  "target": "oscuri",
+  "shown": "oscuri",
+  "start": 10,
+  "end": 16
+ },
+ {
+  "verse": 39,
+  "target": "gente",
+  "shown": "gente",
+  "start": 8,
+  "end": 13
+ },
+ {
+  "verse": 40,
+  "target": "ch’alle",
+  "shown": "alle",
+  "start": 21,
+  "end": 25
+ },
+ {
+  "verse": 41,
+  "target": "Delle italiche",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 42,
+  "target": "e che l’",
+  "shown": "e che l’",
+  "start": 23,
+  "end": 31
+ },
+ {
+  "verse": 44,
+  "target": "Forse fien volti,",
+  "shown": "Forse fien volti,",
+  "start": 0,
+  "end": 17
+ },
+ {
+  "verse": 46,
+  "target": "le alte",
+  "shown": "le",
+  "start": 20,
+  "end": 22
+ },
+ {
+  "verse": 47,
+  "target": "delle patrie",
+  "shown": "delle",
+  "start": 14,
+  "end": 19
+ },
+ {
+  "verse": 48,
+  "target": "dalle perverse",
+  "shown": "dalle",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 49,
+  "target": "isgombrano",
+  "shown": "isgombrano",
+  "start": 4,
+  "end": 14
+ },
+ {
+  "verse": 50,
+  "target": "torce dalle abbiette",
+  "shown": "torce dalle abbiette",
+  "start": 10,
+  "end": 30
+ },
+ {
+  "verse": 51,
+  "target": "ciel fatto",
+  "shown": "ciel",
+  "start": 3,
+  "end": 7
+ },
+ {
+  "verse": 52,
+  "target": "Dal rimembrar",
+  "shown": "Dal rimembrar",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 52,
+  "target": "delle passate imprese",
+  "shown": "delle",
+  "start": 14,
+  "end": 19
+ },
+ {
+  "verse": 53,
+  "target": "Alla patria infelice",
+  "shown": "Alla",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 56,
+  "target": "fulgea,",
+  "shown": "fulgea,",
+  "start": 14,
+  "end": 21
+ },
+ {
+  "verse": 57,
+  "target": "stagione;",
+  "shown": "stagione;",
+  "start": 28,
+  "end": 37
+ },
+ {
+  "verse": 58,
+  "target": "Che nullo",
+  "shown": "Che",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 60,
+  "target": "spregiarla:",
+  "shown": "spregiarla:",
+  "start": 30,
+  "end": 41
+ },
+ {
+  "verse": 62,
+  "target": "obblia,",
+  "shown": "obblia,",
+  "start": 10,
+  "end": 17
+ },
+ {
+  "verse": 62,
+  "target": "delle putri",
+  "shown": "delle",
+  "start": 21,
+  "end": 26
+ },
+ {
+  "verse": 63,
+  "target": "e il flutto",
+  "shown": "il",
+  "start": 22,
+  "end": 24
+ },
+ {
+  "verse": 64,
+  "target": "il piede",
+  "shown": "il",
+  "start": 16,
+  "end": 18
+ },
+ {
+  "verse": 65,
+  "target": "leteo",
+  "shown": "leteo",
+  "start": 16,
+  "end": 21
+ }
+]

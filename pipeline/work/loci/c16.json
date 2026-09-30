@@ -1,0 +1,478 @@
+[
+ {
+  "verse": 2,
+  "target": "nella chiusa",
+  "shown": "nella",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 3,
+  "target": "La gallinella",
+  "shown": "La gallinella",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 4,
+  "target": "Sol che",
+  "shown": "Sol",
+  "start": 27,
+  "end": 30
+ },
+ {
+  "verse": 4,
+  "target": "nasce",
+  "shown": "nasce",
+  "start": 35,
+  "end": 40
+ },
+ {
+  "verse": 5,
+  "target": "tremuli",
+  "shown": "tremuli",
+  "start": 7,
+  "end": 14
+ },
+ {
+  "verse": 6,
+  "target": "saetta, alla",
+  "shown": "saetta, alla",
+  "start": 7,
+  "end": 19
+ },
+ {
+  "verse": 8,
+  "target": "il primo",
+  "shown": "il",
+  "start": 32,
+  "end": 34
+ },
+ {
+  "verse": 9,
+  "target": "Degli augelli",
+  "shown": "Degli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 10,
+  "target": "benedico:",
+  "shown": "benedico:",
+  "start": 20,
+  "end": 29
+ },
+ {
+  "verse": 12,
+  "target": "là dove segue",
+  "shown": "là dove segue",
+  "start": 22,
+  "end": 35
+ },
+ {
+  "verse": 13,
+  "target": "Odio al dolor compagno; e doloroso",
+  "shown": "Odio al dolor compagno; e doloroso",
+  "start": 0,
+  "end": 34
+ },
+ {
+  "verse": 14,
+  "target": "Io vivo",
+  "shown": "Io vivo",
+  "start": 0,
+  "end": 7
+ },
+ {
+  "verse": 15,
+  "target": "dimostra",
+  "shown": "dimostra",
+  "start": 27,
+  "end": 35
+ },
+ {
+  "verse": 17,
+  "target": "cortese!",
+  "shown": "cortese!",
+  "start": 13,
+  "end": 21
+ },
+ {
+  "verse": 17,
+  "target": "volgi ‖ Dai miseri lo sguardo; e tu, sdegnando",
+  "shown": "volgi",
+  "start": 31,
+  "end": 36
+ },
+ {
+  "verse": 18,
+  "target": "volgi ‖ Dai miseri lo sguardo; e tu, sdegnando",
+  "shown": "Dai miseri lo sguardo; e tu, sdegnando",
+  "start": 0,
+  "end": 38
+ },
+ {
+  "verse": 19,
+  "target": "sciagure",
+  "shown": "sciagure",
+  "start": 3,
+  "end": 11
+ },
+ {
+  "verse": 19,
+  "target": "alla reina",
+  "shown": "alla",
+  "start": 27,
+  "end": 31
+ },
+ {
+  "verse": 20,
+  "target": "servi, o natura.",
+  "shown": "servi, o natura.",
+  "start": 9,
+  "end": 25
+ },
+ {
+  "verse": 21,
+  "target": "agl’infelici",
+  "shown": "agl'",
+  "start": 15,
+  "end": 19
+ },
+ {
+  "verse": 22,
+  "target": "il ferro",
+  "shown": "il ferro",
+  "start": 30,
+  "end": 38
+ },
+ {
+  "verse": 24,
+  "target": "Sovra",
+  "shown": "Sovra",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 26,
+  "target": "Ivi,",
+  "shown": "Ivi,",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 27,
+  "target": "Sol dipinge",
+  "shown": "Sol",
+  "start": 27,
+  "end": 30
+ },
+ {
+  "verse": 31,
+  "target": "moto",
+  "shown": "moto",
+  "start": 30,
+  "end": 34
+ },
+ {
+  "verse": 34,
+  "target": "il mondo obblio",
+  "shown": "il",
+  "start": 25,
+  "end": 27
+ },
+ {
+  "verse": 38,
+  "target": "Co’",
+  "shown": "Co’",
+  "start": 0,
+  "end": 3
+ },
+ {
+  "verse": 39,
+  "target": "Amore,",
+  "shown": "Amore,",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 40,
+  "target": "mio, che",
+  "shown": "mio,",
+  "start": 10,
+  "end": 14
+ },
+ {
+  "verse": 42,
+  "target": "volto ‖ Nel fior",
+  "shown": "volto",
+  "start": 39,
+  "end": 44
+ },
+ {
+  "verse": 43,
+  "target": "degli anni.",
+  "shown": "degli",
+  "start": 9,
+  "end": 14
+ },
+ {
+  "verse": 43,
+  "target": "sovvien del",
+  "shown": "sovvien del",
+  "start": 24,
+  "end": 35
+ },
+ {
+  "verse": 45,
+  "target": "tempo, allor",
+  "shown": "tempo,",
+  "start": 14,
+  "end": 20
+ },
+ {
+  "verse": 46,
+  "target": "giovanil",
+  "shown": "giovanil",
+  "start": 10,
+  "end": 18
+ },
+ {
+  "verse": 50,
+  "target": "all’opra",
+  "shown": "all'",
+  "start": 33,
+  "end": 37
+ },
+ {
+  "verse": 53,
+  "target": "il viver mio",
+  "shown": "il",
+  "start": 25,
+  "end": 27
+ },
+ {
+  "verse": 55,
+  "target": "il pianger",
+  "shown": "il",
+  "start": 23,
+  "end": 25
+ },
+ {
+  "verse": 60,
+  "target": "nella placida",
+  "shown": "nella",
+  "start": 9,
+  "end": 14
+ },
+ {
+  "verse": 62,
+  "target": "alle ville",
+  "shown": "alle",
+  "start": 13,
+  "end": 17
+ },
+ {
+  "verse": 64,
+  "target": "all’opre",
+  "shown": "all’opre",
+  "start": 4,
+  "end": 12
+ },
+ {
+  "verse": 65,
+  "target": "nelle romite",
+  "shown": "nelle",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 67,
+  "target": "ahi, ma",
+  "shown": "ahi, ma",
+  "start": 25,
+  "end": 32
+ },
+ {
+  "verse": 68,
+  "target": "sopor;",
+  "shown": "sopor;",
+  "start": 16,
+  "end": 22
+ },
+ {
+  "verse": 70,
+  "target": "luna, al",
+  "shown": "luna",
+  "start": 7,
+  "end": 11
+ },
+ {
+  "verse": 71,
+  "target": "nelle selve",
+  "shown": "nelle",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 71,
+  "target": "selve;",
+  "shown": "selve;",
+  "start": 22,
+  "end": 28
+ },
+ {
+  "verse": 72,
+  "target": "Alla mattina",
+  "shown": "Alla",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 73,
+  "target": "dai covili",
+  "shown": "dai",
+  "start": 28,
+  "end": 31
+ },
+ {
+  "verse": 74,
+  "target": "salve,",
+  "shown": "salve,",
+  "start": 21,
+  "end": 27
+ },
+ {
+  "verse": 75,
+  "target": "Delle notti",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 78,
+  "target": "ch’a",
+  "shown": "ch’a",
+  "start": 19,
+  "end": 23
+ },
+ {
+  "verse": 79,
+  "target": "delle rote e",
+  "shown": "delle",
+  "start": 10,
+  "end": 15
+ },
+ {
+  "verse": 81,
+  "target": "Su la tacita via",
+  "shown": "Su la tacita via",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 82,
+  "target": "dell’armi",
+  "shown": "dell'",
+  "start": 9,
+  "end": 14
+ },
+ {
+  "verse": 87,
+  "target": "vil,",
+  "shown": "vil,",
+  "start": 18,
+  "end": 22
+ },
+ {
+  "verse": 90,
+  "target": "Delle ardenti",
+  "shown": "Delle",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 90,
+  "target": "degli aperti",
+  "shown": "degli",
+  "start": 24,
+  "end": 29
+ },
+ {
+  "verse": 91,
+  "target": "alle malvage",
+  "shown": "alle",
+  "start": 17,
+  "end": 21
+ },
+ {
+  "verse": 95,
+  "target": "alla vista",
+  "shown": "alla",
+  "start": 7,
+  "end": 11
+ },
+ {
+  "verse": 95,
+  "target": "ancor io soleva",
+  "shown": "ancor io soleva",
+  "start": 22,
+  "end": 37
+ },
+ {
+  "verse": 97,
+  "target": "negli abitati",
+  "shown": "negli",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 97,
+  "target": "lochi,",
+  "shown": "lochi,",
+  "start": 29,
+  "end": 35
+ },
+ {
+  "verse": 98,
+  "target": "umano,",
+  "shown": "umano,",
+  "start": 29,
+  "end": 35
+ },
+ {
+  "verse": 99,
+  "target": "Scopriva umani aspetti al guardo mio",
+  "shown": "Scopriva umani aspetti al guardo mio",
+  "start": 0,
+  "end": 36
+ },
+ {
+  "verse": 102,
+  "target": "dell'etereo",
+  "shown": "dell’",
+  "start": 12,
+  "end": 17
+ },
+ {
+  "verse": 102,
+  "target": "campo,",
+  "shown": "campo,",
+  "start": 24,
+  "end": 30
+ },
+ {
+  "verse": 105,
+  "target": "pe’",
+  "shown": "pe’",
+  "start": 6,
+  "end": 9
+ },
+ {
+  "verse": 107,
+  "target": "core e lena",
+  "shown": "core e lena",
+  "start": 3,
+  "end": 14
+ }
+]

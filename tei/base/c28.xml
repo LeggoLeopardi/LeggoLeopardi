@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XXVIII. A se stesso</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXVIII._A_se_stesso_p._133"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="28" xml:id="c28">
+<head>XXVIII.<lb/>A SE STESSO.</head>
+<lg type="stanza">
+<l n="1" xml:id="c28.v1"><w xml:id="c28.v1.w1">Or</w> <w xml:id="c28.v1.w2">poserai</w> <w xml:id="c28.v1.w3">per</w> <w xml:id="c28.v1.w4">sempre</w><pc>,</pc></l>
+<l n="2" xml:id="c28.v2"><w xml:id="c28.v2.w1">Stanco</w> <w xml:id="c28.v2.w2">mio</w> <w xml:id="c28.v2.w3">cor</w><pc>.</pc> <w xml:id="c28.v2.w4">Perì</w> <w xml:id="c28.v2.w5">l’</w><w xml:id="c28.v2.w6">inganno</w> <w xml:id="c28.v2.w7">estremo</w><pc>,</pc></l>
+<l n="3" xml:id="c28.v3"><w xml:id="c28.v3.w1">Ch’</w><w xml:id="c28.v3.w2">eterno</w> <w xml:id="c28.v3.w3">io</w> <w xml:id="c28.v3.w4">mi</w> <w xml:id="c28.v3.w5">credei</w><pc>.</pc> <w xml:id="c28.v3.w6">Perì</w><pc>.</pc> <w xml:id="c28.v3.w7">Ben</w> <w xml:id="c28.v3.w8">sento</w><pc>,</pc></l>
+<l n="4" xml:id="c28.v4"><w xml:id="c28.v4.w1">In</w> <w xml:id="c28.v4.w2">noi</w> <w xml:id="c28.v4.w3">di</w> <w xml:id="c28.v4.w4">cari</w> <w xml:id="c28.v4.w5">inganni</w><pc>,</pc></l>
+<l n="5" xml:id="c28.v5"><w xml:id="c28.v5.w1">Non</w> <w xml:id="c28.v5.w2">che</w> <w xml:id="c28.v5.w3">la</w> <w xml:id="c28.v5.w4">speme</w><pc>,</pc> <w xml:id="c28.v5.w5">il</w> <w xml:id="c28.v5.w6">desiderio</w> <w xml:id="c28.v5.w7">è</w> <w xml:id="c28.v5.w8">spento</w><pc>.</pc></l>
+<l n="6" xml:id="c28.v6"><w xml:id="c28.v6.w1">Posa</w> <w xml:id="c28.v6.w2">per</w> <w xml:id="c28.v6.w3">sempre</w><pc>.</pc> <w xml:id="c28.v6.w4">Assai</w></l>
+<l n="7" xml:id="c28.v7"><w xml:id="c28.v7.w1">Palpitasti</w><pc>.</pc> <w xml:id="c28.v7.w2">Non</w> <w xml:id="c28.v7.w3">val</w> <w xml:id="c28.v7.w4">cosa</w> <w xml:id="c28.v7.w5">nessuna</w></l>
+<l n="8" xml:id="c28.v8"><w xml:id="c28.v8.w1">I</w> <w xml:id="c28.v8.w2">moti</w> <w xml:id="c28.v8.w3">tuoi</w><pc>,</pc> <w xml:id="c28.v8.w4">nè</w> <w xml:id="c28.v8.w5">di</w> <w xml:id="c28.v8.w6">sospiri</w> <w xml:id="c28.v8.w7">è</w> <w xml:id="c28.v8.w8">degna</w></l>
+<l n="9" xml:id="c28.v9"><w xml:id="c28.v9.w1">La</w> <w xml:id="c28.v9.w2">terra</w><pc>.</pc> <w xml:id="c28.v9.w3">Amaro</w> <w xml:id="c28.v9.w4">e</w> <w xml:id="c28.v9.w5">noia</w></l>
+<l n="10" xml:id="c28.v10"><w xml:id="c28.v10.w1">La</w> <w xml:id="c28.v10.w2">vita</w><pc>,</pc> <w xml:id="c28.v10.w3">altro</w> <w xml:id="c28.v10.w4">mai</w> <w xml:id="c28.v10.w5">nulla</w><pc>;</pc> <w xml:id="c28.v10.w6">e</w> <w xml:id="c28.v10.w7">fango</w> <w xml:id="c28.v10.w8">è</w> <w xml:id="c28.v10.w9">il</w> <w xml:id="c28.v10.w10">mondo</w><pc>.</pc></l>
+<l n="11" xml:id="c28.v11"><w xml:id="c28.v11.w1">T’</w><w xml:id="c28.v11.w2">acqueta</w> <w xml:id="c28.v11.w3">omai</w><pc>.</pc> <w xml:id="c28.v11.w4">Dispera</w></l>
+<l n="12" xml:id="c28.v12"><w xml:id="c28.v12.w1">L’</w><w xml:id="c28.v12.w2">ultima</w> <w xml:id="c28.v12.w3">volta</w><pc>.</pc> <w xml:id="c28.v12.w4">Al</w> <w xml:id="c28.v12.w5">gener</w> <w xml:id="c28.v12.w6">nostro</w> <w xml:id="c28.v12.w7">il</w> <w xml:id="c28.v12.w8">fato</w></l>
+<l n="13" xml:id="c28.v13"><w xml:id="c28.v13.w1">Non</w> <w xml:id="c28.v13.w2">donò</w> <w xml:id="c28.v13.w3">che</w> <w xml:id="c28.v13.w4">il</w> <w xml:id="c28.v13.w5">morire</w><pc>.</pc> <w xml:id="c28.v13.w6">Omai</w> <w xml:id="c28.v13.w7">disprezza</w></l>
+<l n="14" xml:id="c28.v14"><w xml:id="c28.v14.w1">Te</w><pc>,</pc> <w xml:id="c28.v14.w2">la</w> <w xml:id="c28.v14.w3">natura</w><pc>,</pc> <w xml:id="c28.v14.w4">il</w> <w xml:id="c28.v14.w5">brutto</w></l>
+<l n="15" xml:id="c28.v15"><w xml:id="c28.v15.w1">Poter</w> <w xml:id="c28.v15.w2">che</w><pc>,</pc> <w xml:id="c28.v15.w3">ascoso</w><pc>,</pc> <w xml:id="c28.v15.w4">a</w> <w xml:id="c28.v15.w5">comun</w> <w xml:id="c28.v15.w6">danno</w> <w xml:id="c28.v15.w7">impera</w><pc>,</pc></l>
+<l n="16" xml:id="c28.v16"><w xml:id="c28.v16.w1">E</w> <w xml:id="c28.v16.w2">l’</w><w xml:id="c28.v16.w3">infinita</w> <w xml:id="c28.v16.w4">vanità</w> <w xml:id="c28.v16.w5">del</w> <w xml:id="c28.v16.w6">tutto</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

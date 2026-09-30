@@ -1,0 +1,23 @@
+[
+ {
+  "verse": 8,
+  "target": "ciel nostra",
+  "shown": "ciel nostra",
+  "start": 16,
+  "end": 27
+ },
+ {
+  "verse": 21,
+  "target": "bruno",
+  "shown": "bruno",
+  "start": 19,
+  "end": 24
+ },
+ {
+  "verse": 24,
+  "target": "Da negre",
+  "shown": "Da negre",
+  "start": 0,
+  "end": 8
+ }
+]

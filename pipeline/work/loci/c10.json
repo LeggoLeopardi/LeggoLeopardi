@@ -1,0 +1,261 @@
+[
+ {
+  "verse": 3,
+  "target": "Oimè, se",
+  "shown": "Oimè,",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 13,
+  "target": "Dimmi, tenero",
+  "shown": "Dimmi,",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 17,
+  "target": "nella notte",
+  "shown": "nella",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 18,
+  "target": "queto parea",
+  "shown": "queto",
+  "start": 6,
+  "end": 11
+ },
+ {
+  "verse": 18,
+  "target": "nell’emisfero:",
+  "shown": "nell’emisfero:",
+  "start": 18,
+  "end": 32
+ },
+ {
+  "verse": 19,
+  "target": "Tu inquieto",
+  "shown": "Tu",
+  "start": 0,
+  "end": 2
+ },
+ {
+  "verse": 23,
+  "target": "chiudea,",
+  "shown": "chiudea,",
+  "start": 19,
+  "end": 27
+ },
+ {
+  "verse": 25,
+  "target": "alle tenebre",
+  "shown": "alle",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 27,
+  "target": "alle palpebre!",
+  "shown": "alle",
+  "start": 22,
+  "end": 26
+ },
+ {
+  "verse": 30,
+  "target": "nell’alma instabili",
+  "shown": "nell’alma instabili",
+  "start": 6,
+  "end": 25
+ },
+ {
+  "verse": 31,
+  "target": "Pensieri si volgean",
+  "shown": "Pensieri si volgean",
+  "start": 0,
+  "end": 19
+ },
+ {
+  "verse": 32,
+  "target": "D’antica selva",
+  "shown": "D’antica selva",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 33,
+  "target": "mormorar ne",
+  "shown": "mormorar",
+  "start": 18,
+  "end": 26
+ },
+ {
+  "verse": 38,
+  "target": "Della vampa",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 38,
+  "target": "il venticello",
+  "shown": "il",
+  "start": 24,
+  "end": 26
+ },
+ {
+  "verse": 40,
+  "target": "io giacea",
+  "shown": "io",
+  "start": 12,
+  "end": 14
+ },
+ {
+  "verse": 48,
+  "target": "cielo, ahi",
+  "shown": "cielo,",
+  "start": 21,
+  "end": 27
+ },
+ {
+  "verse": 51,
+  "target": "e il core",
+  "shown": "il",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 54,
+  "target": "delle rote",
+  "shown": "delle",
+  "start": 2,
+  "end": 7
+ },
+ {
+  "verse": 54,
+  "target": "romorio s'intese",
+  "shown": "romorio",
+  "start": 16,
+  "end": 23
+ },
+ {
+  "verse": 60,
+  "target": "che il cor",
+  "shown": "il",
+  "start": 26,
+  "end": 28
+ },
+ {
+  "verse": 67,
+  "target": "Ned io",
+  "shown": "Ned io",
+  "start": 0,
+  "end": 6
+ },
+ {
+  "verse": 71,
+  "target": "degli astri",
+  "shown": "degli astri",
+  "start": 6,
+  "end": 17
+ },
+ {
+  "verse": 71,
+  "target": "dell’aurora",
+  "shown": "dell'",
+  "start": 29,
+  "end": 34
+ },
+ {
+  "verse": 75,
+  "target": "Che di beltade",
+  "shown": "Che di beltade",
+  "start": 0,
+  "end": 14
+ },
+ {
+  "verse": 76,
+  "target": "gli occhi ai noti",
+  "shown": "gli occhi ai noti",
+  "start": 3,
+  "end": 20
+ },
+ {
+  "verse": 79,
+  "target": "sì vario fui,",
+  "shown": "fui,",
+  "start": 28,
+  "end": 32
+ },
+ {
+  "verse": 82,
+  "target": "e col mio core",
+  "shown": "core",
+  "start": 36,
+  "end": 40
+ },
+ {
+  "verse": 83,
+  "target": "perenne ragionar",
+  "shown": "perenne",
+  "start": 6,
+  "end": 13
+ },
+ {
+  "verse": 84,
+  "target": "Alla guardia",
+  "shown": "Alla",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 88,
+  "target": "Che la illibata,",
+  "shown": "Che la illibata,",
+  "start": 0,
+  "end": 16
+ },
+ {
+  "verse": 89,
+  "target": "Turbare egli temea pinta",
+  "shown": "Turbare egli temea pinta",
+  "start": 0,
+  "end": 24
+ },
+ {
+  "verse": 89,
+  "target": "nel seno,",
+  "shown": "seno,",
+  "start": 29,
+  "end": 34
+ },
+ {
+  "verse": 90,
+  "target": "all’aure si turba",
+  "shown": "all’aure si turba",
+  "start": 5,
+  "end": 22
+ },
+ {
+  "verse": 93,
+  "target": "e il piacer",
+  "shown": "il",
+  "start": 2,
+  "end": 4
+ },
+ {
+  "verse": 95,
+  "target": "che la vergogna",
+  "shown": "che la vergogna",
+  "start": 16,
+  "end": 31
+ },
+ {
+  "verse": 97,
+  "target": "cielo, a voi,",
+  "shown": "cielo, a voi,",
+  "start": 3,
+  "end": 16
+ }
+]

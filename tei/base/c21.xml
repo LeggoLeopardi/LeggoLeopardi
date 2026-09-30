@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XXI. A Silvia</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXI._%E2%80%96_A_SILVIA._p._98"/><ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXI._%E2%80%96_A_SILVIA._p._99"/><ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXI._%E2%80%96_A_SILVIA._p._100"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="21" xml:id="c21">
+<head>XXI.<lb/>A SILVIA.</head>
+<lg type="stanza">
+<l n="1" xml:id="c21.v1"><w xml:id="c21.v1.w1">Silvia</w><pc>,</pc> <w xml:id="c21.v1.w2">rimembri</w> <w xml:id="c21.v1.w3">ancora</w></l>
+<l n="2" xml:id="c21.v2"><w xml:id="c21.v2.w1">Quel</w> <w xml:id="c21.v2.w2">tempo</w> <w xml:id="c21.v2.w3">della</w> <w xml:id="c21.v2.w4">tua</w> <w xml:id="c21.v2.w5">vita</w> <w xml:id="c21.v2.w6">mortale</w><pc>,</pc></l>
+<l n="3" xml:id="c21.v3"><w xml:id="c21.v3.w1">Quando</w> <w xml:id="c21.v3.w2">beltà</w> <w xml:id="c21.v3.w3">splendea</w></l>
+<l n="4" xml:id="c21.v4"><w xml:id="c21.v4.w1">Negli</w> <w xml:id="c21.v4.w2">occhi</w> <w xml:id="c21.v4.w3">tuoi</w> <w xml:id="c21.v4.w4">ridenti</w> <w xml:id="c21.v4.w5">e</w> <w xml:id="c21.v4.w6">fuggitivi</w><pc>,</pc></l>
+<l n="5" xml:id="c21.v5"><w xml:id="c21.v5.w1">E</w> <w xml:id="c21.v5.w2">tu</w><pc>,</pc> <w xml:id="c21.v5.w3">lieta</w> <w xml:id="c21.v5.w4">e</w> <w xml:id="c21.v5.w5">pensosa</w><pc>,</pc> <w xml:id="c21.v5.w6">il</w> <w xml:id="c21.v5.w7">limitare</w></l>
+<l n="6" xml:id="c21.v6"><w xml:id="c21.v6.w1">Di</w> <w xml:id="c21.v6.w2">gioventù</w> <w xml:id="c21.v6.w3">salivi</w><pc>?</pc></l>
+</lg>
+<lg type="stanza">
+<l n="7" xml:id="c21.v7"><w xml:id="c21.v7.w1">Sonavan</w> <w xml:id="c21.v7.w2">le</w> <w xml:id="c21.v7.w3">quiete</w></l>
+<l n="8" xml:id="c21.v8"><w xml:id="c21.v8.w1">Stanze</w><pc>,</pc> <w xml:id="c21.v8.w2">e</w> <w xml:id="c21.v8.w3">le</w> <w xml:id="c21.v8.w4">vie</w> <w xml:id="c21.v8.w5">dintorno</w><pc>,</pc></l>
+<l n="9" xml:id="c21.v9"><w xml:id="c21.v9.w1">Al</w> <w xml:id="c21.v9.w2">tuo</w> <w xml:id="c21.v9.w3">perpetuo</w> <w xml:id="c21.v9.w4">canto</w><pc>,</pc></l>
+<l n="10" xml:id="c21.v10"><w xml:id="c21.v10.w1">Allor</w> <w xml:id="c21.v10.w2">che</w> <w xml:id="c21.v10.w3">all'</w><w xml:id="c21.v10.w4">opre</w> <w xml:id="c21.v10.w5">femminili</w> <w xml:id="c21.v10.w6">intenta</w></l>
+<l n="11" xml:id="c21.v11"><w xml:id="c21.v11.w1">Sedevi</w><pc>,</pc> <w xml:id="c21.v11.w2">assai</w> <w xml:id="c21.v11.w3">contenta</w></l>
+<l n="12" xml:id="c21.v12"><w xml:id="c21.v12.w1">Di</w> <w xml:id="c21.v12.w2">quel</w> <w xml:id="c21.v12.w3">vago</w> <w xml:id="c21.v12.w4">avvenir</w> <w xml:id="c21.v12.w5">che</w> <w xml:id="c21.v12.w6">in</w> <w xml:id="c21.v12.w7">mente</w> <w xml:id="c21.v12.w8">avevi</w><pc>.</pc></l>
+<l n="13" xml:id="c21.v13"><w xml:id="c21.v13.w1">Era</w> <w xml:id="c21.v13.w2">il</w> <w xml:id="c21.v13.w3">maggio</w> <w xml:id="c21.v13.w4">odoroso</w><pc>:</pc> <w xml:id="c21.v13.w5">e</w> <w xml:id="c21.v13.w6">tu</w> <w xml:id="c21.v13.w7">solevi</w></l>
+<l n="14" xml:id="c21.v14"><w xml:id="c21.v14.w1">Così</w> <w xml:id="c21.v14.w2">menare</w> <w xml:id="c21.v14.w3">il</w> <w xml:id="c21.v14.w4">giorno</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="15" xml:id="c21.v15"><w xml:id="c21.v15.w1">Io</w> <w xml:id="c21.v15.w2">gli</w> <w xml:id="c21.v15.w3">studi</w> <w xml:id="c21.v15.w4">leggiadri</w></l>
+<l n="16" xml:id="c21.v16"><w xml:id="c21.v16.w1">Talor</w> <w xml:id="c21.v16.w2">lasciando</w> <w xml:id="c21.v16.w3">e</w> <w xml:id="c21.v16.w4">le</w> <w xml:id="c21.v16.w5">sudate</w> <w xml:id="c21.v16.w6">carte</w><pc>,</pc></l>
+<l n="17" xml:id="c21.v17"><w xml:id="c21.v17.w1">Ove</w> <w xml:id="c21.v17.w2">il</w> <w xml:id="c21.v17.w3">tempo</w> <w xml:id="c21.v17.w4">mio</w> <w xml:id="c21.v17.w5">primo</w></l>
+<l n="18" xml:id="c21.v18"><w xml:id="c21.v18.w1">E</w> <w xml:id="c21.v18.w2">di</w> <w xml:id="c21.v18.w3">me</w> <w xml:id="c21.v18.w4">si</w> <w xml:id="c21.v18.w5">spendea</w> <w xml:id="c21.v18.w6">la</w> <w xml:id="c21.v18.w7">miglior</w> <w xml:id="c21.v18.w8">parte</w><pc>,</pc></l>
+<l n="19" xml:id="c21.v19"><w xml:id="c21.v19.w1">D’</w><w xml:id="c21.v19.w2">in</w> <w xml:id="c21.v19.w3">su</w> <w xml:id="c21.v19.w4">i</w> <w xml:id="c21.v19.w5">veroni</w> <w xml:id="c21.v19.w6">del</w> <w xml:id="c21.v19.w7">paterno</w> <w xml:id="c21.v19.w8">ostello</w></l>
+<l n="20" xml:id="c21.v20"><w xml:id="c21.v20.w1">Porgea</w> <w xml:id="c21.v20.w2">gli</w> <w xml:id="c21.v20.w3">orecchi</w> <w xml:id="c21.v20.w4">al</w> <w xml:id="c21.v20.w5">suon</w> <w xml:id="c21.v20.w6">della</w> <w xml:id="c21.v20.w7">tua</w> <w xml:id="c21.v20.w8">voce</w><pc>,</pc></l>
+<l n="21" xml:id="c21.v21"><w xml:id="c21.v21.w1">Ed</w> <w xml:id="c21.v21.w2">alla</w> <w xml:id="c21.v21.w3">man</w> <w xml:id="c21.v21.w4">veloce</w></l>
+<l n="22" xml:id="c21.v22"><w xml:id="c21.v22.w1">Che</w> <w xml:id="c21.v22.w2">percorrea</w> <w xml:id="c21.v22.w3">la</w> <w xml:id="c21.v22.w4">faticosa</w> <w xml:id="c21.v22.w5">tela</w><pc>.</pc></l>
+<l n="23" xml:id="c21.v23"><w xml:id="c21.v23.w1">Mirava</w> <w xml:id="c21.v23.w2">il</w> <w xml:id="c21.v23.w3">ciel</w> <w xml:id="c21.v23.w4">sereno</w><pc>,</pc></l>
+<l n="24" xml:id="c21.v24"><w xml:id="c21.v24.w1">Le</w> <w xml:id="c21.v24.w2">vie</w> <w xml:id="c21.v24.w3">dorate</w> <w xml:id="c21.v24.w4">e</w> <w xml:id="c21.v24.w5">gli</w> <w xml:id="c21.v24.w6">orti</w><pc>,</pc></l>
+<l n="25" xml:id="c21.v25"><w xml:id="c21.v25.w1">E</w> <w xml:id="c21.v25.w2">quinci</w> <w xml:id="c21.v25.w3">il</w> <w xml:id="c21.v25.w4">mar</w> <w xml:id="c21.v25.w5">da</w> <w xml:id="c21.v25.w6">lungi</w><pc>,</pc> <w xml:id="c21.v25.w7">e</w> <w xml:id="c21.v25.w8">quindi</w> <w xml:id="c21.v25.w9">il</w> <w xml:id="c21.v25.w10">monte</w><pc>.</pc></l>
+<l n="26" xml:id="c21.v26"><w xml:id="c21.v26.w1">Lingua</w> <w xml:id="c21.v26.w2">mortal</w> <w xml:id="c21.v26.w3">non</w> <w xml:id="c21.v26.w4">dice</w></l>
+<l n="27" xml:id="c21.v27"><w xml:id="c21.v27.w1">Quel</w> <w xml:id="c21.v27.w2">ch’</w><w xml:id="c21.v27.w3">io</w> <w xml:id="c21.v27.w4">sentiva</w> <w xml:id="c21.v27.w5">in</w> <w xml:id="c21.v27.w6">seno</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="28" xml:id="c21.v28"><w xml:id="c21.v28.w1">Che</w> <w xml:id="c21.v28.w2">pensieri</w> <w xml:id="c21.v28.w3">soavi</w><pc>,</pc></l>
+<l n="29" xml:id="c21.v29"><w xml:id="c21.v29.w1">Che</w> <w xml:id="c21.v29.w2">speranze</w><pc>,</pc> <w xml:id="c21.v29.w3">che</w> <w xml:id="c21.v29.w4">cori</w><pc>,</pc> <w xml:id="c21.v29.w5">o</w> <w xml:id="c21.v29.w6">Silvia</w> <w xml:id="c21.v29.w7">mia</w><pc>!</pc></l>
+<l n="30" xml:id="c21.v30"><w xml:id="c21.v30.w1">Quale</w> <w xml:id="c21.v30.w2">allor</w> <w xml:id="c21.v30.w3">ci</w> <w xml:id="c21.v30.w4">apparia</w></l>
+<l n="31" xml:id="c21.v31"><w xml:id="c21.v31.w1">La</w> <w xml:id="c21.v31.w2">vita</w> <w xml:id="c21.v31.w3">umana</w> <w xml:id="c21.v31.w4">e</w> <w xml:id="c21.v31.w5">il</w> <w xml:id="c21.v31.w6">fato</w><pc>!</pc></l>
+<l n="32" xml:id="c21.v32"><w xml:id="c21.v32.w1">Quando</w> <w xml:id="c21.v32.w2">sovviemmi</w> <w xml:id="c21.v32.w3">di</w> <w xml:id="c21.v32.w4">cotanta</w> <w xml:id="c21.v32.w5">speme</w><pc>,</pc></l>
+<l n="33" xml:id="c21.v33"><w xml:id="c21.v33.w1">Un</w> <w xml:id="c21.v33.w2">affetto</w> <w xml:id="c21.v33.w3">mi</w> <w xml:id="c21.v33.w4">preme</w></l>
+<l n="34" xml:id="c21.v34"><w xml:id="c21.v34.w1">Acerbo</w> <w xml:id="c21.v34.w2">e</w> <w xml:id="c21.v34.w3">sconsolato</w><pc>,</pc></l>
+<l n="35" xml:id="c21.v35"><w xml:id="c21.v35.w1">E</w> <w xml:id="c21.v35.w2">tornami</w> <w xml:id="c21.v35.w3">a</w> <w xml:id="c21.v35.w4">doler</w> <w xml:id="c21.v35.w5">di</w> <w xml:id="c21.v35.w6">mia</w> <w xml:id="c21.v35.w7">sventura</w><pc>.</pc></l>
+<l n="36" xml:id="c21.v36"><w xml:id="c21.v36.w1">O</w> <w xml:id="c21.v36.w2">natura</w><pc>,</pc> <w xml:id="c21.v36.w3">o</w> <w xml:id="c21.v36.w4">natura</w><pc>,</pc></l>
+<l n="37" xml:id="c21.v37"><w xml:id="c21.v37.w1">Perchè</w> <w xml:id="c21.v37.w2">non</w> <w xml:id="c21.v37.w3">rendi</w> <w xml:id="c21.v37.w4">poi</w></l>
+<l n="38" xml:id="c21.v38"><w xml:id="c21.v38.w1">Quel</w> <w xml:id="c21.v38.w2">che</w> <w xml:id="c21.v38.w3">prometti</w> <w xml:id="c21.v38.w4">allor</w><pc>?</pc> <w xml:id="c21.v38.w5">perchè</w> <w xml:id="c21.v38.w6">di</w> <w xml:id="c21.v38.w7">tanto</w></l>
+<l n="39" xml:id="c21.v39"><w xml:id="c21.v39.w1">Inganni</w> <w xml:id="c21.v39.w2">i</w> <w xml:id="c21.v39.w3">figli</w> <w xml:id="c21.v39.w4">tuoi</w><pc>?</pc></l>
+</lg>
+<lg type="stanza">
+<l n="40" xml:id="c21.v40"><w xml:id="c21.v40.w1">Tu</w> <w xml:id="c21.v40.w2">pria</w> <w xml:id="c21.v40.w3">che</w> <w xml:id="c21.v40.w4">l’</w><w xml:id="c21.v40.w5">erbe</w> <w xml:id="c21.v40.w6">inaridisse</w> <w xml:id="c21.v40.w7">il</w> <w xml:id="c21.v40.w8">verno</w><pc>,</pc></l>
+<l n="41" xml:id="c21.v41"><w xml:id="c21.v41.w1">Da</w> <w xml:id="c21.v41.w2">chiuso</w> <w xml:id="c21.v41.w3">morbo</w> <w xml:id="c21.v41.w4">combattuta</w> <w xml:id="c21.v41.w5">e</w> <w xml:id="c21.v41.w6">vinta</w><pc>,</pc></l>
+<l n="42" xml:id="c21.v42"><w xml:id="c21.v42.w1">Perivi</w><pc>,</pc> <w xml:id="c21.v42.w2">o</w> <w xml:id="c21.v42.w3">tenerella</w><pc>.</pc> <w xml:id="c21.v42.w4">E</w> <w xml:id="c21.v42.w5">non</w> <w xml:id="c21.v42.w6">vedevi</w></l>
+<l n="43" xml:id="c21.v43"><w xml:id="c21.v43.w1">Il</w> <w xml:id="c21.v43.w2">fior</w> <w xml:id="c21.v43.w3">degli</w> <w xml:id="c21.v43.w4">anni</w> <w xml:id="c21.v43.w5">tuoi</w><pc>;</pc></l>
+<l n="44" xml:id="c21.v44"><w xml:id="c21.v44.w1">Non</w> <w xml:id="c21.v44.w2">ti</w> <w xml:id="c21.v44.w3">molceva</w> <w xml:id="c21.v44.w4">il</w> <w xml:id="c21.v44.w5">core</w></l>
+<l n="45" xml:id="c21.v45"><w xml:id="c21.v45.w1">La</w> <w xml:id="c21.v45.w2">dolce</w> <w xml:id="c21.v45.w3">lode</w> <w xml:id="c21.v45.w4">or</w> <w xml:id="c21.v45.w5">delle</w> <w xml:id="c21.v45.w6">negre</w> <w xml:id="c21.v45.w7">chiome</w><pc>,</pc></l>
+<l n="46" xml:id="c21.v46"><w xml:id="c21.v46.w1">Or</w> <w xml:id="c21.v46.w2">degli</w> <w xml:id="c21.v46.w3">sguardi</w> <w xml:id="c21.v46.w4">innamorati</w> <w xml:id="c21.v46.w5">e</w> <w xml:id="c21.v46.w6">schivi</w><pc>;</pc></l>
+<l n="47" xml:id="c21.v47"><w xml:id="c21.v47.w1">Nè</w> <w xml:id="c21.v47.w2">teco</w> <w xml:id="c21.v47.w3">le</w> <w xml:id="c21.v47.w4">compagne</w> <w xml:id="c21.v47.w5">ai</w> <w xml:id="c21.v47.w6">dì</w> <w xml:id="c21.v47.w7">festivi</w></l>
+<l n="48" xml:id="c21.v48"><w xml:id="c21.v48.w1">Ragionavan</w> <w xml:id="c21.v48.w2">d’</w><w xml:id="c21.v48.w3">amore</w><pc>.</pc></l>
+</lg>
+<lg type="stanza">
+<l n="49" xml:id="c21.v49"><w xml:id="c21.v49.w1">Anche</w> <w xml:id="c21.v49.w2">peria</w> <w xml:id="c21.v49.w3">fra</w> <w xml:id="c21.v49.w4">poco</w></l>
+<l n="50" xml:id="c21.v50"><w xml:id="c21.v50.w1">La</w> <w xml:id="c21.v50.w2">speranza</w> <w xml:id="c21.v50.w3">mia</w> <w xml:id="c21.v50.w4">dolce</w><pc>:</pc> <w xml:id="c21.v50.w5">agli</w> <w xml:id="c21.v50.w6">anni</w> <w xml:id="c21.v50.w7">miei</w></l>
+<l n="51" xml:id="c21.v51"><w xml:id="c21.v51.w1">Anche</w> <w xml:id="c21.v51.w2">negaro</w> <w xml:id="c21.v51.w3">i</w> <w xml:id="c21.v51.w4">fati</w></l>
+<l n="52" xml:id="c21.v52"><w xml:id="c21.v52.w1">La</w> <w xml:id="c21.v52.w2">giovanezza</w><pc>.</pc> <w xml:id="c21.v52.w3">Ahi</w> <w xml:id="c21.v52.w4">come</w><pc>,</pc></l>
+<l n="53" xml:id="c21.v53"><w xml:id="c21.v53.w1">Come</w> <w xml:id="c21.v53.w2">passata</w> <w xml:id="c21.v53.w3">sei</w><pc>,</pc></l>
+<l n="54" xml:id="c21.v54"><w xml:id="c21.v54.w1">Cara</w> <w xml:id="c21.v54.w2">compagna</w> <w xml:id="c21.v54.w3">dell'</w><w xml:id="c21.v54.w4">età</w> <w xml:id="c21.v54.w5">mia</w> <w xml:id="c21.v54.w6">nova</w><pc>,</pc></l>
+<l n="55" xml:id="c21.v55"><w xml:id="c21.v55.w1">Mia</w> <w xml:id="c21.v55.w2">lacrimata</w> <w xml:id="c21.v55.w3">speme</w><pc>!</pc></l>
+<l n="56" xml:id="c21.v56"><w xml:id="c21.v56.w1">Questo</w> <w xml:id="c21.v56.w2">è</w> <w xml:id="c21.v56.w3">quel</w> <w xml:id="c21.v56.w4">mondo</w><pc>?</pc> <w xml:id="c21.v56.w5">questi</w></l>
+<l n="57" xml:id="c21.v57"><w xml:id="c21.v57.w1">I</w> <w xml:id="c21.v57.w2">diletti</w><pc>,</pc> <w xml:id="c21.v57.w3">l’</w><w xml:id="c21.v57.w4">amor</w><pc>,</pc> <w xml:id="c21.v57.w5">l’</w><w xml:id="c21.v57.w6">opre</w><pc>,</pc> <w xml:id="c21.v57.w7">gli</w> <w xml:id="c21.v57.w8">eventi</w></l>
+<l n="58" xml:id="c21.v58"><w xml:id="c21.v58.w1">Onde</w> <w xml:id="c21.v58.w2">cotanto</w> <w xml:id="c21.v58.w3">ragionammo</w> <w xml:id="c21.v58.w4">insieme</w><pc>?</pc></l>
+<l n="59" xml:id="c21.v59"><w xml:id="c21.v59.w1">Questa</w> <w xml:id="c21.v59.w2">la</w> <w xml:id="c21.v59.w3">sorte</w> <w xml:id="c21.v59.w4">dell'</w><w xml:id="c21.v59.w5">umane</w> <w xml:id="c21.v59.w6">genti</w><pc>?</pc></l>
+<l n="60" xml:id="c21.v60"><w xml:id="c21.v60.w1">All'</w><w xml:id="c21.v60.w2">apparir</w> <w xml:id="c21.v60.w3">del</w> <w xml:id="c21.v60.w4">vero</w></l>
+<l n="61" xml:id="c21.v61"><w xml:id="c21.v61.w1">Tu</w><pc>,</pc> <w xml:id="c21.v61.w2">misera</w><pc>,</pc> <w xml:id="c21.v61.w3">cadesti</w><pc>:</pc> <w xml:id="c21.v61.w4">e</w> <w xml:id="c21.v61.w5">con</w> <w xml:id="c21.v61.w6">la</w> <w xml:id="c21.v61.w7">mano</w></l>
+<l n="62" xml:id="c21.v62"><w xml:id="c21.v62.w1">La</w> <w xml:id="c21.v62.w2">fredda</w> <w xml:id="c21.v62.w3">morte</w> <w xml:id="c21.v62.w4">ed</w> <w xml:id="c21.v62.w5">una</w> <w xml:id="c21.v62.w6">tomba</w> <w xml:id="c21.v62.w7">ignuda</w></l>
+<l n="63" xml:id="c21.v63"><w xml:id="c21.v63.w1">Mostravi</w> <w xml:id="c21.v63.w2">di</w> <w xml:id="c21.v63.w3">lontano</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

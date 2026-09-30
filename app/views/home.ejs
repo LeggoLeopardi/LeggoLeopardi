@@ -1,0 +1,30 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+<main>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow"><%= __('home.eyebrow') %></p>
+      <h1>Leggo <span>Leopardi</span></h1>
+      <p class="lede"><%= __('home.lede') %></p>
+      <% const inf = canti.find((p) => p.slug === 'l-infinito'); %>
+      <div class="cta">
+        <% if (inf) { %><a class="btn primary" href="/leggo/<%= inf.n %>"><%= __('home.readInfinito') %></a><% } %>
+        <a class="btn ghost" href="#canti"><%= __('home.index') %></a>
+      </div>
+    </div>
+    <figure class="vignette">
+      <img src="/img/vignette-n35c-infinito.jpg" width="760" height="981" alt="<%= __('home.vignetteAlt') %>">
+      <figcaption><%- __('home.vignetteCaption') %></figcaption>
+    </figure>
+  </div>
+  <section id="canti" class="band-soft">
+    <div class="wrap">
+      <h2><%= __('home.canti') %></h2>
+      <ol class="canti">
+        <% canti.forEach((p) => { %><li class="canto"><span class="num"><%= p.roman %></span><a class="t" href="/leggo/<%= p.n %>"><%= p.title || p.incipit %></a><span class="st st-<%= p.status.leggo %>"><%= __('status.' + p.status.leggo) %></span></li>
+        <% }) %>
+      </ol>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>

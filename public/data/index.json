@@ -1,0 +1,535 @@
+[
+ {
+  "n": 1,
+  "roman": "I",
+  "title": "All'Italia",
+  "slug": "all-italia",
+  "incipit": "O patria mia, vedo le mura e gli archi",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 2,
+  "roman": "II",
+  "title": "Sopra il monumento di Dante che si preparava in Firenze",
+  "slug": "sopra-il-monumento-di-dante-che-si-preparava-in-firenze",
+  "incipit": "Perchè le nostre genti",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 3,
+  "roman": "III",
+  "title": "Ad Angelo Mai, quand'ebbe trovato i libri di Cicerone della Repubblica",
+  "slug": "ad-angelo-mai-quand-ebbe-trovato-i-libri-di-cicerone-della-repubblica",
+  "incipit": "Italo ardito, a che giammai non posi",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 4,
+  "roman": "IV",
+  "title": "Nelle nozze della sorella Paolina",
+  "slug": "nelle-nozze-della-sorella-paolina",
+  "incipit": "Poi che del patrio nido",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 5,
+  "roman": "V",
+  "title": "A un vincitore nel pallone",
+  "slug": "a-un-vincitore-nel-pallone",
+  "incipit": "Di gloria il viso e la gioconda voce,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 6,
+  "roman": "VI",
+  "title": "Bruto minore",
+  "slug": "bruto-minore",
+  "incipit": "Poi che divelta, nella tracia (5) polve",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 7,
+  "roman": "VII",
+  "title": "Alla Primavera, o delle favole antiche",
+  "slug": "alla-primavera-o-delle-favole-antiche",
+  "incipit": "Perchè i celesti danni",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 8,
+  "roman": "VIII",
+  "title": "Inno ai Patriarchi, o del principii del genere umano",
+  "slug": "inno-ai-patriarchi-o-del-principii-del-genere-umano",
+  "incipit": "E voi de’ figli dolorosi il canto,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 9,
+  "roman": "IX",
+  "title": "Ultimo canto di Saffo",
+  "slug": "ultimo-canto-di-saffo",
+  "incipit": "Placida notte, e verecondo raggio",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 10,
+  "roman": "X",
+  "title": "Il primo amore",
+  "slug": "il-primo-amore",
+  "incipit": "Tornami a mente il dì che la battaglia",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 11,
+  "roman": "XI",
+  "title": "Il passero solitario",
+  "slug": "il-passero-solitario",
+  "incipit": "D’in su la vetta della torre antica,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 12,
+  "roman": "XII",
+  "title": "L'infinito",
+  "slug": "l-infinito",
+  "incipit": "Sempre caro mi fu quest’ermo colle,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 13,
+  "roman": "XIII",
+  "title": "La sera del dì di festa",
+  "slug": "la-sera-del-di-di-festa",
+  "incipit": "Dolce e chiara è la notte e senza vento,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 14,
+  "roman": "XIV",
+  "title": "Alla luna",
+  "slug": "alla-luna",
+  "incipit": "O graziosa luna, io mi rammento",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 15,
+  "roman": "XV",
+  "title": "Il sogno",
+  "slug": "il-sogno",
+  "incipit": "Era il mattino, e tra le chiuse imposte",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 16,
+  "roman": "XVI",
+  "title": "La vita solitaria",
+  "slug": "la-vita-solitaria",
+  "incipit": "La mattutina pioggia, allor che l’ale",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 17,
+  "roman": "XVII",
+  "title": "Consalvo",
+  "slug": "consalvo",
+  "incipit": "Presso alla fin di sua dimora in terra,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 18,
+  "roman": "XVIII",
+  "title": "Alla sua donna",
+  "slug": "alla-sua-donna",
+  "incipit": "Cara beltà che amore",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 19,
+  "roman": "XIX",
+  "title": "Al conte Carlo Pepoli",
+  "slug": "al-conte-carlo-pepoli",
+  "incipit": "Questo affannoso e travagliato sonno",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 20,
+  "roman": "XX",
+  "title": "Il risorgimento",
+  "slug": "il-risorgimento",
+  "incipit": "Credei ch’al tutto fossero",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 21,
+  "roman": "XXI",
+  "title": "A Silvia",
+  "slug": "a-silvia",
+  "incipit": "Silvia, rimembri ancora",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 22,
+  "roman": "XXII",
+  "title": "Le ricordanze",
+  "slug": "le-ricordanze",
+  "incipit": "Vaghe stelle dell'Orsa, io non credea",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 23,
+  "roman": "XXIII",
+  "title": "Canto notturno di un pastore errante dell'Asia",
+  "slug": "canto-notturno-di-un-pastore-errante-dell-asia",
+  "incipit": "Che fai tu, luna, in ciel? dimmi, che fai,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 24,
+  "roman": "XXIV",
+  "title": "La quiete dopo la tempesta",
+  "slug": "la-quiete-dopo-la-tempesta",
+  "incipit": "Passata è la tempesta:",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 25,
+  "roman": "XXV",
+  "title": "Il sabato del villaggio",
+  "slug": "il-sabato-del-villaggio",
+  "incipit": "La donzelletta vien dalla campagna,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 26,
+  "roman": "XXVI",
+  "title": "Il pensiero dominante",
+  "slug": "il-pensiero-dominante",
+  "incipit": "Dolcissimo, possente",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 27,
+  "roman": "XXVII",
+  "title": "Amore e morte",
+  "slug": "amore-e-morte",
+  "incipit": "Fratelli, a un tempo stesso, Amore e Morte",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 28,
+  "roman": "XXVIII",
+  "title": "A se stesso",
+  "slug": "a-se-stesso",
+  "incipit": "Or poserai per sempre,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 29,
+  "roman": "XXIX",
+  "title": "Aspasia",
+  "slug": "aspasia",
+  "incipit": "Torna dinanzi al mio pensier talora",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 30,
+  "roman": "XXX",
+  "title": "Sopra un basso rilievo antico sepolcrale, dove una giovane morta è rappresentata in atto di partire, accomiatandosi dai suoi",
+  "slug": "sopra-un-basso-rilievo-antico-sepolcrale-dove-una-giovane-morta-e-rappresentata-in-atto-di-partire-accomiatandosi-dai-suoi",
+  "incipit": "Dove vai? chi ti chiama",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 31,
+  "roman": "XXXI",
+  "title": "Sopra il ritratto di una bella donna, scolpito nel monumento sepolcrale della medesima",
+  "slug": "sopra-il-ritratto-di-una-bella-donna-scolpito-nel-monumento-sepolcrale-della-medesima",
+  "incipit": "Tal fosti: or qui sotterra",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 32,
+  "roman": "XXXII",
+  "title": "Palinodia al marchese Gino Capponi",
+  "slug": "palinodia-al-marchese-gino-capponi",
+  "incipit": "Errai, candido Gino; assai gran tempo,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 33,
+  "roman": "XXXIII",
+  "title": "Il tramonto della luna",
+  "slug": "il-tramonto-della-luna",
+  "incipit": "Quale in notte solinga,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 34,
+  "roman": "XXXIV",
+  "title": "La ginestra, o il fiore del deserto",
+  "slug": "la-ginestra-o-il-fiore-del-deserto",
+  "incipit": "Qui sull’arida schiena",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 35,
+  "roman": "XXXV",
+  "title": "Imitazione",
+  "slug": "imitazione",
+  "incipit": "Lungi dal propio ramo,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 36,
+  "roman": "XXXVI",
+  "title": "Scherzo",
+  "slug": "scherzo",
+  "incipit": "Quando fanciullo io venni",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 37,
+  "roman": "XXXVII",
+  "title": "",
+  "slug": "frammento-xxxvii",
+  "incipit": "Odi, Melisso: io vo’ contarti un sogno",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 38,
+  "roman": "XXXVIII",
+  "title": "",
+  "slug": "frammento-xxxviii",
+  "incipit": "Io qui vagando al limitare intorno,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 39,
+  "roman": "XXXIX",
+  "title": "",
+  "slug": "frammento-xxxix",
+  "incipit": "Spento il diurno raggio in occidente,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 40,
+  "roman": "XL",
+  "title": "Dal greco di Simonide",
+  "slug": "dal-greco-di-simonide",
+  "incipit": "Ogni mondano evento",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ },
+ {
+  "n": 41,
+  "roman": "XLI",
+  "title": "Dello stesso",
+  "slug": "dello-stesso",
+  "incipit": "Umana cosa picciol tempo dura,",
+  "status": {
+   "leggo": "provisional",
+   "traduco": "none",
+   "collaziono": "none",
+   "concordanza": "none"
+  }
+ }
+]

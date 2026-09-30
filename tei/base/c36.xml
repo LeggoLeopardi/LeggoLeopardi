@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XXXVI. Scherzo</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXXVI._SCHERZO._p._159"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="36" xml:id="c36">
+<head>XXXVI.<lb/>SCHERZO.</head>
+<lg type="stanza">
+<l n="1" xml:id="c36.v1"><w xml:id="c36.v1.w1">Quando</w> <w xml:id="c36.v1.w2">fanciullo</w> <w xml:id="c36.v1.w3">io</w> <w xml:id="c36.v1.w4">venni</w></l>
+<l n="2" xml:id="c36.v2"><w xml:id="c36.v2.w1">A</w> <w xml:id="c36.v2.w2">pormi</w> <w xml:id="c36.v2.w3">con</w> <w xml:id="c36.v2.w4">le</w> <w xml:id="c36.v2.w5">Muse</w> <w xml:id="c36.v2.w6">in</w> <w xml:id="c36.v2.w7">disciplina</w><pc>,</pc></l>
+<l n="3" xml:id="c36.v3"><w xml:id="c36.v3.w1">L’</w><w xml:id="c36.v3.w2">una</w> <w xml:id="c36.v3.w3">di</w> <w xml:id="c36.v3.w4">quelle</w> <w xml:id="c36.v3.w5">mi</w> <w xml:id="c36.v3.w6">pigliò</w> <w xml:id="c36.v3.w7">per</w> <w xml:id="c36.v3.w8">mano</w><pc>;</pc></l>
+<l n="4" xml:id="c36.v4"><w xml:id="c36.v4.w1">E</w> <w xml:id="c36.v4.w2">poi</w> <w xml:id="c36.v4.w3">tutto</w> <w xml:id="c36.v4.w4">quel</w> <w xml:id="c36.v4.w5">giorno</w></l>
+<l n="5" xml:id="c36.v5"><w xml:id="c36.v5.w1">La</w> <w xml:id="c36.v5.w2">mi</w> <w xml:id="c36.v5.w3">condusse</w> <w xml:id="c36.v5.w4">intorno</w></l>
+<l n="6" xml:id="c36.v6"><w xml:id="c36.v6.w1">A</w> <w xml:id="c36.v6.w2">veder</w> <w xml:id="c36.v6.w3">l’</w><w xml:id="c36.v6.w4">officina</w><pc>.</pc></l>
+<l n="7" xml:id="c36.v7"><w xml:id="c36.v7.w1">Mostrommi</w> <w xml:id="c36.v7.w2">a</w> <w xml:id="c36.v7.w3">parte</w> <w xml:id="c36.v7.w4">a</w> <w xml:id="c36.v7.w5">parte</w></l>
+<l n="8" xml:id="c36.v8"><w xml:id="c36.v8.w1">Gli</w> <w xml:id="c36.v8.w2">strumenti</w> <w xml:id="c36.v8.w3">dell’</w><w xml:id="c36.v8.w4">arte</w><pc>,</pc></l>
+<l n="9" xml:id="c36.v9"><w xml:id="c36.v9.w1">E</w> <w xml:id="c36.v9.w2">i</w> <w xml:id="c36.v9.w3">servigi</w> <w xml:id="c36.v9.w4">diversi</w></l>
+<l n="10" xml:id="c36.v10"><w xml:id="c36.v10.w1">A</w> <w xml:id="c36.v10.w2">che</w> <w xml:id="c36.v10.w3">ciascun</w> <w xml:id="c36.v10.w4">di</w> <w xml:id="c36.v10.w5">loro</w></l>
+<l n="11" xml:id="c36.v11"><w xml:id="c36.v11.w1">S’</w><w xml:id="c36.v11.w2">adopra</w> <w xml:id="c36.v11.w3">nel</w> <w xml:id="c36.v11.w4">lavoro</w></l>
+<l n="12" xml:id="c36.v12"><w xml:id="c36.v12.w1">Delle</w> <w xml:id="c36.v12.w2">prose</w> <w xml:id="c36.v12.w3">e</w> <w xml:id="c36.v12.w4">de’</w> <w xml:id="c36.v12.w5">versi</w><pc>.</pc></l>
+<l n="13" xml:id="c36.v13"><w xml:id="c36.v13.w1">Io</w> <w xml:id="c36.v13.w2">mirava</w><pc>,</pc> <w xml:id="c36.v13.w3">e</w> <w xml:id="c36.v13.w4">chiedea</w><pc>:</pc></l>
+<l n="14" xml:id="c36.v14"><w xml:id="c36.v14.w1">Musa</w><pc>,</pc> <w xml:id="c36.v14.w2">la</w> <w xml:id="c36.v14.w3">lima</w> <w xml:id="c36.v14.w4">ov’</w><w xml:id="c36.v14.w5">è</w><pc>?</pc> <w xml:id="c36.v14.w6">Disse</w> <w xml:id="c36.v14.w7">la</w> <w xml:id="c36.v14.w8">Dea</w><pc>:</pc></l>
+<l n="15" xml:id="c36.v15"><w xml:id="c36.v15.w1">La</w> <w xml:id="c36.v15.w2">lima</w> <w xml:id="c36.v15.w3">è</w> <w xml:id="c36.v15.w4">consumata</w><pc>;</pc> <w xml:id="c36.v15.w5">or</w> <w xml:id="c36.v15.w6">facciam</w> <w xml:id="c36.v15.w7">senza</w><pc>.</pc></l>
+<l n="16" xml:id="c36.v16"><w xml:id="c36.v16.w1">Ed</w> <w xml:id="c36.v16.w2">io</w><pc>,</pc> <w xml:id="c36.v16.w3">ma</w> <w xml:id="c36.v16.w4">di</w> <w xml:id="c36.v16.w5">rifarla</w></l>
+<l n="17" xml:id="c36.v17"><w xml:id="c36.v17.w1">Non</w> <w xml:id="c36.v17.w2">vi</w> <w xml:id="c36.v17.w3">cal</w><pc>,</pc> <w xml:id="c36.v17.w4">soggiungea</w><pc>,</pc> <w xml:id="c36.v17.w5">quand’</w><w xml:id="c36.v17.w6">ella</w> <w xml:id="c36.v17.w7">è</w> <w xml:id="c36.v17.w8">stanca</w><pc>?</pc></l>
+<l n="18" xml:id="c36.v18"><w xml:id="c36.v18.w1">Rispose</w><pc>:</pc> <w xml:id="c36.v18.w2">hassi</w> <w xml:id="c36.v18.w3">a</w> <w xml:id="c36.v18.w4">rifar</w><pc>,</pc> <w xml:id="c36.v18.w5">ma</w> <w xml:id="c36.v18.w6">il</w> <w xml:id="c36.v18.w7">tempo</w> <w xml:id="c36.v18.w8">manca</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,135 @@
+[
+ {
+  "verse": 1,
+  "target": "rimembri",
+  "shown": "rimembri",
+  "start": 8,
+  "end": 16
+ },
+ {
+  "verse": 2,
+  "target": "Della tua",
+  "shown": "della",
+  "start": 11,
+  "end": 16
+ },
+ {
+  "verse": 4,
+  "target": "Negli occhi",
+  "shown": "Negli",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 10,
+  "target": "All'opre femminili",
+  "shown": "all'",
+  "start": 10,
+  "end": 14
+ },
+ {
+  "verse": 20,
+  "target": "della tua voce",
+  "shown": "della",
+  "start": 27,
+  "end": 32
+ },
+ {
+  "verse": 21,
+  "target": "Alla man",
+  "shown": "alla",
+  "start": 3,
+  "end": 7
+ },
+ {
+  "verse": 41,
+  "target": "combattuta",
+  "shown": "combattuta",
+  "start": 16,
+  "end": 26
+ },
+ {
+  "verse": 43,
+  "target": "degli anni tuoi",
+  "shown": "degli",
+  "start": 8,
+  "end": 13
+ },
+ {
+  "verse": 45,
+  "target": "delle negre",
+  "shown": "delle",
+  "start": 17,
+  "end": 22
+ },
+ {
+  "verse": 46,
+  "target": "Degli sguardi",
+  "shown": "degli",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 47,
+  "target": "ai dì",
+  "shown": "ai",
+  "start": 20,
+  "end": 22
+ },
+ {
+  "verse": 49,
+  "target": "Anche",
+  "shown": "Anche",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 50,
+  "target": "agli anni",
+  "shown": "agli",
+  "start": 23,
+  "end": 27
+ },
+ {
+  "verse": 51,
+  "target": "Anche negaro",
+  "shown": "Anche",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 54,
+  "target": "dell'età",
+  "shown": "dell'",
+  "start": 14,
+  "end": 19
+ },
+ {
+  "verse": 55,
+  "target": "lacrimata",
+  "shown": "lacrimata",
+  "start": 4,
+  "end": 13
+ },
+ {
+  "verse": 59,
+  "target": "dell'umane",
+  "shown": "dell'",
+  "start": 16,
+  "end": 21
+ },
+ {
+  "verse": 60,
+  "target": "All'apparir",
+  "shown": "All'",
+  "start": 0,
+  "end": 4
+ },
+ {
+  "verse": 60,
+  "target": "vero",
+  "shown": "vero",
+  "start": 16,
+  "end": 20
+ }
+]

@@ -1,0 +1,100 @@
+[
+ {
+  "verse": 1,
+  "target": "luna",
+  "shown": "luna",
+  "start": 11,
+  "end": 15
+ },
+ {
+  "verse": 2,
+  "target": "l’anno, sovra questo colle",
+  "shown": "l’anno, sovra questo colle",
+  "start": 14,
+  "end": 40
+ },
+ {
+  "verse": 3,
+  "target": "Io venia pien",
+  "shown": "Io venia pien",
+  "start": 0,
+  "end": 13
+ },
+ {
+  "verse": 7,
+  "target": "alle mie",
+  "shown": "alle",
+  "start": 26,
+  "end": 30
+ },
+ {
+  "verse": 8,
+  "target": "apparia, che",
+  "shown": "apparia, che",
+  "start": 13,
+  "end": 25
+ },
+ {
+  "verse": 10,
+  "target": "luna",
+  "shown": "luna",
+  "start": 14,
+  "end": 18
+ },
+ {
+  "verse": 11,
+  "target": "il noverar",
+  "shown": "il",
+  "start": 17,
+  "end": 19
+ },
+ {
+  "verse": 12,
+  "target": "occorre ‖ Nel tempo… il corso, ‖ Il rimembrar",
+  "shown": "occorre",
+  "start": 30,
+  "end": 37
+ },
+ {
+  "verse": 13,
+  "target": "occorre ‖ Nel tempo… il corso, ‖ Il rimembrar",
+  "shown": "Nel tempo giovanil, quando ancor lungo",
+  "start": 0,
+  "end": 38
+ },
+ {
+  "verse": 14,
+  "target": "occorre ‖ Nel tempo… il corso, ‖ Il rimembrar",
+  "shown": "La speme e breve ha la memoria il corso,",
+  "start": 0,
+  "end": 40
+ },
+ {
+  "verse": 15,
+  "target": "occorre ‖ Nel tempo… il corso, ‖ Il rimembrar",
+  "shown": "Il rimembrar",
+  "start": 0,
+  "end": 12
+ },
+ {
+  "verse": 15,
+  "target": "delle passate",
+  "shown": "delle",
+  "start": 13,
+  "end": 18
+ },
+ {
+  "verse": 15,
+  "target": "cose,",
+  "shown": "cose,",
+  "start": 27,
+  "end": 32
+ },
+ {
+  "verse": 16,
+  "target": "e che l’affanno duri!",
+  "shown": "e che l’affanno duri!",
+  "start": 18,
+  "end": 39
+ }
+]

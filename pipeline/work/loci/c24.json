@@ -1,0 +1,79 @@
+[
+ {
+  "verse": 5,
+  "target": "alla montagna",
+  "shown": "alla",
+  "start": 21,
+  "end": 25
+ },
+ {
+  "verse": 7,
+  "target": "nella valle",
+  "shown": "nella",
+  "start": 9,
+  "end": 14
+ },
+ {
+  "verse": 14,
+  "target": "dell'acqua",
+  "shown": "dell’",
+  "start": 30,
+  "end": 35
+ },
+ {
+  "verse": 15,
+  "target": "Della novella",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 22,
+  "target": "dalla via",
+  "shown": "dalla",
+  "start": 3,
+  "end": 8
+ },
+ {
+  "verse": 26,
+  "target": "dolce,",
+  "shown": "dolce,",
+  "start": 3,
+  "end": 9
+ },
+ {
+  "verse": 30,
+  "target": "all'opre",
+  "shown": "all’",
+  "start": 8,
+  "end": 12
+ },
+ {
+  "verse": 40,
+  "target": "alle nostre",
+  "shown": "alle",
+  "start": 6,
+  "end": 10
+ },
+ {
+  "verse": 45,
+  "target": "ai mortali",
+  "shown": "ai",
+  "start": 13,
+  "end": 15
+ },
+ {
+  "verse": 51,
+  "target": "cara agli eterni!",
+  "shown": "cara agli eterni!",
+  "start": 6,
+  "end": 23
+ },
+ {
+  "verse": 53,
+  "target": "D’alcun dolor:",
+  "shown": "D’alcun dolor:",
+  "start": 0,
+  "end": 14
+ }
+]

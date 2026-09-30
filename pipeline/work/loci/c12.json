@@ -1,0 +1,51 @@
+[
+ {
+  "verse": 3,
+  "target": "Dell'ultimo",
+  "shown": "Dell'",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 4,
+  "target": "interminati ‖ Spazi",
+  "shown": "interminati",
+  "start": 22,
+  "end": 33
+ },
+ {
+  "verse": 5,
+  "target": "interminati ‖ Spazi",
+  "shown": "Spazi",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 7,
+  "target": "fingo;",
+  "shown": "fingo;",
+  "start": 18,
+  "end": 24
+ },
+ {
+  "verse": 13,
+  "target": "il suon",
+  "shown": "il",
+  "start": 10,
+  "end": 12
+ },
+ {
+  "verse": 14,
+  "target": "Immensità",
+  "shown": "Immensità",
+  "start": 0,
+  "end": 9
+ },
+ {
+  "verse": 15,
+  "target": "il naufragar",
+  "shown": "il",
+  "start": 2,
+  "end": 4
+ }
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "verse": 1,
+  "target": "dalla campagna",
+  "shown": "dalla",
+  "start": 20,
+  "end": 25
+ },
+ {
+  "verse": 3,
+  "target": "dell'erba",
+  "shown": "dell'",
+  "start": 15,
+  "end": 20
+ },
+ {
+  "verse": 12,
+  "target": "Quando ai dì",
+  "shown": "ai",
+  "start": 7,
+  "end": 9
+ },
+ {
+  "verse": 15,
+  "target": "compagni dell’età",
+  "shown": "dell'",
+  "start": 17,
+  "end": 22
+ },
+ {
+  "verse": 19,
+  "target": "Al biancheggiar della recente luna",
+  "shown": "Al biancheggiar della recente luna",
+  "start": 0,
+  "end": 34
+ },
+ {
+  "verse": 21,
+  "target": "Della festa",
+  "shown": "Della",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 28,
+  "target": "alla sua",
+  "shown": "alla",
+  "start": 16,
+  "end": 20
+ },
+ {
+  "verse": 35,
+  "target": "Nella chiusa bottega",
+  "shown": "Nella",
+  "start": 0,
+  "end": 5
+ },
+ {
+  "verse": 35,
+  "target": "alla lucerna",
+  "shown": "alla",
+  "start": 21,
+  "end": 25
+ },
+ {
+  "verse": 37,
+  "target": "dell'alba",
+  "shown": "dell'",
+  "start": 33,
+  "end": 38
+ },
+ {
+  "verse": 42,
+  "target": "Ciascuno",
+  "shown": "Ciascuno",
+  "start": 0,
+  "end": 8
+ },
+ {
+  "verse": 47,
+  "target": "alla festa",
+  "shown": "alla",
+  "start": 13,
+  "end": 17
+ }
+]

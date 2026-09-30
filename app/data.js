@@ -1,0 +1,27 @@
+const fs = require('node:fs');
+const path = require('node:path');
+
+const DATA_DIR = path.join(__dirname, '..', 'public', 'data');
+let cachedIndex = null;
+const poems = new Map();
+
+function readJson(file) {
+  return JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), 'utf8'));
+}
+
+/** The 41 Canti: [{ n, roman, title, slug, incipit, status }]. */
+function index() {
+  if (!cachedIndex) cachedIndex = readJson('index.json');
+  return cachedIndex;
+}
+
+/** One poem's data, or null when `param` is not the number of a known poem. */
+function poem(param) {
+  if (!/^[1-9]\d?$/.test(String(param))) return null;
+  const n = Number(param);
+  if (!index().some((p) => p.n === n)) return null;
+  if (!poems.has(n)) poems.set(n, readJson(`c${n}.json`));
+  return poems.get(n);
+}
+
+module.exports = { index, poem };

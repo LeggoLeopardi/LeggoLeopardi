@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>XXXV. Imitazione</title>
+</titleStmt>
+<publicationStmt>
+<p>LeggoLeopardi. Testo base provvisorio, da verificare.</p>
+</publicationStmt>
+<sourceDesc>
+<bibl>Canti, Napoli, Starita, 1835, esemplare corretto (N35c). Trascrizione: WikiLeopardi.<ptr target="https://wikileopardi.altervista.org/wiki_leopardi/index.php?title=N35c_XXXV._IMITAZIONE._p._158"/></bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc status="provisional">
+<change>Generato da pipeline/leggo_pipeline/build_base.py a partire da WikiLeopardi.</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="canto" n="35" xml:id="c35">
+<head>XXXV.<lb/>IMITAZIONE.</head>
+<lg type="stanza">
+<l n="1" xml:id="c35.v1"><w xml:id="c35.v1.w1">Lungi</w> <w xml:id="c35.v1.w2">dal</w> <w xml:id="c35.v1.w3">propio</w> <w xml:id="c35.v1.w4">ramo</w><pc>,</pc></l>
+<l n="2" xml:id="c35.v2"><w xml:id="c35.v2.w1">Povera</w> <w xml:id="c35.v2.w2">foglia</w> <w xml:id="c35.v2.w3">frale</w><pc>,</pc></l>
+<l n="3" xml:id="c35.v3"><w xml:id="c35.v3.w1">Dove</w> <w xml:id="c35.v3.w2">vai</w> <w xml:id="c35.v3.w3">tu</w><pc>?</pc> <w xml:id="c35.v3.w4">Dal</w> <w xml:id="c35.v3.w5">faggio</w></l>
+<l n="4" xml:id="c35.v4"><w xml:id="c35.v4.w1">Là</w> <w xml:id="c35.v4.w2">dov’</w><w xml:id="c35.v4.w3">io</w> <w xml:id="c35.v4.w4">nacqui</w><pc>,</pc> <w xml:id="c35.v4.w5">mi</w> <w xml:id="c35.v4.w6">divise</w> <w xml:id="c35.v4.w7">il</w> <w xml:id="c35.v4.w8">vento</w><pc>.</pc></l>
+<l n="5" xml:id="c35.v5"><w xml:id="c35.v5.w1">Esso</w><pc>,</pc> <w xml:id="c35.v5.w2">tornando</w><pc>,</pc> <w xml:id="c35.v5.w3">a</w> <w xml:id="c35.v5.w4">volo</w></l>
+<l n="6" xml:id="c35.v6"><w xml:id="c35.v6.w1">Dal</w> <w xml:id="c35.v6.w2">bosco</w> <w xml:id="c35.v6.w3">alla</w> <w xml:id="c35.v6.w4">campagna</w><pc>,</pc></l>
+<l n="7" xml:id="c35.v7"><w xml:id="c35.v7.w1">Dalla</w> <w xml:id="c35.v7.w2">valle</w> <w xml:id="c35.v7.w3">mi</w> <w xml:id="c35.v7.w4">porta</w> <w xml:id="c35.v7.w5">alla</w> <w xml:id="c35.v7.w6">montagna</w><pc>.</pc></l>
+<l n="8" xml:id="c35.v8"><w xml:id="c35.v8.w1">Seco</w> <w xml:id="c35.v8.w2">perpetuamente</w></l>
+<l n="9" xml:id="c35.v9"><w xml:id="c35.v9.w1">Vo</w> <w xml:id="c35.v9.w2">pellegrina</w><pc>,</pc> <w xml:id="c35.v9.w3">e</w> <w xml:id="c35.v9.w4">tutto</w> <w xml:id="c35.v9.w5">l’</w><w xml:id="c35.v9.w6">altro</w> <w xml:id="c35.v9.w7">ignoro</w><pc>.</pc></l>
+<l n="10" xml:id="c35.v10"><w xml:id="c35.v10.w1">Vo</w> <w xml:id="c35.v10.w2">dove</w> <w xml:id="c35.v10.w3">ogni</w> <w xml:id="c35.v10.w4">altra</w> <w xml:id="c35.v10.w5">cosa</w><pc>,</pc></l>
+<l n="11" xml:id="c35.v11"><w xml:id="c35.v11.w1">Dove</w> <w xml:id="c35.v11.w2">naturalmente</w></l>
+<l n="12" xml:id="c35.v12"><w xml:id="c35.v12.w1">Va</w> <w xml:id="c35.v12.w2">la</w> <w xml:id="c35.v12.w3">foglia</w> <w xml:id="c35.v12.w4">di</w> <w xml:id="c35.v12.w5">rosa</w><pc>,</pc></l>
+<l n="13" xml:id="c35.v13"><w xml:id="c35.v13.w1">E</w> <w xml:id="c35.v13.w2">la</w> <w xml:id="c35.v13.w3">foglia</w> <w xml:id="c35.v13.w4">d’</w><w xml:id="c35.v13.w5">alloro</w><pc>.</pc></l>
+</lg>
+</div>
+</body>
+</text>
+</TEI>
