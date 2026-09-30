@@ -5,6 +5,7 @@
       <a href="<%= leggoHref %>" class="<%= path.startsWith('/leggo') ? 'on' : '' %>">Leggo</a>
       <a href="<%= confrontoHref %>" class="<%= path.startsWith('/confronto') ? 'on' : '' %>">Confronto</a>
       <a href="<%= traducoHref %>" class="<%= path.startsWith('/traduco') ? 'on' : '' %>">Traduco</a>
+      <a href="/progetto" class="<%= path.startsWith('/progetto') ? 'on' : '' %>"><%= __('nav.progetto') %></a>
     </nav>
     <div class="lang">
       <a href="/lang/it?next=<%= encodeURIComponent(path) %>" class="<%= lang === 'it' ? 'on' : '' %>">IT</a>
