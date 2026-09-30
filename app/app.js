@@ -28,6 +28,17 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => res.render('home'));
 
+app.get('/leggo', (req, res) => {
+  const requested = data.poem(req.query.n);
+  res.redirect(`/leggo/${requested ? requested.n : data.index()[0].n}`);
+});
+
+app.get('/leggo/:n', (req, res, next) => {
+  const poem = data.poem(req.params.n);
+  if (!poem) return next();
+  res.render('leggo', { poem, title: `${poem.roman}. ${poem.title || poem.incipit}` });
+});
+
 app.get('/lang/:code', (req, res) => {
   const code = ['it', 'en'].includes(req.params.code) ? req.params.code : 'it';
   const next = typeof req.query.next === 'string' && /^\/(?!\/)/.test(req.query.next) ? req.query.next : '/';

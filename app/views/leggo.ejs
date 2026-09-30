@@ -1,0 +1,37 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+<main class="wrap leggo">
+  <form class="poem-select" action="/leggo" method="get">
+    <label for="poem-select" class="eyebrow"><%= __('leggo.choose') %></label>
+    <select id="poem-select" name="n" onchange="this.form.submit()">
+      <% canti.forEach((p) => { %>
+        <option value="<%= p.n %>"<%= p.n === poem.n ? ' selected' : '' %><%= p.status.leggo === 'none' ? ' disabled' : '' %>><%= p.roman %>. <%= p.title || p.incipit %></option>
+      <% }) %>
+    </select>
+    <button type="submit"><%= __('leggo.go') %></button>
+  </form>
+
+  <article class="poem">
+    <p class="badge"><%= __('leggo.source.' + poem.source.status) %></p>
+    <h1 class="poem-head"><% poem.head.forEach((h) => { %><span><%= h %></span><% }) %></h1>
+    <% if (poem.epigraph.length) { %>
+      <blockquote class="epigraph"><% poem.epigraph.forEach((e) => { %><p><%= e %></p><% }) %></blockquote>
+    <% } %>
+    <% poem.stanzas.forEach((stanza) => { %>
+      <div class="stanza">
+        <% stanza.forEach((item) => { %>
+          <% if (item.type === 'label') { %>
+            <p class="speaker"><%= item.text %></p>
+          <% } else {
+               const cls = ['verse'];
+               if (item.missing) cls.push('missing');
+               if (item.unnumbered) cls.push('unnumbered');
+               if (item.indent) cls.push('indent' + item.indent); %>
+            <p class="<%= cls.join(' ') %>" id="<%= item.n ? 'v' + item.n : item.id %>"<%= item.unnumbered ? ' title="' + __('leggo.unnumbered') + '"' : '' %>><span class="vn"><%= item.n && item.n % 5 === 0 ? item.n : '' %></span><span class="vt"><% if (item.missing) { %><%= __('leggo.missingVerse') %><% } else { %><%- item.html %><% } %></span></p>
+          <% } %>
+        <% }) %>
+      </div>
+    <% }) %>
+  </article>
+</main>
+<%- include('partials/footer') %>
