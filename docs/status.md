@@ -13,7 +13,8 @@ Last updated: 2026-09-30.
 | Phase | State |
 |---|---|
 | 1a Skeleton: N35c base text of all 41 Canti from WikiLeopardi, Leggo view, CI, deploy | **Done** (PR #1, 2026-09-30) |
-| 1b *L'infinito* complete: apparatus and Collaziono, translations and Traduco, commentaries in Leggo, Concordanza | Next |
+| *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (branch `infinito-facsimile`) |
+| 1b *L'infinito* complete: apparatus and Collaziono, translations and Traduco, commentaries in Leggo, Concordanza | Parked: plan on branch `phase-1b-collation` |
 | 1c Other poems | – |
 | 2 Team workspace | – |
 
@@ -39,6 +40,17 @@ Last updated: 2026-09-30.
 - There are no stanza markers on the wiki for four poems, so each comes out as one stanza:
   - *Il primo amore*: correct, the terzine are continuous.
   - *La sera del dì di festa*, *Il sogno*, *Dal greco di Simonide*: to check.
+
+## *L'infinito* text and facsimile
+
+- Source: `tei/genetic/c12.xml`, Priore and Nava's TEI (copy from the EVT fork, May 2026), unchanged. Witnesses AN (layers Penna A–D), AV, NR25, B26, F31, N35, N35c.
+- Page images: WikiLeopardi (NR25, B26, F31, N35, N35c). Verse zones in `tei/facsimile/c12.xml`, detected inside hand-marked regions (`pipeline/facsimile.json`). Check images: `reports/facsimile/`.
+- View: `/leggo/12/facsimile`. The display mode for the variants is still to be decided by the team; this is the minimal version.
+- For Priore and Nava (their TEI, not changed here):
+  - v.2: no space after `</app>`, so the text reads *siepe,che*.
+  - The title of AV reads `MDCCCXIX V L'Infinito`; `V` is probably a mistyped `|`.
+  - The newer copy marks title line breaks with ` | ` instead of `<lb/>`.
+- No manuscript images yet: the BNN IIIF links for AN return errors; no source for AV.
 
 ## Open items
 
