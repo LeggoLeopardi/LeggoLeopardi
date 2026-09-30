@@ -1,0 +1,20 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+<main class="wrap progetto">
+  <h1><%= __('progetto.title') %></h1>
+  <p class="lede"><%= __('progetto.lede') %></p>
+
+  <h2><%= __('progetto.editions') %></h2>
+  <ol class="editions">
+    <% editions.forEach((c) => { %>
+    <li class="edition" id="<%= c.id %>">
+      <h3><%= c.short %> <%= c.year %></h3>
+      <p><%= c.bibl %></p>
+      <p class="small"><%= c.source %></p>
+      <p class="small"><% c.status.forEach((s) => { %><%= s %> <% }) %></p>
+      <p class="small"><%= __('progetto.poems') %>: <% c.poems.forEach((p, i) => { %><%- i ? ', ' : '' %><a href="/leggo/<%= p.n %>?c=<%= c.id %>"><%= p.label %></a><% }) %></p>
+    </li>
+    <% }) %>
+  </ol>
+</main>
+<%- include('partials/footer') %>

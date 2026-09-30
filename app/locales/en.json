@@ -1,7 +1,8 @@
 {
   "nav": {
     "label": "Modules",
-    "soon": "Coming soon"
+    "soon": "Coming soon",
+    "progetto": "Project"
   },
   "home": {
     "eyebrow": "Digital edition of the Canti · University of Bologna",
@@ -63,5 +64,11 @@
     "label": "Commentary",
     "all": "All commentators",
     "sources": "Commented editions"
+  },
+  "progetto": {
+    "title": "Project",
+    "lede": "Leggo Leopardi is the digital edition of Giacomo Leopardi’s Canti: the text with its commentaries (Leggo), the manuscript and printed witnesses (Confronto), the translations (Traduco).",
+    "editions": "Commented editions",
+    "poems": "Poems commented"
   }
 }

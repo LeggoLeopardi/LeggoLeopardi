@@ -107,6 +107,20 @@ app.get('/lang/:code', (req, res) => {
   res.redirect(next);
 });
 
+app.get('/progetto', (req, res) => {
+  // every commented edition, oldest first, with the poems it comments on
+  const editions = new Map();
+  data.index().forEach((p) => {
+    const comm = data.commentaries(p.n);
+    if (!comm) return;
+    comm.commentators.forEach((c) => {
+      if (!editions.has(c.id)) editions.set(c.id, { ...c, poems: [] });
+      editions.get(c.id).poems.push({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}` });
+    });
+  });
+  res.render('progetto', { title: req.__('progetto.title'), editions: [...editions.values()].sort((a, b) => a.year - b.year) });
+});
+
 app.get('/traduco', (req, res) => {
   const requested = data.poem(req.query.n);
   const target = requested && data.translations(requested.n)

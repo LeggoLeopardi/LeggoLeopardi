@@ -29,7 +29,7 @@
   <% if (comm) {
        const range = (nt) => nt.from === nt.to ? `v. ${nt.from}` : `vv. ${nt.from}–${nt.to}`;
        const note = (c, nt, withWho) => `<li class="cnote${nt.added ? ' added' : ''}" data-from="${nt.from}" data-to="${nt.to}">`
-         + (withWho ? `<p class="cwho">${c.short} ${c.year}</p>` : '')
+         + (withWho ? `<p class="cwho"><a href="/progetto#${c.id}">${c.short} ${c.year}</a></p>` : '')
          + `<span class="cv">${range(nt)}</span> <b class="clemma">${nt.lemma.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</b> ${nt.html}</li>`; %>
   <section class="comm" aria-label="<%= __('comm.label') %>">
     <details class="list-picker cpick">
@@ -50,15 +50,6 @@
       <% }) %>
     <% } %>
 
-    <section class="csources" aria-label="<%= __('comm.sources') %>">
-      <% (cview.mode === 'one' ? [cview.sel] : comm.commentators).forEach((c) => { %>
-      <div class="csrc">
-        <h2><%= c.short %> <%= c.year %></h2>
-        <p><%= c.bibl %></p>
-        <p class="small"><%= c.source %> · <%= c.status.join(' ') %></p>
-      </div>
-      <% }) %>
-    </section>
   </section>
   <% } %>
   </div>
