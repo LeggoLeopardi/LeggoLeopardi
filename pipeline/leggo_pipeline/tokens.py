@@ -7,7 +7,9 @@ from dataclasses import dataclass
 from .wikitext import Span
 
 # A word may end with an elision apostrophe (quest’, Dell'); a word may start with one (’l).
-TOKEN = re.compile(r"[^\W\d_]+['’]?|['’][^\W\d_]+|\d+|[^\w\s]")
+# Combining accents (decomposed input such as "di" + U+0300) stay with their letter.
+LETTERS = r"(?:[^\W\d_][\u0300-\u036f]*)+"
+TOKEN = re.compile(rf"{LETTERS}['’]?|['’]{LETTERS}|\d+|[^\w\s]")
 
 
 @dataclass

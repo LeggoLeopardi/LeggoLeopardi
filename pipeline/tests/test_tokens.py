@@ -28,3 +28,7 @@ def test_note_calls_and_italics():
     assert [(t.text, t.kind, t.italic) for t in toks] == [
         ("progressive", "w", True), ("(", "pc", False), ("12", "ref", False), (")", "pc", False), (".", "pc", False),
     ]
+
+
+def test_combining_accents_stay_with_their_letter():
+    assert kinds("dì perché,") == [("dì", "w"), ("perché", "w"), (",", "pc")]
