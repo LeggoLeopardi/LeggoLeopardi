@@ -99,9 +99,6 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 .wtab { text-decoration: none; padding: 3px 12px; border: 1px solid var(--tint); border-radius: 3px; color: var(--main); }
 .wtab.on { background: var(--main); border-color: var(--main); color: var(--paper); }
 .facs-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; }
-.wlabel { font-size: 1rem; color: var(--muted); margin: 0 0 .6em; }
-.facs-head { font-weight: 500; color: var(--dark); font-size: 1.4rem; line-height: 1.2; margin: 0 0 .8em; }
-.facs-head span { display: block; }
 .fverse { scroll-margin-top: 90px; display: grid; grid-template-columns: 2.4em minmax(0, 1fr); margin: 0; padding: 1px 4px; border-radius: 3px; cursor: default; }
 .fverse .vn { font-family: var(--label); font-size: .85rem; color: var(--muted); text-align: right; padding-right: .8em; padding-top: .25em; }
 .fverse.hl, .fverse.sel, .fverse:target { background: var(--panel); }
@@ -166,12 +163,6 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
 .tcols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 3vw, 40px); align-items: start; }
 .tcols.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .tname { font-family: var(--label); font-weight: 500; font-size: 1.1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .4em; }
-.tsource { font-size: .95rem; color: var(--muted); margin: 0 0 1em; }
-.tsource summary { cursor: pointer; font-family: var(--label); letter-spacing: .04em; }
-.tsource p, .tsource ul { margin: .3em 0; }
-.tsource ul { padding-left: 1.2em; }
-.thead { font-weight: 500; color: var(--dark); font-size: 1.2rem; margin: 0 0 .8em; }
-.thead span { display: block; }
 .tstanza { margin-bottom: 1em; }
 .tl { display: grid; grid-template-columns: 2.2em minmax(0, 1fr); margin: 0; }
 .tcol:not(.it) .tl { grid-template-columns: minmax(0, 1fr); }
@@ -186,22 +177,8 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .poem-bar { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; }
 .poem-bar .step { flex: 0 0 auto; }
-.poem-bar .poem-select { margin: 0; display: block; min-width: 0; }
-.poem-title { margin: 0; min-width: 0; }
-.poem-title select {
-  appearance: none; -webkit-appearance: none; border: 0; border-radius: 3px; background-color: transparent;
-  font-family: var(--display); font-size: clamp(1.6rem, 3.6vw, 2.4rem); font-weight: 500; color: var(--dark);
-  padding: 2px 1.4em 2px 0; max-width: 100%; cursor: pointer; text-overflow: ellipsis; field-sizing: content;
-  background-image: linear-gradient(45deg, transparent 50%, var(--main) 50%), linear-gradient(135deg, var(--main) 50%, transparent 50%);
-  background-position: calc(100% - 13px) 58%, calc(100% - 7px) 58%; background-size: 6px 6px; background-repeat: no-repeat;
-}
-.poem-title select:hover { background-color: var(--panel); }
 .step { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border-radius: 50%; font-size: 1.9rem; line-height: 1; text-decoration: none; color: var(--main); }
 a.step:hover { background: var(--panel); }
-.ptabs { display: flex; gap: 20px; border-bottom: 1px solid var(--line); margin: 4px 0 24px; padding-left: calc(2.4rem + 8px); font-family: var(--label); font-size: 1.1rem; letter-spacing: .04em; }
-.ptab { text-decoration: none; color: var(--muted); padding: 6px 0; border-bottom: 2px solid transparent; margin-bottom: -1px; }
-.ptab.on { color: var(--main); border-bottom-color: var(--main); }
-.poem-bar + :not(.ptabs) { margin-top: 20px; }
 .print-head { font-family: var(--label); letter-spacing: .06em; color: var(--dark); font-size: 1.15rem; line-height: 1.35; margin: 0 0 1em; }
 .print-head span { display: block; }
 
@@ -211,5 +188,40 @@ a.step:hover { background: var(--panel); }
   .brand { font-size: 1.15rem; margin-right: 0; white-space: nowrap; }
   .links { flex-wrap: nowrap; overflow-x: auto; gap: 12px; margin-right: auto; scrollbar-width: none; }
   .lang { flex-shrink: 0; }
-  .ptabs { padding-left: 0; }
 }
+
+/* poem list under the title */
+.poem-picker { position: relative; min-width: 0; }
+.poem-picker > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .4em; border-radius: 3px; padding: 0 .3em 0 0; max-width: 100%; }
+.poem-picker > summary::-webkit-details-marker { display: none; }
+.poem-picker > summary::after { content: ""; flex: 0 0 auto; width: 7px; height: 7px; border-right: 2px solid var(--main); border-bottom: 2px solid var(--main); transform: rotate(45deg) translateY(-3px); margin-left: .2em; }
+.poem-picker[open] > summary::after { transform: rotate(-135deg) translateY(-2px); }
+.poem-picker > summary:hover { background: var(--panel); }
+.poem-title { margin: 0; font-weight: 500; color: var(--dark); font-size: clamp(1.6rem, 3.6vw, 2.4rem); line-height: 1.15; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.picker {
+  position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; width: min(64rem, calc(100vw - 32px)); max-height: 70vh; overflow: auto;
+  list-style: none; margin: 0; padding: 12px 18px; columns: 3 17rem; column-gap: 28px;
+  background: var(--paper); border: 1px solid var(--tint); border-radius: 6px; box-shadow: 0 14px 36px -14px rgba(14, 58, 98, .45);
+}
+.picker li { break-inside: avoid; }
+.picker a, .picker .off { display: grid; grid-template-columns: 3.9em minmax(0, 1fr); gap: 8px; padding: 3px 4px; text-decoration: none; border-radius: 3px; font-size: 1.05rem; line-height: 1.3; }
+.picker a:hover { background: var(--panel); }
+.picker a[aria-current] { background: var(--panel); color: var(--main); font-weight: 600; }
+.picker .off { color: var(--muted); opacity: .55; }
+.picker .num { font-family: var(--label); color: var(--muted); text-align: right; }
+
+/* witness tabs: the description appears on hover or focus */
+.wtab { position: relative; }
+.wtab .tip {
+  position: absolute; z-index: 25; left: 0; top: calc(100% + 6px); width: max-content; max-width: 22rem;
+  background: var(--dark); color: var(--paper); font-family: var(--display); font-size: .95rem; letter-spacing: 0; line-height: 1.35;
+  padding: 6px 10px; border-radius: 4px; box-shadow: 0 8px 20px -10px rgba(0, 0, 0, .5);
+  opacity: 0; visibility: hidden; transition: opacity .12s; pointer-events: none;
+}
+.wtab:hover .tip, .wtab:focus-visible .tip { opacity: 1; visibility: visible; }
+@media (prefers-reduced-motion: reduce) { .wtab .tip { transition: none; } }
+
+/* traduco: sources after the texts */
+.tsrc h2 { font-family: var(--label); font-weight: 500; font-size: 1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .3em; }
+.tsrc p, .tsrc ul { margin: .25em 0; }
+.tsrc ul { padding-left: 1.1em; }

@@ -1,15 +1,11 @@
 <header class="poem-bar">
   <% if (pnav.prev) { %><a class="step prev" href="/<%= pnav.mod %>/<%= pnav.prev.n %>" aria-label="<%= __('poem.prev') %>" title="<%= pnav.prev.roman %>. <%= pnav.prev.title || pnav.prev.incipit %>">‹</a><% } else { %><span class="step" aria-hidden="true"></span><% } %>
-  <form class="poem-select" action="/<%= pnav.mod %>" method="get">
-    <label for="poem-select" class="visually-hidden"><%= __('poem.choose') %></label>
-    <h1 class="poem-title">
-      <select id="poem-select" name="n" onchange="this.form.submit()">
-        <% pnav.options.forEach((o) => { %><option value="<%= o.n %>"<%= o.n === poem.n ? ' selected' : '' %><%= o.disabled ? ' disabled' : '' %>><%= o.label %></option>
-        <% }) %>
-      </select>
-    </h1>
-    <noscript><button type="submit"><%= __('leggo.go') %></button></noscript>
-  </form>
+  <details class="poem-picker"><summary><h1 class="poem-title"><%= poem.roman %>. <%= poem.title || poem.incipit %></h1></summary>
+    <ol class="picker" aria-label="<%= __('poem.choose') %>">
+      <% pnav.options.forEach((o) => { %><li><% if (o.disabled) { %><span class="off"><span class="num"><%= o.roman %></span><span class="t"><%= o.title %></span></span><% } else { %><a href="/<%= pnav.mod %>/<%= o.n %>"<%- o.n === poem.n ? ' aria-current="page"' : '' %>><span class="num"><%= o.roman %></span><span class="t"><%= o.title %></span></a><% } %></li>
+      <% }) %>
+    </ol>
+  </details>
   <% if (pnav.next) { %><a class="step next" href="/<%= pnav.mod %>/<%= pnav.next.n %>" aria-label="<%= __('poem.next') %>" title="<%= pnav.next.roman %>. <%= pnav.next.title || pnav.next.incipit %>">›</a><% } else { %><span class="step" aria-hidden="true"></span><% } %>
 </header>
-<% if (pnav.tabs.length) { %><nav class="ptabs" aria-label="<%= __('poem.modules') %>"><% pnav.tabs.forEach((t) => { %><a href="<%= t.href %>" class="ptab<%= t.on ? ' on' : '' %>"<%- t.on ? ' aria-current="page"' : '' %>><%= t.mod === 'leggo' ? 'Leggo' : 'Traduco' %></a><% }) %></nav><% } %>
+<script src="/js/site.js" defer></script>
