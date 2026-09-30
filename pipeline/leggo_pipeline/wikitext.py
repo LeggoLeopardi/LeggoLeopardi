@@ -95,3 +95,106 @@ def clean_inline(raw: str) -> Cleaned:
                 open_italic = None
     parts.append(raw[pos:])
     return _squeeze(Cleaned("".join(parts), italic, loci, notes))
+
+
+@dataclass
+class Line:
+    kind: str  # "verse", "label" (speaker) or "unnumbered"
+    text: str
+    n: int | None = None
+    stanza_start: bool = False
+    indent: int = 0
+    italic: list[Span] = field(default_factory=list)
+    loci: list[Span] = field(default_factory=list)
+    notes: list[Span] = field(default_factory=list)
+    page: str = ""
+
+
+@dataclass
+class ParsedPoem:
+    pre: list[str] = field(default_factory=list)
+    lines: list[Line] = field(default_factory=list)
+    missing: list[int] = field(default_factory=list)
+    problems: list[str] = field(default_factory=list)
+
+
+def _join_multiline_links(block: str) -> str:
+    return LINK.sub(lambda m: m.group(0).replace("\n", " "), block)
+
+
+def _split_run_on(n: int, rest: str) -> list[tuple[int, str]]:
+    """'137 A, 138 B' arrives as n=137, rest='A, 138 B': split at the next expected number."""
+    out: list[tuple[int, str]] = []
+    while True:
+        m = re.search(rf"\s{n + 1}\s", rest)
+        if not m:
+            break
+        out.append((n, rest[: m.start()]))
+        n, rest = n + 1, rest[m.end() :]
+    out.append((n, rest))
+    return out
+
+
+def parse_pages(pages: list[tuple[str, str]]) -> ParsedPoem:
+    """Parse the ordered (title, wikitext) pages of one poem."""
+    poem = ParsedPoem()
+    last = 0
+    for title, wikitext in pages:
+        for block in POEM.findall(wikitext):
+            blank_before = False
+            seen_in_block = False
+            for raw in _join_multiline_links(block).split("\n"):
+                raw = raw.strip()
+                if not raw:
+                    blank_before = True
+                    continue
+                m = VERSE.match(raw)
+                if m:
+                    nbsp = m.group(2).count("&nbsp;")
+                    for i, (n, rest) in enumerate(_split_run_on(int(m.group(1)), m.group(3))):
+                        if n <= last:
+                            poem.problems.append(
+                                f"{title}: verse {n} after verse {last} (duplicate or out of order), dropped"
+                            )
+                            continue
+                        if n > last + 1:
+                            gap = list(range(last + 1, n))
+                            poem.missing += gap
+                            poem.problems.append(f"{title}: verse(s) {gap[0]}-{gap[-1]} missing in source")
+                        first_part = i == 0
+                        c = clean_inline(rest)
+                        poem.lines.append(
+                            Line(
+                                "verse",
+                                c.text,
+                                n,
+                                stanza_start=last == 0
+                                or (first_part and (nbsp >= 3 or (blank_before and seen_in_block))),
+                                indent=nbsp if first_part and nbsp < 3 else 0,
+                                italic=c.italic,
+                                loci=c.loci,
+                                notes=c.notes,
+                                page=title,
+                            )
+                        )
+                        last = n
+                    seen_in_block = True
+                    blank_before = False
+                    continue
+                c = clean_inline(raw)
+                if not c.text or ARROWS_ONLY.match(c.text):
+                    continue
+                if last == 0:
+                    poem.pre.append(c.text)
+                elif SPEAKER.match(c.text):
+                    poem.lines.append(Line("label", c.text, page=title))
+                else:
+                    poem.lines.append(
+                        Line("unnumbered", c.text, italic=c.italic, loci=c.loci, notes=c.notes, page=title)
+                    )
+                    poem.problems.append(f"{title}: line without verse number after verse {last}: {c.text!r}")
+                seen_in_block = True
+                blank_before = False
+    if last == 0:
+        poem.problems.append("no verses found")
+    return poem
