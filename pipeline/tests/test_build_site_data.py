@@ -165,7 +165,12 @@ def test_lemma_spans_find_the_commented_words():
     assert [cut(*s) for s in lemma_spans("ermo colle.", VV, 1, 1)] == ["ermo colle"]
     assert [cut(*s) for s in lemma_spans("Ermo;", VV, 1, 1)] == ["ermo"]  # case, apostrophe as a boundary
     assert [cut(*s) for s in lemma_spans("Sempre caro mi fu quest'ermo colle.", VV, 1, 3)] == ["Sempre caro mi fu quest’ermo colle"]
-    assert [cut(*s) for s in lemma_spans("che da tanta ecc.:", VV, 2, 3)] == ["che da tanta"]  # "ecc." abbreviates the rest
+    # "ecc." abbreviates the rest of the phrase: underline on to the next . ; : ! ? (or the end of the note's verses)
+    assert [cut(*s) for s in lemma_spans("che da tanta ecc.:", VV, 2, 2)] == ["che da tanta parte"]
+    three = {2: "E questa siepe, che da tanta parte", 3: "Dell'ultimo orizzonte il guardo esclude."}
+    assert [three[v][s:e] for v, s, e in lemma_spans("che da tanta ecc.:", three, 2, 3)] == ["che da tanta parte", "Dell'ultimo orizzonte il guardo esclude"]
+    seven = {7: "Io nel pensier mi fingo; ove per poco", 8: "Il cor non si spaura. E come il vento"}
+    assert [seven[v][s:e] for v, s, e in lemma_spans("per poco ecc.:", seven, 7, 8)] == ["per poco", "Il cor non si spaura"]
     assert [cut(*s) for s in lemma_spans("quello Infinito silenzio:", VV, 9, 10)] == ["quello", "Infinito silenzio"]  # across verses
     assert lemma_spans("mare.", VV, 1, 2) == []  # not in the verses: no underline
     assert lemma_spans("fu", {1: "Sempre caro mi fu quest’ermo colle,"}, 1, 1) == [[1, 15, 17]]

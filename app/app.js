@@ -99,7 +99,12 @@ app.get('/leggo/:n', (req, res, next) => {
         if (!byVerse.has(nt.from)) byVerse.set(nt.from, []);
         byVerse.get(nt.from).push({ c, nt });
       }));
-      cview = { mode: 'all', groups: [...byVerse.keys()].sort((a, b) => a - b).map((v) => ({ v, items: byVerse.get(v) })) };
+      // within a verse, in the order of the text (where each lemma starts); same place: older edition first (stable sort)
+      const at = ({ nt }) => (nt.spans && nt.spans.length ? nt.spans[0][1] : 0);
+      cview = {
+        mode: 'all',
+        groups: [...byVerse.keys()].sort((a, b) => a - b).map((v) => ({ v, items: byVerse.get(v).sort((x, y) => at(x) - at(y)) })),
+      };
     }
   }
   const shown = !comm ? [] : (cview.mode === 'one' ? [cview.sel] : comm.commentators)

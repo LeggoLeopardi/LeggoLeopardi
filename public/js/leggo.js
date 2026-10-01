@@ -30,12 +30,18 @@
     verse.addEventListener('mouseleave', () => clear('hl'));
     verse.addEventListener('click', () => { mark('sel', [verse, ...mine()]); align(mine()[0], verse); });
   });
+  // the words of a note can run over several lines: light them all. Where notes overlap, the word stands for the
+  // shortest note covering it (pointing at "ermo" lights "ermo", not the whole verse a longer lemma covers).
+  const segsOf = (key) => lems.filter((l) => keysOf(l).includes(key));
+  const size = new Map();
+  lems.forEach((l) => keysOf(l).forEach((k) => size.set(k, (size.get(k) || 0) + l.textContent.length)));
+  const words = (lem) => segsOf(keysOf(lem).reduce((a, b) => (size.get(b) < size.get(a) ? b : a)));
   lems.forEach((lem) => {
     const mine = () => notes.filter((n) => keysOf(lem).includes(n.id));
-    lem.addEventListener('mouseenter', () => mark('hl', [lem.closest('.verse'), lem, ...mine()]));
+    lem.addEventListener('mouseenter', () => mark('hl', [lem.closest('.verse'), ...words(lem), ...mine()]));
     lem.addEventListener('click', (e) => {
       e.stopPropagation();
-      mark('sel', [lem, ...mine()]);
+      mark('sel', [...words(lem), ...mine()]);
       align(mine()[0], lem.closest('.verse'));
     });
   });

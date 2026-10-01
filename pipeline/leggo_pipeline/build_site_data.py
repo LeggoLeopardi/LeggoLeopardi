@@ -205,8 +205,11 @@ def _fold(text: str) -> tuple[str, list[int]]:
 
 def lemma_spans(lemma: str, verses: dict[int, str | None], frm: int, to: int) -> list[list[int]]:
     """Where a note's lemma stands in its verses: [verse, start, end] offsets into each verse's text; [] if not found.
-    A lemma cut short with "ecc."/"ec." is matched on the words before it."""
-    words = re.split(r"\s+(?:ecc?\.|\.\.\.|…).*$", lemma.strip())[0].strip(" .,:;!?")
+    A lemma cut short with "ecc."/"ec." is matched on the words before it and runs on to the end of the phrase
+    (the next . ; : ! ? or the end of the note's verses)."""
+    head = re.split(r"\s+(?:ecc?\.|\.\.\.|…).*$", lemma.strip())[0]
+    cut = head != lemma.strip()
+    words = head.strip(" .,:;!?")
     if not words:
         return []
     joined, owner = "", []  # the verses joined by one space; owner[i] = (verse, offset) of joined[i]
@@ -224,8 +227,14 @@ def lemma_spans(lemma: str, verses: dict[int, str | None], frm: int, to: int) ->
     m = re.search(rf"(?<!\w){needle}(?!\w)", hay)
     if not m:
         return []
+    end = m.end()
+    if cut:
+        stop = re.compile(r"[.;:!?]").search(hay, end)
+        end = stop.start() if stop else len(hay)
+        while end > m.end() and hay[end - 1] in " ,":
+            end -= 1
     spans: list[list[int]] = []
-    for i in range(where[m.start()], where[m.end() - 1] + 1):
+    for i in range(where[m.start()], where[end - 1] + 1):
         if owner[i] is None:
             continue
         v, off = owner[i]
