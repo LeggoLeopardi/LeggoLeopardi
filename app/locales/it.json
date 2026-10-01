@@ -5,13 +5,11 @@
     "progetto": "Progetto"
   },
   "home": {
-    "eyebrow": "Edizione digitale dei Canti · Università di Bologna",
     "lede": "I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i testimoni a stampa e le traduzioni.",
     "readInfinito": "Leggi L’infinito",
-    "index": "Indice dei Canti",
     "canti": "I Canti",
     "vignetteAlt": "Pagina 62 dei Canti, Napoli, Starita 1835: XII. L’infinito",
-    "vignetteCaption": "<i>Canti</i>, Napoli, Starita 1835, p. 62: XII. L’infinito. Esemplare corretto (N35c). Immagine: WikiLeopardi."
+    "vignetteCaption": "<i>L’infinito</i> in due stampe: <i>Versi</i>, Bologna, Stamperia delle Muse, 1826 (B26) e <i>Canti</i>, Napoli, Starita, 1835, p. 62, esemplare corretto (N35c). Immagini: WikiLeopardi."
   },
   "leggo": {
     "choose": "Scegli un canto",

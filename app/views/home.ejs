@@ -2,20 +2,19 @@
 <%- include('partials/nav') %>
 <main>
   <div class="wrap hero">
-    <div>
-      <p class="eyebrow"><%= __('home.eyebrow') %></p>
-      <h1>Leggo <span>Leopardi</span></h1>
-      <p class="lede"><%= __('home.lede') %></p>
-      <% const inf = canti.find((p) => p.slug === 'l-infinito'); %>
-      <div class="cta">
-        <% if (inf) { %><a class="btn primary" href="/leggo/<%= inf.n %>"><%= __('home.readInfinito') %></a><% } %>
-        <a class="btn ghost" href="#canti"><%= __('home.index') %></a>
+    <figure class="collage">
+      <div class="collage-stage">
+        <img class="c-back" src="/img/b26-infinito.jpg" width="530" height="880" alt="">
+        <img class="c-front" src="/img/vignette-n35c-infinito.jpg" width="760" height="981" alt="<%= __('home.vignetteAlt') %>">
       </div>
-    </div>
-    <figure class="vignette">
-      <img src="/img/vignette-n35c-infinito.jpg" width="760" height="981" alt="<%= __('home.vignetteAlt') %>">
       <figcaption><%- __('home.vignetteCaption') %></figcaption>
     </figure>
+    <div class="hero-txt">
+      <h1>Leggo <span class="firma" role="img" aria-label="Leopardi"></span></h1>
+      <p class="lede"><%= __('home.lede') %></p>
+      <% const inf = canti.find((p) => p.slug === 'l-infinito'); %>
+      <% if (inf) { %><a class="btn primary" href="/leggo/<%= inf.n %>"><%= __('home.readInfinito') %></a><% } %>
+    </div>
   </div>
   <section id="canti" class="band-soft">
     <div class="wrap">
