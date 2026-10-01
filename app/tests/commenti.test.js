@@ -17,7 +17,7 @@ test('Leggo on L\'infinito: the poem and all the commentaries, grouped by verse'
   assert.equal((html.match(/<p class="verse/g) || []).length, 15);
   assert.match(html, /<section class="comm"/);
   const v1 = html.slice(html.indexOf('<div class="cgroup" data-v="1">'), html.indexOf('<div class="cgroup" data-v="2">'));
-  assert.deepEqual(who(v1), ['Fornaciari 1889', 'Castagnola 1893', 'Straccali 1895', 'Levi 1921']);
+  assert.deepEqual(who(v1), ['Fornaciari 1889', 'Levi 1921', 'Castagnola 1893', 'Straccali 1895', 'Levi 1921']);  // text order; the name again when the commentator changes
   assert.equal((v1.match(/<li class="cnote/g) || []).length, 6);  // Levi's three lemmas on v. 1 are three notes under one name
   assert.match(v1, /<b class="clemma">colle,<\/b> il M\. Tabor/);
   assert.match(v1, /<b class="clemma">ermo colle\.<\/b> Il monte Tabor/);
@@ -70,4 +70,14 @@ test('commented words are underlined in the verse and point at their notes', asy
   const one = await get(`/leggo/${inf}?c=castagnola_1893`);
   assert.match(v1(one), /<span class="vt">Sempre caro mi fu quest’<span class="lem" data-notes="n-castagnola_1893-0">ermo<\/span> colle,<\/span>/);
   assert.equal([...one.matchAll(/class="lem"/g)].length, 1);
+});
+
+test('within a verse the notes follow the text: mirando (v. 4) before interminati Spazi', async () => {
+  const html = await get(`/leggo/${inf}`);
+  const v4 = html.slice(html.indexOf('<div class="cgroup" data-v="4">'), html.indexOf('<div class="cgroup" data-v="5">'));
+  const lemmas = [...v4.matchAll(/<b class="clemma">([^<]+)<\/b>/g)].map((m) => m[1]);
+  assert.deepEqual(lemmas, ['mirando,', 'interminati Spazi.']);
+  const v1 = html.slice(html.indexOf('<div class="cgroup" data-v="1">'), html.indexOf('<div class="cgroup" data-v="2">'));
+  assert.deepEqual([...v1.matchAll(/<b class="clemma">([^<]+)<\/b>/g)].map((m) => m[1]),
+    ["Sempre caro mi fu quest'ermo colle.", 'Sempre caro mi fu:', 'Ermo;', 'ermo colle.', 'ermo,', 'colle,']);  // same place: older edition first
 });
