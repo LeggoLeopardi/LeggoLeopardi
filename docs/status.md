@@ -71,8 +71,9 @@ Last updated: 2026-09-30.
 
 ## Open items
 
-- **Palette.** The team chooses at the 2026-09-30 meeting: Ocean v1, Mare al tramonto, Petrolio e ocra or Indaco e seppia (`docs/mockups/palettes-warm-v1.html`). To apply it, replace the `:root` colour block in `public/css/site.css` and its dark-mode version.
-- **Image rights** for the home vignette (N35c p. 62, image from WikiLeopardi). The BNN autograph is the preferred alternative, but its IIIF links in the EVT TEI currently return errors.
+- **Style (2026-10-01).** The site now follows LeggoManzoni's layout in blue: ground `#E6EFF6`, white rounded panels, bare navbar with pill states, "Leggo" + Leopardi's signature (`public/img/firma-leopardi.png`, cut from `Leopardi_firma.gif`), collage on the home page (B26 and N35c pages), terracotta accent `#BE5749`. Mockups: `docs/mockups/rhyme-v1/`. This replaces the Ocean v1 / warm palettes choice (`docs/mockups/palettes-warm-v1.html`); to be confirmed with the team.
+- **Phone navbar.** With the signature the brand takes half the row; the module links scroll sideways. To decide: smaller signature or a second row.
+- **Image rights** for the home images (N35c p. 62 and B26, images from WikiLeopardi). The BNN autograph is the preferred alternative, but its IIIF links in the EVT TEI currently return errors.
 - **Zecchini translations.** The meeting notes mention 56 translations; the docx files hold 38 tables. Check whether the Drive has more.
 - **Moroncini 1917** was digitised at ADlab and is not in the local folder.
 

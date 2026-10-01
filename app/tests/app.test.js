@@ -31,7 +31,7 @@ test('language switch sets a cookie and redirects only to local paths', async ()
 test('unknown pages are 404 with the site layout', async () => {
   const res = await request(app).get('/nope');
   assert.equal(res.status, 404);
-  assert.match(res.text, /Leggo <b>Leopardi<\/b>/);
+  assert.match(res.text, /<a class="brand" href="\/">Leggo <span class="firma" role="img" aria-label="Leopardi"><\/span><\/a>/);
 });
 
 test('language switch rejects backslash tricks that browsers read as //', async () => {

@@ -1,6 +1,6 @@
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/">Leggo <b>Leopardi</b></a>
+    <a class="brand" href="/">Leggo <span class="firma" role="img" aria-label="Leopardi"></span></a>
     <nav class="links" aria-label="<%= __('nav.label') %>">
       <a href="<%= leggoHref %>" class="<%= path.startsWith('/leggo') ? 'on' : '' %>">Leggo</a>
       <a href="<%= confrontoHref %>" class="<%= path.startsWith('/confronto') ? 'on' : '' %>">Confronto</a>
@@ -8,8 +8,7 @@
       <a href="/progetto" class="<%= path.startsWith('/progetto') ? 'on' : '' %>"><%= __('nav.progetto') %></a>
     </nav>
     <div class="lang">
-      <a href="/lang/it?next=<%= encodeURIComponent(path) %>" class="<%= lang === 'it' ? 'on' : '' %>">IT</a>
-      <a href="/lang/en?next=<%= encodeURIComponent(path) %>" class="<%= lang === 'en' ? 'on' : '' %>">EN</a>
+      <% const other = lang === 'it' ? 'en' : 'it'; %><a href="/lang/<%= other %>?next=<%= encodeURIComponent(path) %>" lang="<%= other %>"><%= other.toUpperCase() %></a>
     </div>
   </div>
 </header>
