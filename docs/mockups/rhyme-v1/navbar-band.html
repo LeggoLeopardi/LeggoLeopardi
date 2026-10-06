@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banda del menu · Leggo Leopardi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+SC:wght@500;600&display=swap">
+<link rel="stylesheet" href="mock.css">
+<style>
+  body { padding-bottom: 60px; }
+  .intro { max-width: 1240px; margin: 0 auto; padding: 28px 20px 0; }
+  .intro h1 { font-weight: 500; color: var(--dark); font-size: 2.2rem; margin: 0 0 .2em; }
+  .intro p { margin: 0; color: var(--muted); }
+  .opt { max-width: 1240px; margin: 36px auto 0; padding: 0 20px; }
+  .opt h2 { font-size: 1.6rem; margin: 0 0 .1em; }
+  .opt > p { margin: 0 0 14px; color: var(--muted); font-size: 1.05rem; }
+  .pair { display: grid; gap: 18px; }
+  .lp, .mz { border: 1px solid var(--tint); border-radius: 10px; overflow: hidden; }
+  .lp { background: var(--ground); max-height: 430px; }
+  .lp .nav { position: static; }
+  .lp .hero { padding-block: 26px 40px; }
+  .lp .collage { max-width: 380px; }
+  /* A: solid band, as in the first version */
+  .lp.a .nav { background: var(--main); color: var(--on-main); }
+  .lp.a .brand .firma { background: var(--on-main); }
+  .lp.a .links a:hover { background: color-mix(in srgb, var(--on-main) 18%, transparent); }
+  .lp.a .links a.on { background: var(--on-main); color: var(--main); }
+  .lp.a .lang a { border-color: var(--on-main); }
+  /* B: the tint of the collage block */
+  .lp.b .nav { background: var(--block); color: var(--dark); }
+  .lp.b .links a:hover { background: var(--ground); }
+  .lp.b .lang a { border-color: var(--dark); }
+  /* LeggoManzoni: its home page with the navbar redrawn */
+  .mz { background: #DDEBDD; }
+  .mz-shot { display: block; width: 100%; height: auto; }
+  .mz-nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 7%; font-weight: 700; }
+  .mz-brand { font-size: 1.5rem; display: flex; align-items: center; gap: 14px; }
+  .mz-brand img { height: 30px; width: auto; }
+  .mz-links { display: flex; gap: 2px; align-items: center; font-size: 1.12rem; }
+  .mz-links a { padding: 3px 15px; border-radius: 10px; }
+  .mz-lang { border: 2px solid currentColor; margin-left: 4px; }
+  .mz.a .mz-nav { background: #73978B; color: #fff; }
+  .mz.a .mz-brand img { filter: brightness(0) invert(1); }
+  .mz.a .mz-links a.on { background: #fff; color: #5E8377; }
+  .mz.b .mz-nav { background: #BCC8B1; color: #3F5F55; }
+  .mz.b .mz-links a.on { background: #73978B; color: #fff; }
+  @media (max-width: 900px) { .mz-links a:not(.on):not(.mz-lang) { display: none; } }
+  /* A2: the chosen solid band; blue lighter (white text 4.7:1), sage unchanged with larger bold menu text (3.2:1, large text) */
+  .lp.a2 .nav { background: #4877A1; }
+  .lp.a2 .links a.on { color: #4877A1; }
+  .mz.a2 .mz-nav { background: #73978B; }
+  .mz.a2 .mz-links { font-size: 19px; }  /* 19px bold counts as large text: white on this sage (3.2:1) passes AA */
+  .mz.a2 .mz-links a.on { color: #5E8377; }
+</style>
+</head>
+<body>
+<div class="intro"><h1>Banda del menu</h1><p>La stessa scelta su Leggo Leopardi e su Leggo Manzoni.</p></div>
+<section class="opt"><h2>A2. Banda piena, un po’ più chiara</h2><p>Scelta: banda piena con testo bianco, colore alleggerito. Blu #4877A1. Verde #73978B invariato, con il testo del menu un po’ più grande e in grassetto, per una lettura sicura.</p><div class="pair"><div class="lp a a2"><header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="home.html">Leggo <span class="firma" role="img" aria-label="Leopardi"></span></a>
+    <nav class="links" aria-label="Moduli">
+      <a href="leggo.html" class="on">Leggo</a>
+      <a href="/confronto" class="">Confronto</a>
+      <a href="/traduco" class="">Traduco</a>
+      <a href="/progetto" class="">Progetto</a>
+    </nav>
+    <div class="lang"><a href="#">EN</a></div>
+  </div>
+</header><main><div class="wrap hero">
+    <figure class="collage">
+      <div class="collage-stage">
+        <img class="c-back" src="img/b26-infinito.jpg" width="530" height="880" alt="">
+        <img class="c-front" src="../../../public/img/vignette-n35c-infinito.jpg" width="760" height="981" alt="Pagina 62 dei Canti, Napoli, Starita 1835: XII. L’infinito">
+      </div>
+      <figcaption><i>Canti</i>, Napoli, Starita 1835, p. 62: XII. L’infinito. Esemplare corretto (N35c). Immagine: WikiLeopardi.</figcaption>
+    </figure>
+    <div class="hero-txt">
+      <h1>Leggo <span class="firma" role="img" aria-label="Leopardi"></span></h1>
+      <p class="lede">I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i testimoni a stampa e le traduzioni.</p>
+      <a class="btn primary" href="leggo.html">Leggi L’infinito</a>
+    </div>
+  </div></main></div><div class="mz a a2"><div class="mz-nav"><span class="mz-brand">Leggo <img src="img/manzoni-firma.png" alt="Manzoni"></span><span class="mz-links"><a class="on">Home</a><a class="">Progetto</a><a class="">Leggo</a><a class="">Traduco</a><a class="">Vedo</a><a class="">Ricerco</a><a class="">Confronto</a><a class="">Wo-Dú</a><a class="">News</a><a class="mz-lang">IT</a></span></div><img class="mz-shot" src="img/manzoni-home.jpg" alt=""></div></div></section>
+<section class="opt"><h2>A. Banda piena</h2><p>Il colore principale, come nella prima versione; testo e firma chiari.</p><div class="pair"><div class="lp a"><header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="home.html">Leggo <span class="firma" role="img" aria-label="Leopardi"></span></a>
+    <nav class="links" aria-label="Moduli">
+      <a href="leggo.html" class="on">Leggo</a>
+      <a href="/confronto" class="">Confronto</a>
+      <a href="/traduco" class="">Traduco</a>
+      <a href="/progetto" class="">Progetto</a>
+    </nav>
+    <div class="lang"><a href="#">EN</a></div>
+  </div>
+</header><main><div class="wrap hero">
+    <figure class="collage">
+      <div class="collage-stage">
+        <img class="c-back" src="img/b26-infinito.jpg" width="530" height="880" alt="">
+        <img class="c-front" src="../../../public/img/vignette-n35c-infinito.jpg" width="760" height="981" alt="Pagina 62 dei Canti, Napoli, Starita 1835: XII. L’infinito">
+      </div>
+      <figcaption><i>Canti</i>, Napoli, Starita 1835, p. 62: XII. L’infinito. Esemplare corretto (N35c). Immagine: WikiLeopardi.</figcaption>
+    </figure>
+    <div class="hero-txt">
+      <h1>Leggo <span class="firma" role="img" aria-label="Leopardi"></span></h1>
+      <p class="lede">I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i testimoni a stampa e le traduzioni.</p>
+      <a class="btn primary" href="leggo.html">Leggi L’infinito</a>
+    </div>
+  </div></main></div><div class="mz a"><div class="mz-nav"><span class="mz-brand">Leggo <img src="img/manzoni-firma.png" alt="Manzoni"></span><span class="mz-links"><a class="on">Home</a><a class="">Progetto</a><a class="">Leggo</a><a class="">Traduco</a><a class="">Vedo</a><a class="">Ricerco</a><a class="">Confronto</a><a class="">Wo-Dú</a><a class="">News</a><a class="mz-lang">IT</a></span></div><img class="mz-shot" src="img/manzoni-home.jpg" alt=""></div></div></section>
+<section class="opt"><h2>B. Banda poco più scura del fondo</h2><p>La tinta del blocco dietro le pagine in home; testo e firma scuri.</p><div class="pair"><div class="lp b"><header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="home.html">Leggo <span class="firma" role="img" aria-label="Leopardi"></span></a>
+    <nav class="links" aria-label="Moduli">
+      <a href="leggo.html" class="on">Leggo</a>
+      <a href="/confronto" class="">Confronto</a>
+      <a href="/traduco" class="">Traduco</a>
+      <a href="/progetto" class="">Progetto</a>
+    </nav>
+    <div class="lang"><a href="#">EN</a></div>
+  </div>
+</header><main><div class="wrap hero">
+    <figure class="collage">
+      <div class="collage-stage">
+        <img class="c-back" src="img/b26-infinito.jpg" width="530" height="880" alt="">
+        <img class="c-front" src="../../../public/img/vignette-n35c-infinito.jpg" width="760" height="981" alt="Pagina 62 dei Canti, Napoli, Starita 1835: XII. L’infinito">
+      </div>
+      <figcaption><i>Canti</i>, Napoli, Starita 1835, p. 62: XII. L’infinito. Esemplare corretto (N35c). Immagine: WikiLeopardi.</figcaption>
+    </figure>
+    <div class="hero-txt">
+      <h1>Leggo <span class="firma" role="img" aria-label="Leopardi"></span></h1>
+      <p class="lede">I Canti nel testo dell’esemplare corretto dell’edizione Starita (N35c), con i testimoni a stampa e le traduzioni.</p>
+      <a class="btn primary" href="leggo.html">Leggi L’infinito</a>
+    </div>
+  </div></main></div><div class="mz b"><div class="mz-nav"><span class="mz-brand">Leggo <img src="img/manzoni-firma.png" alt="Manzoni"></span><span class="mz-links"><a class="on">Home</a><a class="">Progetto</a><a class="">Leggo</a><a class="">Traduco</a><a class="">Vedo</a><a class="">Ricerco</a><a class="">Confronto</a><a class="">Wo-Dú</a><a class="">News</a><a class="mz-lang">IT</a></span></div><img class="mz-shot" src="img/manzoni-home.jpg" alt=""></div></div></section>
+</body>
+</html>

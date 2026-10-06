@@ -5,13 +5,11 @@
     "progetto": "Project"
   },
   "home": {
-    "eyebrow": "Digital edition of the Canti · University of Bologna",
     "lede": "The Canti in the text of the corrected copy of the Starita edition (N35c), with the printed witnesses and the translations.",
     "readInfinito": "Read L’infinito",
-    "index": "Index of the Canti",
     "canti": "The Canti",
     "vignetteAlt": "Page 62 of the Canti, Naples, Starita 1835: XII. L’infinito",
-    "vignetteCaption": "<i>Canti</i>, Naples, Starita 1835, p. 62: XII. L’infinito. Corrected copy (N35c). Image: WikiLeopardi."
+    "vignetteCaption": "<i>L’infinito</i> in two printings: <i>Versi</i>, Bologna, Stamperia delle Muse, 1826 (B26) and <i>Canti</i>, Naples, Starita, 1835, p. 62, corrected copy (N35c). Images: WikiLeopardi."
   },
   "leggo": {
     "choose": "Choose a poem",

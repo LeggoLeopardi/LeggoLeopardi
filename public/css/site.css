@@ -1,62 +1,76 @@
-/* Palette "Ocean v1" (spec §8). A warmer variant will replace this block only. */
+/* Palette: LeggoManzoni's grammar in blue. A tinted ground with white reading panels on it; terracotta is the
+   accent the two sites share. */
 :root {
   --main: #2F6391;
   --dark: #0E3A62;
   --tint: #A9C8DB;
+  --ground: #E6EFF6;
+  --block: #C3D5E3;
   --panel: #E6EFF6;
-  --accent: #B8743A;
-  --paper: #F7F4EA;
+  --accent: #BE5749;
+  --paper: #FCFDFE;
+  --on-main: #FCFDFE;
   --ink: #1B2733;
   --muted: #56697A;
-  --line: #CCDCE8;
-  --band: var(--main);
-  --on-band: #F7F4EA;
+  --line: #D3E0EA;
+  --band: #4877A1;
+  --on-band: #FCFDFE;
+  --r: 10px;
   --display: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
   --label: "Cormorant SC", "Cormorant Garamond", Garamond, Georgia, serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --main: #7FB0D6; --dark: #CFE2F0; --tint: #35597A; --panel: #152C42; --accent: #D99A5E;
-    --paper: #0C1B2A; --ink: #E3ECF3; --muted: #9FB4C6; --line: #24425E; --band: #163F66; --on-band: #EEF3F7;
+    --main: #7FB0D6; --dark: #CFE2F0; --tint: #35597A; --ground: #0C1B2A; --block: #1D3A56; --panel: #1B3550; --accent: #E58E7F;
+    --paper: #12263A; --on-main: #0C1B2A; --ink: #E3ECF3; --muted: #9FB4C6; --line: #24425E; --band: #1D4669; --on-band: #E3ECF3;
     color-scheme: dark;
   }
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--display); font-size: 1.2rem; line-height: 1.5; }
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--display); font-size: 1.2rem; line-height: 1.5; }
 a { color: inherit; }
 .wrap { max-width: 1120px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 40px); }
-.eyebrow { font-family: var(--label); letter-spacing: .08em; font-size: .95rem; color: var(--muted); }
+/* the signature is a mask, so its ink takes any colour; the small letters sit on the baseline of the word before it */
+.firma { display: inline-block; aspect-ratio: 593 / 206; background: var(--dark); -webkit-mask: url(../img/firma-leopardi.png) center / contain no-repeat; mask: url(../img/firma-leopardi.png) center / contain no-repeat; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nav :focus-visible { outline-color: var(--on-band); }
 
 /* navbar */
+/* the menu is a solid band, as on LeggoManzoni; white text on #4877A1 is 4.7:1 */
 .nav { background: var(--band); color: var(--on-band); position: sticky; top: 0; z-index: 5; }
-.nav-inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; padding-block: 12px; }
-.brand { font-style: italic; font-size: 1.5rem; font-weight: 500; text-decoration: none; margin-right: auto; }
-.brand b { font-style: normal; font-weight: 600; }
-.links { display: flex; gap: 20px; flex-wrap: wrap; font-family: var(--label); font-size: 1.1rem; letter-spacing: .04em; }
-.links a { text-decoration: none; border-bottom: 1px solid transparent; }
-.links a.on, .links a:hover { border-color: var(--on-band); }
-.links .soon { opacity: .55; cursor: default; }
-.lang { display: flex; gap: 6px; font-family: var(--label); }
-.lang a { text-decoration: none; padding: 1px 8px; border: 1px solid var(--on-band); border-radius: 3px; opacity: .8; }
-.lang a.on { background: var(--on-band); color: var(--band); opacity: 1; }
+.nav-inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; padding-block: 14px; }
+.brand { font-size: 1.6rem; font-weight: 500; text-decoration: none; margin-right: auto; white-space: nowrap; }
+.brand .firma { background: var(--on-band); height: 1.45em; margin-left: .1em; vertical-align: -.75em; }
+.links { display: flex; gap: 6px; flex-wrap: wrap; font-size: 1.2rem; font-weight: 500; }
+.links a { text-decoration: none; padding: 3px 14px; border-radius: var(--r); }
+.links a:hover { background: color-mix(in srgb, var(--on-band) 18%, transparent); }
+.links a.on { background: var(--on-band); color: var(--band); }
+.lang { font-weight: 500; }
+.lang a { text-decoration: none; padding: 1px 12px; border: 1.5px solid var(--on-band); border-radius: var(--r); }
+.lang a:hover { background: color-mix(in srgb, var(--on-band) 18%, transparent); }
 
 /* home */
-.hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(24px, 5vw, 64px); align-items: center; padding-block: clamp(32px, 6vw, 72px); }
-.hero h1 { font-size: clamp(3.2rem, 8vw, 6rem); line-height: .95; font-weight: 500; font-style: italic; color: var(--dark); margin: .2em 0 .25em; }
-.hero h1 span { display: block; font-style: normal; font-weight: 600; }
-.lede { font-size: 1.35rem; max-width: 34em; }
-.cta { display: flex; gap: 14px; flex-wrap: wrap; }
-.btn { font-family: var(--label); font-size: 1.15rem; letter-spacing: .04em; text-decoration: none; padding: 8px 18px; border-radius: 3px; border: 1px solid var(--main); }
-.btn.primary { background: var(--main); color: var(--paper); }
-.btn.ghost { color: var(--main); }
-.vignette { margin: 0; justify-self: center; max-width: 420px; width: 100%; }
-.vignette img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
-.vignette figcaption { font-size: 1rem; color: var(--muted); margin-top: 10px; }
-.band-soft { background: var(--panel); padding-block: clamp(28px, 5vw, 56px); }
+.hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(24px, 5vw, 64px); align-items: center; padding-block: clamp(28px, 5vw, 64px) clamp(40px, 6vw, 80px); }
+.hero h1 { font-size: clamp(2.7rem, 5.4vw, 4.2rem); line-height: 1.1; font-weight: 500; color: var(--accent); margin: 0 0 .3em; white-space: nowrap; }
+.hero h1 .firma { height: 1.35em; vertical-align: -.7em; }
+.lede { font-size: 1.3rem; max-width: 34em; margin: 0 0 1.4em; }
+.btn { display: inline-block; font-size: 1.15rem; font-weight: 600; letter-spacing: .02em; text-decoration: none; padding: 12px 34px; border-radius: 999px; border: 1px solid var(--main); transition: background .15s, transform .1s; }
+.btn.primary { background: var(--main); color: var(--on-main); }
+.btn.primary:hover { background: var(--dark); border-color: var(--dark); }
+.btn:active { transform: translateY(1px); }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+/* two pages over an offset block, as on LeggoManzoni's home */
+.collage { margin: 0; max-width: 620px; }
+.collage-stage { position: relative; aspect-ratio: 10 / 9; }
+.collage-stage::before { content: ""; position: absolute; inset: 14% 0 -4% 16%; background: var(--block); }
+.collage img { position: absolute; display: block; height: auto; box-shadow: 0 18px 40px -22px rgba(14, 58, 98, .55); }
+.c-back { left: 0; top: 15%; width: 44%; }
+.c-front { left: 34%; top: 3%; width: 60%; }
+.collage figcaption { font-size: .95rem; color: var(--muted); margin: calc(4% + 14px) 0 0 16%; }
+.band-soft { padding-bottom: clamp(28px, 5vw, 56px); }
 h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 0 0 .6em; }
-.canti { list-style: none; margin: 0; padding: 0; columns: 3 18rem; column-gap: 36px; }
+.canti { list-style: none; margin: 0; padding: 22px 30px; columns: 3 18rem; column-gap: 36px; background: var(--paper); border-radius: var(--r); }
 .canto { break-inside: avoid; display: grid; grid-template-columns: 3.4em minmax(0, 1fr); gap: 8px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 1.1rem; }
 .canto .num { font-family: var(--label); color: var(--muted); text-align: right; }
 .canto .t { text-decoration: none; }
@@ -68,6 +82,7 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 .poem-select select { font: inherit; font-size: 1.05rem; max-width: 100%; padding: 4px 8px; border: 1px solid var(--tint); border-radius: 3px; background: var(--paper); color: var(--ink); }
 .poem-select button { font-family: var(--label); font-size: 1rem; padding: 4px 12px; border: 1px solid var(--main); border-radius: 3px; background: var(--main); color: var(--paper); cursor: pointer; }
 .poem { max-width: 40rem; }
+.poem, .comm, .facs-text, .apparatus, .tcol, .edition { background: var(--paper); border-radius: var(--r); padding: 22px 28px; }
 .badge { display: inline-block; font-family: var(--label); font-size: .9rem; color: var(--muted); border: 1px dashed var(--tint); padding: 2px 10px; border-radius: 3px; }
 .poem-head { font-weight: 500; color: var(--dark); font-size: clamp(1.6rem, 3.5vw, 2.2rem); line-height: 1.2; margin: .6em 0 .8em; }
 .poem-head span { display: block; }
@@ -85,19 +100,19 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 
 /* 404 and footer */
 .notfound { padding-block: 60px; }
-.foot { background: var(--dark); color: var(--paper); padding-block: 22px; font-size: 1rem; margin-top: 40px; }
-@media (prefers-color-scheme: dark) { .foot { background: #081421; color: var(--ink); } }
+.foot { color: var(--muted); border-top: 1px solid var(--line); padding-block: 22px; font-size: 1rem; margin-top: 40px; }
 
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; }
-  .vignette { max-width: 340px; }
+  .hero-txt { order: -1; }
+  .collage { max-width: 460px; }
 }
 
 /* facsimile (text and page aligned) */
 .facs { padding-block: clamp(20px, 4vw, 40px); }
 .wtabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 20px; font-family: var(--label); }
-.wtab { text-decoration: none; padding: 3px 12px; border: 1px solid var(--tint); border-radius: 3px; color: var(--main); }
-.wtab.on { background: var(--main); border-color: var(--main); color: var(--paper); }
+.wtab { text-decoration: none; padding: 3px 14px; border: 1px solid var(--tint); border-radius: var(--r); color: var(--main); }
+.wtab.on { background: var(--main); border-color: var(--main); color: var(--on-main); }
 .facs-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; }
 .fverse { scroll-margin-top: 90px; display: grid; grid-template-columns: 2.4em minmax(0, 1fr); margin: 0; padding: 1px 4px; border-radius: 3px; cursor: default; }
 .fverse .vn { font-family: var(--label); font-size: .85rem; color: var(--muted); text-align: right; padding-right: .8em; padding-top: .25em; }
@@ -112,7 +127,7 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 .zone:focus-visible { outline: 2px solid var(--accent); }
 .facs-img figcaption { font-size: .95rem; color: var(--muted); margin-top: 8px; }
 .nozones { display: block; }
-.apparatus { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 16px; }
+.apparatus { margin-top: 32px; }
 .apparatus h2 { font-weight: 500; color: var(--dark); font-size: 1.6rem; margin: 0 0 .5em; }
 .places { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .places > li { scroll-margin-top: 90px; display: grid; grid-template-columns: 5em minmax(0, 1fr); gap: 10px; padding: 6px 8px; border-radius: 3px; }
@@ -130,7 +145,7 @@ h2 { font-weight: 500; color: var(--dark); font-size: clamp(1.9rem, 4vw, 2.6rem)
 
 /* variant popover (facsimile page) */
 .facs { position: relative; }
-.popover { position: absolute; z-index: 20; width: min(26rem, 90vw); max-height: 60vh; overflow: auto; background: var(--paper); border: 1px solid var(--tint); border-radius: 6px; box-shadow: 0 12px 32px -12px rgba(14, 58, 98, .45); padding: 8px 14px 12px; }
+.popover { position: absolute; z-index: 20; width: min(26rem, 90vw); max-height: 60vh; overflow: auto; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 12px 32px -12px rgba(14, 58, 98, .45); padding: 8px 14px 12px; }
 .popover[hidden] { display: none; }
 .popover-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
 .popover-bar h2 { font-family: var(--label); font-size: 1rem; letter-spacing: .04em; color: var(--muted); margin: 0; font-weight: 500; }
@@ -152,8 +167,11 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
   .nav { position: static; }
   .nav-inner { gap: 6px 14px; padding-block: 8px; }
   .brand { font-size: 1.3rem; }
-  .links { gap: 12px; font-size: 1rem; }
-  .lang a { padding: 0 6px; }
+  .links { gap: 2px; font-size: 1.05rem; }
+  .links a { padding: 2px 9px; }
+  .lang a { padding: 0 8px; }
+  .canti { padding: 14px 16px; }
+  .poem, .comm, .facs-text, .apparatus, .tcol, .edition { padding: 16px; }
 }
 
 /* traduco */
@@ -176,7 +194,7 @@ a.place.on { background: color-mix(in srgb, var(--accent) 20%, transparent); bor
 .poem-bar { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; }
 .poem-bar .step { flex: 0 0 auto; }
 .step { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border-radius: 50%; font-size: 1.9rem; line-height: 1; text-decoration: none; color: var(--main); }
-a.step:hover { background: var(--panel); }
+a.step:hover { background: var(--block); }
 .print-head { font-family: var(--label); letter-spacing: .06em; color: var(--dark); font-size: 1.15rem; line-height: 1.35; margin: 0 0 1em; }
 .print-head span + span::before { content: " "; }  /* one line: XII. L'INFINITO. */
 
@@ -184,22 +202,22 @@ a.step:hover { background: var(--panel); }
 @media (max-width: 640px) {
   .nav-inner { flex-wrap: nowrap; gap: 10px; }
   .brand { font-size: 1.15rem; margin-right: 0; white-space: nowrap; }
-  .links { flex-wrap: nowrap; overflow-x: auto; gap: 12px; margin-right: auto; scrollbar-width: none; }
+  .links { flex-wrap: nowrap; overflow-x: auto; margin-right: auto; scrollbar-width: none; }
   .lang { flex-shrink: 0; }
 }
 
 /* poem list under the title */
 .poem-picker { position: relative; min-width: 0; }
-.poem-picker > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .4em; border-radius: 3px; padding: 0 .3em 0 0; max-width: 100%; }
+.poem-picker > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .4em; border-radius: var(--r); padding: 0 .4em; max-width: 100%; }
 .poem-picker > summary::-webkit-details-marker { display: none; }
 .poem-picker > summary::after { content: ""; flex: 0 0 auto; width: 7px; height: 7px; border-right: 2px solid var(--main); border-bottom: 2px solid var(--main); transform: rotate(45deg) translateY(-3px); margin-left: .2em; }
 .poem-picker[open] > summary::after { transform: rotate(-135deg) translateY(-2px); }
-.poem-picker > summary:hover { background: var(--panel); }
+.poem-picker > summary:hover { background: var(--block); }
 .poem-title { margin: 0; font-weight: 500; color: var(--dark); font-size: clamp(1.6rem, 3.6vw, 2.4rem); line-height: 1.15; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .picker {
   position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; width: min(64rem, calc(100vw - 32px)); max-height: 70vh; overflow: auto;
   list-style: none; margin: 0; padding: 12px 18px; columns: 3 17rem; column-gap: 28px;
-  background: var(--paper); border: 1px solid var(--tint); border-radius: 6px; box-shadow: 0 14px 36px -14px rgba(14, 58, 98, .45);
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 14px 36px -14px rgba(14, 58, 98, .45);
 }
 .picker li { break-inside: avoid; }
 .picker a, .picker .off { display: grid; grid-template-columns: 3.9em minmax(0, 1fr); gap: 8px; padding: 3px 4px; text-decoration: none; border-radius: 3px; font-size: 1.05rem; line-height: 1.3; }
@@ -220,6 +238,7 @@ a.step:hover { background: var(--panel); }
 @media (prefers-reduced-motion: reduce) { .wtab .tip { transition: none; } }
 
 /* traduco: sources after the texts */
+.tsources { margin-top: 24px; }
 .tsrc h2 { font-family: var(--label); font-weight: 500; font-size: 1rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .3em; }
 .tsrc p, .tsrc ul { margin: .25em 0; }
 .tsrc ul { padding-left: 1.1em; }
@@ -236,7 +255,7 @@ a.step:hover { background: var(--panel); }
 .list-panel {
   position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; width: min(46rem, calc(100vw - 32px)); max-height: 70vh; overflow: auto;
   padding: 12px 18px; columns: 2 18rem; column-gap: 28px;
-  background: var(--paper); border: 1px solid var(--tint); border-radius: 6px; box-shadow: 0 14px 36px -14px rgba(14, 58, 98, .45);
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 14px 36px -14px rgba(14, 58, 98, .45);
 }
 .lgrp, .lnone { break-inside: avoid; margin: 0 0 10px; }
 .lgroup { font-family: var(--label); letter-spacing: .05em; color: var(--muted); font-size: .95rem; margin: 0 0 2px; }
@@ -274,7 +293,7 @@ a.step:hover { background: var(--panel); }
 .progetto h2 { font-family: var(--label); font-weight: 500; letter-spacing: .03em; color: var(--main); margin-top: 1.6em; }
 .editions { list-style: none; padding: 0; display: grid; gap: 18px; }
 .edition { scroll-margin-top: 80px; }
-.edition:target { background: var(--panel); }
+.edition:target { box-shadow: inset 3px 0 0 var(--accent); }
 .edition h3 { font-family: var(--label); font-weight: 500; font-size: 1.05rem; letter-spacing: .03em; color: var(--main); margin: 0 0 .2em; }
 .edition p { margin: .15em 0; }
 .edition .small { font-size: .88rem; color: var(--muted); }
