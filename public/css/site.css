@@ -13,6 +13,8 @@
   --ink: #1B2733;
   --muted: #56697A;
   --line: #D3E0EA;
+  --band: #4877A1;
+  --on-band: #FCFDFE;
   --r: 10px;
   --display: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
   --label: "Cormorant SC", "Cormorant Garamond", Garamond, Georgia, serif;
@@ -20,7 +22,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --main: #7FB0D6; --dark: #CFE2F0; --tint: #35597A; --ground: #0C1B2A; --block: #1D3A56; --panel: #1B3550; --accent: #E58E7F;
-    --paper: #12263A; --on-main: #0C1B2A; --ink: #E3ECF3; --muted: #9FB4C6; --line: #24425E;
+    --paper: #12263A; --on-main: #0C1B2A; --ink: #E3ECF3; --muted: #9FB4C6; --line: #24425E; --band: #1D4669; --on-band: #E3ECF3;
     color-scheme: dark;
   }
 }
@@ -32,19 +34,21 @@ a { color: inherit; }
 /* the signature is a mask, so its ink takes any colour; the small letters sit on the baseline of the word before it */
 .firma { display: inline-block; aspect-ratio: 593 / 206; background: var(--dark); -webkit-mask: url(../img/firma-leopardi.png) center / contain no-repeat; mask: url(../img/firma-leopardi.png) center / contain no-repeat; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nav :focus-visible { outline-color: var(--on-band); }
 
 /* navbar */
-.nav { background: var(--ground); color: var(--main); position: sticky; top: 0; z-index: 5; }
+/* the menu is a solid band, as on LeggoManzoni; white text on #4877A1 is 4.7:1 */
+.nav { background: var(--band); color: var(--on-band); position: sticky; top: 0; z-index: 5; }
 .nav-inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; padding-block: 14px; }
 .brand { font-size: 1.6rem; font-weight: 500; text-decoration: none; margin-right: auto; white-space: nowrap; }
-.brand .firma { height: 1.45em; margin-left: .1em; vertical-align: -.75em; }
+.brand .firma { background: var(--on-band); height: 1.45em; margin-left: .1em; vertical-align: -.75em; }
 .links { display: flex; gap: 6px; flex-wrap: wrap; font-size: 1.2rem; font-weight: 500; }
 .links a { text-decoration: none; padding: 3px 14px; border-radius: var(--r); }
-.links a:hover { background: var(--block); }
-.links a.on { background: var(--main); color: var(--on-main); }
+.links a:hover { background: color-mix(in srgb, var(--on-band) 18%, transparent); }
+.links a.on { background: var(--on-band); color: var(--band); }
 .lang { font-weight: 500; }
-.lang a { text-decoration: none; padding: 1px 12px; border: 1.5px solid var(--main); border-radius: var(--r); }
-.lang a:hover { background: var(--block); }
+.lang a { text-decoration: none; padding: 1px 12px; border: 1.5px solid var(--on-band); border-radius: var(--r); }
+.lang a:hover { background: color-mix(in srgb, var(--on-band) 18%, transparent); }
 
 /* home */
 .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(24px, 5vw, 64px); align-items: center; padding-block: clamp(28px, 5vw, 64px) clamp(40px, 6vw, 80px); }
