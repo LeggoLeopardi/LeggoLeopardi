@@ -198,11 +198,11 @@ a.step:hover { background: var(--block); }
 .print-head { font-family: var(--label); letter-spacing: .06em; color: var(--dark); font-size: 1.15rem; line-height: 1.35; margin: 0 0 1em; }
 .print-head span + span::before { content: " "; }  /* one line: XII. L'INFINITO. */
 
-/* phones: the navbar in one row, modules scroll sideways if needed */
+/* phones: brand and language on the first row, the four modules across the second */
 @media (max-width: 640px) {
-  .nav-inner { flex-wrap: nowrap; gap: 10px; }
-  .brand { font-size: 1.15rem; margin-right: 0; white-space: nowrap; }
-  .links { flex-wrap: nowrap; overflow-x: auto; margin-right: auto; scrollbar-width: none; }
+  .nav-inner { gap: 4px 10px; }
+  .links { order: 3; flex: 1 0 100%; flex-wrap: nowrap; justify-content: space-between; }
+  .links a { padding: 2px 8px; }
   .lang { flex-shrink: 0; }
 }
 
@@ -269,8 +269,8 @@ a.step:hover { background: var(--block); }
 .lcols .poem { max-width: none; }
 .verse[data-v] { border-radius: 3px; cursor: pointer; }
 .verse.hl, .verse.sel { background: var(--panel); }
-.lem { border-bottom: 2px solid color-mix(in srgb, var(--accent) 60%, transparent); cursor: pointer; }
-.lem:hover, .lem.hl, .lem.sel { background: color-mix(in srgb, var(--accent) 18%, transparent); border-bottom-color: var(--accent); }
+span.lem { border-bottom: 2px solid color-mix(in srgb, var(--accent) 60%, transparent); cursor: pointer; }
+span.lem:hover, span.lem.hl, span.lem.sel { background: color-mix(in srgb, var(--accent) 18%, transparent); border-bottom-color: var(--accent); }
 .comm { position: sticky; top: 72px; max-height: calc(100vh - 90px); overflow: auto; padding-right: 6px; }
 .comm::after { content: ""; display: block; height: calc(100vh - 200px); }  /* room to bring the last notes level with their verse */
 .cpick { margin: 0 0 14px; }
