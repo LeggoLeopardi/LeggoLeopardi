@@ -1,5 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const request = require('supertest');
@@ -42,11 +43,13 @@ test('bad poem addresses are 404, never 500', async () => {
   }
 });
 
-test('selector and bare /leggo redirect to a known poem only', async () => {
-  let res = await request(app).get('/leggo?n=12');
-  assert.equal(res.headers.location, '/leggo/12');
+test('selector and bare /leggo redirect to a known poem only; the default is the first commented poem', async () => {
+  const commented = index.find((p) => fs.existsSync(path.join(__dirname, '..', '..', 'public', 'data', 'comm', `c${p.n}.json`)));
+  const first = (commented || index[0]).n;
+  let res = await request(app).get('/leggo?n=1');
+  assert.equal(res.headers.location, '/leggo/1');
   res = await request(app).get('/leggo?n=99');
-  assert.equal(res.headers.location, `/leggo/${index[0].n}`);
+  assert.equal(res.headers.location, `/leggo/${first}`);
   res = await request(app).get('/leggo');
-  assert.equal(res.headers.location, `/leggo/${index[0].n}`);
+  assert.equal(res.headers.location, `/leggo/${first}`);
 });
