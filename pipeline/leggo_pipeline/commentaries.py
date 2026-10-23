@@ -65,6 +65,7 @@ def build_commentary_tei(entry: dict, poem: dict) -> bytes:
     _el(ns, "note", f"Selezione: {entry['selection']}.")
     bibl = _el(_el(fd, "sourceDesc"), "bibl", entry["bibl"])
     _el(bibl, "date", str(entry["year"]), when=str(entry["year"]))
+    _el(bibl, "biblScope", entry["page"], unit="page")
     _el(bibl, "note", entry["source"], type="source")
 
     div = _el(_el(_el(tei, "text"), "body"), "div", type="commentary", corresp=base)

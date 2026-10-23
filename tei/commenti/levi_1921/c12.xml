@@ -18,7 +18,7 @@
 <note>Selezione: esempio: le note al v. 1.</note>
 </notesStmt>
 <sourceDesc>
-<bibl>Giacomo Leopardi, Canti, con introduzione e note di Giulio Augusto Levi, Firenze, Luigi Battistelli, 1921<date when="1921">1921</date><note type="source">commenti/Leopardi_-_Canti,_Battistelli_1921.djvu, p. 131</note></bibl>
+<bibl>Giacomo Leopardi, Canti, con introduzione e note di Giulio Augusto Levi, Firenze, Luigi Battistelli, 1921<date when="1921">1921</date><biblScope unit="page">131</biblScope><note type="source">commenti/edizioni_commentate/Levi_Leopardi_-_Canti,_Battistelli_1921.djvu, p. 131</note></bibl>
 </sourceDesc>
 </fileDesc>
 </teiHeader>

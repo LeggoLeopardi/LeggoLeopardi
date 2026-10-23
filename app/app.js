@@ -146,7 +146,7 @@ app.get('/progetto', (req, res) => {
     if (!comm) return;
     comm.commentators.forEach((c) => {
       if (!editions.has(c.id)) editions.set(c.id, { ...c, poems: [] });
-      editions.get(c.id).poems.push({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}` });
+      editions.get(c.id).poems.push({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}`, page: c.page });
     });
   });
   res.render('progetto', { title: req.__('progetto.title'), editions: [...editions.values()].sort((a, b) => a.year - b.year) });

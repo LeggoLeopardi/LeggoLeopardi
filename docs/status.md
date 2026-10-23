@@ -65,8 +65,9 @@ Last updated: 2026-09-30.
 ## Commentaries (Leggo)
 
 - Source: `pipeline/commenti.json`, transcribed by reading the page images on 2026-09-30 (not the OCR text layer); TEI in `tei/commenti/`.
+- **References (2026-10-23).** The site shows each edition's bibl and, per poem, the printed page (`page` → `<biblScope unit="page">`). The local file the notes were read from (`source` → `<note type="source">`) stays in the TEI as provenance and is not published. The editions are in `../commenti/edizioni_commentate/` (catalogue: `../commenti/Catalogo commenti Canti.xlsx`).
 - Straccali 1895: all 10 notes on *L'infinito* plus introduction and metre. One note each (examples) from Straccali–Antognoni 1919 (v. 4, added by Antognoni), Fornaciari 1889 (vv. 1–3), Castagnola 1893 (v. 1), G. A. Levi 1921 (v. 1).
-- The file named "Battistelli 1921" is G. A. Levi's commentary (Firenze, Battistelli 1921), not on Flori's list.
+- The file once named "Battistelli 1921" is G. A. Levi's commentary (Firenze, Battistelli 1921), the first edition of Levi 1965 on Flori's list.
 - No notes to use: Mestica 1886 (text edition without commentary), Scherillo 1900 (no notes on the verses of *L'infinito*), Cappelletti 1881 (anthology without *L'infinito*).
 
 ## Open items

@@ -18,7 +18,7 @@
 <note>Selezione: esempio: una nota.</note>
 </notesStmt>
 <sourceDesc>
-<bibl>Canti di Giacomo Leopardi con interpretazione e commento di Paolo Emilio Castagnola, per uso delle scuole, Firenze, Successori Le Monnier, 1893<date when="1893">1893</date><note type="source">commenti/Castagnola.pdf, p. 82 (pagina 104 del PDF)</note></bibl>
+<bibl>Canti di Giacomo Leopardi con interpretazione e commento di Paolo Emilio Castagnola, per uso delle scuole, Firenze, Successori Le Monnier, 1893<date when="1893">1893</date><biblScope unit="page">82</biblScope><note type="source">commenti/edizioni_commentate/Castagnola_Leopardi_-_Canti,_Le_Monnier_1893.pdf, p. 82 (pagina 104 del PDF)</note></bibl>
 </sourceDesc>
 </fileDesc>
 </teiHeader>

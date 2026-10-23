@@ -10,9 +10,8 @@
     <li class="edition" id="<%= c.id %>">
       <h3><%= c.short %> <%= c.year %></h3>
       <p><%= c.bibl %></p>
-      <p class="small"><%= c.source %></p>
       <p class="small"><% c.status.forEach((s) => { %><%= s %> <% }) %></p>
-      <p class="small"><%= __('progetto.poems') %>: <% c.poems.forEach((p, i) => { %><%- i ? ', ' : '' %><a href="/leggo/<%= p.n %>?c=<%= c.id %>"><%= p.label %></a><% }) %></p>
+      <p class="small"><%= __('progetto.poems') %>: <% c.poems.forEach((p, i) => { %><%- i ? '; ' : '' %><a href="/leggo/<%= p.n %>?c=<%= c.id %>"><%= p.label %></a><% if (p.page) { %>, p. <%= p.page %><% } %><% }) %></p>
     </li>
     <% }) %>
   </ol>

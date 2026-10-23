@@ -55,7 +55,8 @@ test('Progetto: the project and the index of commented editions', async () => {
   const ids = [...res.text.matchAll(/<li class="edition" id="([^"]+)">/g)].map((m) => m[1]);
   assert.deepEqual(ids, ['fornaciari_1889', 'castagnola_1893', 'straccali_1895', 'straccali-antognoni_1919', 'levi_1921']);
   assert.match(res.text, /I canti di Giacomo Leopardi commentati da Alfredo Straccali, 2ª edizione riveduta e corretta, Firenze, G\. C\. Sansoni, 1895/);
-  assert.match(res.text, /<a href="\/leggo\/12\?c=straccali_1895">XII\. L(?:'|&#39;)infinito<\/a>/);
+  assert.match(res.text, /<a href="\/leggo\/12\?c=straccali_1895">XII\. L(?:'|&#39;)infinito<\/a>, p\. 33/);
+  assert.doesNotMatch(res.text, /\.pdf|\.djvu|edizioni_commentate/);
   assert.match(res.text, /Trascrizione dall(?:'|&#39;)immagine della pagina, da verificare\./);
 });
 
