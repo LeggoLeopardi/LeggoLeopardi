@@ -1,6 +1,6 @@
 # LeggoLeopardi: project status
 
-Last updated: 2026-09-30.
+Last updated: 2026-10-23.
 
 ## Live
 
@@ -13,7 +13,7 @@ Last updated: 2026-09-30.
 | Phase | State |
 |---|---|
 | 1a Skeleton: N35c base text of all 41 Canti from WikiLeopardi, Leggo view, CI, deploy | **Done** (PR #1, 2026-09-30) |
-| *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (branch `infinito-facsimile`) |
+| *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (PR #2) |
 | Traduco for *L'infinito*: 19 translations (EN, FR, DE, ES, RU), whole poem side by side | **Done** (`/traduco/12`) |
 | Leggo = commented reading of *L'infinito* (example notes from 5 editions); former Leggo renamed Confronto | **Done** (`/leggo/12`, `/confronto/12`) |
 | 1b rest: Collaziono (parked plan on branch `phase-1b-collation`), commentaries in Leggo, Concordanza; verse alignment of translations (after the admin panel) | Next |
@@ -47,7 +47,7 @@ Last updated: 2026-09-30.
 
 - Source: `tei/genetic/c12.xml`, Priore and Nava's TEI (copy from the EVT fork, May 2026), unchanged. Witnesses AN (layers Penna A–D), AV, NR25, B26, F31, N35, N35c.
 - Page images: WikiLeopardi (NR25, B26, F31, N35, N35c). Verse zones in `tei/facsimile/c12.xml`, detected inside hand-marked regions (`pipeline/facsimile.json`). Check images: `reports/facsimile/`.
-- View: `/leggo/12/facsimile`. The display mode for the variants is still to be decided by the team; this is the minimal version.
+- View: `/confronto/12` (the old `/leggo/12/facsimile` redirects there). The display mode for the variants is still to be decided by the team; this is the minimal version.
 - For Priore and Nava (their TEI, not changed here):
   - v.2: no space after `</app>` (*siepe,che*). **Fixed in our copy** on 2026-09-30, noted in its `<revisionDesc>`; their original still needs it.
   - The title of AV reads `MDCCCXIX V L'Infinito`; `V` is probably a mistyped `|`.
