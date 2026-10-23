@@ -132,6 +132,7 @@ def test_commentaries_json():
     assert ids == ["fornaciari_1889", "castagnola_1893", "straccali_1895", "straccali-antognoni_1919", "levi_1921"]  # by year
     st = next(c for c in data["commentators"] if c["id"] == "straccali_1895")
     assert st["short"] == "Straccali" and st["year"] == 1895 and st["bibl"].startswith("I canti di Giacomo Leopardi")
+    assert st["page"] == "33" and "source" not in st  # the local file stays in the TEI, not on the site
     assert len(st["notes"]) == 15 and len(st["intro"]) == 2
     first = st["notes"][0]
     assert (first["from"], first["to"], first["lemma"]) == (1, 1, "ermo colle.")

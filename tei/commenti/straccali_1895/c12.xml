@@ -18,7 +18,7 @@
 <note>Selezione: tutte le note al canto.</note>
 </notesStmt>
 <sourceDesc>
-<bibl>I canti di Giacomo Leopardi commentati da Alfredo Straccali, 2ª edizione riveduta e corretta, Firenze, G. C. Sansoni, 1895<date when="1895">1895</date><note type="source">commenti/Straccali_I_canti_di_Giacomo_Leopardi.pdf, p. 33 (pagina 58 del PDF)</note></bibl>
+<bibl>I canti di Giacomo Leopardi commentati da Alfredo Straccali, 2ª edizione riveduta e corretta, Firenze, G. C. Sansoni, 1895<date when="1895">1895</date><biblScope unit="page">33</biblScope><note type="source">commenti/edizioni_commentate/Straccali_Leopardi_-_Canti_2a_ed,_Sansoni_1895.pdf, p. 33 (pagina 58 del PDF)</note></bibl>
 </sourceDesc>
 </fileDesc>
 </teiHeader>

@@ -46,6 +46,7 @@ def test_note_content_marks_and_added_notes():
     assert len(straccali.xpath("//tei:note[@type='intro']", namespaces=NS)) == 2
     assert straccali.xpath("string(//tei:titleStmt/tei:author)", namespaces=NS) == "Alfredo Straccali"
     assert straccali.xpath("string(//tei:sourceDesc/tei:bibl/tei:date/@when)", namespaces=NS) == "1895"
+    assert straccali.xpath("string(//tei:sourceDesc/tei:bibl/tei:biblScope[@unit='page'])", namespaces=NS) == "33"
     antognoni = tree(CONFIG["12"][1])
     assert antognoni.xpath("//tei:note[@type='comm']/@subtype", namespaces=NS) == ["added"]
     fornaciari = tree(CONFIG["12"][2])

@@ -1,6 +1,6 @@
 # LeggoLeopardi: project status
 
-Last updated: 2026-09-30.
+Last updated: 2026-10-23.
 
 ## Live
 
@@ -13,7 +13,7 @@ Last updated: 2026-09-30.
 | Phase | State |
 |---|---|
 | 1a Skeleton: N35c base text of all 41 Canti from WikiLeopardi, Leggo view, CI, deploy | **Done** (PR #1, 2026-09-30) |
-| *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (branch `infinito-facsimile`) |
+| *L'infinito* text and facsimile (minimal view, team TEI + WikiLeopardi page images) | **Done** (PR #2) |
 | Traduco for *L'infinito*: 19 translations (EN, FR, DE, ES, RU), whole poem side by side | **Done** (`/traduco/12`) |
 | Leggo = commented reading of *L'infinito* (example notes from 5 editions); former Leggo renamed Confronto | **Done** (`/leggo/12`, `/confronto/12`) |
 | 1b rest: Collaziono (parked plan on branch `phase-1b-collation`), commentaries in Leggo, Concordanza; verse alignment of translations (after the admin panel) | Next |
@@ -47,7 +47,7 @@ Last updated: 2026-09-30.
 
 - Source: `tei/genetic/c12.xml`, Priore and Nava's TEI (copy from the EVT fork, May 2026), unchanged. Witnesses AN (layers Penna A–D), AV, NR25, B26, F31, N35, N35c.
 - Page images: WikiLeopardi (NR25, B26, F31, N35, N35c). Verse zones in `tei/facsimile/c12.xml`, detected inside hand-marked regions (`pipeline/facsimile.json`). Check images: `reports/facsimile/`.
-- View: `/leggo/12/facsimile`. The display mode for the variants is still to be decided by the team; this is the minimal version.
+- View: `/confronto/12` (the old `/leggo/12/facsimile` redirects there). The display mode for the variants is still to be decided by the team; this is the minimal version.
 - For Priore and Nava (their TEI, not changed here):
   - v.2: no space after `</app>` (*siepe,che*). **Fixed in our copy** on 2026-09-30, noted in its `<revisionDesc>`; their original still needs it.
   - The title of AV reads `MDCCCXIX V L'Infinito`; `V` is probably a mistyped `|`.
@@ -65,8 +65,9 @@ Last updated: 2026-09-30.
 ## Commentaries (Leggo)
 
 - Source: `pipeline/commenti.json`, transcribed by reading the page images on 2026-09-30 (not the OCR text layer); TEI in `tei/commenti/`.
+- **References (2026-10-23).** The site shows each edition's bibl and, per poem, the printed page (`page` → `<biblScope unit="page">`). The local file the notes were read from (`source` → `<note type="source">`) stays in the TEI as provenance and is not published. The editions are in `../commenti/edizioni_commentate/` (catalogue: `../commenti/Catalogo commenti Canti.xlsx`).
 - Straccali 1895: all 10 notes on *L'infinito* plus introduction and metre. One note each (examples) from Straccali–Antognoni 1919 (v. 4, added by Antognoni), Fornaciari 1889 (vv. 1–3), Castagnola 1893 (v. 1), G. A. Levi 1921 (v. 1).
-- The file named "Battistelli 1921" is G. A. Levi's commentary (Firenze, Battistelli 1921), not on Flori's list.
+- The file once named "Battistelli 1921" is G. A. Levi's commentary (Firenze, Battistelli 1921), the first edition of Levi 1965 on Flori's list.
 - No notes to use: Mestica 1886 (text edition without commentary), Scherillo 1900 (no notes on the verses of *L'infinito*), Cappelletti 1881 (anthology without *L'infinito*).
 
 ## Open items

@@ -18,7 +18,7 @@
 <note>Selezione: esempio: le note ai vv. 1-3.</note>
 </notesStmt>
 <sourceDesc>
-<bibl>Poesie di Giacomo Leopardi scelte e commentate a uso delle scuole dal professore Raffaello Fornaciari, Firenze, G. Barbèra, 1889<date when="1889">1889</date><note type="source">commenti/Fornaciari_Poesie_di_Giacomo_Leopardi_scelte_e_comm.pdf, p. 83 (pagina 110 del PDF)</note></bibl>
+<bibl>Poesie di Giacomo Leopardi scelte e commentate a uso delle scuole dal professore Raffaello Fornaciari, Firenze, G. Barbèra, 1889<date when="1889">1889</date><biblScope unit="page">83</biblScope><note type="source">commenti/edizioni_commentate/Fornaciari_Leopardi_-_Poesie,_Barbera_1889.pdf, p. 83 (pagina 110 del PDF)</note></bibl>
 </sourceDesc>
 </fileDesc>
 </teiHeader>

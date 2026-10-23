@@ -54,8 +54,10 @@ function poemNav(poem, mod) {
 app.get('/', (req, res) => res.render('home'));
 
 app.get('/leggo', (req, res) => {
+  // with no poem asked for, open the first one with commentaries (any poem when none has them)
   const requested = data.poem(req.query.n);
-  res.redirect(`/leggo/${requested ? requested.n : data.index()[0].n}`);
+  const target = requested || data.index().find((p) => data.commentaries(p.n)) || data.index()[0];
+  res.redirect(`/leggo/${target.n}`);
 });
 
 const escapeHtml = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -146,7 +148,7 @@ app.get('/progetto', (req, res) => {
     if (!comm) return;
     comm.commentators.forEach((c) => {
       if (!editions.has(c.id)) editions.set(c.id, { ...c, poems: [] });
-      editions.get(c.id).poems.push({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}` });
+      editions.get(c.id).poems.push({ n: p.n, label: `${p.roman}. ${p.title || p.incipit}`, page: c.page });
     });
   });
   res.render('progetto', { title: req.__('progetto.title'), editions: [...editions.values()].sort((a, b) => a.year - b.year) });

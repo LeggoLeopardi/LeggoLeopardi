@@ -274,7 +274,7 @@ def commentaries_json(entry: dict, comm_dir: Path, base_path: Path | None = None
             "short": x("string(//tei:titleStmt/tei:title[@type='short'])"),
             "year": int(x("string(//tei:sourceDesc/tei:bibl/tei:date/@when)")),
             "bibl": " ".join((bibl.text or "").split()),
-            "source": x("string(//tei:sourceDesc/tei:bibl/tei:note[@type='source'])"),
+            "page": x("string(//tei:sourceDesc/tei:bibl/tei:biblScope[@unit='page'])"),
             "status": [" ".join("".join(t.itertext()).split()) for t in x("//tei:notesStmt/tei:note")],
             "intro": [_rich(p) for p in x("//tei:note[@type='intro']")],
             "notes": notes,
